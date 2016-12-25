@@ -23,5 +23,7 @@
 
 ## Permessi
 * [Permessi](permessi/permessi.md)
+* [Cambiare i permessi](permessi/cambiare_permessi.md)
+* [Cambiare il proprietario](permessi/owner.md)
 
 [Torna all'indice generale](../README.md)
