@@ -26,4 +26,7 @@
 * [Cambiare i permessi](permessi/cambiare_permessi.md)
 * [Cambiare il proprietario](permessi/owner.md)
 
+## Git e GitHub
+* [Git e GitHub](git/github.md)
+
 [Torna all'indice generale](../README.md)
