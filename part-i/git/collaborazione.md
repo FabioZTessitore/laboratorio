@@ -17,19 +17,19 @@ Quindi lo schema di lavoro diventa:
 
 <table>
 <tr>
-  <td>1</td> <td>pull</td> <td>`$ git pull origin`</td>
+  <td>1</td> <td>pull</td> <td>$ git pull origin</td>
 </tr>
 <tr>
   <td>2</td> <td></td> <td>modifica dei file</td>
 </tr>
 <tr>
-  <td>3</td> <td>stage dei file</td> <td>`$ git add lista_dei_file_modificati`</td>
+  <td>3</td> <td>stage dei file</td> <td>$ git add lista_dei_file_modificati</td>
 </tr>
 <tr>
-  <td>4</td> <td>commit</td> <td>`$ git commit -m "descrizione modifica"`</td>
+  <td>4</td> <td>commit</td> <td>$ git commit -m "descrizione modifica"</td>
 </tr>
 <tr>
-  <td>5</td> <td>push</td> <td>`$ git push origin master`</td>
+  <td>5</td> <td>push</td> <td>$ git push origin master</td>
 </tr>
 </table>
 
