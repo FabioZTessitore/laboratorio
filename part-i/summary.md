@@ -19,5 +19,6 @@
 ## Metacaratteri
 * [Metacaratteri](metacaratteri/metacaratteri.md)
 * [Redirezione](metacaratteri/redirezione.md)
+* [Espansione delle parentesi graffe](metacaratteri/graffe.md)
 
 [Torna all'indice generale](../README.md)
