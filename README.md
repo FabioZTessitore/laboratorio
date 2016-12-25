@@ -2,5 +2,5 @@
 
 [Introduzione](introduzione.md)
 
-* [Parte I](summary_part_i.md)
-* [Parte II](summary_part_ii.md)
+* [Parte I](part-i/summary.md)
+* [Parte II](part-ii/summary.md)
