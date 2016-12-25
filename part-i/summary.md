@@ -9,4 +9,11 @@
 * [Storico dei comandi](prompt/storico-comandi.md)
 * [Le pagine del mauale](prompt/man-page.md)
 
+## Il filesystem
+* [Struttura del filesystem](filesystem/struttura.md)
+* [Esplorare il filesystem](filesystem/esplorare.md)
+* [Creare file e directory](filesystem/creare.md)
+* [Rimuovere file e directory](filesystem/rimuovere.md)
+* [Copiare, Spostare, Rinominare](filesystem/cpmv.md)
+
 [Torna all'indice generale](../README.md)
