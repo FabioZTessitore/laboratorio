@@ -29,4 +29,4 @@ Altre directory comuni sono:
 ![](../../images/people/tess.png): Lo vedremo tra poco. Per il momento può
 utilizzare l'interfaccia grafica del suo sistema Linux.
 
-Torna a [Il prompt dei comandi](../summary.md)
+Torna a [Il filesystem](../summary.md)

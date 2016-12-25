@@ -11,5 +11,6 @@
 
 ## Il filesystem
 * [Struttura del filesystem](filesystem/struttura.md)
+* [Esplorare il filesystem](filesystem/esplorare.md)
 
 [Torna all'indice generale](../README.md)
