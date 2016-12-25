@@ -7,3 +7,5 @@ A volte, soprattutto sui server, l'interfaccia grafica non è presente e all'avv
 ![](/images/people/tazza.png): Va bene, ma in questo modo sono costretto ad abbandonare l'interfaccia grafica mentre eseguo le operazioni da terminale. Immagino che a volte possa essere scomodo.
 
 ![](/images/people/tess.png): Infatti ha a disposizione un'altra possibilità. Può lanciare un'applicazione che emula il terminale direttamente dall'interfaccia grafica. Basta cercarla.
+
+Torna a [Il prompt dei comandi](summary_part_i.md)
