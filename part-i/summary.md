@@ -13,5 +13,6 @@
 * [Struttura del filesystem](filesystem/struttura.md)
 * [Esplorare il filesystem](filesystem/esplorare.md)
 * [Creare file e directory](filesystem/creare.md)
+* [Rimuovere file e directory](filesystem/rimuovere.md)
 
 [Torna all'indice generale](../README.md)
