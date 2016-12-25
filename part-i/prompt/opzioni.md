@@ -38,7 +38,11 @@ L'opzione `-t` riordina in base alla data di modifica.
 
 ## Raggruppare le opzioni
 
-![](/images/people/tess.png): Ovviamente può fornire più opzioni contemporaneamente ad un comando, come in `$ ls -l -t`, ma ricordi che le opzioni possono essere raggruppate.
+![](/images/people/tess.png): Ovviamente può fornire più opzioni contemporaneamente ad un comando, come in:
+```
+$ ls -l -t
+```
+ma ricordi che le opzioni possono essere raggruppate.
 ```
 $ ls -lt
 drwxr-xr-x 25 fabio fabio  4096 ott 30 20:30 Scrivania
