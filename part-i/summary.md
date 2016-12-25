@@ -16,4 +16,9 @@
 * [Rimuovere file e directory](filesystem/rimuovere.md)
 * [Copiare, Spostare, Rinominare](filesystem/cpmv.md)
 
+## Metacaratteri
+* [Metacaratteri](metacaratteri/metacaratteri.md)
+* [Redirezione](metacaratteri/redirezione.md)
+* [Espansione delle parentesi graffe](metacaratteri/graffe.md)
+
 [Torna all'indice generale](../README.md)
