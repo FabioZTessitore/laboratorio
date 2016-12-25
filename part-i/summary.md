@@ -21,4 +21,7 @@
 * [Redirezione](metacaratteri/redirezione.md)
 * [Espansione delle parentesi graffe](metacaratteri/graffe.md)
 
+## Permessi
+* [Permessi](permessi/permessi.md)
+
 [Torna all'indice generale](../README.md)
