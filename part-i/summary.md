@@ -14,5 +14,6 @@
 * [Esplorare il filesystem](filesystem/esplorare.md)
 * [Creare file e directory](filesystem/creare.md)
 * [Rimuovere file e directory](filesystem/rimuovere.md)
+* [Copiare, Spostare, Rinominare](filesystem/cpmv.md)
 
 [Torna all'indice generale](../README.md)
