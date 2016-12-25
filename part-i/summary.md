@@ -1,0 +1,7 @@
+# Parte I
+[Torna all'indice generale](../README.md)
+
+## Il prompt dei comandi
+* [Il terminale](prompt/terminale.md)
+
+[Torna all'indice generale](../README.md)
