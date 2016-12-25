@@ -2,9 +2,9 @@
 
 ## Il prompt
 
-![](/images/people/tazza.png): Ho aperto un terminale, e ora?
+![](../../images/people/tazza.png): Ho aperto un terminale, e ora?
 
-![](/images/people/tess.png): Molto probabilmente vedrà un testo simile a questo:
+![](../../images/people/tess.png): Molto probabilmente vedrà un testo simile a questo:
 ```
 fabio@debian ~ $
 ```
@@ -13,20 +13,20 @@ Quello che vede è il *prompt*. Il terminale la informa che il nome utente è `f
 
 ## I primi comandi
 
-![](/images/people/tazza.png): E cosa posso fare ora?
+![](../../images/people/tazza.png): E cosa posso fare ora?
 
-![](/images/people/tess.png): Caro Sig. Tazza, il terminale è in attesa dei suoi ordini.
+![](../../images/people/tess.png): Caro Sig. Tazza, il terminale è in attesa dei suoi ordini.
 
-![](/images/people/tazza.png): Ehm ... se solo sapessi cosa chiedere ...
+![](../../images/people/tazza.png): Ehm ... se solo sapessi cosa chiedere ...
 
-![](/images/people/tess.png): Per cominciare provi a chiedere il giorno e l'ora.
+![](../../images/people/tess.png): Per cominciare provi a chiedere il giorno e l'ora.
 ```
 $ date
 dom 30 ott 2016, 20.55.33, CET
 ```
 Come può vedere, dare un comando è semplicissimo. Deve solo scriverne il nome e battere <kbd>Invio</kbd>.
 
-![](/images/people/tess.png): Continui, continui a provare. Chieda qual è il nome del computer ad esempio.
+![](../../images/people/tess.png): Continui, continui a provare. Chieda qual è il nome del computer ad esempio.
 ```
 $ hostname
 debian
@@ -42,6 +42,6 @@ $ ls
 Documenti  Immagini  Modelli  Scaricati  Scrivania  Wallpapers  work
 ```
 
-![](/images/people/tazza.png): Ma è *&lt;meraviglia&gt;bellissimo!!!&lt;/meraviglia&gt;*
+![](../../images/people/tazza.png): Ma è *&lt;meraviglia&gt;bellissimo!!!&lt;/meraviglia&gt;*
 
 Torna a [Il prompt dei comandi](../summary.md)
