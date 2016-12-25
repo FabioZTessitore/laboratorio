@@ -7,5 +7,6 @@
   - Il filesystem
   - I metacaratteri
   - I permessi
+  - Git e GitHub
 
 * [Parte II](part-ii/summary.md)
