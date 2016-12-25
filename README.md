@@ -6,5 +6,6 @@
   - Il prompt dei comandi
   - Il filesystem
   - I metacaratteri
+  - I permessi
 
 * [Parte II](part-ii/summary.md)
