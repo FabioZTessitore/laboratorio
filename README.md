@@ -1,4 +1,4 @@
-# Indice Genarale
+# Indice Generale
 
 [Introduzione](introduzione.md)
 
