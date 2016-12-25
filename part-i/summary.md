@@ -23,5 +23,6 @@
 
 ## Permessi
 * [Permessi](permessi/permessi.md)
+* [Cambiare i permessi](permessi/cambiare_permessi.md)
 
 [Torna all'indice generale](../README.md)
