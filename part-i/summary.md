@@ -28,5 +28,6 @@
 
 ## Git e GitHub
 * [Git e GitHub](git/github.md)
+* [Clonare una repository](git/clone.md)
 
 [Torna all'indice generale](../README.md)
