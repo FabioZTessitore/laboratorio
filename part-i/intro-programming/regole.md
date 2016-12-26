@@ -12,6 +12,7 @@ Tutti i linguaggi sono composti da un alfabeto `a b c ... + - * / % { } [ ] ...`
 in altre parole i simboli utilizzabili, e da regole su come combinare i vari elementi.
 
 Le regole si dividono in:
+
 1. Sintassi
 2. Semantica statica
 3. Semantica

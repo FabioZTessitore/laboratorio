@@ -47,6 +47,7 @@ non è molto chiara.
 momento non posso darle troppe spiegazioni.
 
 Un paio di cose, però, deve saperle:
+
 1. Le istruzioni vanno inserite dopo la partentesi graffa aperta che segue `main()`
 2. Le istruzioni C terminano con il carattere `;`
 
@@ -99,6 +100,7 @@ int main()
 ```
 
 ![](../../images/people/tazza.png): Lei continua a non dirmi tutto.
+
 1. Perché c'è un `*` all'interno dell'ultimo commento?
 2. Cosa significa `\n` all'interno della stringa?
 

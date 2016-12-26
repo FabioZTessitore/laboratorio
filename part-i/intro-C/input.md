@@ -39,7 +39,7 @@ per avere input da tastiera e le passo una stringa con una specifica di stampa?
 e c'è l'operatore `&`. Credevo servisse a stampare l'indirizzo di una variabile.
 
 ![](../../images/people/tess.png): Non si confonda. L'operatore `&` serve ad ottenere
-l'indirizzo di una variabile. Negli esempi della volta scorsa lo stampavamo.
+l'indirizzo di una variabile. Negli esempi della volta scorsa lo stampava.
 Qui, invece, l'indirizzo di `age` viene passato alla funzione `scanf()` in modo
 che questa possa sapere dove mettere il valore letto in input.
 
