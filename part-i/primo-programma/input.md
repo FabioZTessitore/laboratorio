@@ -5,12 +5,12 @@
 ![](../../images/people/tess.png): Per fare qualche programmino utile, anche se
 ancora molto semplice, dobbiamo essere in grado di ottenere dei valori da tastiera.
 
-```py
+{% highlight python linenos %}
 # Ottenere input dalla tastiera
 print "Come ti chiami? "
 name = raw_input()
 print "Ciao", name
-```
+{% endhighlight %}
 
 ![](../../images/people/tazza.png): Parliamone.
 
