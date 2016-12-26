@@ -1,8 +1,8 @@
 # Le variabili
 
-![](../../images/people/tess.png): Già ha già visto cosa sono e come si usano le variabili
-in Python. Ora che vogliamo utilizzare il linguaggio C ricordi che le variabili
-prima di poter essere utilizzate vanno *dichiarate*.
+![](../../images/people/tess.png): Caro Sig. Tazza, le ho già mostrato cosa sono
+e come si usano le variabili in Python. Ricordi, però, che in C
+prima di poter utilizzare una variabile deve *dichiararla*.
 
 Una dichiarazione di variabile è una riga del tipo:
 
