@@ -20,7 +20,7 @@ Crei una pagina Web `index.html` contentente una lista di collegamenti alle segu
     - un'immagine
     - una classifica sotto forma di tabella
 
-  * login.html
+  * login.html:
 
     - contenente un form (non funzionante) che chiede una serie di dati all'utente<br>
     (email, password, età, sesso, titolo di studio, un commento sul sito).<br>
