@@ -12,5 +12,6 @@
   - Il primo programma
   - Introduzione al C
   - Esame
+  - Bonus, Introduzione all'HTML
 
 * [Parte II](part-ii/summary.md)

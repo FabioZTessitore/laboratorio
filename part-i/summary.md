@@ -61,4 +61,10 @@
 ## Esame finale
 * [Tempo di volo](esame/esercizi.md)
 
+## Bonus
+### Introduzione all'HTML
+* [La prima pagina Web](intro-html/struttura.md)
+* [HTML Dog Tutorial](intro-html/tutorial.md)
+  * [Esercizi](intro-html/esercizi.md)
+
 [Torna all'indice generale](../README.md)
