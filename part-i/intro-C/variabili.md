@@ -12,7 +12,7 @@ int numero;
 
 Come vede è necessario specificare il tipo e il nome della variabile nella dichiarazione.
 
-Da questo momento in poi può utilizzare la variabile `numero`:
+Da questo momento in poi potrà utilizzare la variabile `numero`:
 
 ```c
 numero = 42;
@@ -32,9 +32,8 @@ di dichiarare una variabile prima di utilizzarla?
 
 ## I tipi fondamentali
 
-![](../../images/people/tess.png): Oltre alle variabili intere ci sono le
-variabili in virgola mobile (floating point).
-Solo che in C ce ne sono di due tipi: `float` (singola precisione) e
+![](../../images/people/tess.png): Oltre alle variabili intere ci sono quelle
+in virgola mobile (floating point). In C ne esistono due tipi: `float` (singola precisione) e
 `double` (doppia precisione).
 
 Per il momento le consiglio di usare variabili `double`.
