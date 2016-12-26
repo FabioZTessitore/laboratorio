@@ -9,5 +9,6 @@
   - I permessi
   - Git e GitHub
   - Introduzione alla programmazione
+  - Il primo programma
 
 * [Parte II](part-ii/summary.md)

@@ -39,4 +39,7 @@
 * [I tipi elementari](intro-programming/tipi.md)
 * [Espressioni](intro-programming/espressioni.md)
 
+## Il primo programma
+* [Stampare un messaggio](primo-programma/print.md)
+
 [Torna all'indice generale](../README.md)
