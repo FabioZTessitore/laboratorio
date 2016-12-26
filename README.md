@@ -8,5 +8,6 @@
   - I metacaratteri
   - I permessi
   - Git e GitHub
+  - Introduzione alla programmazione
 
 * [Parte II](part-ii/summary.md)
