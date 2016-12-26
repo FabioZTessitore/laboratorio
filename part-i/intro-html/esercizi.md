@@ -7,6 +7,7 @@ Crei una repository su `GitHub` chiamata `MyWebSite` e la usi per caricare i suo
 
 1. **MyWebSite**<br>
 Crei una pagina Web `index.html` contentente una lista di collegamenti alle seguenti pagine:
+
   * ricetta.html:
 
     - contiene un'intestazione
