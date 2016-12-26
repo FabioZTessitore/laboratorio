@@ -44,5 +44,6 @@
 * [Le variabili](primo-programma/variabili.md)
 * [Input da tastiera](primo-programma/input.md)
   * [Esercizi](primo-programma/esercizi.md)
+* [L'operatore modulo](primo-programma/modulo.md)
 
 [Torna all'indice generale](../README.md)
