@@ -47,5 +47,6 @@
 * [L'operatore modulo](primo-programma/modulo.md)
 * [Espressioni booleane ed operatori logici](primo-programma/espr_booleane_e_operat_logici.md)
 * [Effettuare scelte, il costrutto if else](primo-programma/scelte.md)
+  * [Esercizi](primo-programma/esercizi2.md)
 
 [Torna all'indice generale](../README.md)
