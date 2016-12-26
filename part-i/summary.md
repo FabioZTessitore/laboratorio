@@ -50,6 +50,7 @@
   * [Esercizi](primo-programma/esercizi2.md)
 
 ## Introduzione al C
-  * [Hello World](intro-C/hello.md)
+* [Hello World](intro-C/hello.md)
+  * [Esercizi](intro-C/esercizi.md)
 
 [Torna all'indice generale](../README.md)
