@@ -49,4 +49,7 @@
 * [Effettuare scelte, il costrutto if else](primo-programma/scelte.md)
   * [Esercizi](primo-programma/esercizi2.md)
 
+## Introduzione al C
+  * [Hello World](intro-C/hello.md)
+
 [Torna all'indice generale](../README.md)
