@@ -58,4 +58,7 @@
 * [Esecuzione condizionale](intro-C/esecuzione-condizionale.md)
   * [Esercizi](intro-C/esercizi3.md)
 
+## Esame finale
+* [Tempo di volo](esame/esercizi.md)
+
 [Torna all'indice generale](../README.md)
