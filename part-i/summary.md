@@ -34,5 +34,6 @@
 
 ## Introduzione alla Programmazione
 * [Conoscenza](intro-programming/conoscenza.md)
+  * [Radice Quadrata](intro-programming/soluzione_radice_quadrata.md)
 
 [Torna all'indice generale](../README.md)
