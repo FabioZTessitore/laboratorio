@@ -42,5 +42,6 @@
 ## Il primo programma
 * [Stampare un messaggio](primo-programma/print.md)
 * [Le variabili](primo-programma/variabili.md)
+* [Input da tastiera](primo-programma/input.md)
 
 [Torna all'indice generale](../README.md)
