@@ -50,6 +50,12 @@
   * [Esercizi](primo-programma/esercizi2.md)
 
 ## Introduzione al C
-  * [Hello World](intro-C/hello.md)
+* [Hello World](intro-C/hello.md)
+  * [Esercizi](intro-C/esercizi.md)
+* [Le variabili](intro-C/variabili.md)
+* [Input da tastiera](intro-C/input.md)
+  * [Esercizi](intro-C/esercizi2.md)
+* [Esecuzione condizionale](intro-C/esecuzione-condizionale.md)
+  * [Esercizi](intro-C/esercizi3.md)
 
 [Torna all'indice generale](../README.md)
