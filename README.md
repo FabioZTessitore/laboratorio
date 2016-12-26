@@ -10,5 +10,7 @@
   - Git e GitHub
   - Introduzione alla programmazione
   - Il primo programma
+  - Introduzione al C
+  - Esame
 
 * [Parte II](part-ii/summary.md)
