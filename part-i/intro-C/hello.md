@@ -100,6 +100,7 @@ int main()
 ```
 
 ![](../../images/people/tazza.png): Lei continua a non dirmi tutto.
+
 1. Perché c'è un `*` all'interno dell'ultimo commento?
 2. Cosa significa `\n` all'interno della stringa?
 
