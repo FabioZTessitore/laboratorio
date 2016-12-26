@@ -52,5 +52,6 @@
 ## Introduzione al C
 * [Hello World](intro-C/hello.md)
   * [Esercizi](intro-C/esercizi.md)
+* [Le variabili](intro-C/variabili.md)
 
 [Torna all'indice generale](../README.md)
