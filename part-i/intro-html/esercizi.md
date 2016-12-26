@@ -9,24 +9,20 @@ Crei una repository su `GitHub` chiamata `MyWebSite` e la usi per caricare i suo
 Crei una pagina Web `index.html` contentente una lista di collegamenti alle seguenti pagine:
 
   * ricetta.html:
-
     - contiene un'intestazione
     - una piccola descrizione di ricetta
     - la lista degli ingredienti
     - passi per la preparazione
 
   * sport.html:
-
     - contiene un'intestazione
     - un'immagine
     - una classifica sotto forma di tabella
 
   * login.html:
-
     - contenente un form (non funzionante) che chiede una serie di dati all'utente<br>
     (email, password, età, sesso, titolo di studio, un commento sul sito).<br>
     I dati verranno chiesti con queste modalità:
-
       * email: campo di testo
       * password: campo di testo nascosto
       * età: campo di testo
