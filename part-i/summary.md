@@ -32,4 +32,7 @@
 * [Effettuare modifiche](git/commit_push.md)
 * [Un semplice modello di collaborazione](git/collaborazione.md)
 
+## Introduzione alla Programmazione
+* [Conoscenza](intro-programming/conoscenza.md)
+
 [Torna all'indice generale](../README.md)
