@@ -62,6 +62,7 @@
 * [Tempo di volo](esame/esercizi.md)
 
 ## Bonus
+
 ### Introduzione all'HTML
 * [La prima pagina Web](intro-html/struttura.md)
 * [HTML Dog Tutorial](intro-html/tutorial.md)
