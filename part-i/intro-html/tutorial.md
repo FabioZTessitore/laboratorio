@@ -14,7 +14,7 @@ degli esperimenti.
 
 <a href="http://htmldog.com/guides/html/beginner/">HTML Dog Tutorial (Beginner)</a>
 
-## Suggerimenti per i test
+## Suggerimenti
 
 ![](../../images/people/tess.png): Sig. Tazza, un paio di suggerimenti. Quando scriverà
 delle pagine di esempio (le scriverà vero?) avrà bisogno di inserire testo e immagini.

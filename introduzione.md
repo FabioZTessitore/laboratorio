@@ -1,4 +1,4 @@
-# I dialoghi del signor Tessitore e del signor Tazza
+# Introduzione
 
 ![](images/people/tess.png): Sig. Tazza, che piacere rivederla, come sta?
 

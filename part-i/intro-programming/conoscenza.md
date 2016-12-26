@@ -10,6 +10,7 @@ per collaborare, ma quando iniziamo a programmare?
 ![](../../images/people/tess.png): Non di qualcuno ...
 
 La conoscenza si divide in due grosse categorie:
+
 1. Dichiarativa
 2. Imperativa
 

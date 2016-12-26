@@ -1,4 +1,6 @@
-# Indice Generale
+# I Dialoghi del Sig. Tazza e del Sig. Tessitore
+
+## Indice Generale
 
 [Introduzione](introduzione.md)
 
