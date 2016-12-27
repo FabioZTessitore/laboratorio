@@ -13,57 +13,81 @@ un sacco di cose ...
 una serie di variabili contenenti svariate informazioni.
 Per accedere a queste variabili si usa il carattere `$`
 
-Ad esempio se vuole visualizzare il contenuto della variabile `BASH`
+Ad esempio, la variabile `BASH` contiene il percorso dell'eseguibile
+della shell in uso. Per visualizzarne il contenuto:
 
 ```
 $ echo $BASH
 /bin/bash
 ```
 
-![](../../images/people/tazza.png): Che significa questo output?
-
-![](../../images/people/tess.png): La variabile `BASH` vale `/bin/bash`,
-in altre parole fa riferimento al file ... boh
-
 Controlli pure:
 
 ```
 $ ls -l $BASH
-...
+-rwxr-xr-x 1 root root 1099016 nov 15 19:49 /bin/bash
 ```
+
+![](../../images/people/tazza.png): Che motivo c'è di memorizzare il percorso
+dell'eseguibile della shell? Non è sempre lo stesso?
+
+![](../../images/people/tess.png): Evidentemente no. Esistono vari tipi di shell
+e `/bin/bash` e solo una di queste.
+
+Memorizzando il percorso della shell in una variabile tutti i file di configurazione,
+e l'utente stesso, possono far riferimento a `$BASH` senza preoccuparsi di sapere
+qual è il file attualmente in uso.
+
+![](../../images/people/tazza.png): E immagino ci siano molte altre variabili.
+
+![](../../images/people/tess.png): Esatto. Visualizzi il contenuto delle variabili
+`HOME` e `USER`. La shell sa!
 
 ## Espansione delle espressioni aritmetiche
 
-A volte è necessario fare calcoli all'interno
-di comandi più lunghi per ottenere altre informazioni.
-Per fare operazioni aritmetiche si usa l'operatore $[]
-es.
+![](../../images/people/tess.png): La shell di Linux è uno strumento estremamente
+versatile. Lo sa che permette anche di fare operazioni aritmetiche?
+
+```
 $ echo "I am $[2016-1979] years old!"
-[stampa la mia età, calcolando prima
-l'espressione contenuta in $[]]
+I am 37 years old!
+```
 
+## Espansione dei comandi
 
+![](../../images/people/tess.png): Il comando precedente sarebbe più utile
+se l'anno 2016 non fosse scritto, bensì calcolato.
 
-Espansione dei comandi
+![](../../images/people/tazza.png): D'altra parte il 2016 sta finendo.
 
-Altre volte è necessario o utile eseguire
-un comando all'interno di un altro comando
-mediante gli operatori $() oppure `` (backtick)
-es.
+![](../../images/people/tess.png): E non conosce nessun comando in grado
+di dire qual è l'anno in corso?
+
+![](../../images/people/tazza.png): Certo, `date`
+
+```
+$ date +%Y
+```
+
+Se potessi inserire un comando all'interno di un altro comando ...
+
+![](../../images/people/tess.png): Esistono gli operatori `$()` oppure `` (apici inversi)
+proprio per questo.
+
+```
+$ echo "I am $[$(date +'%Y')-1979] years old!"
+...  # il risultato dipende dall'anno in corso!
+```
+
+Le faccio un altro esempio:
+
+```
 $ echo "There are $(ls | wc -w) files in this directory."
-[viene prima eseguito ls,
-quindi la pipe con wc (word count) che conta le parole (-w)
-restituisce il numero di file nella directory
-che può essere stampato da echo]
+There are 15 files in this directory.
+```
 
-Utilizzando l'espansione dei comandi si
-può modificare il comando della volta precedente
-in modo da renderlo indipendente dall'anno corrente.
-
-$ echo "I am $[$(date +'%Y')-1979] years old."
-[prima viene eseguito il comando più interno, date
-poi l'espressione aritmetica,
-infine echo]
-
+Qui viene prima eseguito il comando `ls`,
+poi la pipe con `wc` (word count) che conta le parole (`-w`).
+Infine avviene la stampa con echo del numero di file nella directory (il numero di parole contato da `wc`).
 
 Torna a [La shell](../summary.md)
