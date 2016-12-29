@@ -1,82 +1,138 @@
 # L'ambiente della shell
 
-I file di configurazione della shell sono:
+![](../../images/people/tazza.png): Sig. Tessitore, non so come dirglielo ...
 
-/etc/profile    configurazione di tutti gli utenti,
-                eseguito al login
+![](../../images/people/tess.png): Non mi faccia preoccupare, che succede?
 
-/etc/bashrc     configurazione di tutti gli utenti,
-                eseguito ogni volta che si apre una shell bash
+![](../../images/people/tazza.png): Ho perso tutti gli alias.
 
-~/.bash_profile configurazione specifica per ogni utente,
-                eseguito al login
+![](../../images/people/tess.png): Sig. Tazza, come si fa a perdere un alias?
 
-~/.bashrc       configurazione specifica della shell bash,
-                eseguito al login e per ogni nuova shell
-                aperta (definire qui gli alias)
+![](../../images/people/tazza.png): Non scherzi. Ho riavviato il computer
+e tutti gli alias che avevo creato sono spariti!
 
-~/.bash_logout  eseguito all'uscita
+## I file di configurazione della shell
 
+![](../../images/people/tess.png): La shell per poter svolgere i propri compiti
+utilizza alcuni file di configurazione. Evidentemente non ha salvato i suoi
+alias all'interno di questi file.
 
-Se vogliamo creare un alias che sia
-sempre presente nel sistema lo possiamo
-definire all'interno del file .bashrc
-Apriamo il file e alla fine aggiungiamo la riga
+![](../../images/people/tazza.png): Credevo che il comando `alias` permettesse
+la creazione di `alias` permanenti, evidentemente mi sbagliavo.
 
+![](../../images/people/tess.png): Utilizzando la shell `bash`, una delle più
+comuni, ci sono cinque file di configurazione. (Tenga presente che non necessariamente
+devono esserci tutti).
+
+<table>
+<tr>
+<td>File</td><td>Descrizione</td><td>Eseguito</td>
+</tr>
+<tr>
+<td>`/etc/profile`</td><td>configurazione generale di tutti gli utenti</td><td>login</td>
+</tr>
+<tr>
+<td>`/etc/bashrc`</td><td>configurazione generale di tutti gli utenti, shell bash</td><td>ogni nuova shell</td>
+</tr>
+<tr>
+<td>`~/.bash_profile`</td><td>configurazione specifica per ogni utente</td><td>login</td>
+</tr>
+<tr>
+<td>`~/.bashrc`</td><td>configurazione specifica per ogni utente, shell bash</td><td>login e ogni nuova shell</td>
+</tr>
+<tr>
+<td>`~/.bash_logout`</td><td></td><td>uscita</td>
+</tr>
+</table>
+
+![](../../images/people/tazza.png): E devo modificare tutti questi file?
+
+![](../../images/people/tess.png): Ma no. `/etc/profile` e `/etc/bashrc` non può
+toccarli, servono i permessi di amministratore.
+
+`~/.bash_profile` sulla mia macchina neanche c'è.
+
+`~/.bash_logout` non fa altro che pulire lo schermo quando esce.
+
+L'unico interessante è `~/.bashrc`.
+
+![](../../images/people/tazza.png): Non riesco a trovarlo.
+
+![](../../images/people/tess.png): Guardi che il nome inizia con il `.`. Ricorda
+cosa significa?
+
+![](../../images/people/tazza.png): Giusto. &Egrave; un file nascosto!
+
+## Alias permanenti
+
+![](../../images/people/tess.png): Come le stavo dicendo, se vuole
+creare un alias che sia sempre presente nel sistema lo deve
+definire all'interno del file `.bashrc` presente nella sua home.
+
+Apra il file e alla fine aggiunga la riga
+
+```
 alias d='date +%D'
+```
 
-Salviamo e chiudiamo il file.
+Infine salvi ed esca dall'editor.
 
-Siccome il file .bashrc viene letto al login
-e quando si apre una nuova shell non sarà
-immediatamente disponibile.
-Per evitare di aprire una nuova shell si può
-far rileggere il file di configurazione con:
+![](../../images/people/tazza.png): Fatto, ma non succede nulla.
 
+![](../../images/people/tess.png): Cosa vuole che succede? Il file `.bashrc`
+viene eseguito al login o quando si apre una nuova shell.
+
+Se proprio ne vuole forzare la rilettura:
+
+```
 $ source $HOME/.bashrc
-[riesegue il file di configurazione .bashrc
-presente nella cartella $HOME dell'utente,
-equivalente a ~/.bashrc]
+```
 
+![](../../images/people/tazza.png): Perché ha scritto `$HOME`, non bastava `~`
+oppure accertarsi di essere nella propria home?
 
-Impostare il prompt
+![](../../images/people/tess.png): Certo, volevo solo tentare di metterla in difficoltà.
 
-Sempre in .bashrc è presente la definizione
-della variabile PS1 che determina come
-verrà visualizzato il prompt dei comandi.
-Si può provare a modificare tale valore
-(meglio fare una copia di backup di .bashrc)
+## Modificare il prompt dei comandi
 
+![](../../images/people/tess.png): Sig. Tazza, ora che ha fatto amicizia con
+il file `.bashrc` posso dirle un'altra cosa. Se cerca bene troverà la definizione
+di una variabile chiamata `PS1` che determina come verrà visualizzato
+il prompt dei comandi.
 
-Aggiungere variabili di ambiente
+Mi raccomando, faccia una copia di backup del file prima di iniziare ad
+effettuare modifiche. Linux le permette l'accesso ai file di configurazione,
+ma se rompe qualcosa i cocci sono suoi.
 
-Le variabili di ambiente possono essere anche
-aggiunte dall'utente. Immaginiamo ad esempio
-di avere una directory con i nostri progetti
-annidata all'interno di molte altre directory
-(~/projects/work/javascript/models/)
-Invece di scrivere ogni volta
+## Aggiungere variabili di ambiente
 
+![](../../images/people/tess.png): Così come viene definita `PS1`,
+può creare anche altre variabili in base alle esigenze.
+
+![](../../images/people/tazza.png): Può farmi un esempio?
+
+![](../../images/people/tess.png): Immagini di avere una directory con i suoi
+progetti annidata all'interno di molte altre directory.
+Una cosa del tipo `~/projects/work/javascript/models/`
+
+Invece di scrivere ogni volta:
+
+```
 $ cd ~/projects/work/javascript/models/
+```
 
-possiamo creare una variabile all'interno del
-file .bashrc:
+può creare una variabile, `P`, sempre in `.bashrc`:
 
+```
 P=$HOME/projects/work/javascript/models/
+```
 
-e quindi scrivere
+e quindi scrivere:
 
+```
 $ cd $P
+```
 
 per raggiungere la nostra directory
-
-![](../../images/people/tess.png):
-![](../../images/people/tess.png):
-![](../../images/people/tess.png):
-![](../../images/people/tess.png):
-![](../../images/people/tess.png):
-![](../../images/people/tess.png):
-![](../../images/people/tess.png):
-![](../../images/people/tess.png):
 
 Torna a [La shell](../summary.md)
