@@ -8,5 +8,6 @@
 * [Alias](shell/alias.md)
 * [Dove sono i comandi?](shell/locating_commands.md)
 * [L'ambiente della shell](shell/env.md)
+* [Cercare](shell/finding.md)
 
 [Torna all'indice generale](../README.md)
