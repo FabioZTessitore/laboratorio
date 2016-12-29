@@ -1,6 +1,6 @@
 # Cercare
 
-## Cercare file con locate
+## Cercare file con `locate`
 
 ![](../../images/people/tess.png): Sig. Tazza, ogni giorno produce nuovi file,
 nuovi progetti ... Avrà bisogno di qualche strumento per effettuare ricerche.
@@ -47,8 +47,59 @@ $ locate -i bashrc
 ...
 ```
 
+## Cercare file con `find`
 
-![](../../images/people/tess.png):
-![](../../images/people/tess.png):
+![](../../images/people/tess.png): In alternativa a `locate` c'è `find`.
+
+&Egrave; uno strumento molto più potente anche se più lento dovendo
+effettuare la ricerca nel filesystem.
+
+![](../../images/people/tazza.png): Perché dice che è più potente se è più lento?
+
+![](../../images/people/tess.png): Perché permette di effettuare ricerche in
+base a vari criteri: nome del file, proprietà, permessi, dimensioni, data di
+modifica ecc. ecc.
+
+Visto che `find` cerca nel filesystem, si può velocizzare la ricerca limitandola
+ad alcune parti di esso:
+
+> mostra tutti i file presenti in /etc
+
+```
+$ find /etc
+```
+
+Volendo può ottenere un output più completo con l'opzione `-ls`
+
+```
+$ find /etc -ls
+```
+
+![](../../images/people/tess.png): Sig. Tazza, una nota:
+a volte non avendo i permessi per effettuare ricerche in certe directory
+e otterrà una serie di messaggi di errore.
+
+Per evitare di visualizzarli può usare la redirezione dello standard error.
+Ricorda come si fa?
+
+![](../../images/people/tazza.png): Certo.
+
+```
+$ find /root -ls 2> lista_errori
+ls lista_errori
+... lista_errori ...
+```
+
+![](../../images/people/tess.png): Molto bene. Mi spieghi però cosa se ne
+fa di quel file `lista_errori`.
+
+In questi casi deve solo scartare quel tipo di output, quindi invece
+di fare la redirezione verso un file è meglio farla verso `/dev/null`
+
+```
+$ find /root -ls 2> /dev/null
+```
+
+![](../../images/people/tess.png): `/dev/null` è il nulla, faccia attenzione a non caderci dentro!
 
 Torna a [La shell](../summary.md)
