@@ -14,5 +14,6 @@
 ## I tipi avanzati
 * [I puntatori](shell/pointer.md)
 * [I vettori](shell/vettori.md)
+* [Le stringhe](shell/stringhe.md)
 
 [Torna all'indice generale](../README.md)
