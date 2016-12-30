@@ -11,4 +11,7 @@
 * [Cercare](shell/finding.md)
 * [Cercare nei file](shell/grep.md)
 
+## I tipi avanzati
+* [I puntatori](shell/pointer.md)
+
 [Torna all'indice generale](../README.md)
