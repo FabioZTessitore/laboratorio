@@ -29,19 +29,19 @@ devono esserci tutti).
 <td>File</td><td>Descrizione</td><td>Eseguito</td>
 </tr>
 <tr>
-<td>`/etc/profile`</td><td>configurazione generale di tutti gli utenti</td><td>login</td>
+<td>/etc/profile</td><td>configurazione generale di tutti gli utenti</td><td>login</td>
 </tr>
 <tr>
-<td>`/etc/bashrc`</td><td>configurazione generale di tutti gli utenti, shell bash</td><td>ogni nuova shell</td>
+<td>/etc/bashrc</td><td>configurazione generale di tutti gli utenti, shell bash</td><td>ogni nuova shell</td>
 </tr>
 <tr>
-<td>`~/.bash_profile`</td><td>configurazione specifica per ogni utente</td><td>login</td>
+<td>~/.bash_profile</td><td>configurazione specifica per ogni utente</td><td>login</td>
 </tr>
 <tr>
-<td>`~/.bashrc`</td><td>configurazione specifica per ogni utente, shell bash</td><td>login e ogni nuova shell</td>
+<td>~/.bashrc</td><td>configurazione specifica per ogni utente, shell bash</td><td>login e ogni nuova shell</td>
 </tr>
 <tr>
-<td>`~/.bash_logout`</td><td></td><td>uscita</td>
+<td>~/.bash_logout</td><td></td><td>uscita</td>
 </tr>
 </table>
 

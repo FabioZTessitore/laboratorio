@@ -5,7 +5,7 @@ esplorare il filesystem. Le ricordo che per chiedere la lista degli
 oggetti presenti nella directory corrente c'è il comando `ls`.
 
 Inoltre, per sapere in quale directory si trova, può usare il comando `pwd`.
-In questo modo non potrà perdersi mentre presegue la sua esplorazione!
+In questo modo non potrà perdersi mentre prosegue la sua esplorazione!
 
 Per spostarsi tra le directory può usare il comando `cd`. Ad esempio, provi
 a spostarsi nella directory root `/`.

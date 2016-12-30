@@ -25,8 +25,11 @@ $ history | grep git
 ![](../../images/people/tess.png): `grep` è corredato di tante opzioni utili:
 
 `-i`    ignora maiuscole e minuscole
+
 `-v`    mostra solo le righe che NON contengono il testo
+
 `-r`    ricerca ricorsiva nella directory
+
 `-l`    (usato con -r) mostra solo i nomi dei file in cui è presente il testo
 
 `--color`   colora le parole cercate
