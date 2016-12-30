@@ -79,7 +79,7 @@ Infine salvi ed esca dall'editor.
 
 ![](../../images/people/tazza.png): Fatto, ma non succede nulla.
 
-![](../../images/people/tess.png): Cosa vuole che succede? Il file `.bashrc`
+![](../../images/people/tess.png): Cosa vuole che succeda? Il file `.bashrc`
 viene eseguito al login o quando si apre una nuova shell.
 
 Se proprio ne vuole forzare la rilettura:
@@ -97,7 +97,7 @@ oppure accertarsi di essere nella propria home?
 
 ![](../../images/people/tess.png): Sig. Tazza, ora che ha fatto amicizia con
 il file `.bashrc` posso dirle un'altra cosa. Se cerca bene troverà la definizione
-di una variabile chiamata `PS1` che determina come verrà visualizzato
+di una variabile chiamata `PS1`. Essa determina come verrà visualizzato
 il prompt dei comandi.
 
 Mi raccomando, faccia una copia di backup del file prima di iniziare ad
@@ -133,6 +133,6 @@ e quindi scrivere:
 $ cd $P
 ```
 
-per raggiungere la nostra directory
+per raggiungere la sua directory
 
 Torna a [La shell](../summary.md)

@@ -17,10 +17,10 @@ esempio mediante pipe, oppure includendo un comando all'interno di un altro
 comando, vorrei poter "salvare" il comando ottenuto in modo da poterlo usare
 in seguito senza riscrivere tutto da capo.
 
-![](../../images/people/tess.png): Giusto. Posso proporle di creare un alias.
+![](../../images/people/tess.png): Giusto. Le propongo di creare un *alias*.
 
 La shell di Linux mette a disposizione la possibilità
-di creare sinonimi (alias, appunto) per comandi singoli o un gruppo di comandi.
+di creare sinonimi (alias, appunto) per comandi singoli o in gruppo.
 
 Inizi visualizzando gli alias già impostati sulla sua macchina:
 
@@ -30,7 +30,7 @@ alias ls='ls --color=auto'
 ```
 
 In questo caso il comando `ls` viene interpretato come `ls --color=auto`
-e questo mi permette di vedere file e directory colorate.
+e questo permette di vedere file e directory colorate.
 
 Provi ad impostare un nuovo alias:
 
@@ -50,7 +50,7 @@ per scoprire cosa significa `-i`
 
 ![](../../images/people/tazza.png): `-i` "prompt before every removal"
 
-![](../../images/people/tess.png): D'ora in avanti, rm chiederà conferma prima
+![](../../images/people/tess.png): D'ora in avanti, `rm` chiederà conferma prima
 di qualunque elimininazione.
 
 ![](../../images/people/tess.png): Proviamo con un gruppo di comandi.

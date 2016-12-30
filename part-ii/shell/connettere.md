@@ -1,9 +1,9 @@
 # Connettere i comandi
 
-![](../../images/people/tess.png): Bentornato, Sig. Tazza.
+![](../../images/people/tess.png): Bentornato, Sig. Tazza, oggi le parlerò ancora
+dei comandi della shell di Linux.
 
-Oggi continuerò a parlarle dei comandi della shell di Linux. Uno dei principi
-alla base della progettazione di tali comandi è "fai una sola cosa, ma falla bene".
+Uno dei principi alla base della progettazione di tali comandi è "fai una sola cosa, ma falla bene".
 
 Come può facilmente intuire, se ogni comando fa una sola cosa ci vorrebbero
 tantissimi comandi per venire incontro a tutte le esigenze di gestione ed
@@ -63,7 +63,7 @@ Il comando `cat /etc/passwd` non mostra il contenuto del file `/etc/passwd`
 perché c'è una pipe con il comando `sort`. &Egrave; quest'ultimo a ricevere
 il contenuto di `/etc/passwd`, lo riordina e solo dopo avviene la stampa.
 
-Un altro esempio, in ordine inverso:
+Lo stesso esempio, ma stampa in ordine inverso:
 
 ```
 $ cat /etc/passwd | sort -r

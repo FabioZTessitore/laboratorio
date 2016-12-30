@@ -18,9 +18,9 @@ $ date
 Perche' questa differenza?
 
 ![](../../images/people/tess.png): Le rispondo subito. Per mandare in esecuzione
-un qualunque programma, fatto da lei o un comando di sistema, bisogna conoscerne
-il percorso (path) completo. Il comando `date` si trova in `/bin` quindi
-dovrebbe scrivere:
+un qualunque programma, che sia fatto da lei o che sia un comando di sistema,
+bisogna conoscerne il percorso (path) completo.
+Il comando `date` si trova in `/bin` quindi dovrebbe scrivere:
 
 ```
 $ /bin/date
@@ -34,8 +34,8 @@ relativo perché si trova già nella directory contenente il programma.
 ![](../../images/people/tazza.png): Però scrivo solo `date` e non `/bin/date`.
 Come fa la shell a capire cosa voglio fare?
 
-![](../../images/people/tess.png): I comandi vengono memorizzati in directory
-note e i nomi di queste directory vengono aggiunti alla variabile `PATH`
+![](../../images/people/tess.png): I comandi vengono memorizzati in particolari directory
+e i nomi di queste directory vengono aggiunti alla variabile `PATH`
 
 Le mostro il contenuto di `PATH` sulla mia macchina:
 
@@ -44,12 +44,12 @@ $ echo $PATH
 /usr/local/bin:/usr/bin:/bin
 ```
 
-Come le dicevo, in `PATH` è memorizzata una lista di directory. Come può
-vedere sono intervallate dal simbolo `:`. Tali directory verranno
+Come le dicevo, in `PATH` è memorizzata una lista di directory, intervallate
+dal simbolo `:`. Tali directory verranno
 controllate sequenzialmente alla ricerca del comando invocato.
 
 &Egrave; importante notare come nel `PATH` non sia presente
-la directory corrente (`.`) per cui è necessario usare la sintassi `$ ./nomefile`.
+la directory corrente (`.`) per cui è necessario usare la sintassi `./nomefile`.
 
 ![](../../images/people/tess.png): Un'altra cosa. Non tutto ciò che viene invocato
 dalla shell ha un file corrispondente nel filesystem.
@@ -77,8 +77,7 @@ Allora ricordi bene, la shell cerca i comandi in un ordine ben preciso:
 ![](../../images/people/tazza.png): Dato un comando, c'è un modo per capire di
 che si tratta?
 
-![](../../images/people/tess.png): Ovviamente si. Per capire da dove viene
-preso un comando si usa `type`:
+![](../../images/people/tess.png): Ovviamente si. Si usa `type`:
 
 ```
 $ type bash

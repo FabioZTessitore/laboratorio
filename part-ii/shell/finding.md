@@ -7,12 +7,12 @@ nuovi progetti ... Avrà bisogno di qualche strumento per effettuare ricerche.
 
 ![](../../images/people/tazza.png): Potrebbero farmi comodo, senza dubbio.
 
-![](../../images/people/tess.png): Esistono vari modi per cercare file
-all'interno del filesystem di Linux. Uno di questi è fornito dal comando `locate`.
+![](../../images/people/tess.png): Esistono vari modi per cercare file.
+Uno di questi è fornito dal comando `locate`.
 
 `locate` è molto veloce nell'effettuare ricerche perché non cerca nel
-filesystem, ma in un database interno. Ovviamente solo i nomi dei file
-che sono stati aggiunti al database possono essere cercati.
+filesystem, ma in un database interno. Ovviamente potranno essere trovati
+solo i nomi dei file che sono stati aggiunti al database.
 
 ![](../../images/people/tazza.png): Devo imparare a gestire un database di nomi
 per poter utilizzare `locate`?
@@ -76,7 +76,7 @@ $ find /etc -ls
 ```
 
 ![](../../images/people/tess.png): Sig. Tazza, una nota:
-a volte non avendo i permessi per effettuare ricerche in certe directory
+a volte non avrà i permessi per effettuare ricerche in certe directory
 e otterrà una serie di messaggi di errore.
 
 Per evitare di visualizzarli può usare la redirezione dello standard error.
@@ -119,7 +119,7 @@ Oppure scartando gli eventuali errori dovuti a mancanza di permessi:
 $ find /etc -name passwd 2> /dev/null
 ```
 
-Per ignorare la differenza tra maiuscole e minuscole si usa `iname`:
+Per ignorare la differenza tra maiuscole e minuscole si usa `-iname`:
 
 > cerca un file il cui nome contiene 'passwd' ignorando maiuscole e minuscole
 
@@ -130,7 +130,7 @@ $ find /etc -iname *passwd*
 ### Cercare file per dimensione
 
 ![](../../images/people/tess.png): Oltre che per nome può
-cercare i file che hanno una determinata dimensione mediante l'attributo `size`.
+cercare i file che hanno una determinata dimensione mediante l'attributo `-size`.
 
 > cerca nella propria HOME i file più grandi di 10MB
 
@@ -147,7 +147,7 @@ $ find $HOME -size +3M -size -1G
 ### Cercare file per proprietario
 
 ![](../../images/people/tess.png): Per cercare file che hanno uno specifico
-proprietario `find` mette a disposizione l'attributo `user`:
+proprietario `find` mette a disposizione l'attributo `-user`:
 
 ```
 $ find $HOME -user fabio -ls
@@ -159,7 +159,7 @@ La stessa cosa si può fare per i gruppi:
 $ find $HOME -group fabio -ls
 ```
 
-Una cosa molto utile potrebbe essere cercare file che NON le appartengono:
+Una cosa molto utile potrebbe essere cercare file che *non* le appartengono:
 
 ```
 $ find $HOME -not -user $USER -ls
@@ -168,7 +168,7 @@ $ find $HOME -not -user $USER -ls
 ### Cercare file con specifici permessi
 
 ![](../../images/people/tess.png): La ricerca di file con specifici permessi
-viene effettuata con `find` tramite l'attributo `perm` e permette di scovare
+viene effettuata con `find` tramite l'attributo `-perm` e permette di scovare
 eventuali falle di sicurezza.
 
 ```
@@ -181,13 +181,14 @@ segno, tutti i bit devono coincidere. In questo caso, quindi,
 che hanno permessi esattamente pari a rwxr-xr-x (755).
 
 Quando, invece, il codice è preceduto dal segno meno,
-cerca tutti i file che hanno **almeno** quei permessi.
+cerca tutti i file che hanno *almeno* quei permessi.
 
 > Cerca i file nella directory /bin che hanno permessi uguali o superiori a rwxr-xr-w
 
 ```
 $ find /bin -perm -755 -ls
 ```
+
 Quando il numero è preceduto dal simbolo `/`,
 cerca tutti i file in cui almeno uno tra
 il proprietario, il gruppo e gli altri utenti hanno
@@ -214,9 +215,9 @@ $ find /bin -perm /002 -ls
 ![](../../images/people/tess.png): `find` permette di cercare file
 che hanno subito variazioni nel tempo.
 
-L'attributo `mtime` è utilizzato per cercare variazioni nel contenuto dei file.
-`ctime` cerca variazioni nel proprietario o nei permessi.
-`atime` cerca variazioni nell'ultimo accesso ai file.
+L'attributo `mtime` è utilizzato per cercare variazioni nel *contenuto* dei file.
+`ctime` cerca variazioni nel *proprietario* o nei *permessi*.
+`atime` cerca variazioni nell'*ultimo accesso* ai file.
 
 Queste variazioni sono conteggiate in giorni. Se si preferisce avere i minuti
 si possono usare `mmin`, `cmin`, `amin`.
@@ -242,7 +243,8 @@ $ find /var/ftp /var/www -atime +300
 
 ### Combinare i criteri di ricerca
 
-Per combinare le ricerche esistono gli operatori logici `-o` (or), `-and`, `-not`
+![](../../images/people/tess.png): Per combinare le ricerche esistono
+gli operatori logici `-o` (or), `-and`, `-not`
 
 ```
 $ find /home -user fabio -o -user claudio -ls
@@ -254,7 +256,7 @@ $ find /home -user fabio -not -group fabio -ls
 
 ### Eseguire comandi sui risultati di ricerca
 
-Contestualmente alla ricerca è possibile
+![](../../images/people/tess.png): Contestualmente alla ricerca è possibile
 eseguire comandi sui file risultato della ricerca stessa.
 
 Esistono, a questo scopo, `-exec` ed `-ok`. La differenza tra i due sta nel fatto
@@ -266,7 +268,7 @@ Per esempio, esegua il comando `du -sh` sui risultati di ricerca:
 $ find $HOME -size +30M -exec du -sh {} \;
 ```
 
-Oppure esegua il comando `du` sui risultati di ricerca
+Oppure esegua il comando `du` (senza opzioni) sui risultati di ricerca
 e poi riordini in ordine decrescente.
 
 ```

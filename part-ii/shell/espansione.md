@@ -87,7 +87,8 @@ There are 15 files in this directory.
 ```
 
 Qui viene prima eseguito il comando `ls`,
-poi la pipe con `wc` (word count) che conta le parole (`-w`).
-Infine avviene la stampa con echo del numero di file nella directory (il numero di parole contato da `wc`).
+poi la pipe con `wc` (word count) che conta le parole (opzione `-w`).
+Infine avviene la stampa con echo del numero di file nella directory
+(il numero di parole contato da `wc -w`).
 
 Torna a [La shell](../summary.md)

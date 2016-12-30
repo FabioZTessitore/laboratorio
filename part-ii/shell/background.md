@@ -20,7 +20,7 @@ si può recuperare questo comando o è perduto per sempre?
 
 ![](../../images/people/tess.png): Per far tornare in primo piano
 (foreground) il comando lanciato precedentemente in background
-si usa il comando `fg`
+si usa `fg`
 
 ```
 $ fg
