@@ -12,8 +12,9 @@
 * [Cercare nei file](shell/grep.md)
 
 ## I tipi avanzati
-* [I puntatori](shell/pointer.md)
-* [I vettori](shell/vettori.md)
-* [Le stringhe](shell/stringhe.md)
+* [I puntatori](tipi-avanzati/pointer.md)
+* [I vettori](tipi-avanzati/vettori.md)
+* [Le stringhe](tipi-avanzati/stringhe.md)
+* [Conversioni di tipo](tipi-avanzati/cast.md)
 
 [Torna all'indice generale](../README.md)
