@@ -17,7 +17,7 @@ una stringa?
 
 ![](../../images/people/tazza.png): Credevo fosse uno dei tipi elementari.
 
-![](../../images/people/tess.png): Non proprio. Almeno non in C. Ma facciamo
+![](../../images/people/tess.png): Non proprio, o almeno non in C. Ma facciamo
 un passo indietro.
 
 In C esiste il tipo elementare `char` che può essere usato per memorizzare un carattere.
@@ -26,8 +26,8 @@ Si usa così:
 ```c
 char c = 'A';
 
-printf("Stampa il codice corrispondente al carattere A: %d\n", c);
-printf("Stampa il carattere A: %c\n", c);
+printf("Codice del carattere A: %d\n", c);
+printf("Carattere A: %c\n", c);
 ```
 
 Il tipo `char` è sostanzialmente un tipo intero, generalmente di dimensione
@@ -87,34 +87,43 @@ char str[5] = { 'C', 'i', 'a', 'o', '\0' };  /* non dimentichi il terminatore */
 
 ![](../../images/people/tazza.png): Un po' meglio, ma è ancora scomodo.
 
-![](../../images/people/tess.png): Ha ragione.
-![](../../images/people/tess.png):
+![](../../images/people/tess.png): Ha ragione, ma deve pazientare ancora un po'.
 
+Facendo così come le ho mostrato si rischia di commettere
+errori nel conteggio dei caratteri (soprattutto in
+caso di modifiche successive al programma).
+Sarebbe meglio se fosse il compilatore a contare per noi:
 
+```c
+/* ometto il 5 tra le parentesi [] */
+char str[] = { 'C', 'i', 'a', 'o', '\0' };
+```
 
+La situazione è migliorata ma risulta ancora scomodo memorizzare una stringa.
 
-  /* Cosi' facendo pero' rischiamo di commettere
-   * errori nel conteggio dei caratteri (soprattutto in
-   * caso di modifiche successive al programma).
-   * Allora lasciamo che sia il compilatore a contare per noi
-   */
-  char str3[] = { 'C', 'i', 'a', 'o', '\0' };
+Il linguaggio C ci viene in aiuto mediante un'altra notazione,
+che già conosce, ma di cui ora può apprezzare la potenza e l'utilità
+(però tenga presente che quello che le ho mostrato è ciò che succede dietro le quinte).
 
-  /* La situazione e' migliorata ma risulta ancora
-   * scomodo scrivere una stringa.
-   * Il C ci viene in aiuto mediante un'altra notazione
-   */
-  char str4[] = "Ciao";
+```c
+char str[] = "Ciao";  /* aggiunge automaticamente il terminatore */
+```
 
-  printf("str1: %s\n"
-      "str2: %s\n"
-      "str3: %s\n"
-      "str4: %s\n", str1, str2, str3, str4);
+## Esempio completo
+
+```c
+/* crea e stampa una stringa */
+
+#include <stdio.h>
+
+int main()
+{
+  char saluto[] = "Salve a tutti!";
+
+  puts(saluto);  /* puts() stampa una stringa */
 
   return 0;
 }
-
-## char *
-
+```
 
 Torna a [I tipi avanzati](../summary.md)
