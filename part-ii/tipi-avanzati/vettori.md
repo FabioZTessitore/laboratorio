@@ -1,6 +1,7 @@
 # I vettori
 
-![](../../images/people/tess.png): Caro Sig. Tazza, oggi le parlerò dei *vettori*.
+![](../../images/people/tess.png): Caro Sig. Tazza, oggi parliamo di *vettori*.
+
 Voglio subito chiarire che i vantaggi derivanti dall'uso di questo tipo
 avanzato le saranno chiari in seguito. Per il momento si concentri su cosa
 sono e come si dichiarano e usano.
@@ -22,7 +23,7 @@ Torniamo al C, ecco come dichiarare un vettore di 10 interi:
 int numeri[10];
 ```
 
-Il vettore si chiama `numeri` (il treno dell'analogia). Le variabili di cui è
+Il vettore si chiama `numeri`. Le variabili di cui è
 composto sono `numeri[0] numeri[1] ... numeri[9]` (10 in tutto).
 Ognuna delle variabili è una semplice variabile intera che può usare come ha sempre fatto.
 
@@ -51,8 +52,7 @@ quantità di dati.
 
 Provi a
 stampare gli indirizzi di alcuni elementi consecutivi del vettore. Provi
-anche a calcolare la differenza tra indirizzi e la confronti con la dimensione
-degli interi.
+anche a calcolare la differenza tra indirizzi.
 
 ![](../../images/people/tazza.png): Ci sono un sacco di cose. Vediamo, da dove
 comincio ... creo un vettore di interi:
@@ -84,7 +84,7 @@ int distanza = &vett[2] - &vett[1];
 printf("vett[1] e vett[2] distano %d celle\n", distanza);
 ```
 
-![](../../images/people/tess.png): Non le resta altro da fare che confrontare
+![](../../images/people/tess.png): Provi ora a confrontare
 questa distanza con la dimensione di un intero.
 
 ![](../../images/people/tazza.png): La dimensione di una variabile o tipo
