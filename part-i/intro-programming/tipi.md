@@ -96,7 +96,7 @@ un tipo nullo?
 
 ![](../../images/people/tess.png): *&lt;tono-maestro-jedi&gt;Il nulla non esiste!&lt;/tono-maestro-jedi&gt;*
 
-## Conversioni di tipo
+## Conversioni di tipo (*cast*)
 
 ![](../../images/people/tess.png): Molto più spesso di quanto possa immaginare
 sarà necessario convertire valori da un tipo ad un altro.
