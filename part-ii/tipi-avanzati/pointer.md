@@ -1,7 +1,7 @@
 # I puntatori
 
-![](../../images/people/tess.png): Bentornato Sig. Tazza, oggi inizierò a parlarle
-dei tipi avanzati gestiti da vari linguaggi di programmazione.
+![](../../images/people/tess.png): Bentornato Sig. Tazza, oggi le parlerò
+di alcuni tipi avanzati gestiti da vari linguaggi di programmazione.
 
 ![](../../images/people/tazza.png): Già argomenti avanzati?
 
@@ -39,7 +39,7 @@ gli indirizzi in variabili di tipo puntatore.
 
 ![](../../images/people/tazza.png): Ok, chiaro.
 
-![](../../images/people/tess.png): Devo solo dirle come si crea una variabile
+![](../../images/people/tess.png): Non mi resta che dirle come si crea una variabile
 tipo puntatore: deve aggiungere un `*` al tipo della variabile puntata!
 
 ![](../../images/people/tazza.png): Lo sapevo che finiva in qualcosa di incomprensibile.
@@ -49,7 +49,7 @@ l'indirizzo di una variabile `int` avrà bisogno di un puntatore a intero che
 si scrive `int *`. Nel caso delle variabili `float` e `double` avrà, invece,
 `float *` e `double *`.
 
-![](../../images/people/tazza.png): Molto bene. Voglio provare.
+![](../../images/people/tazza.png): Ora va meglio. Voglio provare.
 
 ![](../../images/people/tess.png): Le riscrivo l'esempio di prima, solo che stavolta
 memorizzo l'indirizzo di `num` prima di stamparlo.
