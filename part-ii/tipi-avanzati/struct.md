@@ -101,4 +101,4 @@ int main()
 }
 ```
 
-Torna a [I tipi avanzati](../summary.md)
+Torna a [I tipi avanzati in C](../summary.md)

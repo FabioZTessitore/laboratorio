@@ -25,4 +25,4 @@ int x_int = 3;
 double x_double = (double)x_int;  /* noti le parentesi */
 ```
 
-Torna a [I tipi avanzati](../summary.md)
+Torna a [I tipi avanzati in C](../summary.md)
