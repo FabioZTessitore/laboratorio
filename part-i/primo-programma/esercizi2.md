@@ -5,11 +5,11 @@ la sua comprensione degli argomenti trattati.
 
 Usi la repository `helloworld` creata per gli esercizi precedenti.
 
-1. **PariDisp**<br>
+1 **PariDisp**<br>
 Creare un programma `paridisp.py` che dica se il numero intero
 inserito dall'utente è pari o dispari.
 
-2. **Volume**<br>
+2 **Volume**<br>
 Scrivere un programma che calcoli il volume di un cubo o di una sfera
 in base ad una scelta effettuata dall'utente.
 Se l'utente sceglie di calcolare il volume di un cubo,
@@ -25,12 +25,12 @@ Lato del cubo: 2
 Il cubo di lato 2 ha volume 8
 ```
 
-3. **PrimoGrado**<br>
+3 **PrimoGrado**<br>
 Scrivere un programma che trovi la soluzione a equazioni di primo grado
 nella forma `ax + b = 0`, con `a` e `b` interi.<br>
 Il programma dovrebbe tener conto dei casi particolari: `a`, `b` o entrambi nulli.
 
-4. **SecGrado**<br>
+4 **SecGrado**<br>
 Scrivere un programma che trovi le soluzioni a equazioni di secondo grado
 nella forma `ax^2 + bx + c = 0`, con `a`, `b` e `c` interi.<br>
 Il programma dovrebbe tener conto dei casi particolari.<br>

@@ -20,6 +20,7 @@ li memorizzi all'interno di un vettore, li sommi, calcoli la media e infine stam
 tutti i dati.
 
 Esempio di esecuzione:
+
 ```
 Somma e Media
 
