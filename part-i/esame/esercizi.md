@@ -5,7 +5,7 @@ la sua comprensione degli argomenti trattati.
 
 Crei una repository su `GitHub` chiamata `volo` e la usi per caricare i suoi esercizi.
 
-1. **TempoVolo**<br>
+1 **TempoVolo**<br>
 Utilizzando il linguaggio Python determinare la durata massima di volo
 di un aeroplano dati in input la quantità di carburante (in galloni) e
 il consumo orario (in galloni/h).<br>

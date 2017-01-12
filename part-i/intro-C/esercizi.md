@@ -15,10 +15,10 @@ Esempio:
 nome_file_eseguibile
 ```
 
-1. **FullName**<br>
+1 **FullName**<br>
 Crei un programma `fullname.c` che stampi il suo nome completo utilizzando due chiamate a `printf()`
 
-2. **Figure**<br>
+2 **Figure**<br>
 Crei un programma che stampi le seguenti figure:
 
 ```
