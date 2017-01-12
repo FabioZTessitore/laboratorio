@@ -25,7 +25,7 @@ int numeri[10];
 
 Il vettore si chiama `numeri`. Le variabili di cui è
 composto sono `numeri[0] numeri[1] ... numeri[9]` (10 in tutto).
-Ognuna delle variabili è una semplice variabile intera che può usare come ha sempre fatto.
+Ognuna di esse è una semplice variabile intera che può usare come ha sempre fatto.
 
 ```
 numeri[0] = 3;
@@ -75,7 +75,7 @@ printf("indirizzo di vett[2]: %p\n", &vett[2]);
 tra indirizzi. Il risultato di che tipo sarà?
 
 ![](../../images/people/tess.png): La differenza tra due indirizzi è un valore intero
-e rappresenta il numero di celle tra il primo e il secondo elemento.
+e rappresenta il numero di *celle* tra il primo e il secondo elemento.
 
 ![](../../images/people/tazza.png): Va bene, allora faccio:
 

@@ -1,7 +1,7 @@
 # I puntatori
 
 ![](../../images/people/tess.png): Bentornato Sig. Tazza, oggi le parlerò
-di alcuni tipi avanzati gestiti da vari linguaggi di programmazione.
+di alcuni tipi avanzati gestiti dal linguaggio C.
 
 ![](../../images/people/tazza.png): Già argomenti avanzati?
 
@@ -9,7 +9,7 @@ di alcuni tipi avanzati gestiti da vari linguaggi di programmazione.
 di che si tratta. In questo modo avremo a disposizione più strumenti per
 fare esercitazioni ed esperimenti.
 
-In particolare inizierò dal linguaggio C e dai *puntatori*.
+In particolare inizierò dai *puntatori*.
 
 Ricorda quando abbiamo utilizzato l'operatore `&` per ottenere l'indirizzo
 di una variabile?
@@ -45,7 +45,7 @@ tipo puntatore: deve aggiungere un `*` al tipo della variabile puntata!
 ![](../../images/people/tazza.png): Lo sapevo che finiva in qualcosa di incomprensibile.
 
 ![](../../images/people/tess.png): Non si lasci confondere. Se vuole memorizzare
-l'indirizzo di una variabile `int` avrà bisogno di un puntatore a intero che
+l'indirizzo di una variabile `int` avrà bisogno di un *puntatore a intero* che
 si scrive `int *`. Nel caso delle variabili `float` e `double` avrà, invece,
 `float *` e `double *`.
 

@@ -41,7 +41,7 @@ il carattere `A` stesso.
 ![](../../images/people/tazza.png): Mettendo insieme più caratteri ottengo una stringa.
 
 ![](../../images/people/tess.png): Si, ma andiamo per gradi. Dovendo memorizzare
-tanti caratteri insieme possiamo usare un vettore. Le mostro come.
+tanti caratteri insieme possiamo usare un vettore.
 
 ## Vettori di caratteri
 
@@ -51,7 +51,7 @@ tanti caratteri insieme possiamo usare un vettore. Le mostro come.
 char caratteri[5];
 ```
 
-Poi si memorizza un carattere per ogni cella del vettore:
+Poi si memorizza un carattere in ogni cella del vettore:
 
 ```c
 caratteri[0] = 'C';
