@@ -100,4 +100,5 @@ int main()
   return 0;
 }
 ```
+
 Torna a [I tipi avanzati](../summary.md)
