@@ -17,5 +17,6 @@
 * [I vettori](tipi-avanzati/vettori.md)
 * [Le stringhe](tipi-avanzati/stringhe.md)
 * [Raggruppare variabili, le struct](tipi-avanzati/struct.md)
+  * [Esercizi](tipi-avanzati/esercizi.md)
 
 [Torna all'indice generale](../README.md)
