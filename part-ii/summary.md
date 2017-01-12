@@ -21,5 +21,6 @@
 
 ## I tipi avanzati del Python
 * [Le tuple](tipi-avanzati/tuple.md)
+* [Gli oggetti](tipi-avanzati/oggetti.md)
 
 [Torna all'indice generale](../README.md)
