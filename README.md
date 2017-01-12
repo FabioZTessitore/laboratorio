@@ -21,3 +21,4 @@
 * [Parte II](part-ii/summary.md)
   - La shell di Linux
   - Tipi avanzati del C
+  - Tipi avanzati del Python

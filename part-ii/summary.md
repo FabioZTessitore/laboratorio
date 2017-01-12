@@ -19,4 +19,7 @@
 * [Raggruppare variabili, le struct](tipi-avanzati/struct.md)
   * [Esercizi](tipi-avanzati/esercizi.md)
 
+## I tipi avanzati del Python
+* [Le tuple](tipi-avanzati/tuple.md)
+
 [Torna all'indice generale](../README.md)
