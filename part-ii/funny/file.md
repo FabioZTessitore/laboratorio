@@ -58,7 +58,7 @@ variabile intera, con `int *` creo un puntatore a intero.
 niente di diverso.
 
 ```c
-FILE *f = fopen('myfile.txt', 'w');
+FILE *f = fopen("myfile.txt", "w");
 ```
 
 Ricordi però che prima di chiudere il programma bisogna chiudere tutti i file
@@ -68,21 +68,21 @@ aperti:
 fclose(f);
 ```
 
-### Scrivere in un file
+## Scrivere in un file
 
 ![](../../images/people/tess.png): Una volta aperto il file possiamo scrivere
 qualcosa al suo interno. Invece di usare `printf()` le basterà usare `fprintf()`
 che accetta come primo parametro il riferimento al `FILE` che ha aperto.
 
 ```c
-FILE *f = fopen('myfile.txt', 'w');
+FILE *f = fopen("myfile.txt", "w");
 
 fprintf(f, "Hello, World!\n");
 
 fclose(f);
 ```
 
-### Leggere da un file
+## Leggere da un file
 
 ![](../../images/people/tess.png): Proviamo a fare l'operazione opposta,
 leggiamo da un file.
@@ -109,7 +109,7 @@ printf("Ho letto il valore %d\n", num);
 fclose(f);
 ```
 
-### Lo standard output e lo standard error
+## Lo standard output e lo standard error
 
 ![](../../images/people/tess.png): Prima mi ha ricordato che conosce la redirezione
 dell'output. Ricorderà anche che si può redirigere sia lo standard output sia
