@@ -80,4 +80,4 @@ end_graphics()
 ![](../../images/people/tess.png): Eh si. Queste funzioni accettano le coordinate
 dei punti sotto forma di tupla `(x, y)`.
 
-Torna a [Funny Output](part-ii/summary.md)
+Torna a [Non solo terminale](part-ii/summary.md)

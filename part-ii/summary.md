@@ -24,10 +24,14 @@
 * [Gli oggetti](tipi-avanzati/oggetti.md)
 * [Le liste](tipi-avanzati/liste.md)
 
-##  Funny Output
+##  Non solo terminale
 * [Disegniamo con GASP](funny/gasp.md)
 * [Leggere e scrivere file in C](funny/file.md)
 * [Leggere e scrivere file in Python](funny/filepy.md)
+
+## Introduzione alle librerie NCurses
 * [Terminale Ncurses]
+* [Atrtibuti e colori]
+* [Input]
 
 [Torna all'indice generale](../README.md)

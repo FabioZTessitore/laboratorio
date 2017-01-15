@@ -53,4 +53,4 @@ print 'Ho letto il valore', num
 close(f)
 ```
 
-Torna a [Funny Output](part-ii/summary.md)
+Torna a [Non solo terminale](part-ii/summary.md)
