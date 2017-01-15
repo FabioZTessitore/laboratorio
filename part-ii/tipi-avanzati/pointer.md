@@ -65,4 +65,4 @@ printf("La variabile num e' memorizzata all'indirizzo %p\n", p_num);
 
 Se ha difficoltà può vedere <a href="https://github.com/FabioZTessitore/laboratorio/blob/master/esempi/part-ii/tipi-avanzati/puntatori.c">il codice completo</a>
 
-Torna a [I tipi avanzati in C](../summary.md)
+Torna a [I tipi avanzati del C](../summary.md)

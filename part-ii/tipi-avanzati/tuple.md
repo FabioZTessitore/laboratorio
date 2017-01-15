@@ -67,4 +67,4 @@ t = ('hello', 'bye')
 saluto1, saluto2 = t
 ```
 
-Torna a [I tipi avanzati in Python](../summary.md)
+Torna a [I tipi avanzati del Python](../summary.md)
