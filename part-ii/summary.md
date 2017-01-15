@@ -22,5 +22,11 @@
 ## I tipi avanzati del Python
 * [Le tuple](tipi-avanzati/tuple.md)
 * [Gli oggetti](tipi-avanzati/oggetti.md)
+* [Le liste](tipi-avanzati/liste.md)
+
+##  Funny Output
+* [Disegniamo con GASP](funny/gasp.md)
+* [I/O su file]
+* [Terminale Ncurses]
 
 [Torna all'indice generale](../README.md)
