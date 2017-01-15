@@ -26,7 +26,7 @@
 
 ##  Funny Output
 * [Disegniamo con GASP](funny/gasp.md)
-* [I/O su file]
+* [Leggere e scrivere file in C](funny/file.md)
 * [Terminale Ncurses]
 
 [Torna all'indice generale](../README.md)
