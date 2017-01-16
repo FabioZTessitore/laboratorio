@@ -69,7 +69,7 @@ un vettore di caratteri, ma non ancora una stringa.
 
 ![](../../images/people/tess.png): Affinché un vettore di caratteri diventi
 una stringa bisogna aggiungere il *terminatore*, un carattere speciale
-che indica il termine della stringa.
+che indica il termine della stringa stessa.
 
 ```c
 caratteri[4] = '\0';
@@ -101,7 +101,7 @@ char str[] = { 'C', 'i', 'a', 'o', '\0' };
 
 La situazione è migliorata ma risulta ancora scomodo memorizzare una stringa.
 
-Il linguaggio C ci viene in aiuto mediante un'altra notazione,
+Il linguaggio C le viene in aiuto mediante un'altra notazione,
 che già conosce, ma di cui ora può apprezzare la potenza e l'utilità
 (però tenga presente che quello che le ho mostrato è ciò che succede dietro le quinte).
 

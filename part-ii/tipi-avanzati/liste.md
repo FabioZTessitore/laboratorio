@@ -25,7 +25,7 @@ una_lista[0] = 'hello'
 
 ![](../../images/people/tess.png): Per il momento devo darle un'altra
 informazione. Dire che una lista è modificabile non significa solo che può
-cambiare il valore dei suoi elementi, ma può anche aggiungere elementi.
+cambiare il valore dei suoi elementi, ma può anche aggiungerne.
 
 ![](../../images/people/tazza.png): Si spieghi meglio.
 

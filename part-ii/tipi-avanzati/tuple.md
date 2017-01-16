@@ -29,7 +29,7 @@ una_tupla = ("ciao", "buongiorno", "buonanotte")
 
 ![](../../images/people/tess.png): In effetti è una sequenza di valori,
 ma la somiglianza finisce qui. Innanzitutto una volta creata una tupla
-non può più modificarla (si dice che è *immutabile*).
+non può essere modificata (si dice che è *immutabile*).
 
 Inoltre una tupla può contenere valori di tipo diverso anche contemporaneamente:
 
