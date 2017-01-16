@@ -5,7 +5,7 @@ utilizzavano il terminale per l'input e l'output.
 Non si potrebbe vedere qualche esempio diverso?
 
 ![](../../images/people/tess.png): Sig. Tazza, ormai ha acquisito abbastanza conoscenze
-per poter fare qualcosa di diverso. Le piace disegnare?
+per fare un disegno. Le piacerebbe?
 
 ![](../../images/people/tazza.png): Non saprei, proviamo.
 
@@ -48,6 +48,8 @@ end_graphics()
 ![](../../images/people/tess.png): Provi, provi, apra una finestra!
 
 ![](../../images/people/tazza.png): Non ci posso credere. ...
+
+## Disegnare forme
 
 ![](../../images/people/tess.png): Un bel risultato, ma serebbe meglio poter disegnare qualche forma:
 
