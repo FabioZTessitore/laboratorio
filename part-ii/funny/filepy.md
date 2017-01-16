@@ -2,33 +2,42 @@
 
 ## Aprire e chiudere un file di testo
 
-![](../../images/people/tess.png): Anche in Python esistono funzioni per
-l'apertura e chiusura di file. Si chiamano `open()` e `close()`.
+![](../../images/people/tess.png): Ovviamente anche in Python
+possiamo lavorare con i file.
+
+```py
+f = open('myfile.txt', 'w')
+```
+
+![](../../images/people/tess.png): La funzione `open()` ritorna un oggetto
+che rappresenta il file aperto. Tale oggetto mette
+a disposizione delle operazioni, tra cui `close()` e  `write()`:
+
 
 ```py
 f = open('myfile.txt', 'w')
 
-close(f)
+f.close()
 ```
 
 ## Scrivere in un file
 
-![](../../images/people/tess.png): La funzione `open()` ritorna un oggetto
-che rappresenta il file aperto. Per poter scrivere, tale oggetto file, mette
-a disposizione l'operazione `write()`:
+![](../../images/people/tess.png): Per la scrittura usiamo `write()`:
 
 ```py
 f = open('myfile.txt', 'w')
 
 f.write('Hello, World!\n')
 
-close(f)
+f.close()
 ```
 
 ## Leggere da un file
 
 ![](../../images/people/tess.png): Per leggere dobbiamo fare qualche passaggio
-in più perché l'oggetto file può leggere stringhe. Una delle operazioni
+in più perché l'oggetto file può leggere solo stringhe.
+
+In particolare, una delle operazioni
 messe a disposizione è `readline()` che legge una riga intera.
 
 Crei un file con il suo editor di testi preferito
@@ -50,7 +59,7 @@ num = int(line)       # converte in intero
 
 print 'Ho letto il valore', num
 
-close(f)
+f.close()
 ```
 
 Torna a [Non solo terminale](part-ii/summary.md)

@@ -1,11 +1,9 @@
 # Leggere e scrivere file in C
 
-![](../../images/people/tess.png): Sig. Tazza, oggi le mostrerò come aprire
-file in modo da potervi scrivere qualcosa dentro e come effettuare input
-da file.
+![](../../images/people/tess.png): Sig. Tazza, oggi le mostrerò come aprire file di testo in lettura e scrittura.
 
 ![](../../images/people/tazza.png): Aspetti un attimo. Se creo un programma,
-diciamo `hello`, che stampa il solito saluto `Hello, World!`, mi basterà
+diciamo `hello`, che stampa il solito saluto `"Hello, World!"`, mi basterà
 utilizzare la redirezione dell'output per stampare in un file invece che
 sul terminale.
 
@@ -17,32 +15,28 @@ $ ./hello > saluti
 del sistema operativo per ottenere il risultato voluto e in molti casi
 può essere sufficiente.
 
-Voglio mostrarle, invece, come fare per far aprire un file dal programma stesso
-in modo da poter fare letture e scritture. In questo modo, per esempio,
+Voglio mostrarle, invece, come aprire un file dal suo stesso programma in modo da poter effettuare letture e scritture. In questo modo, per esempio,
 potrà salvare il risultato delle sue operazioni.
-
-![](../../images/people/tazza.png): OK, capito.
 
 ## Aprire e chiudere un file
 
-![](../../images/people/tess.png): Per cominciare apriamo un file di testo.
-A tale scopo abbiamo a disposizione la funzione `fopen()`.
+![](../../images/people/tess.png): Per aprire un file abbiamo a disposizione la funzione `fopen()`.
 
-`fopen()` accetta come parametri il nome del file da aprire e il modo in cui deve aprirlo.
+`fopen()` accetta come parametri il nome del file e il modo in cui deve aprirlo.
 
 ![](../../images/people/tazza.png): Che significa il modo?
 
-![](../../images/people/tess.png): Si possono aprire file in sola lettura ad esempio.
-Oppure in lettura e scrittura.
+![](../../images/people/tess.png): Si possono aprire file in sola lettura o in sola scrittura. Per il momento queste due modalità saranno sufficienti:
 
-Per il momento queste due modalità saranno sufficienti:
+`"r"`, apre un file in sola lettura
 
-"r", apre un file in sola lettura
-"w", apre un file in scrittura  ???????? controllare r+, w+ ?????????
+`"w"`, apre un file in sola scrittura, lo crea se non esiste
+
+Faccia attenzione con il modo `"w"`. Se si tenta di aprire un file già esistente, quest'ultimo verrà cancellato e poi aperto..
 
 ![](../../images/people/tazza.png): Va bene, dove si nascondono le difficoltà?
 
-![](../../images/people/tess.png): Sig. Tazza, come è sospettoso ...
+![](../../images/people/tess.png): Sig. Tazza, come è diffidente ...
 
 La funzione `fopen()` restituisce un puntatore a `FILE`.
 
@@ -96,8 +90,8 @@ e ci scriva dentro un numero, ad esempio intero:
 42
 ```
 
-![](../../images/people/tess.png): A questo punto apriamo il file in lettura
-e utilizzando `fscanf()` leggiamo quel valore e stampiamolo sul terminale.
+![](../../images/people/tess.png): A questo punto apra il file in lettura
+e utilizzando `fscanf()` legga quel valore e lo stampi sul terminale.
 
 ```c
 int num = 0;
