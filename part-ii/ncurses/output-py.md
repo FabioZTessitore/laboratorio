@@ -1,13 +1,4 @@
-
 ![](../../images/people/tess.png):
-![](../../images/people/tess.png):
-![](../../images/people/tess.png):
-![](../../images/people/tess.png):
-
-
-Poi caricare C/dim_finestra/dim_finestra.c
-Issue:
-ottenere le dimensioni del terminale
 
 Poi caricare Python/hello/hello.py
 Issue:
@@ -31,3 +22,4 @@ e deve essere disegnata mediante un ciclo.
 
 Esercizio:
 stampare un asterisco ai quattro angoli del terminale
+Torna a [Introduzione alle librerie NCurses](part-ii/summary.md)

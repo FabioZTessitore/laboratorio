@@ -32,6 +32,7 @@
 ## Introduzione alle librerie NCurses
 * [Hello, NCurses](ncurses/output.md)
 * [Spostare il cursore](ncurses/position.md)
+* [Dimensioni del terminale](ncurses/dimensioni.md)
 * [Atrtibuti e colori]
 * [Input]
 
