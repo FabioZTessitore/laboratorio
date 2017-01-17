@@ -30,7 +30,7 @@
 * [Leggere e scrivere file in Python](funny/filepy.md)
 
 ## Introduzione alle librerie NCurses
-* [Terminale Ncurses]
+* [Hello, NCurses](ncurses/output.md)
 * [Atrtibuti e colori]
 * [Input]
 

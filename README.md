@@ -22,3 +22,5 @@
   - La shell di Linux
   - Tipi avanzati del C
   - Tipi avanzati del Python
+  - Non solo terminale
+  - Introduzione alle librerie NCurses
