@@ -25,15 +25,17 @@
 * [Le liste](tipi-avanzati/liste.md)
 
 ##  Non solo terminale
-* [Disegniamo con GASP](funny/gasp.md)
-* [Leggere e scrivere file in C](funny/file.md)
-* [Leggere e scrivere file in Python](funny/filepy.md)
+* [Disegniamo con GASP](no-term/gasp.md)
+* [Leggere e scrivere file in C](no-term/file.md)
+* [Leggere e scrivere file in Python](no-term/filepy.md)
+  * [Esercizi](no-term/esercizi.md)
 
 ## Introduzione alle librerie NCurses
 * [Hello, NCurses](ncurses/output.md)
 * [Spostare il cursore](ncurses/position.md)
 * [Dimensioni del terminale](ncurses/dimensioni.md)
 * [Python e NCurses](ncurses/output-py.md)
+  * [Esercizi](ncurses/esercizi.md)
 * [Atrtibuti e colori]
 * [Input]
 
