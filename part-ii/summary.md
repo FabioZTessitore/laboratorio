@@ -33,6 +33,7 @@
 * [Hello, NCurses](ncurses/output.md)
 * [Spostare il cursore](ncurses/position.md)
 * [Dimensioni del terminale](ncurses/dimensioni.md)
+* [Python e NCurses](ncurses/output-py.md)
 * [Atrtibuti e colori]
 * [Input]
 
