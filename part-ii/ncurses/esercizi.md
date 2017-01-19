@@ -10,6 +10,9 @@ e la usi per caricare i suoi esercizi.
 Si scriva un programma C che chiede all'utente di inserire un valore
 in virgola mobile (double), lo converta in intero e quindi stampi entrambi i valori.
 
+Si può già fare lampeggio di un carattere, stringhe che compaiono
+in varie posizioni a intervalli
+
 <h4><a href="https://github.com/FabioZTessitore/laboratorio/tree/master/esercizi/part-ii/ncurses">Soluzioni</a></h4>
 
 
