@@ -17,6 +17,7 @@
   - Introduzione al C
   - Esame
   - Bonus, Introduzione all'HTML
+  - Letture Consigliate
 
 * [Parte II](part-ii/summary.md)
   - La shell di Linux
