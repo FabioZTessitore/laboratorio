@@ -138,3 +138,5 @@ per *attraversare* `css` in modo da poter accedere a `base`.
 ![](../../images/people/tazza.png): *&lt;meraviglia&gt;Fantastico&lt;/meraviglia&gt;*
 
 Torna a [I permessi](../summary.md)
+
+Oppure [continua a leggere](cambiare-permessi.md)
