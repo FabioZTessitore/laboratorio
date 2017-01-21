@@ -132,3 +132,5 @@ ValueError
 ```
 
 Torna a [Introduzione alla programmazione](../summary.md)
+
+Oppure [continua a leggere](espressioni.mb)

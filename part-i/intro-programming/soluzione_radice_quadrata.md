@@ -43,3 +43,5 @@ Quindi la soluzione trovata, dopo quattro iterazioni, è `5.40`
 Quante iterazioni sono necessarie per arrivare a `5.0`?
 
 Torna a [Introduzione alla programmazione](../summary.md)
+
+Oppure [continua a leggere](regole.md)

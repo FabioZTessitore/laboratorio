@@ -26,3 +26,5 @@ double x_double = (double)x_int;  /* noti le parentesi */
 ```
 
 Torna a [I tipi avanzati](../summary.md)
+
+Oppure [continua a leggere](pointer.md)

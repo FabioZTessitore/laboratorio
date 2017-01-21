@@ -160,3 +160,5 @@ $ ls -l
 Non si stupirà nel vedere il permesso di esecuzione attivo, vero?
 
 Torna a [Introduzione al C](../summary.md)
+
+Oppure [continua a leggere](esercizi.mb)

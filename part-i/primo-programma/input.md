@@ -71,3 +71,5 @@ resta in attesa di un valore intero invece che di una stringa.
 Per altri tipi deve effettuare una conversione come ha già visto in precedenza.
 
 Torna a [Il primo programma](../summary.md)
+
+Oppure [continua a leggere](esercizi.mb)

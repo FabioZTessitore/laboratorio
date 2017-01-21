@@ -104,3 +104,5 @@ ls è /bin/ls
 ```
 
 Torna a [La shell](../summary.md)
+
+Oppure [continua a leggere](env.md)

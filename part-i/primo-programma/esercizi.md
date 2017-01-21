@@ -35,3 +35,5 @@ math.pi
 <h4><a href="https://github.com/FabioZTessitore/laboratorio/tree/master/esercizi/part-i/primo-programma">Soluzioni</a></h4>
 
 Torna a [Il primo programma](../summary.md)
+
+Oppure [continua a leggere](modulo.mb)

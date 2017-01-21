@@ -136,3 +136,5 @@ $ cd $P
 per raggiungere la sua directory
 
 Torna a [La shell](../summary.md)
+
+Oppure [continua a leggere](finding.md)

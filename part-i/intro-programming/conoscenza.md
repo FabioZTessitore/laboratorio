@@ -66,3 +66,5 @@ scrive algoritmi, o codice in generale. Il bello, e il brutto, della programmazi
 è che un computer fa *esattamente* quello che gli viene chiesto di fare!
 
 Torna a [Introduzione alla programmazione](../summary.md)
+
+Oppure [continua a leggere](soluzione_radice_quadrata.md)
