@@ -41,3 +41,5 @@ di 320x200 pixel può scrivere una cosa del genere:
 ```
 
 Torna a [Introduzione all'HTML](../summary.md)
+
+Oppure [continua a leggere](esercizi.md)
