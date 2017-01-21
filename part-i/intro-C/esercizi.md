@@ -35,4 +35,4 @@ Crei un programma che stampi le seguenti figure:
 
 Torna a [Introduzione al C](../summary.md)
 
-Oppure [continua a leggere](variabili.mb)
+Oppure [continua a leggere](variabili.md)

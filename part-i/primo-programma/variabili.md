@@ -46,4 +46,4 @@ avere delle stampe chiare la aiuterà molto.
 
 Torna a [Il primo programma](../summary.md)
 
-Oppure [continua a leggere](input.mb)
+Oppure [continua a leggere](input.md)

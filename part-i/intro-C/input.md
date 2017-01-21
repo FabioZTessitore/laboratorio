@@ -45,4 +45,4 @@ che questa possa sapere dove mettere il valore letto in input.
 
 Torna a [Introduzione al C](../summary.md)
 
-Oppure [continua a leggere](esercizi2)
+Oppure [continua a leggere](esercizi2.md)

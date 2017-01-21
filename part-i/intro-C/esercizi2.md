@@ -18,4 +18,4 @@ dato il raggio (intero).
 
 Torna a [Introduzione al C](../summary.md)
 
-Oppure [continua a leggere](esecuzione_condizionale.mb)
+Oppure [continua a leggere](esecuzione_condizionale.md)

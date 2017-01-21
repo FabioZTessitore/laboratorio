@@ -59,4 +59,4 @@ rispettivamente `&&`, `||` e `!`
 
 Torna a [Introduzione al C](../summary.md)
 
-Oppure [continua a leggere](esercizi3.mb)
+Oppure [continua a leggere](esercizi3.md)
