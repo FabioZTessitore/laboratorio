@@ -36,3 +36,5 @@ $ ls --hide=Documenti
 ```
 
 Torna a [Il prompt dei comandi](../summary.md)
+
+Oppure [continua a leggere](storico-comandi.md)

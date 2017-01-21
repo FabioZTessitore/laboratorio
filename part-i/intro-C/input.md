@@ -44,3 +44,5 @@ Qui, invece, l'indirizzo di `age` viene passato alla funzione `scanf()` in modo
 che questa possa sapere dove mettere il valore letto in input.
 
 Torna a [Introduzione al C](../summary.md)
+
+Oppure [continua a leggere](esercizi2.md)

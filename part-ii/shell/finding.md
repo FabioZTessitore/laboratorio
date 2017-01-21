@@ -276,3 +276,5 @@ $ find /home -size +5M -exec du {} \; | sort -nr
 ```
 
 Torna a [La shell](../summary.md)
+
+Oppure [continua a leggere](grep.md)

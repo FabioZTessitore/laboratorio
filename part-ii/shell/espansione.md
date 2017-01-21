@@ -92,3 +92,5 @@ Infine avviene la stampa con echo del numero di file nella directory
 (il numero di parole contato da `wc -w`).
 
 Torna a [La shell](../summary.md)
+
+Oppure [continua a leggere](alias.md)

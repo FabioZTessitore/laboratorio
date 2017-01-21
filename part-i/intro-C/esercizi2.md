@@ -17,3 +17,5 @@ dato il raggio (intero).
 <h4><a href="https://github.com/FabioZTessitore/laboratorio/tree/master/esercizi/part-i/intro-C">Soluzioni</a></h4>
 
 Torna a [Introduzione al C](../summary.md)
+
+Oppure [continua a leggere](esecuzione-condizionale.md)

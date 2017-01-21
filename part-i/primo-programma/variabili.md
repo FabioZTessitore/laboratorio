@@ -45,3 +45,5 @@ Quando i programmi inizieranno a diventare grandi e i bug inizieranno ad accumul
 avere delle stampe chiare la aiuterà molto.
 
 Torna a [Il primo programma](../summary.md)
+
+Oppure [continua a leggere](input.md)
