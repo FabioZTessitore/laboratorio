@@ -53,4 +53,4 @@ int main()
 }
 ```
 
-Torna a [Introduzione alle librerie NCurses](part-ii/summary.md)
+Torna a [Introduzione alle librerie NCurses](../summary.md)
