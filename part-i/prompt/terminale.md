@@ -9,3 +9,5 @@ A volte, soprattutto sui server, l'interfaccia grafica non è presente e all'avv
 ![](../../images/people/tess.png): Infatti ha a disposizione un'altra possibilità. Può lanciare un'applicazione che emula il terminale direttamente dall'interfaccia grafica. Basta cercarla.
 
 Torna a [Il prompt dei comandi](../summary.md)
+
+Oppure [contina a leggere](prompt.md)

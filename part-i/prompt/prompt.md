@@ -54,3 +54,5 @@ Documenti  Immagini  Modelli  Scaricati  Scrivania  Wallpapers  work
 ![](../../images/people/tazza.png): Ma è *&lt;meraviglia&gt;bellissimo!!!&lt;/meraviglia&gt;*
 
 Torna a [Il prompt dei comandi](../summary.md)
+
+Oppure [continua a leggere](opzioni.md)
