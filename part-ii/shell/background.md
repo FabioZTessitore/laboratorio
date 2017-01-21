@@ -28,4 +28,4 @@ $ fg
 
 Torna a [La shell](../summary.md)
 
-Oppure [continua a leggere](espandione.md)
+Oppure [continua a leggere](espansione.md)
