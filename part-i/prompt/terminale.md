@@ -10,4 +10,4 @@ A volte, soprattutto sui server, l'interfaccia grafica non è presente e all'avv
 
 Torna a [Il prompt dei comandi](../summary.md)
 
-Oppure [contina a leggere](prompt.md)
+Oppure [continua a leggere](prompt.md)
