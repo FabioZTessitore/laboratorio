@@ -96,3 +96,5 @@ $ cat /etc/group >> copia_password
 ```
 
 Torna a [I metacaratteri](../summary.md)
+
+Oppure [continua a leggere](graffe.md)

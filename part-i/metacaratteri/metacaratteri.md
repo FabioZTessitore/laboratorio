@@ -102,3 +102,5 @@ bici grappolo ghepardo garage
 ```
 
 Torna a [I metacaratteri](../summary.md)
+
+Oppure [continua a leggere](redirezione.md)
