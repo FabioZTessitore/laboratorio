@@ -31,3 +31,5 @@ README.md   # se ha messo quella spunta ...
 ```
 
 Torna a [Git e GitHub](../summary.md)
+
+Oppure [continua a leggere](commit_push.md)

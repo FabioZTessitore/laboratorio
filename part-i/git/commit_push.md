@@ -31,3 +31,5 @@ modificata del file `README.md`
 comandi, tra un attimo le mostrerò come utilizzarli per collaborare con un'altra persona.
 
 Torna a [Git e GitHub](../summary.md)
+
+Oppure [continua a leggere](collaborazione.md)
