@@ -139,4 +139,4 @@ per *attraversare* `css` in modo da poter accedere a `base`.
 
 Torna a [I permessi](../summary.md)
 
-Oppure [continua a leggere](cambiare-permessi.md)
+Oppure [continua a leggere](cambiare_permessi.md)
