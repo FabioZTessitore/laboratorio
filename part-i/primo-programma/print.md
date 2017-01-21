@@ -37,4 +37,4 @@ Hello, World!
 
 Torna a [Il primo programma](../summary.md)
 
-Oppure [continua a leggere](variabili.mb)
+Oppure [continua a leggere](variabili.md)

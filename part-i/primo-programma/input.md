@@ -72,4 +72,4 @@ Per altri tipi deve effettuare una conversione come ha già visto in precedenza.
 
 Torna a [Il primo programma](../summary.md)
 
-Oppure [continua a leggere](esercizi.mb)
+Oppure [continua a leggere](esercizi.md)

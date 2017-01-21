@@ -56,4 +56,4 @@ del blocco `else`.
 
 Torna a [Il primo programma](../summary.md)
 
-Oppure [continua a leggere](esercizi2.mb)
+Oppure [continua a leggere](esercizi2.md)

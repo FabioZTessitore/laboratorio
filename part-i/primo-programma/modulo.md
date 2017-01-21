@@ -27,4 +27,4 @@ $ python
 
 Torna a [Il primo programma](../summary.md)
 
-Oppure [continua a leggere](espr_booleane_e_operat_logici..mb)
+Oppure [continua a leggere](espr_booleane_e_operat_logici.md)

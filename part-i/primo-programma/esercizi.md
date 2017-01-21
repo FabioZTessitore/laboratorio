@@ -36,4 +36,4 @@ math.pi
 
 Torna a [Il primo programma](../summary.md)
 
-Oppure [continua a leggere](modulo.mb)
+Oppure [continua a leggere](modulo.md)
