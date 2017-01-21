@@ -141,3 +141,5 @@ $ pwd
 ```
 
 Torna a [Il filesystem](../summary.md)
+
+Oppure [continua a leggere](creare.md)

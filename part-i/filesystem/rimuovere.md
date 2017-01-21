@@ -69,3 +69,5 @@ $ rm -r progetti
 ```
 
 Torna a [Il filesystem](../summary.md)
+
+Oppure [continua a leggere](cpmv.md)
