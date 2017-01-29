@@ -23,7 +23,7 @@ from gasp import *
 ```
 
 A questo punto ha a disposizione le funzioni `begin_graphics()`
-ed `end_graphics` per creare e chiudere una finestra.
+ed `end_graphics()` per creare e chiudere una finestra rispettivamente.
 
 ```py
 from gasp import *
