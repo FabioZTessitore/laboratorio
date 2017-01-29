@@ -4,7 +4,7 @@
 Ebbene, facciamo un passo avanti e parliamo di liste in Python.
 
 Una lista è una sequenza di valori. Come per le tuple possono essere valori
-di tipo diverso, ma al contrario delle tuple, una lista è modificabile.
+di tipo diverso, ma al contrario delle tuple, una lista è *modificabile*.
 
 ```py
 una_lista = ['ciao', 3, 2.1, 'bye']
