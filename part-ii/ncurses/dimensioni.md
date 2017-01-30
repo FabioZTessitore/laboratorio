@@ -5,7 +5,7 @@ per ottenere le dimensioni del terminale in modo tale che le sue stampe
 siano sempre visibili.
 
 Di scoprire quante righe e quante colonne ha a disposizione si occupa
-`getmaxyx()`. Per poterla usare deve fornirle un riferimento allo schermo
+`getmaxyx()`. Per poterla usare deve fornirle lo schermo
 virtuale di cui vuole conoscere le dimensioni.
 
 ![](../../images/people/tazza.png): Ma non so chi sia questo schermo virtuale.
