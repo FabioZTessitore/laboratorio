@@ -19,4 +19,24 @@
 * [Raggruppare variabili, le struct](tipi-avanzati/struct.md)
   * [Esercizi](tipi-avanzati/esercizi.md)
 
+## I tipi avanzati del Python
+* [Le tuple](tipi-avanzati/tuple.md)
+* [Gli oggetti](tipi-avanzati/oggetti.md)
+* [Le liste](tipi-avanzati/liste.md)
+
+##  Non solo terminale
+* [Disegniamo con GASP](no-term/gasp.md)
+* [Leggere e scrivere file in C](no-term/file.md)
+* [Leggere e scrivere file in Python](no-term/filepy.md)
+  * [Esercizi](no-term/esercizi.md)
+
+## Introduzione alle librerie NCurses
+* [Hello, NCurses](ncurses/output.md)
+* [Spostare il cursore](ncurses/position.md)
+* [Dimensioni del terminale](ncurses/dimensioni.md)
+* [Python e NCurses](ncurses/output-py.md)
+  * [Esercizi](ncurses/esercizi.md)
+* [Atrtibuti e colori]
+* [Input]
+
 [Torna all'indice generale](../README.md)
