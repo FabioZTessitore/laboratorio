@@ -129,4 +129,6 @@ fprintf(stderr, "Errore: ...\n");
 
 ![](../../images/people/tazza.png): Che meraviglia!
 
-Torna a [Non solo terminale](part-ii/summary.md)
+Torna a [Non solo terminale](../summary.md)
+
+Oppure [continua a leggere](filepy.md)

@@ -32,4 +32,4 @@ Si riscriva in Python il programma dell'esercizio 2
 
 <h4><a href="https://github.com/FabioZTessitore/laboratorio/tree/master/esercizi/part-ii/no-term">Soluzioni</a></h4>
 
-Torna a [Non solo terminale](part-ii/summary.md)
+Torna a [Non solo terminale](../summary.md)
