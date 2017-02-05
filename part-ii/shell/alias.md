@@ -73,3 +73,5 @@ $ unalias p
 ```
 
 Torna a [La shell](../summary.md)
+
+Oppure [continua a leggere](locating_commands.md)

@@ -55,3 +55,5 @@ alternative che ha fornito risulta verificata, allora vengono eseguite le istruz
 del blocco `else`.
 
 Torna a [Il primo programma](../summary.md)
+
+Oppure [continua a leggere](esercizi2.md)

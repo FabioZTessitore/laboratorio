@@ -76,3 +76,5 @@ Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.
 Il doppio trattino `--` fa in modo che la parola `help` sia considerata nella sua interezza e non come un insieme di opzioni separate.
 
 Torna a [Il prompt dei comandi](../summary.md)
+
+Oppure [continua a leggere](argomenti.md)

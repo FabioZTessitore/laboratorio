@@ -54,3 +54,5 @@ int main()
 ```
 
 Torna a [Introduzione alle librerie NCurses](../summary.md)
+
+Oppure [continua a leggere](output-py.md)

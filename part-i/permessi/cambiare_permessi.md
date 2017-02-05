@@ -78,3 +78,5 @@ $ ls -l file_test2
 ![](../../images/people/tazza.png): Lo sapevo che c'era un altro modo!
 
 Torna a [I permessi](../summary.md)
+
+Oppure [continua a leggere](owner.md)

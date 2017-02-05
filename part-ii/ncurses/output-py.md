@@ -60,3 +60,5 @@ curses.endwin()
 ```
 
 Torna a [Introduzione alle librerie NCurses](../summary.md)
+
+Oppure [continua a leggere](esercizi.md)

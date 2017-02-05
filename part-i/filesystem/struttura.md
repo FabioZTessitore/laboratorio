@@ -30,3 +30,5 @@ Altre directory comuni sono:
 utilizzare l'interfaccia grafica del suo sistema Linux.
 
 Torna a [Il filesystem](../summary.md)
+
+Oppure [continua a leggere](esplorare.md)

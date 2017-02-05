@@ -144,3 +144,5 @@ int main()
 ```
 
 Torna a [Introduzione alle librerie NCurses](../summary.md)
+
+Oppure [continua a leggere](position.md)

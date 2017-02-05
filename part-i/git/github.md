@@ -64,3 +64,5 @@ $ cat .gitignore
 ![](../../images/people/tazza.png): *&lt;annuendo&gt;C'è ... c'è&lt;/annuendo&gt;*
 
 Torna a [Git e GitHub](../summary.md)
+
+Oppure [continua a leggere](clone.md)

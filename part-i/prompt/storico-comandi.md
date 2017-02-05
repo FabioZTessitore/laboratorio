@@ -52,3 +52,5 @@ Provi a premere la combinazione di tasti <kbd>CTRL+R</kbd>. Da questo momento in
 ![](../../images/people/tess.png): Sig. Tazza, volevo ricordarle un'altra cosa. Quando digita i comandi, i nomi di file e directory ecc., si ricordi che il tasto `TAB` è suo amico. Le permetterà il completamento automatico facendole risparmiare molto tempo e fatica e allo stesso tempo evitandole errori di battitura.
 
 Torna a [Il prompt dei comandi](../summary.md)
+
+Oppure [continua a leggere](man-page.md)

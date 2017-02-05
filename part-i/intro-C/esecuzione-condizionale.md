@@ -58,3 +58,5 @@ rispettivamente `&&`, `||` e `!`
 ![](../../images/people/tess.png): *&lt;tono-maestro-jedi&gt;Provare non esiste. Fare o non fare&lt;/tono-maestro-jedi&gt;*
 
 Torna a [Introduzione al C](../summary.md)
+
+Oppure [continua a leggere](esercizi3.md)

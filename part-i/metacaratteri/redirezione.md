@@ -1,9 +1,11 @@
 # Redirezione dei file
 
-![](../../images/people/tess.png): Alcuni metacaratteri redirigono l'input e l'output
-da e verso i file. Sono comodissimi.
+![](../../images/people/tess.png): Alcuni metacaratteri redirigono (dirigono altrove)
+l'input e l'output da e verso i file. Sono comodissimi.
 
 ![](../../images/people/tazza.png): Sig. Tessitore, non capisco di cosa parla.
+
+## Redirezione dello standard input
 
 ![](../../images/people/tess.png): Ma si che lo sa. In parte ne ha già fatto uso senza saperlo.
 Ricorda che alcuni comandi accettano un file come argomento per poter lavorare?
@@ -22,6 +24,8 @@ $ cat < /etc/passwd
 
 Siccome redirigere il contenuto di un file verso un comando è un'operazione
 molto comune, il simbolo `<` è spesso opzionale e quindi omesso.
+
+## Redirezione dello standard output
 
 Al contrario, il simbolo `>` (anche questo può immaginarlo come una freccia),
 redirige l'output di un comando verso un file (normalmente l'output dei comandi
@@ -60,6 +64,8 @@ ad un amico:
 $ ls Musica > lista_brani
 ```
 
+## Redirezione dello standard error
+
 ![](../../images/people/tess.png): E non è finita. A volte quando si esegue un comando
 possono comparire degli errori. Tali errori vengono stampati sullo
 *standard error* (generalmente lo schermo, come per l'output).
@@ -76,6 +82,8 @@ gli errori?
 
 ![](../../images/people/tess.png): In quel caso userà `&>`
 
+## Aggiungere testo in coda (`append`)
+
 ![](../../images/people/tess.png): Sig. Tazza, un'ultima cosa. Prima le ho detto
 di fare attenzione perché se esiste già un file con lo stesso nome esso verrà
 sovrascritto.
@@ -88,3 +96,5 @@ $ cat /etc/group >> copia_password
 ```
 
 Torna a [I metacaratteri](../summary.md)
+
+Oppure [continua a leggere](graffe.md)

@@ -100,5 +100,6 @@ int main()
   return 0;
 }
 ```
-
 Torna a [I tipi avanzati del C](../summary.md)
+
+Oppure [continua a leggere](esercizi.md)

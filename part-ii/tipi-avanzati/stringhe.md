@@ -127,3 +127,5 @@ int main()
 ```
 
 Torna a [I tipi avanzati del C](../summary.md)
+
+Oppure [continua a leggere](struct.md)

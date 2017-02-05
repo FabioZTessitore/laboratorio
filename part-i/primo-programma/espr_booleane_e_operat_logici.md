@@ -70,3 +70,5 @@ vuole che i suoi programmi siano in grado di effettuare delle scelte, avrà
 bisogno di scrivere le condizioni in base alle quali tali scelte saranno effettuate.
 
 Torna a [Il primo programma](../summary.md)
+
+Oppure [continua a leggere](scelte.md)
