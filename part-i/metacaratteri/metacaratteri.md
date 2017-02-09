@@ -97,7 +97,7 @@ ape garage
 Le parentesi `[]` diventano ancora più utili quando specifica un intervallo:
 
 ```
-$ ls [b-g]*        # la lettera iniziale e' compresa tra 'a' e 'g'
+$ ls [b-g]*        # la lettera iniziale e' compresa tra 'b' e 'g'
 bici grappolo ghepardo garage
 ```
 
