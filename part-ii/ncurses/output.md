@@ -63,7 +63,7 @@ in fase di link:
 
 ```
 $ gcc -c hello.c -o hello.o
-$ gcc hello -o hello.o -lncurses
+$ gcc hello.o -o hello -lncurses
 $ ./hello
 ```
 
