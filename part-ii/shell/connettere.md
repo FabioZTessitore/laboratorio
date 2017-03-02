@@ -91,3 +91,5 @@ $ du /bin/* | sort -nr | head
 ```
 
 Torna a [La shell](../summary.md)
+
+Oppure [continua a leggere](background.md)

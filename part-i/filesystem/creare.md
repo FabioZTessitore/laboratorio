@@ -69,3 +69,5 @@ $ touch hello.js
 ```
 
 Torna a [Il filesystem](../summary.md)
+
+Oppure [continua a leggere](rimuovere.md)

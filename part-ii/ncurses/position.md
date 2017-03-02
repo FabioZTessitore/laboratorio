@@ -8,7 +8,7 @@ A tal proposito esiste la funzione `move()`:
 
 ```c
 move(13, 5);    /* sposta il cursore alla riga di indice 13 (quattordicesima)
-                                    e alla colonna di indice 5 (sesta) */
+                                           e alla colonna di indice 5 (sesta) */
 addstr("Hello, World!");
 ```
 
@@ -60,3 +60,5 @@ int main()
 ```
 
 Torna a [Introduzione alle librerie NCurses](../summary.md)
+
+Oppure [continua a leggere](dimensioni.md)

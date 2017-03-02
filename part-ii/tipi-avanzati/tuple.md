@@ -68,3 +68,5 @@ saluto1, saluto2 = t
 ```
 
 Torna a [I tipi avanzati del Python](../summary.md)
+
+Oppure [continua a leggere](oggetti.md)

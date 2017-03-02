@@ -10,6 +10,7 @@ value = 0
 f = open('sum.dat', 'r')
 if not f:
     print "Impossibile aprire il file sum.dat"
+    print "Verra' creato in fase di salvataggio dati."
     somma = 0
 else:
     print "Lettura del file sum.dat in corso ..."

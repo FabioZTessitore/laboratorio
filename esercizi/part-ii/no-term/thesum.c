@@ -29,6 +29,8 @@ int main()
   f = fopen("sum.dat", "r");
   if (!f) {
     fprintf(stderr, "Impossibile aprire il file sum.dat\n");
+    fprintf(stdout, "Il file sum.dat non esiste,\n"
+                "verra' creato in fase di salvataggio dei dati.\n");
     sum = 0;
   } else {
     printf("Lettura del file sum.dat in corso ...\n");

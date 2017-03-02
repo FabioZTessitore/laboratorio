@@ -71,3 +71,5 @@ corretto dal punto di vista della sintassi e della semantica statica,
 ma fare qualcosa di diverso da quello che ci aspettavamo!
 
 Torna a [Introduzione alla programmazione](../summary.md)
+
+Oppure [continua a leggere](tipi.md)

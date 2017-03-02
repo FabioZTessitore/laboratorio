@@ -180,3 +180,5 @@ int main()
 ![](../../images/people/tazza.png): *&lt;meraviglia&gt;Ma è incredibile!&lt;/meraviglia&gt;*
 
 Torna a [Introduzione al C](../summary.md)
+
+Oppure [continua a leggere](input.md)

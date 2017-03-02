@@ -9,10 +9,10 @@ Sapeva che i terminali possono essere gestiti in modalità semigrafica?
 ![](../../images/people/tess.png): In modalità semigrafica può stampare
 i caratteri in vari colori,
 con attributi quali il sottolineato o il grassetto.
-Inoltre, può stampare in qualunque posizione sullo schermo.
+Inoltre, può stampare in qualunque posizione sullo schermo indicando il numero di riga e di colonna.
 
 Il problema con i terminali è che tutte queste operazioni risultano
-difficoltose (e anche noiose). Inoltre non tutti i terminali sono uguali
+difficoltose (e noiose). Inoltre non tutti i terminali sono uguali
 e ciò che funziona su uno potrebbe non funzionare su un altro.
 
 ![](../../images/people/tazza.png): E come risolviamo?
@@ -31,7 +31,7 @@ $ sudo apt-get install libncurses5-dev
 
 ![](../../images/people/tess.png): Quando vuole usare le librerie NCurses
 deve innanzitutto ricordarsi di iniziare il programma con una chiamata
-alla funzione `initscr()` in modo da passare il terminale in modalità
+alla funzione `initscr()` in modo da passare in modalità
 semigrafica.
 
 Prima di uscire, una chiamata a `endwin()` riporterà il terminale alla
@@ -49,10 +49,7 @@ int main()
   /* inizializza */
   initscr();
 
-  /* prima di terminare un programma ncurses e' meglio
-   * chiamare la funzione endwin() altrimenti il terminale
-   * potrebbe non funzionare correttamente.
-   */
+  /* ripristina il normale funzionamento del terminale */
   endwin();
 
   return 0;
@@ -107,8 +104,8 @@ Deve avere, però, un'accortenza.
 
 Quando si stampa a video con le NCurses,
 il testo non compare direttamente sullo schermo.
-Viene, invece, stampato su uno schermo virtuale.
-La funzione refresh() copia lo schermo virtuale
+Viene, invece, stampato su uno *schermo virtuale*.
+La funzione `refresh()` copia lo schermo virtuale
 su quello fisico. In questo modo si possono fare tante modifiche e poi visualizzarle tutte insieme.
 
 Ecco il programma completo:
@@ -147,3 +144,5 @@ int main()
 ```
 
 Torna a [Introduzione alle librerie NCurses](../summary.md)
+
+Oppure [continua a leggere](position.md)

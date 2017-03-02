@@ -32,7 +32,7 @@ potrà salvare il risultato delle sue operazioni.
 
 `"w"`, apre un file in sola scrittura, lo crea se non esiste
 
-Faccia attenzione con il modo `"w"`. Se si tenta di aprire un file già esistente, quest'ultimo verrà cancellato e poi aperto..
+Faccia attenzione con il modo `"w"`. Se si tenta di aprire un file già esistente, quest'ultimo verrà azzerato..
 
 ![](../../images/people/tazza.png): Va bene, dove si nascondono le difficoltà?
 
@@ -129,4 +129,6 @@ fprintf(stderr, "Errore: ...\n");
 
 ![](../../images/people/tazza.png): Che meraviglia!
 
-Torna a [Non solo terminale](part-ii/summary.md)
+Torna a [Non solo terminale](../summary.md)
+
+Oppure [continua a leggere](filepy.md)

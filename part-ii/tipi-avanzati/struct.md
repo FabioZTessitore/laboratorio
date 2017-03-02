@@ -11,7 +11,7 @@ variabili. Un esempio, che svilupperemo in seguito, riguarda le coordinate di un
 
 ![](../../images/people/tazza.png): `x` e `y`
 
-![](../../images/people/tess.png): Vedo che ha delle ottime basi di geometria ...
+![](../../images/people/tess.png): *&lt;sarcasmo&gt;Vedo che ha delle ottime basi di geometria ...&lt;/sarcasmo&gt;*
 
 In ogni caso sono due valori, quindi servono due variabili. Una scelta potrebbe
 essere:
@@ -22,7 +22,7 @@ int y;
 ```
 
 Però può ben immaginare che avrebbe più senso legarle in qualche modo
-visto che si riferiscono allo stesso *punto* del piano.
+visto che si riferiscono allo *stesso punto* del piano.
 
 ## La `struct timespec`
 
@@ -46,7 +46,7 @@ nella variabile `tv_nsec`. Non si lasci spaventare o confondere dai nomi un po'
 strani, sono variabili come quelle che ha sempre usato.
 
 ![](../../images/people/tazza.png): Se queste variabili, `tv_sec` e `tv_nsec`
-sono dentro la `struct timespec`, come faccio a impostare dei valori?
+sono dentro la `struct timespec`, come faccio a memorizzare dei valori?
 
 ![](../../images/people/tess.png): Per prima cosa deve dichiarare le variabili,
 o meglio, deve dichiarare la struct che le contiene:
@@ -100,5 +100,6 @@ int main()
   return 0;
 }
 ```
-
 Torna a [I tipi avanzati del C](../summary.md)
+
+Oppure [continua a leggere](esercizi.md)

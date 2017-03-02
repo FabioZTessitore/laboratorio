@@ -161,3 +161,5 @@ Ecco la pagina completa:
 ```
 
 Torna a [Introduzione all'HTML](../summary.md)
+
+Oppure [continua a leggere](tutorial.md)

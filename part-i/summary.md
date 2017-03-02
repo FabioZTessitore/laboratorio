@@ -68,4 +68,6 @@
 * [HTML Dog Tutorial](intro-html/tutorial.md)
   * [Esercizi](intro-html/esercizi.md)
 
+## [Letture consigliate](letture.md)
+
 [Torna all'indice generale](../README.md)

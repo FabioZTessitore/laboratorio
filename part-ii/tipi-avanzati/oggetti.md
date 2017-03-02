@@ -22,3 +22,5 @@ l'argomento. Tra non molto le mostrerò come usare degli oggetti, ma
 non abbia fretta.
 
 Torna a [I tipi avanzati del Python](../summary.md)
+
+Oppure [continua a leggere](liste.md)

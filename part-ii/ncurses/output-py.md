@@ -6,7 +6,7 @@ un programma che fa uso delle NCurses in Python.
 Inizi con l'importare la libreria:
 
 ```py
-import curses
+import curses  # si, non c'e' la n
 ```
 
 ![](../../images/people/tazza.png): Ci sono sempre le funzioni `initscr()` e
@@ -60,3 +60,5 @@ curses.endwin()
 ```
 
 Torna a [Introduzione alle librerie NCurses](../summary.md)
+
+Oppure [continua a leggere](esercizi.md)
