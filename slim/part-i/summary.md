@@ -2,3 +2,8 @@
 * [Il terminale](prompt/terminale.md)
 * [Il prompt dei comandi](prompt/prompt.md)
 * [Le opzioni dei comandi](prompt/opzioni.md)
+* [Gli argomenti dei comandi](prompt/argomenti.md)
+* [Storico dei comandi](prompt/storico-comandi.md)
+* [Le pagine del manuale](prompt/man-page.md)
+
+## Il filesystem
