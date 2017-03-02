@@ -7,3 +7,6 @@
 * [Le pagine del manuale](prompt/man-page.md)
 
 ## Il filesystem
+* [Struttura del filesystem](filesystem/struttura.md)
+* [Esplorare il filesystem](filesystem/esplorare.md)
+
