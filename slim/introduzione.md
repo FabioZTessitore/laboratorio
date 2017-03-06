@@ -1,4 +1,4 @@
-Name: Ottenere Linux
+Ottenere Linux
 
 
 #### Ottenere Linux

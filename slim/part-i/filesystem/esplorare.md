@@ -4,12 +4,12 @@ Esplorare il filesystem
 
 #### Esplorare il filesystem
 
-Possiamo iniziare ad esplorare il filesystem. Ti ricordo che per chiedere
+Puoi iniziare ad esplorare il filesystem. Ti ricordo che per chiedere
 la lista degli oggetti presenti nella directory corrente c'è il comando `ls`.
 
 Inoltre, per sapere in quale directory ti trovi, puoi usare il comando `pwd`.
 
-Per spostarti tra le directory puoi usare il comando `cd`. 
+Per spostarti tra le directory puoi usare il comando `cd`.
 
 > Si sposta nella directory root `/`
 
@@ -24,7 +24,7 @@ $ ls
 bin  boot  dev  etc  home  lib  lib64  root  sbin  tmp  usr  ...
 ```
 
-Chiede conferma della directory corrente:
+> Chiede conferma della directory corrente:
 
 ```
 $ pwd
@@ -43,11 +43,11 @@ $ ls
 
 Combinando i comandi `cd`, `pwd` e `ls` puoi esplorare tutto il filesystem di Linux senza timori.
 
-###### La directory home
+##### La directory home
 
 Per tornare alla propria directory personale esistono vari modi, quindi andiamo per gradi.
 
-La directory personale ha nome pari al suo nome utente (`fabio` nel mio caso)
+La directory personale ha nome pari al tuo nome utente (`fabio` nel mio caso)
 e si trova all'interno della directory `/home`
 
 ```
@@ -57,8 +57,8 @@ $ ls
 $ cd fabio
 ```
 
-Nell'ultimo comando `cd fabio` non c'è il simbolo `/`
-prima  del nome della directory. Infatti la directory `fabio` non si trova
+Nell'ultimo comando, `cd fabio`, non c'è il simbolo `/`
+prima del nome della directory. Infatti la directory `fabio` non si trova
 all'interno della root `/`, ma all'interno della `/home` (in cui già ci troviamo).
 
 In altre parole, il percorso `/home/fabio` è un *percorso assoluto* (parte da `/`),
@@ -67,7 +67,7 @@ mentre `fabio` è un *percorso relativo* (relativo alla directory `home` in cui 
 Siccome tornare alla propria home è un'operazione
 piuttosto comune esistono delle scorciatoie.
 
-Innanzitutto puoi fare riferimento alla directory personale
+Innanzitutto puoi fare riferimento alla tua directory personale
 mediante il simbolo `~` (tilde).
 
 ```
@@ -94,7 +94,7 @@ $ pwd
 /home/fabio
 ```
 
-###### Directory speciali
+##### Directory speciali
 
 Quando si esegue il comando `ls -a` vengono mostrati due simboli speciali, `.` e `..`
 
@@ -109,7 +109,7 @@ $ ls -a
 `.` rappresenta la directory corrente<br>
 `..` rappresenta la directory genitore
 
-Ad esempio, se ci troviamo in `/etc`
+Ad esempio, se ti trovi in `/etc`
 
 `.` rappresenta `/etc` stesso<br>
 `..` rappresenta `/` (la directory che contiene `etc`)

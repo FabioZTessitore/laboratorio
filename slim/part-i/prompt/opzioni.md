@@ -48,7 +48,7 @@ Scrivania  Scaricati  Documenti  Wallpapers  work  Immagini  Modelli
 ```
 L'opzione `-t` riordina in base alla data di modifica.
 
-#### Raggruppare le opzioni
+##### Raggruppare le opzioni
 
 Si possono fornire più opzioni ad un comando contemporaneamente:
 
@@ -69,10 +69,10 @@ drwxr-xr-x  2 fabio fabio  4096 giu  3 17:18 Immagini
 drwxr-xr-x  2 fabio fabio  4096 ago 26  2015 Modelli
 ```
 
-#### Opzioni con nomi lunghi
+##### Opzioni con nomi lunghi
 
 Alcune opzioni hanno nomi composti da più di una lettera.
-Per evitare ambiguità in questi casi si usa il doppio trattino `--`.
+Per evitare ambiguità si usa il doppio trattino `--`.
 
 ```
 $ ls --help

@@ -17,7 +17,7 @@ Altre directory comuni sono:
 
 `/etc` contiene i file di configurazione dei programmi
 
-`/root` è la directory personale dell'utente amministratore (chiamato anch'esso root)
+`/root` è la directory personale dell'utente amministratore (chiamato anch'esso `root`)
 
 `/tmp` contiene file e directory temporanee (cancellate al riavvio del sistema)
 

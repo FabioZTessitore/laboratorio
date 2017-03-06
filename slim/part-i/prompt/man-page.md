@@ -7,7 +7,7 @@ La shell di Linux è uno strumento molto potente e non è semplice
 ricordare tutto. In aiuto ci sono le *pagine del manuale*.
 
 Immagina di voler stampare la data corrente nel formato gg/mm/anno.
-Per iniziare prova a chiamare il comando `date`:
+Per iniziare prova a richiamare il comando `date`:
 
 ```
 $ date
