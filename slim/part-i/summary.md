@@ -19,3 +19,8 @@
 * [Espansione delle parentesi graffe](metacaratteri/graffe.md)
 
 ## Permessi
+* [Permessi](permessi/permessi.md)
+* [Cambiare i permessi](permessi/cambiare_permessi.md)
+* [Cambiare il proprietario](permessi/owner.md)
+
+## Git e GitHub
