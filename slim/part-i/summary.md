@@ -37,3 +37,10 @@
 * [Espressioni](intro-programming/espressioni.md)
 
 ## Il primo programma
+* [Stampare un messaggio](primo-programma/print.md)
+* [Le variabili](primo-programma/variabili.md)
+* [Input da tastiera](primo-programma/input.md)
+  * [Esercizi](primo-programma/esercizio-hello.md)
+  * [Esercizi](primo-programma/esercizio-doppio.md)
+  * [Esercizi](primo-programma/esercizio-cubo.md)
+  * [Esercizi](primo-programma/esercizio-sfera.md)
