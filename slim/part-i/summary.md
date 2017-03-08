@@ -24,3 +24,9 @@
 * [Cambiare il proprietario](permessi/owner.md)
 
 ## Git e GitHub
+* [Git e GitHub](git/github.md)
+* [Clonare una repository](git/clone.md)
+* [Effettuare modifiche](git/commit_push.md)
+* [Un semplice modello di collaborazione](git/collaborazione.md)
+
+## Introduzione alla Programmazione
