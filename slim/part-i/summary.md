@@ -30,3 +30,10 @@
 * [Un semplice modello di collaborazione](git/collaborazione.md)
 
 ## Introduzione alla Programmazione
+* [Conoscenza](intro-programming/conoscenza.md)
+  * [Radice Quadrata](intro-programming/soluzione_radice_quadrata.md)
+* [Regole dei linguaggi](intro-programming/regole.md)
+* [I tipi elementari](intro-programming/tipi.md)
+* [Espressioni](intro-programming/espressioni.md)
+
+## Il primo programma
