@@ -44,3 +44,12 @@
   * [Esercizi](primo-programma/esercizio-doppio.md)
   * [Esercizi](primo-programma/esercizio-cubo.md)
   * [Esercizi](primo-programma/esercizio-sfera.md)
+* [L'operatore modulo](primo-programma/modulo.md)
+* [Espressioni booleane ed operatori logici](primo-programma/espr_booleane_e_operat_logici.md)
+* [Effettuare scelte, il costrutto if else](primo-programma/scelte.md)
+  * [Esercizi](primo-programma/esercizio-paridisp.md)
+  * [Esercizi](primo-programma/esercizio-volume.md)
+  * [Esercizi](primo-programma/esercizio-primogrado.md)
+  * [Esercizi](primo-programma/esercizio-secgrado.md)
+
+## Introduzione al C
