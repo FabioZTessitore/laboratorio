@@ -53,3 +53,7 @@
   * [Esercizi](primo-programma/esercizio-secgrado.md)
 
 ## Introduzione al C
+* [Hello World](intro-C/hello.md)
+  * [Esercizi](intro-C/esercizio-fullname.md)
+  * [Esercizi](intro-C/esercizio-figure.md)
+* [Le variabili](intro-C/variabili.md)
