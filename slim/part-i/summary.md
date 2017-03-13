@@ -57,3 +57,18 @@
   * [Esercizi](intro-C/esercizio-fullname.md)
   * [Esercizi](intro-C/esercizio-figure.md)
 * [Le variabili](intro-C/variabili.md)
+* [Input da tastiera](intro-C/input.md)
+  * [Esercizi](intro-C/esercizio-operazioni.md)
+  * [Esercizi](intro-C/esercizio-cerchio.md)
+* [Esecuzione condizionale](intro-C/esecuzione-condizionale.md)
+  * [Esercizi](intro-C/esercizio-maggiore2.md)
+  * [Esercizi](intro-C/esercizio-maggiore5.md)
+  * [Esercizi](intro-C/esercizio-sommacifre.md)
+
+## Esame finale
+* [Tempo di volo](esame/esercizio-volo.md)
+
+## Bonus - Introduzione all'HTML
+* [La prima pagina Web](intro-html/struttura.md)
+* [HTML Dog Tutorial](intro-html/tutorial.md)
+  * [Esercizi](intro-html/esercizi-mywebsite.md)
