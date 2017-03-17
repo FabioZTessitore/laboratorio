@@ -9,7 +9,7 @@ In questi casi la shell resta occupata e non è possibile lanciare altri comandi
 ![](../../images/people/tazza.png): Non mi tenga sulle spine.
 
 ![](../../images/people/tess.png): L'operatore `&` permette di lanciare
-un comando in background così da evere la shell libera. Provi:
+un comando in background così da avere la shell libera. Provi:
 
 ```
 $ gedit &
