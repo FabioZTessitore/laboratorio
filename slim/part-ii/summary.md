@@ -23,3 +23,6 @@
 * [Le tuple](tipi-avanzati/tuple.md)
 * [Gli oggetti](tipi-avanzati/oggetti.md)
 * [Le liste](tipi-avanzati/liste.md)
+
+##  Non solo terminale
+* [Disegniamo con GASP](no-term/gasp.md)
