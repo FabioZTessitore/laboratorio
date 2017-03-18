@@ -13,7 +13,7 @@ int main()
   printf("indirizzo di vett[2]: %p\n", &vett[2]);
 
   distanza = &vett[2] - &vett[1];
-  printf("vett[1] e vett[2] distano %d celle\n", distanza);
+  printf("vett[1] e vett[2] distano %d unita'\n", distanza);
 
   printf("Dimensione di un intero: %d byte\n", sizeof(int));
 

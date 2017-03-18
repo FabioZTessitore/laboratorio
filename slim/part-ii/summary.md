@@ -7,3 +7,9 @@
 * [L'ambiente della shell](shell/env.md)
 * [Cercare](shell/finding.md)
 * [Cercare nei file](shell/grep.md)
+
+## I tipi avanzati del C
+* [Conversioni di tipo](tipi-avanzati/cast.md)
+* [I puntatori](tipi-avanzati/pointer.md)
+* [I vettori](tipi-avanzati/vettori.md)
+* [Le stringhe](tipi-avanzati/stringhe.md)
