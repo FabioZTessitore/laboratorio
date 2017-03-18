@@ -18,3 +18,8 @@
   * [Esercizi](tipi-avanzati/esercizio-address.md)
   * [Esercizi](tipi-avanzati/esercizio-asterischi.md)
   * [Esercizi](tipi-avanzati/esercizio-sumvett.md)
+
+## I tipi avanzati del Python
+* [Le tuple](tipi-avanzati/tuple.md)
+* [Gli oggetti](tipi-avanzati/oggetti.md)
+* [Le liste](tipi-avanzati/liste.md)
