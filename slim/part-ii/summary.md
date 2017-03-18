@@ -13,3 +13,8 @@
 * [I puntatori](tipi-avanzati/pointer.md)
 * [I vettori](tipi-avanzati/vettori.md)
 * [Le stringhe](tipi-avanzati/stringhe.md)
+* [Raggruppare variabili, le struct](tipi-avanzati/struct.md)
+  * [Esercizi](tipi-avanzati/esercizio-cast.md)
+  * [Esercizi](tipi-avanzati/esercizio-address.md)
+  * [Esercizi](tipi-avanzati/esercizio-asterischi.md)
+  * [Esercizi](tipi-avanzati/esercizio-sumvett.md)
