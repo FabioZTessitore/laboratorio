@@ -4,3 +4,6 @@
 * [Espansione delle variabili, delle espressioni aritmetiche, dei comandi](shell/espansione.md)
 * [Alias](shell/alias.md)
 * [Dove sono i comandi?](shell/locating_commands.md)
+* [L'ambiente della shell](shell/env.md)
+* [Cercare](shell/finding.md)
+* [Cercare nei file](shell/grep.md)
