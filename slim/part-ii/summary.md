@@ -26,3 +26,8 @@
 
 ##  Non solo terminale
 * [Disegniamo con GASP](no-term/gasp.md)
+* [Leggere e scrivere file in C](no-term/file.md)
+* [Leggere e scrivere file in Python](no-term/filepy.md)
+  * [Esercizi](no-term/esercizio-draw.md)
+  * [Esercizi](no-term/esercizio-thesumc.md)
+  * [Esercizi](no-term/esercizio-thesumpy.md)
