@@ -31,3 +31,11 @@
   * [Esercizi](no-term/esercizio-draw.md)
   * [Esercizi](no-term/esercizio-thesumc.md)
   * [Esercizi](no-term/esercizio-thesumpy.md)
+
+## Introduzione alle librerie NCurses
+* [Hello, NCurses](ncurses/output.md)
+* [Spostare il cursore](ncurses/position.md)
+* [Dimensioni del terminale](ncurses/dimensioni.md)
+* [Python e NCurses](ncurses/output-py.md)
+  * [Esercizi](ncurses/esercizio-stringhevolanti.md)
+  * [Esercizi](ncurses/esercizio-asterischi.md)
