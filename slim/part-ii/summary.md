@@ -39,3 +39,8 @@
 * [Python e NCurses](ncurses/output-py.md)
   * [Esercizi](ncurses/esercizio-stringhevolanti.md)
   * [Esercizi](ncurses/esercizio-asterischi.md)
+
+## L'utility Make
+* [Opzioni di compilazione](make/opzioni.md)
+* [L'utility make](make/make.md)
+* [Creazione di un Makefile](make/makefile.md)
