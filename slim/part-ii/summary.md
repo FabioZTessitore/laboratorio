@@ -44,3 +44,11 @@
 * [Opzioni di compilazione](make/opzioni.md)
 * [L'utility make](make/make.md)
 * [Creazione di un Makefile](make/makefile.md)
+
+
+
+
+
+da caricare
+## Letture consigliate
+* [Letture consigliate](letture.md)
