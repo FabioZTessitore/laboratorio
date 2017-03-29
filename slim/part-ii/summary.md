@@ -45,7 +45,10 @@
 * [L'utility make](make/make.md)
 * [Creazione di un Makefile](make/makefile.md)
 
-
+## Il ciclo while
+* [Il ciclo while](while/while.md)
+* [Esempio di ciclo con contatore](while/contatore.md)
+* [Esempio di ciclo con valore sentinella](while/sentinella.md)
 
 
 
