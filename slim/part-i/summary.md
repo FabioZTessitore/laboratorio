@@ -72,3 +72,6 @@
 * [La prima pagina Web](intro-html/struttura.md)
 * [HTML Dog Tutorial](intro-html/tutorial.md)
   * [Esercizi](intro-html/esercizi-mywebsite.md)
+
+## Letture consigliate
+* [Letture consigliate](letture.md)
