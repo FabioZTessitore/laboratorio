@@ -49,6 +49,7 @@
 * [Il ciclo while](while/while.md)
 * [Esempio di ciclo con contatore](while/contatore.md)
 * [Esempio di ciclo con valore sentinella](while/sentinella.md)
+  * [Esercizi](while/esercizio-countdown.md)
 
 
 
