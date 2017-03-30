@@ -62,6 +62,8 @@
   * [Esercizi](dowhile/esercizio-cerchio.md)
   * [Esercizi](dowhile/esercizio-cifra.md)
   * [Esercizi](dowhile/esercizio-palindromi.md)
+  * [Esercizi](dowhile/esercizio-binario.md)
+  * [Esercizi](dowhile/esercizio-cripta.md)
 
 
 da caricare
