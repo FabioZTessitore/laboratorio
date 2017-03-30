@@ -57,8 +57,11 @@
 
 ## Il ciclo do-while
 * [Il ciclo do-while](dowhile/dowhile.md)
-  * [Esercizi](while/esercizio-quadrato.md)
-  * [Esercizi](while/esercizio-quadratovuoto.md)
+  * [Esercizi](dowhile/esercizio-quadrato.md)
+  * [Esercizi](dowhile/esercizio-quadratovuoto.md)
+  * [Esercizi](dowhile/esercizio-cerchio.md)
+  * [Esercizi](dowhile/esercizio-cifra.md)
+  * [Esercizi](dowhile/esercizio-palindromi.md)
 
 
 da caricare
