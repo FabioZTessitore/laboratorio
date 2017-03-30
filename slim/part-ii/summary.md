@@ -52,6 +52,8 @@
   * [Esercizi](while/esercizio-countdown.md)
   * [Esercizi](while/esercizio-treintre.md)
   * [Esercizi](while/esercizio-tabelline.md)
+  * [Esercizi](while/esercizio-massimo.md)
+  * [Esercizi](while/esercizio-duemaggiori.md)
 
 
 da caricare
