@@ -58,6 +58,7 @@
 ## Il ciclo do-while
 * [Il ciclo do-while](dowhile/dowhile.md)
   * [Esercizi](while/esercizio-quadrato.md)
+  * [Esercizi](while/esercizio-quadratovuoto.md)
 
 
 da caricare
