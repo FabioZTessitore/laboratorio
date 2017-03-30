@@ -51,7 +51,7 @@
 * [Esempio di ciclo con valore sentinella](while/sentinella.md)
   * [Esercizi](while/esercizio-countdown.md)
   * [Esercizi](while/esercizio-treintre.md)
-
+  * [Esercizi](while/esercizio-tabelline.md)
 
 
 da caricare
