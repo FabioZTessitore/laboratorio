@@ -65,6 +65,13 @@
   * [Esercizi](dowhile/esercizio-binario.md)
   * [Esercizi](dowhile/esercizio-cripta.md)
 
+## Il ciclo for
+* [Il ciclo for](for/for.md)
+  * [Esercizi](for/esercizio-sequenze.md)
+  * [Esercizi](for/esercizio-sommaprodotto.md)
+  * [Esercizi](for/esercizio-fattoriale.md)
+  * [Esercizi](for/esercizio-figure.md)
+
 
 da caricare
 ## Letture consigliate
