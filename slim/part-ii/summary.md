@@ -74,6 +74,10 @@
   * [Esercizi](for/esercizio-rombo.md)
   * [Esercizi](for/esercizio-pigreco.md)
 
+## Altri esercizi con i cicli
+  * [Esercizi](cicli/esercizio-summvett.md)
+  * [Esercizi](cicli/esercizio-address.md)
+  * [Esercizi](cicli/esercizio-caratteri.md)
 
 da caricare
 ## Letture consigliate
