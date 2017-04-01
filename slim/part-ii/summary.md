@@ -71,6 +71,8 @@
   * [Esercizi](for/esercizio-sommaprodotto.md)
   * [Esercizi](for/esercizio-fattoriale.md)
   * [Esercizi](for/esercizio-figure.md)
+  * [Esercizi](for/esercizio-rombo.md)
+  * [Esercizi](for/esercizio-pigreco.md)
 
 
 da caricare
