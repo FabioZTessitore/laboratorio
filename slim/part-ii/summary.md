@@ -82,6 +82,9 @@
 
 ## La libreria matematica del C
 * [La libreria matematica](math/math.md)
+  * [Esercizi](math/esercizio-fattoriale.md)
+  * [Esercizi](math/esercizio-nepero.md)
+  * [Esercizi](math/esercizio-exp.md)
 
 
 
