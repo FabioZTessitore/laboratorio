@@ -40,7 +40,7 @@ strani, sono variabili come quelle che hai sempre usato.
 
 Siccome queste variabili, `tv_sec` e `tv_nsec`
 sono dentro la `struct timespec` per prima cosa devi
-dichiarare le variabili, o meglio, devi dichiarare la struct che le contiene:
+dichiarare la struct che le contiene:
 
 ```c
 #include <time.h>

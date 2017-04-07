@@ -78,6 +78,17 @@
   * [Esercizi](cicli/esercizio-summvett.md)
   * [Esercizi](cicli/esercizio-address.md)
   * [Esercizi](cicli/esercizio-caratteri.md)
+  * [Esercizi](cicli/esercizio-asterischi.md)
+
+
+
+
+
+
+
+  da caricare più in la
+## Regole di compilazione
+* [Regole di compilazione](make2/compilazione.md)
 
 da caricare
 ## Letture consigliate
