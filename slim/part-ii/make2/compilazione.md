@@ -71,3 +71,5 @@ hello: hello.o
 
 hello.o: hello.c
 ```
+
+<a href="/activities/2">Torna alla Parte II</a>

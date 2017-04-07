@@ -80,7 +80,8 @@
   * [Esercizi](cicli/esercizio-caratteri.md)
   * [Esercizi](cicli/esercizio-asterischi.md)
 
-
+## La libreria matematica del C
+* [La libreria matematica](math/math.md)
 
 
 
