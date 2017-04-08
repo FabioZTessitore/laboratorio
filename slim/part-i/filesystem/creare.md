@@ -7,8 +7,9 @@ Passiamo alla creazione di file e directory direttamente dalla shell.
 Per poter effettuare queste operazioni devi trovarti necessariamente
 all'interno della tua home (o sottodirectory di essa).
 
-In caso contrario non potresti creare proprio niente perché un utente normale
-(non amministratore) non ha il permesso di scrivere al di fuori della propria home.
+In caso contrario non potresti creare o modificare file e directory perché
+un utente normale (non amministratore) non ha il permesso di scrivere al
+di fuori della propria home.
 
 > Assicurati di essere nella home
 
@@ -55,7 +56,7 @@ $ cd helloworld
 $ touch hello.js        # infine crea il file hello.js
 ```
 
-Quando devi creare tante directory una dentro l'altra può usare una scorciatoia.
+Quando devi creare tante directory una dentro l'altra puoi usare una scorciatoia.
 Aggiungi l'opzione `-p` a `mkdir`:
 
 > Nota: attraverso l'interfaccia grafica cancella le directory create in precedenza
