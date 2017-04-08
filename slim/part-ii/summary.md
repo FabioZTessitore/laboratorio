@@ -90,6 +90,20 @@
 
 
 
+
+## Semplici animazioni
+* [Calcolare il tempo trascorso](animazioni/tempo.md)
+* [Movimento di un carattere](animazioni/movimento.md)
+* [Aggiornamento dimensioni finestra](animazioni/finestra.md)
+  * [Esercizi](animazioni/esercizio-rimbalzo.md)
+  * [Esercizi](animazioni/esercizio-rimbalzo2D.md)
+  * [Esercizi](animazioni/esercizio-rimbalzo2D-3.md)
+  * [Esercizi](animazioni/esercizio-rimbalzo2D-3-vett.md)
+
+
+
+
+
   da caricare più in la
 ## Regole di compilazione
 * [Regole di compilazione](make2/compilazione.md)
