@@ -26,6 +26,10 @@
 
 ---
 
+**R. M. Stallman, R. McGrath, P. D. Smith, GNU Make Version 4.2, May 2016**
+
+---
+
 **Think Python: How to Think Like a Computer Scientist, <a href="http://www.greenteapress.com/thinkpython/html/index.html">www.greenteapress.com/thinkpython/html/index.html</a>**
 
 * <a href="http://www.greenteapress.com/thinkpython/html/thinkpython002.html">Chapter 1  The way of the program</a>

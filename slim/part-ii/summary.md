@@ -86,11 +86,6 @@
   * [Esercizi](math/esercizio-nepero.md)
   * [Esercizi](math/esercizio-exp.md)
 
-
-
-
-
-
 ## Semplici animazioni
 * [Calcolare il tempo trascorso](animazioni/tempo.md)
 * [Movimento di un carattere](animazioni/movimento.md)

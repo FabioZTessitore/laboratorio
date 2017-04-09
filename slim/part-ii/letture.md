@@ -6,6 +6,10 @@
 
 ---
 
+**R. M. Stallman, R. McGrath, P. D. Smith, GNU Make Version 4.2, May 2016**
+
+---
+
 **H.M. Deitel, P.J. Deitel, (Trad: I. Scagnetto), C, Corso Completo di Programmazione, Apogeo, 2007, 3^ ed**
 
 * Cap 4: Il controllo del programma in C
