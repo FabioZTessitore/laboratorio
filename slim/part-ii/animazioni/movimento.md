@@ -3,7 +3,7 @@ Movimento di un carattere
 
 #### Movimento di un carattere
 
-Ora possiamo impostare una semplice animazione. Facciamo spostare un carattere
+Ora possiamo impostare una semplice animazione: facciamo spostare un carattere
 sullo schermo.
 
 Le informazioni di cui abbiamo bisogno sono:
@@ -37,7 +37,7 @@ int ch = '*';
 ```
 
 La posizione sarà indicata dal numero di riga e dal numero di colonna
-(sono double per tenere memoria delle posizioni intermedie, verranno
+(sono `double` per tenere memoria delle posizioni intermedie, verranno
 arrotondati a int in fase di stampa):
 
 ```c
@@ -45,7 +45,7 @@ double row = 3.;
 double col = 3.;
 ```
 
-Immaginiamo di farlo spostare sulla riga verso destra. In altre parole
+Immaginiamo di spostare l'asterisco sulla riga verso destra. In altre parole
 durante l'animazione bisognerà incrementare il valore di `col` lasciando
 inalterato quello di `row`.
 

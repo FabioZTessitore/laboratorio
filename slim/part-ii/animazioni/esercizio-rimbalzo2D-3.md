@@ -5,8 +5,8 @@ Rimbalzo2D-3
 Usa la repository `semplici_animazioni` per caricare questo esercizio.
 
 **Rimbalzo2D-3**<br>
-Modifica il programma Rimbalzo2D in modo tale da avere tre caratteri che si
-spostano sullo schermo con velocità diverse.
+Modifica il programma Rimbalzo2D in modo tale da avere tre caratteri (diversi)
+che si spostano sullo schermo con velocità diverse.
 
 <a href="https://github.com/FabioZTessitore/laboratorio/tree/master/esercizi/part-ii/animazioni">Soluzioni</a>
 

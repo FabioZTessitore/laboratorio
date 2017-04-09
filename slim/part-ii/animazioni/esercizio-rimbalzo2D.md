@@ -5,7 +5,7 @@ Rimbalzo2D
 Usa la repository `semplici_animazioni` per caricare questo esercizio.
 
 **Rimbalzo2D**<br>
-Modifica il programma Rimbalzo in modo tale che il carattere possa spostarsi
+Modifica il programma Rimbalzo in modo tale che il carattere si sposti
 sullo schermo in diagonale.
 
 <a href="https://github.com/FabioZTessitore/laboratorio/tree/master/esercizi/part-ii/animazioni">Soluzioni</a>

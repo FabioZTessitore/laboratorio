@@ -39,7 +39,7 @@ E poi possiamo confrontare:
 printf("tempo trascorso: %.3f (msec)\n", end_f - start_f);
 ```
 
-#####Esempio completo
+##### Esempio completo
 
 Nell'esempio che segue viene utilizzata una terza `struct timespec` per
 specificare un intervallo di attesa.
@@ -54,16 +54,16 @@ int main()
 {
   struct timespec start, end;
 
-  /* intervallo di 700 millisecondi */
-  struct timespec intervallo;
-  intervallo.tv_sec = 0;
-  intervallo.tv_nsec = 700 * 1000 * 1000;
+  /* attesa di 700 millisecondi */
+  struct timespec attesa;
+  attesa.tv_sec = 0;
+  attesa.tv_nsec = 700 * 1000 * 1000;
 
   /* istante iniziale */
   clock_gettime(CLOCK_MONOTONIC, &start);
 
   /* attende 700 msec */
-  nanosleep(&intervallo, NULL);
+  nanosleep(&attesa, NULL);
 
   /* istante finale */
   clock_gettime(CLOCK_MONOTONIC, &end);
