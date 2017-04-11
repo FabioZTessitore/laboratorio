@@ -95,7 +95,10 @@
   * [Esercizi](animazioni/esercizio-rimbalzo2D-3.md)
   * [Esercizi](animazioni/esercizio-rimbalzo2D-3-vett.md)
 
-
+## Controllo del flusso
+* [break e continue](flusso/break-continue.md)
+* [Il costrutto switch](flusso/switch.md)
+  * [Esercizi](flusso/esercizio-basi.md)
 
 
 
