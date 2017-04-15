@@ -102,6 +102,14 @@
 
 
 
+## Flussi di caratteri
+* [La funzione getchar()](caratteri/getchar.md)
+* [Eco](caratteri/eco.md)
+  * [Esercizi](caratteri/esercizio-copia.md)
+  * [Esercizi](caratteri/esercizio-contacar.md)
+  * [Esercizi](caratteri/esercizio-contalinee.md)
+
+
   da caricare più in la
 ## Regole di compilazione
 * [Regole di compilazione](make2/compilazione.md)
