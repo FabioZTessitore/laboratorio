@@ -14,7 +14,7 @@ contemporaneamente senza doverne scrivere il nome per esteso.
 
 `?` significa un carattere qualsiasi (però almeno uno);
 
-`[abcxyz]` significa un carattere qualsiasi tra quelli elencati nelle parentesi;
+`[abcxyz]` significa un carattere qualsiasi tra quelli elencati tra parentesi;
 
 Ecco qualche esempio di utilizzo:
 
@@ -24,7 +24,7 @@ Ecco qualche esempio di utilizzo:
 $ touch ape bici grappolo ghepardo garage
 ```
 
-Ora supponiamo che stai cercando un file, ma ricordi solo che il nome inizia per 'a'.
+Ora supponiamo che stai cercando un file, ma ricordi solo che il nome inizia per `'a'`.
 Puoi chiedere alla shell di mostrare solo i file che hanno questa caratteristica:
 
 ```
@@ -32,14 +32,14 @@ $ ls a*
 ape
 ```
 
-Oppure solo quelli che iniziano per 'g':
+Oppure solo quelli che iniziano per `'g'`:
 
 ```
 $ ls g*
 grappolo ghepardo garage
 ```
 
-Oppure quelli che iniziano per 'g' ma terminano in 'e':
+Oppure quelli che iniziano per `'g'` ma terminano in `'e'`:
 
 ```
 $ ls g*e
@@ -49,7 +49,7 @@ garage
 Un eventuale file di nome `ge` sarebbe stato mostrato perché `*` significa
 **zero o più** caratteri.
 
-Allo stesso modo puoi chiedere la lista dei file che hanno una 'e' nel nome, in
+Allo stesso modo puoi chiedere la lista dei file che hanno una `'e'` nel nome, in
 posizione qualsiasi:
 
 ```
@@ -58,8 +58,8 @@ ape ghepardo garage
 ```
 
 Il `?` significa, invece, *almeno* un carattere.
-Quindi `?p*` significa che la 'p' è la seconda lettera seguita da qualunque cosa,
-mentre `???p*` significa che la 'p' è la quarta lettera.
+Quindi `'?p*'` significa che la `'p'` è la seconda lettera seguita da qualunque cosa,
+mentre `'???p*'` significa che la `'p'` è la quarta lettera.
 
 ```
 $ ls ?p*

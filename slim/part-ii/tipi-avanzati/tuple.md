@@ -50,6 +50,8 @@ Ma puoi anche fare un'assegnazione multipla:
 ```py
 t = ('hello', 'bye')
 saluto1, saluto2 = t
+print saluto1   # stampa 'hello'
+print saluto2   # stampa 'bye'
 ```
 
 <a href="/activities/2">Torna alla Parte II</a>
