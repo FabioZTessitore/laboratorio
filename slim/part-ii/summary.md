@@ -106,6 +106,8 @@
   * [Esercizi](caratteri/esercizio-copia.md)
   * [Esercizi](caratteri/esercizio-contacar.md)
   * [Esercizi](caratteri/esercizio-contalinee.md)
+  * [Esercizi](caratteri/esercizio-contaspaziature.md)
+  * [Esercizi](caratteri/esercizio-contavocali.md)
 
 
   da caricare più in la
