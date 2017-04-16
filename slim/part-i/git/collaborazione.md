@@ -14,6 +14,7 @@ In altre parole, prima di iniziare a fare modifiche ricorda di
 scaricare la versione aggiornata con:
 
 ```
+$ cd ~/test
 $ git pull origin
 ```
 

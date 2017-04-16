@@ -100,9 +100,7 @@
 * [Il costrutto switch](flusso/switch.md)
   * [Esercizi](flusso/esercizio-basi.md)
 
-
-
-## Flussi di caratteri
+## Flusso di caratteri
 * [La funzione getchar()](caratteri/getchar.md)
 * [Eco](caratteri/eco.md)
   * [Esercizi](caratteri/esercizio-copia.md)

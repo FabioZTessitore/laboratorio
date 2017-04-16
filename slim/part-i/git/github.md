@@ -40,8 +40,8 @@ Assicurati che tutto sia andato bene: dovrebbe essere stato creato un file
 ```
 $ cd
 $ ls -a
-... .gitignore ...
-$ cat .gitignore
+... .gitconfig ...
+$ cat .gitconfig
 [user]
 	email = LA_SUA_EMAIL
 	name = IL_SUO_NOME_UTENTE
