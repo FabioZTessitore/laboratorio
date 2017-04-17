@@ -32,9 +32,9 @@ Se vuoi ottenere il risultato come float:
 1.5
 ```
 
-Nota come il simbolo della divisione è sempre lo stesso, sia quando si
+Nota come il simbolo della divisione sia sempre lo stesso, sia quando si
 opera su valori interi, sia quando si opera su valori in virgola mobile.
-In altre parole il significato del simbolo `/` dipende dal tipo degli operandi.
+In altre parole il significato del simbolo `/` dipende dal *tipo* degli operandi.
 
 Un altro esempio, una somma tra stringhe:
 
@@ -45,7 +45,7 @@ Un altro esempio, una somma tra stringhe:
 
 ##### Errori
 
-Vedere come reagisce l'interprete quando si commettono degli errori:
+Guarda come reagisce l'interprete quando si commettono degli errori:
 
 > Errore di sintassi, manca l'operatore
 

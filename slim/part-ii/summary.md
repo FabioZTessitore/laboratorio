@@ -108,6 +108,12 @@
   * [Esercizi](caratteri/esercizio-contalinee.md)
   * [Esercizi](caratteri/esercizio-contaspaziature.md)
   * [Esercizi](caratteri/esercizio-contavocali.md)
+* [Gestione degli stati](caratteri/stati.md)
+* [Enum](caratteri/enum.md)
+  * [Esercizi](caratteri/esercizio-spazimultipli.md)
+  * [Esercizi](caratteri/esercizio-contaparole.md)
+  * [Esercizi](caratteri/esercizio-stampaparole.md)
+  * [Esercizi](caratteri/esercizio-eliminacommenti.md)
 
 
   da caricare più in la
