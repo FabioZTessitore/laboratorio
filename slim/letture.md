@@ -63,6 +63,14 @@
 
 ---
 
+**B. W. Kernighan, D. M. Ritchie, The C Programming Language, Prentice Hall, 2^ ed**
+
+* Chap 1: A Tutorial Introduction
+* Chap 2: Types, Operators, and Expressions
+* Chap 3: Control Flow
+
+---
+
 **NCurses Programming HOWTO, <a href="http://www.tldp.org/HOWTO/NCURSES-Programming-HOWTO/">http://www.tldp.org/HOWTO/NCURSES-Programming-HOWTO/</a>**
 
 * <a href="http://www.tldp.org/HOWTO/NCURSES-Programming-HOWTO/intro.html">Chap 1 Introduction</a>

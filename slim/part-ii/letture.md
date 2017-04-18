@@ -22,6 +22,14 @@
 
 ---
 
+**B. W. Kernighan, D. M. Ritchie, The C Programming Language, Prentice Hall, 2^ ed**
+
+* Chap 1: A Tutorial Introduction
+* Chap 2: Types, Operators, and Expressions
+* Chap 3: Control Flow
+
+---
+
 **Think Python: How to Think Like a Computer Scientist, <a href="http://www.greenteapress.com/thinkpython/html/index.html">www.greenteapress.com/thinkpython/html/index.html</a>**
 
 * <a href="http://www.greenteapress.com/thinkpython/html/thinkpython013.html">Chapter 12  Tuples</a> (fino al 12.2)
