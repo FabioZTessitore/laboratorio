@@ -115,11 +115,10 @@
   * [Esercizi](caratteri/esercizio-stampaparole.md)
   * [Esercizi](caratteri/esercizio-eliminacommenti.md)
 
+## Bonus - Introduzione ai fogli di stile (CSS)
+* [I fogli di stile](intro-css/css.md)
+* [HTML Dog, CSS Beginner Tutorial](intro-css/tutorial.md)
+  * [Esercizi](intro-css/esercizi-mywebsite.md)
 
-  da caricare più in la
-## Regole di compilazione
-* [Regole di compilazione](make2/compilazione.md)
-
-da caricare
 ## Letture consigliate
 * [Letture consigliate](letture.md)
