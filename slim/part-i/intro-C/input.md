@@ -28,8 +28,8 @@ Potrebbe sembrarti strano che per avere input da tastiera
 chiamando la funzione `scanf()` le devi passare una stringa
 con una specifica di stampa.
 
-In effetti, se ci pensi bene, stai dicendo cosa ti aspetta in input.
-Mettendo `%d` dici che ti aspetto un intero.
+In effetti, se ci pensi bene, stai dicendo cosa ti aspetti in input.
+Mettendo `%d` dici che ti aspetti un intero.
 
 L'input è leggermente più complesso dell'output, quindi non è finita qui:
 c'è anche la variabile `age`, e soprattutto c'è l'operatore `&`.

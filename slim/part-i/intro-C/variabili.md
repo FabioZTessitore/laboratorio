@@ -5,7 +5,7 @@ Le variabili
 #### Le variabili
 
 Abbiamo già visto cosa sono e come si usano le variabili in Python.
-In C, prima di poter utilizzare una variabile, deve *dichiararla*.
+In C, prima di poter utilizzare una variabile, devi *dichiararla*.
 
 Una dichiarazione di variabile è una riga del tipo:
 
@@ -111,7 +111,7 @@ Se sulla tua macchina gli interi sono formati di 4 byte,
 non puoi pretendere che il tuo programma funzioni correttamente
 su una macchina con interi a 2 byte.
 
-Nel file di intestazione `limits.h` trova i valori minimo e massimo ammissibili.
+Nel file di intestazione `limits.h` trovi i valori minimo e massimo ammissibili.
 
 ```c
 #include <stdio.h>
