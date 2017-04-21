@@ -1,4 +1,4 @@
-## Letture consigliate
+#### Letture consigliate
 
 **C. Negus, *Linux Bible*, Indianapolis, Wiley & Sons, 2015, 9th ed**
 
@@ -48,7 +48,7 @@
 
 ---
 
-**HTML Beginner Tutorial, <a href="http://htmldog.com/guides/html/beginner/">HTML Beginner Tutorial</a>**
+**HTML Dog, <a href="http://htmldog.com/guides/html/beginner/">HTML Beginner Tutorial</a>**
 
 ---
 

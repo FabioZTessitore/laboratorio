@@ -1,4 +1,4 @@
-## Letture consigliate
+#### Letture consigliate
 
 **C. Negus, *Linux Bible*, Indianapolis, Wiley & Sons, 2015, 9th ed**
 
@@ -47,48 +47,29 @@
 * <a href="http://www.tldp.org/HOWTO/NCURSES-Programming-HOWTO/awordwindows.html">Chap 5 A Word about Windows</a>
 * <a href="http://www.tldp.org/HOWTO/NCURSES-Programming-HOWTO/printw.html">Chap 6 Output functions</a>
 
-
-
-
-
-
-
 ---
 
-***Getting Git Right*, <a href="https://www.atlassian.com/git">www.atlassian.com/git</a>**
-
-* <a href="https://www.atlassian.com/git/tutorials/what-is-version-control">What is Version Control</a>
-* <a href="https://www.atlassian.com/git/tutorials/what-is-git">What is Git</a>
-* <a href="https://www.atlassian.com/git/tutorials/why-git">Why Git for your organization</a>
-* <a href="https://www.atlassian.com/git/tutorials/install-git">Install Git</a>
-* <a href="https://www.atlassian.com/git/tutorials/setting-up-a-repository">Setting up a repository</a>
-* <a href="https://www.atlassian.com/git/tutorials/saving-changes">Saving Changes</a>
-
-
----
-
-**M. Dawson, *Python Programming for the Absolute Beginner*, Premier Press, 2003**
-
-* Chap 1: Getting Started, The Game over Program
-* Chap 2: Types, Variables, and Simple I/O, The Useless Trivia Program
-
-
----
-
-**HTML Beginner Tutorial, <a href="http://htmldog.com/guides/html/beginner/">HTML Beginner Tutorial</a>**
+**HTML Dog, <a href="http://htmldog.com/guides/css/beginner/">CSS Beginner Tutorial</a>**
 
 ---
 
 **C. Musciano, B. Kennedy, HTML & XHTML, The Definitive Guide, O'Reilly, 2006, 6th ed**
 
-* Chap 1: HTML, XHTML, and the World Wide Web
-* Chap 2: Quick Start
-* Chap 3: Anatomy of an HTML Document
-* Chap 4: Text Basics
-* Chap 5: Rules, Images, and Multimedia
-* Chap 6: Links and Webs
-* Chap 7: Formatted Lists
+* Chap 8: Cascading Style Sheets
+* Chap 9: Forms
+* Chap 10: Tables
 
 ---
 
-<a href="/activities/1">Torna alla Parte I</a>
+**Eric A. Meyer, CSS, The Definitive Guide, O'Reilly, 2007, 3th ed**
+
+* Chap 1: CSS and Documents
+* Chap 2: Selectors
+* Chap 3: Structure and the Cascade
+* Chap 4: Values and Units
+* Chap 5: Fonts
+* Chap 6: Text Properties
+
+---
+
+<a href="/activities/2">Torna alla Parte II</a>

@@ -82,16 +82,28 @@
 
 ---
 
-**HTML Beginner Tutorial, <a href="http://htmldog.com/guides/html/beginner/">HTML Beginner Tutorial</a>**
+**HTML Dog, <a href="http://htmldog.com/guides/html/beginner/">HTML Beginner Tutorial</a>**
+
+---
+
+**HTML Dog, <a href="http://htmldog.com/guides/css/beginner/">CSS Beginner Tutorial</a>**
 
 ---
 
 **C. Musciano, B. Kennedy, HTML & XHTML, The Definitive Guide, O'Reilly, 2006, 6th ed**
 
-* Chap 1: HTML, XHTML, and the World Wide Web
-* Chap 2: Quick Start
-* Chap 3: Anatomy of an HTML Document
-* Chap 4: Text Basics
-* Chap 5: Rules, Images, and Multimedia
-* Chap 6: Links and Webs
-* Chap 7: Formatted Lists
+---
+
+**Eric A. Meyer, CSS, The Definitive Guide, O'Reilly, 2007, 3th ed**
+
+* Chap 1: CSS and Documents
+* Chap 2: Selectors
+* Chap 3: Structure and the Cascade
+* Chap 4: Values and Units
+* Chap 5: Fonts
+* Chap 6: Text Properties
+
+questi ancora no
+* Chap 7: Basic Visual Formatting
+* Chap 8: Padding, Borders, and Margins
+* Chap 9: Colors and Backgrounds
