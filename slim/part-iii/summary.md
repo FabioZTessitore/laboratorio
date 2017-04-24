@@ -1,3 +1,9 @@
+## Generazione di numeri pseudocasuali
+* [Generazione di numeri pseudocasuali](random/rand.md)
+  * [Esercizi](random/esercizio-rand.md)
+
+
+
 
   da caricare più in la
 ## Regole di compilazione

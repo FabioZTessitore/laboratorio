@@ -60,7 +60,7 @@ Ad esempio gli alias. Quando crei un alias non stai creando un file!
 Allora ricorda bene, la shell cerca i comandi in un ordine ben preciso:
 
 1. alias
-2. parole riservare della shell
+2. parole riservate della shell
 3. funzioni definite nella shell
 4. comandi interni (built-in)
 5. comandi nel filesystem (PATH)
