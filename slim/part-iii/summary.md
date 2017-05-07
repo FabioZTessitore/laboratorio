@@ -1,7 +1,10 @@
+#########################################################
 ## Generazione di numeri pseudocasuali
-* [Generazione di numeri pseudocasuali](random/rand.md)
+* [Generazione di numeri pseudocasuali in C](random/rand.md)
+* [Generazione di numeri pseudocasuali in Python](random/rand-py.md)
   * [Esercizi](random/esercizio-rand.md)
-
+  * [Esercizi](random/esercizio-rand-py.md)
+#########################################################
 
 
 

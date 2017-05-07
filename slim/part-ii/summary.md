@@ -86,6 +86,14 @@
   * [Esercizi](math/esercizio-nepero.md)
   * [Esercizi](math/esercizio-exp.md)
 
+## I cicli in Python
+* [Il ciclo while](py-cicli/while.md)
+* [La funzione range()](py-cicli/range.md)
+* [Il ciclo for](py-cicli/for.md)
+#########################################################
+INSERIRE ESERCIZI
+#########################################################
+
 ## Semplici animazioni
 * [Calcolare il tempo trascorso](animazioni/tempo.md)
 * [Movimento di un carattere](animazioni/movimento.md)
@@ -94,6 +102,10 @@
   * [Esercizi](animazioni/esercizio-rimbalzo2D.md)
   * [Esercizi](animazioni/esercizio-rimbalzo2D-3.md)
   * [Esercizi](animazioni/esercizio-rimbalzo2D-3-vett.md)
+#########################################################
+* [La libreria time del Python](animazioni/time.md)
+  * [Esercizi](animazioni/esercizio-rimbalzo2D-3-vett-py.md)
+#########################################################
 
 ## Controllo del flusso
 * [break e continue](flusso/break-continue.md)
