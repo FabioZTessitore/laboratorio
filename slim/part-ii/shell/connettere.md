@@ -5,13 +5,11 @@ Connettere i comandi
 
 Parliamo ancora dei comandi della shell di Linux.
 
-Uno dei principi alla base della progettazione di tali comandi è "fai una sola cosa, ma falla bene".
+Uno dei principi alla base della progettazione di tali comandi è *fai una sola cosa, ma falla bene*.
 
-Come puoi facilmente intuire, se ogni comando fa una sola cosa ci vorrebbero
-tantissimi comandi per venire incontro a tutte le esigenze di gestione ed
-amministrazione di un sistema Linux.
-
-I comandi possono essere combinati tra loro in modo da ottenere tutte
+Se ogni comando fa una sola cosa, come si può fare per andare incontro a tutte
+le esigenze di gestione ed amministrazione di un sistema Linux?
+La risposta sta nel combinare i comandi tra loro in modo da ottenere tutte
 le funzionalità di cui si ha bisogno.
 
 ##### Comandi sequenziali
@@ -40,8 +38,8 @@ Ricordi quando abbiamo parlato di redirigere l'output di un comando verso
 un file invece che verso il terminale? Qui stiamo facendo una cosa simile,
 solo che l'output di un comando viene rediretto verso un altro comando.
 
-Il comando successivo può fare delle operazioni sull'output del
-comando precedente in modo da ottenere nuove funzionalità.
+L'idea è quella che il comando successivo può fare delle operazioni
+sull'output del comando precedente in modo da ottenere il risultato voluto.
 
 ```
 $ cat /etc/passwd | sort

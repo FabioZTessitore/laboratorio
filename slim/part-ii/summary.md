@@ -102,10 +102,9 @@ INSERIRE ESERCIZI
   * [Esercizi](animazioni/esercizio-rimbalzo2D.md)
   * [Esercizi](animazioni/esercizio-rimbalzo2D-3.md)
   * [Esercizi](animazioni/esercizio-rimbalzo2D-3-vett.md)
-#########################################################
 * [La libreria time del Python](animazioni/time.md)
+* [Sleeping in Python](animazioni/sleep.md)
   * [Esercizi](animazioni/esercizio-rimbalzo2D-3-vett-py.md)
-#########################################################
 
 ## Controllo del flusso
 * [break e continue](flusso/break-continue.md)
