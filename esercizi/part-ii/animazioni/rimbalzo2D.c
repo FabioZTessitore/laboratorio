@@ -2,6 +2,18 @@
 
 /* rimbalzo di un carattere sullo schermo per 30 sec */
 
+/* Istruzioni per la compilazione e l'esecuzione:
+ *
+ * Compilare:
+ * $ gcc -c rimbalzo2D.c -o rimbalzo2D.o
+ *
+ * Link:
+ * $ gcc rimbalzo2D.o -o rimbalzo2D -lncurses
+ *
+ * Eseguire:
+ * $ ./rimbalzo2D
+ */
+
 #include <ncurses.h>
 #include <time.h>
 
@@ -48,7 +60,7 @@ int main()
   start_anim_f = start_anim.tv_sec * 1000. + start_anim.tv_nsec / 1.e6;
 
   /* continua fino a 5 sec */
-  while (anim_length < 30000.) {
+  while (anim_length < 5000.) {
     /* istante iniziale */
     clock_gettime(CLOCK_MONOTONIC, &start);
 

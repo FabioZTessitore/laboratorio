@@ -2,6 +2,18 @@
 
 /* sposta un carattere a destra e sinistra per 30 sec */
 
+/* Istruzioni per la compilazione e l'esecuzione:
+ *
+ * Compilare:
+ * $ gcc -c rimbalzo.c -o rimbalzo.o
+ *
+ * Link:
+ * $ gcc rimbalzo.o -o rimbalzo -lncurses
+ *
+ * Eseguire:
+ * $ ./rimbalzo
+ */
+
 #include <ncurses.h>
 #include <time.h>
 
@@ -46,7 +58,7 @@ int main()
   start_anim_f = start_anim.tv_sec * 1000. + start_anim.tv_nsec / 1.e6;
 
   /* continua fino a 5 sec */
-  while (anim_length < 30000.) {
+  while (anim_length < 5000.) {
     /* istante iniziale */
     clock_gettime(CLOCK_MONOTONIC, &start);
 

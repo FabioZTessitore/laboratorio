@@ -2,6 +2,18 @@
 
 /* rimbalzo di tre caratteri sullo schermo per 30 sec */
 
+/* Istruzioni per la compilazione e l'esecuzione:
+ *
+ * Compilare:
+ * $ gcc -c rimbalzo2D-3.c -o rimbalzo2D-3.o
+ *
+ * Link:
+ * $ gcc rimbalzo2D-3.o -o rimbalzo2D-3 -lncurses
+ *
+ * Eseguire:
+ * $ ./rimbalzo2D-3
+ */
+
 #include <ncurses.h>
 #include <time.h>
 
@@ -57,7 +69,7 @@ int main()
   start_anim_f = start_anim.tv_sec * 1000. + start_anim.tv_nsec / 1.e6;
 
   /* continua fino a 5 sec */
-  while (anim_length < 30000.) {
+  while (anim_length < 5000.) {
     /* istante iniziale */
     clock_gettime(CLOCK_MONOTONIC, &start);
 
