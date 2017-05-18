@@ -3,9 +3,9 @@ Le dimensioni del terminale
 
 #### Le dimensioni del terminale
 
-La funzione `getmaxyx()` si occupa di scoprire quante righe e quante colonne
-abbiamo a disposizione. Per poterla usare bisogna fornirle lo schermo
-virtuale di cui si vogliono conoscere le dimensioni.
+`getmaxyx()` si occupa di scoprire quante righe e quante colonne
+abbiamo a disposizione. Per poterla usare bisogna fornirle lo *schermo
+virtuale* di cui si vogliono conoscere le dimensioni.
 
 Poiché lo schermo virtuale viene creato automaticamente, bisogna solo
 conoscerne il nome: `stdscr` (standard screen).
