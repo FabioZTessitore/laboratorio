@@ -21,7 +21,7 @@ int main()
 
     colonna = 1;
     while (colonna <= 10) {
-      printf("%3d\t", riga*colonna);
+      printf("%5d", riga*colonna);
       colonna++;
     }
     putchar('\n');

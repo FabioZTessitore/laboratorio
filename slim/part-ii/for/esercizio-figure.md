@@ -3,7 +3,7 @@ Figure
 Usa la repository `iterazione_c` per caricare questo esercizio.
 
 **Figure**<br>
-Utilizzando solo la funzione `putchar()`, scrivi un programma che stampa
+Utilizzando solo la funzione `putchar()`, scrivi un programma che stampi
 le seguenti figure.
 
 a)

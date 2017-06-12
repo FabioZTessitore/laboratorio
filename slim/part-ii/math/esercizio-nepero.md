@@ -5,7 +5,7 @@ Nepero
 Usa la repository `exp` per caricare questo esercizio.
 
 **Nepero**<br>
-Scrivi un programma C che approssima il valore della costante `e` mediante la
+Scrivi un programma C che approssimi il valore della costante `e` mediante la
 formula:
 
 ```

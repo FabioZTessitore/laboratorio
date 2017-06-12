@@ -24,7 +24,7 @@ debba fare nulla.
 Il file `/etc/updatedb.conf` specifica quali directory devono essere
 tenute sotto controllo.
 
-Provare a fare una ricerca:
+Prova a fare una ricerca:
 
 ```
 $ locate passwd
@@ -77,8 +77,8 @@ ls
 ... lista_errori ...
 ```
 
-Non ha molto senso salvare gli errori nel file `lista_errori`.
-In questi casi devi solo scartare quel tipo di output, quindi invece
+In casi come questo non ha molto senso salvare gli errori in un file
+e basta scartare quel tipo di output. Quindi invece
 di fare la redirezione verso un file è meglio farla verso `/dev/null`.
 
 ```
@@ -160,12 +160,12 @@ $ find /bin -perm 755 -ls
 Quando il codice numerico fornito a `-perm` non è preceduto da alcun
 segno, tutti i bit devono coincidere. In questo caso, quindi,
 `find` cercherà i file della directory `/bin`
-che hanno permessi esattamente pari a rwxr-xr-x (755).
+che hanno permessi esattamente pari a `rwxr-xr-x` (755).
 
 Quando, invece, il codice è preceduto dal segno meno,
 cerca tutti i file che hanno *almeno* quei permessi.
 
-> Cerca i file nella directory /bin che hanno permessi uguali o superiori a rwxr-xr-w
+> Cerca i file nella directory /bin che hanno permessi uguali o superiori a `rwxr-xr-w`
 
 ```
 $ find /bin -perm -755 -ls

@@ -20,7 +20,7 @@ mettendo a disposizione delle funzioni più semplici e indipendenti dal terminal
 Prima di iniziare accertati di aver installato il pacchetto `libncurses5-dev`:
 
 ```
-$ sudo apt-get install libncurses5-dev
+$ sudo apt install libncurses5-dev
 ```
 
 ##### Hello World NCurses
@@ -96,8 +96,8 @@ ma con un'accortenza.
 
 Quando si stampa a video con le NCurses,
 il testo non compare direttamente sullo schermo.
-Viene, invece, stampato su uno *schermo virtuale*.
-La funzione `refresh()` copia lo schermo virtuale su quello fisico.
+Viene, invece, stampato su uno *schermo virtuale*
+e la funzione `refresh()` copia lo schermo virtuale su quello fisico.
 In questo modo si possono fare tante modifiche e poi visualizzarle tutte insieme.
 
 Ecco il programma completo:

@@ -32,7 +32,7 @@ int main()
 
     x_to_n *= x;
   }
-  printf("e^x = %f\n", result);
+  printf("e^x (10 termini della serie) = %f\n", result);
 
   return 0;
 }

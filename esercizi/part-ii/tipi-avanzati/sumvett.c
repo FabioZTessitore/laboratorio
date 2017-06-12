@@ -42,6 +42,7 @@ int main()
   printf("numbers[0] = %d\n", numbers[0]);
   printf("numbers[1] = %d\n", numbers[1]);
   printf("numbers[2] = %d\n\n", numbers[2]);
+
   printf("Somma: %d\n", somma);
   printf("Media: %f\n", media);
 

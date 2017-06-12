@@ -24,7 +24,7 @@ Ad esempio:
 3! = 3 * 2 * 1 = 6
 ```
 
-Scrivi un programma C che legge in input un numero non negativo e ne calcola
+Scrivi un programma C che legga in input un numero non negativo e ne calcoli
 il fattoriale.
 
 <a href="https://github.com/FabioZTessitore/laboratorio/tree/master/esercizi/part-ii/math">Soluzioni</a>

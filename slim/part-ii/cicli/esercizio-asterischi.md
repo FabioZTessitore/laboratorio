@@ -2,9 +2,12 @@ Asterischi
 
 Usa la repository `iterazione_c` per caricare questo esercizio.
 
-*Nota*: utilizza una directory separata per questo esercizio. Crea i relativi
-file `.gitignore` e `Makefile`. Nelle opzioni di compilazione non utilizzare
-`-ansi` (la struct timespec non fa parte dello standard ansi).
+*Note*: Questo esercizio richiede un file `Makefile` personalizzato,
+quindi crea una directory `asterischi` nella repository per contenerlo.
+Non dimenticare il `.gitignore`.
+Nelle opzioni di compilazione non utilizzare
+`-ansi` (la struct timespec non fa parte dello standard ansi)
+e ricorda di inserire `-lncurses` nel `Makefile`.
 
 **Asterischi**<br>
 Scrivi un programma in C che, facendo uso delle librerie

@@ -99,8 +99,8 @@ dell'output. Ricorderai anche che si può redirigere sia lo standard
 output sia lo standard error.
 
 Lo standard output e lo standard error non
-sono altro che file aperti automaticamente all'avvio dei suoi
-programmi e associati (se non rediretti altrove) al terminale.
+sono altro che file aperti automaticamente all'avvio dei programmi e
+associati (se non rediretti altrove) al terminale.
 
 Quindi se vuoi stampare qualcosa a video, puoi anche stampare
 sullo standard output:

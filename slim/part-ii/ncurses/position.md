@@ -15,7 +15,7 @@ move(13, 5);
 addstr("Hello, World!");
 ```
 
-Siccome l'operazione di spostare il cursore prima di stampare è molto comune
+Siccome l'operazione di spostare il cursore prima di stampare è molto comune,
 esistono delle funzioni che accorpano tali operazioni.
 Sono `mvprintw()`, `mvaddstr()` e `mvaddch()`:
 

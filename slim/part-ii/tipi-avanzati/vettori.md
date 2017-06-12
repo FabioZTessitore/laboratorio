@@ -5,7 +5,7 @@ I vettori
 
 Parliamo ora di *vettori*.
 
-Chiariamo subito che i vantaggi derivanti dall'uso di questo tipo
+Diciamo subito che i vantaggi derivanti dall'uso di questo tipo
 avanzato ti saranno chiari in seguito. Per il momento concentrati su cosa
 sono e come si dichiarano e usano.
 

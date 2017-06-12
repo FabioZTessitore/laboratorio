@@ -12,7 +12,7 @@ Per esempio, usando la libreria GASP, possiamo fare qualche disegnino.
 > Assicurati di avere installato la libreria
 
 ```
-$ sudo apt-get install python-gasp
+$ sudo apt install python-gasp
 ```
 
 Il primo passo è importare gli elementi della libreria:

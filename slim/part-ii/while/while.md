@@ -53,7 +53,7 @@ Non dimenticare di creare il `Makefile`
 ```
 CC=gcc
 CFLAGS=-Wall -ansi -pedantic
-LDFLAGS=
+LDLIBS=
 ```
 
 Infine compila ed esegui:

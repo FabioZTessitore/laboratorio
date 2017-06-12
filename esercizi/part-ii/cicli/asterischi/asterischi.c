@@ -2,6 +2,18 @@
 
 /* Stampa il lampeggio di un asterisco alla posizione (3, 3) */
 
+/* Istruzioni per la compilazione e l'esecuzione:
+ *
+ * Compilare:
+ * $ gcc -Wall -pedantic -c asterischi.c -o asterischi.o
+ *
+ * Link:
+ * $ gcc asterischi.o -o asterischi -lncurses
+ *
+ * Eseguire:
+ * $ ./asterischi
+ */
+
 #include <ncurses.h>
 #include <time.h>
 

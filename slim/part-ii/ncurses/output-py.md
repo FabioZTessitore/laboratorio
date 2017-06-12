@@ -24,13 +24,14 @@ curses.endwin()
 ```
 
 Rispetto al C c'è, però, una differenza importante.
-Lo standard screen viene creato da `initscr()` e devi memorizzarne un riferimento:
+Lo standard screen viene creato da `initscr()` e devi memorizzarne
+manualmente un riferimento:
 
 ```py
 stdscr = curses.initscr()
 ```
 
-Un'altra differenza importante, stavolta è una semplificazione:
+C'è un'altra differenza importante, ma stavolta è una semplificazione:
 l'oggetto `stdscr` contiene un'unica funzione per l'output: `addstr()`.
 
 > Esempio completo

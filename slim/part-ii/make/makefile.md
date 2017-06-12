@@ -15,10 +15,10 @@ di make.
 ```
 CC=gcc
 CFLAGS=-ansi -Wall -pedantic
-LDFLAGS=
+LDLIBS=
 ```
 
-`LDFLAGS` al momento non è utilizzato, ma sarà un comodo segnaposto per
+`LDLIBS` al momento non è utilizzata, ma sarà un comodo segnaposto per
 quando bisognerà aggiungere qualche libreria.
 
 La compilazione segue con una semplice chiamata a make:

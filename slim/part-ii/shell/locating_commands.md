@@ -4,8 +4,8 @@ Dove sono i comandi?
 
 #### Dove sono i comandi?
 
-Forse avrai notato che quando con il C crei dei programmi li mandi in esecuzione
-scrivendo:
+Forse avrai notato che, quando con il linguaggio C crei dei programmi,
+per mandarli in esecuzione scrivi:
 
 ```
 $ ./nomefile
@@ -29,7 +29,7 @@ $ /bin/date
 ma la cosa non e' conveniente!
 
 Nota che quando scrivi `./nomefile` stai utilizzando un percorso
-relativo perché ti trova già nella directory contenente il programma.
+relativo perché ti trovi già nella directory contenente il programma.
 
 Affinché la shell possa capire che scrivendo `date` intendi `/bin/date`
 i comandi vengono memorizzati in particolari directory
@@ -42,7 +42,7 @@ $ echo $PATH
 /usr/local/bin:/usr/bin:/bin
 ```
 
-In `PATH` è memorizzata una lista di directory, intervallate
+In `PATH` è memorizzata una lista di directory, separate
 dal simbolo `:`. Tali directory verranno
 controllate sequenzialmente alla ricerca del comando invocato.
 
@@ -55,7 +55,7 @@ Finora abbiamo parlato di comandi e abbiamo
 detto che ogni comando è un file eseguibile presente in una particolare directory,
 ma questa cosa non è sempre vera.
 
-Ad esempio gli alias. Quando crei un alias non stai creando un file!
+Considera ad esempio gli alias. Quando crei un alias non stai creando un file!
 
 Allora ricorda bene, la shell cerca i comandi in un ordine ben preciso:
 

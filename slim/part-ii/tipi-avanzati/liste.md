@@ -13,8 +13,8 @@ di tipo diverso, ma al contrario delle tuple, una lista è *modificabile*.
 una_lista = ['ciao', 3, 2.1, 'bye']
 ```
 
-Come ti dicevo una lista è modificabile e per accedere agli elementi si
-usa una notazione che già conosci bene.
+Come ti dicevo una lista è modificabile e per accedere ai suoi elementi si
+usa una notazione che conosci bene.
 
 ```py
 una_lista = ['ciao', 3, 2.1, 'bye']

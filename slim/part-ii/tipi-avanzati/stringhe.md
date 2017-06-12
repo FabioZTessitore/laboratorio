@@ -24,6 +24,13 @@ printf("Codice del carattere A: %d\n", c);
 printf("Carattere A: %c\n", c);
 ```
 
+> Output
+
+```
+Codice del carattere A: 65
+Carattere A: A
+```
+
 Il tipo `char` è un intero, generalmente di dimensione
 pari ad un byte. Quando scrivi `char c = 'A';` stai memorizzando il *codice*
 corrispondente al carattere `A`.
@@ -68,7 +75,8 @@ Esiste una scorciatoia per inserire elementi in un vettore e
 quindi può essere utilizzata per creare stringhe:
 
 ```c
-char str[5] = { 'C', 'i', 'a', 'o', '\0' };  /* non dimenticare il terminatore */
+char str[5] = { 'C', 'i', 'a', 'o', '\0' };
+/* non dimenticare il terminatore */
 ```
 
 Facendo così si rischia di commettere
@@ -88,7 +96,8 @@ che già conosci, ma di cui ora puoi apprezzare la potenza e l'utilità
 (però tieni presente che quello che abbiamo visto è ciò che accade dietro le quinte).
 
 ```c
-char str[] = "Ciao";  /* aggiunge automaticamente il terminatore */
+char str[] = "Ciao";
+/* aggiunge automaticamente il terminatore */
 ```
 
 ##### Esempio completo

@@ -40,7 +40,7 @@
   * [Esercizi](ncurses/esercizio-stringhevolanti.md)
   * [Esercizi](ncurses/esercizio-asterischi.md)
 
-## L'utility Make
+## L'utility make
 * [Opzioni di compilazione](make/opzioni.md)
 * [L'utility make](make/make.md)
 * [Creazione di un Makefile](make/makefile.md)
@@ -85,6 +85,11 @@
   * [Esercizi](math/esercizio-fattoriale.md)
   * [Esercizi](math/esercizio-nepero.md)
   * [Esercizi](math/esercizio-exp.md)
+
+
+
+
+  
 
 ## I cicli in Python
 * [Il ciclo while](py-cicli/while.md)

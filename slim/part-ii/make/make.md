@@ -21,8 +21,9 @@ si svolge in una sola operazione.
 Così facendo, però, la compilazione avverrà secondo delle regole predefinite.
 
 Per modificare tale comportamento si possono usare delle variabili di ambiente.
+
 `CC` indica quale compilatore usare, `CFLAGS` quali opzioni di compilazione,
-`LDFLAGS` le librerie.
+`LDLIBS` le librerie.
 
 ```
 $ CC=gcc CFLAGS="-ansi -Wall -pedantic" make hello

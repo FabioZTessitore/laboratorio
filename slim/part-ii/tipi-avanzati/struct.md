@@ -3,7 +3,7 @@ Raggruppare variabili, le struct
 
 #### Raggruppare variabili, le struct
 
-Il linguaggio C usa le struct per raggruppare
+Il linguaggio C usa le **struct** per raggruppare
 variabili. Un esempio, che svilupperemo in seguito,
 riguarda le coordinate di un punto del piano.
 
@@ -45,6 +45,8 @@ dichiarare la struct che le contiene:
 ```c
 #include <time.h>
 
+/* crea la variabile 'intervallo',
+ * di tipo 'struct timespec' */
 struct timespec intervallo;
 ```
 
@@ -55,10 +57,14 @@ di `intervallo` (che è di tipo `struct timespec`), mediante l'operatore `.` (il
 #include <time.h>
 
 struct timespec intervallo;
-intervallo.tv_sec = 0;  /* zero secondi */
-intervallo.tv_nsec = 500 * 1000 * 1000;   /* 500 millisecondi =
-                                             500 * 1000 microsecondi =
-                                             500 * 1000 * 1000 nanosecondi */
+
+/* zero secondi */
+intervallo.tv_sec = 0;
+
+/* 500 millisecondi =
+    500 * 1000 microsecondi =
+    500 * 1000 * 1000 nanosecondi */
+intervallo.tv_nsec = 500 * 1000 * 1000;
 ```
 
 Questa struct ti sarà molto utile più in là per

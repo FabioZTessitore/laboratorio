@@ -5,7 +5,7 @@ Exp
 Usa la repository `exp` per caricare questo esercizio.
 
 **Exp**<br>
-Scrivi un programma C che approssima il valore di `e^x` mediante la
+Scrivi un programma C che approssimi il valore di `e^x` mediante la
 formula:
 
 ```

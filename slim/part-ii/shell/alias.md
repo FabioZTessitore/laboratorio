@@ -29,7 +29,7 @@ Prova ad impostare un nuovo alias:
 $ alias rm='rm -i'
 ```
 
-D'ora in avanti il comando `rm` sarà interpretato come `rm -i`
+D'ora in avanti il comando `rm` sarà interpretato come `rm -i`.
 Sulle pagine del manuale puoi scoprire cosa significa `-i`.
 
 Proviamo con un gruppo di comandi.

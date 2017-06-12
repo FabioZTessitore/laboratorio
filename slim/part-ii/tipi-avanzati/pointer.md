@@ -31,8 +31,9 @@ in un puntatore ad intero prima di stamparlo.
 
 ```c
 int num = 42;
-int *p_num = &num;  /* p_num e' un puntatore a intero (int *),
-                      quindi a destra c'e' l'indirizzo di una variabile intera */
+/* p_num e' un puntatore a intero (int *),
+quindi a destra c'e' l'indirizzo di una variabile intera */
+int *p_num = &num;
 
 /* stampa p_num (un indirizzo), non c'e' l'operatore & */
 printf("Indirizzo di num: %p\n", p_num);

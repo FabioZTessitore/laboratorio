@@ -23,13 +23,13 @@
    intervallo.tv_sec = 0;                  /* 0 secondi e */
    intervallo.tv_nsec = 700 * 1000 * 1000; /* 700 millisecondi */
 
-   printf("*\n");
+   puts("*");
    nanosleep(&intervallo, NULL);
 
-   printf("*\n");
+   puts("*");
    nanosleep(&intervallo, NULL);
 
-   printf("*\n");
+   puts("*");
    nanosleep(&intervallo, NULL);
 
    return 0;

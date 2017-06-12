@@ -3,7 +3,6 @@
 /* Approssima il valore di e = 1 + 1/1! + 1/2! + 1/3! + ... */
 
 #include <stdio.h>
-#include <math.h>
 
 int main()
 {
@@ -20,7 +19,7 @@ int main()
 
   printf("Numero di Nepero e\n\n");
 
-  /* calcola e con n termini */
+  /* calcola 'e' con n termini */
   for (counter = 1; counter < n; counter++) {
     fatt *= counter;
     e += 1. / (double)fatt;
@@ -32,8 +31,10 @@ int main()
   e = 1.;
   counter = 1;
   do {
+    /* valore precendente */
     e_old = e;
 
+    /* valore nuovo */
     fatt *= counter;
     e += 1. / (double)fatt;
 

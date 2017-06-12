@@ -11,7 +11,7 @@ Esempio di esecuzione:
 ```
 Rombo
 
-Numero di righe (dispari 1-19):
+Numero di righe (dispari 1-19): 7
 
    *
   ***

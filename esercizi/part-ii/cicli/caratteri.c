@@ -9,10 +9,10 @@ int main()
   char saluto[] = "Salve a tutti!";
   int i;
 
-  printf("Stringa iniziale:\n");
+  printf("Stringa iniziale: ");
   puts(saluto);
 
-  printf("Caratteri:\n");
+  printf("\nCaratteri:\n");
   i = 0;
   while (saluto[i] != '\0') {
     printf("%c\n", saluto[i]);

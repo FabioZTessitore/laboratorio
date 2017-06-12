@@ -28,7 +28,7 @@ Memorizzando il percorso della shell in una variabile, tutti i file di configura
 e l'utente stesso, possono far riferimento a `$BASH` senza preoccuparsi di sapere
 qual è il file attualmente in uso.
 
-Ci siano molte altre variabili. Visualizza il contenuto di
+Sono definite molte altre variabili. Visualizza il contenuto di
 `HOME` e `USER`. La shell sa un sacco di cose!
 
 ##### Espansione delle espressioni aritmetiche
@@ -58,7 +58,7 @@ all'interno di un altro comando. A tal proposito esistono gli operatori `$()`
 oppure `` (apici inversi).
 
 ```
-$ echo "I am $[$(date +'%Y')-1979] years old!"
+$ echo "I am $[$(date +%Y)-1979] years old!"
 ...  # il risultato dipende dall'anno in corso!
 ```
 

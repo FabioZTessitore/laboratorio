@@ -4,7 +4,7 @@
  * e li visualizza in formato tabulare.
  *
  * 1!   2!   3!   4!   5!
- * 1    2    6   24  120
+ *  1    2    6   24  120
  */
 
 #include <stdio.h>
@@ -16,14 +16,14 @@ int main()
 
   /* intestazione tabella */
   for (counter = 1; counter <= 5; counter++) {
-    printf("%d!\t", counter);
+    printf("%4d!", counter);
   }
   putchar('\n');
 
   /* tabella dei fattoriali */
   for (counter = 1; counter <= 5; counter++) {
     fatt *= counter;
-    printf("%d\t", fatt);
+    printf("%5d", fatt);
   }
   putchar('\n');
 

@@ -11,8 +11,13 @@ Abbiamo già trattato questa operazione con il linguaggio Python.
 
 ```py
 # cast in Python
+
+# un valore intero
 x_int = 3
-x_float = float(x_int)  # in Python i valori in virgola mobile sono float
+
+# in Python i valori in
+# virgola mobile sono float
+x_float = float(x_int)
 ```
 
 Se invece del linguaggio Python usiamo il linguaggio C cambia leggermente la sintassi:
@@ -20,7 +25,8 @@ Se invece del linguaggio Python usiamo il linguaggio C cambia leggermente la sin
 ```c
 /* cast in C */
 int x_int = 3;
-double x_double = (double)x_int;  /* nota le parentesi */
+/* nota le parentesi */
+double x_double = (double)x_int;
 ```
 
 <a href="/activities/2">Torna alla Parte II</a>

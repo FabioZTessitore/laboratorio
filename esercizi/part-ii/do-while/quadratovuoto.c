@@ -33,13 +33,14 @@ int main()
   /* righe intermedie */
   riga = 1;
   while (riga < lato-1) {
-
     putchar('*');
+
     colonna = 1;
     while (colonna < lato-1) {
       putchar(' ');
       colonna++;
     }
+
     putchar('*');
     putchar('\n');
 

@@ -24,7 +24,7 @@ int main()
   c4 = num % 10;
   num /= 10;
 
-  /* salta la terza cifra */
+  /* non memorizza la terza cifra */
   /* c3 = num % 10; */
   num /= 10;
 
@@ -34,7 +34,7 @@ int main()
   c1 = num;
 
   /* output */
-  if (c1==c5 && c2==c4) {
+  if (c1 == c5 && c2 == c4) {
     printf("E' palindromo\n");
   } else {
     printf("Non e' palindromo\n");

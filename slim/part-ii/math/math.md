@@ -48,7 +48,7 @@ int main()
 ```
 CC=gcc
 CFLAGS=-Wall -ansi -pedantic
-LDFLAGS=-lm
+LDLIBS=-lm
 ```
 
 <a href="/activities/2">Torna alla Parte II</a>
