@@ -119,6 +119,7 @@ INSERIRE ESERCIZI
   * [Esercizi](caratteri/esercizio-contalinee.md)
   * [Esercizi](caratteri/esercizio-contaspaziature.md)
   * [Esercizi](caratteri/esercizio-contavocali.md)
+  * [Esercizi](caratteri/esercizio-contacifre.md)
 * [Gestione degli stati](caratteri/stati.md)
 * [Enum](caratteri/enum.md)
   * [Esercizi](caratteri/esercizio-spazimultipli.md)
