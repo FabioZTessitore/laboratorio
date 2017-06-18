@@ -86,18 +86,17 @@
   * [Esercizi](math/esercizio-nepero.md)
   * [Esercizi](math/esercizio-exp.md)
 
-
-
-
-  
-
 ## I cicli in Python
 * [Il ciclo while](py-cicli/while.md)
 * [La funzione range()](py-cicli/range.md)
 * [Il ciclo for](py-cicli/for.md)
-#########################################################
-INSERIRE ESERCIZI
-#########################################################
+  * [Esercizi](py-cicli/liste.md)
+  * [Esercizi](py-cicli/tabelline.md)
+  * [Esercizi](py-cicli/pigreco.md)
+
+
+
+
 
 ## Semplici animazioni
 * [Calcolare il tempo trascorso](animazioni/tempo.md)
