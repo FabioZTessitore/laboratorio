@@ -32,12 +32,13 @@
 
 **Think Python: How to Think Like a Computer Scientist, <a href="http://www.greenteapress.com/thinkpython/html/index.html">www.greenteapress.com/thinkpython/html/index.html</a>**
 
-* <a href="http://www.greenteapress.com/thinkpython/html/thinkpython002.html">Chapter 1  The way of the program</a>
-* <a href="http://www.greenteapress.com/thinkpython/html/thinkpython003.html">Chapter 2  Variables, expressions and statements</a>
-* <a href="http://www.greenteapress.com/thinkpython/html/thinkpython006.html">Chapter 5  Conditionals and recursion</a> (Fino a 5.7)
-* <a href="http://www.greenteapress.com/thinkpython/html/thinkpython011.html">Chapter 10  Lists</a> (fino al 10.2)
-* <a href="http://www.greenteapress.com/thinkpython/html/thinkpython013.html">Chapter 12  Tuples</a> (fino al 12.2)
-* <a href="http://www.greenteapress.com/thinkpython/html/thinkpython015.html">Chapter 14  Files</a> (fino al 14.3)
+* <a href="http://www.greenteapress.com/thinkpython/html/thinkpython002.html">Chapter 1 The way of the program</a>
+* <a href="http://www.greenteapress.com/thinkpython/html/thinkpython003.html">Chapter 2 Variables, expressions and statements</a>
+* <a href="http://www.greenteapress.com/thinkpython/html/thinkpython006.html">Chapter 5 Conditionals and recursion</a> (Fino a 5.7)
+* <a href="http://www.greenteapress.com/thinkpython/html/thinkpython008.html">Chapter 7 Iteration</a>
+* <a href="http://www.greenteapress.com/thinkpython/html/thinkpython011.html">Chapter 10 Lists</a> (fino al 10.2)
+* <a href="http://www.greenteapress.com/thinkpython/html/thinkpython013.html">Chapter 12 Tuples</a> (fino al 12.2)
+* <a href="http://www.greenteapress.com/thinkpython/html/thinkpython015.html">Chapter 14 Files</a> (fino al 14.3)
 
 ---
 
@@ -45,6 +46,8 @@
 
 * Chap 1: Getting Started, The Game over Program
 * Chap 2: Types, Variables, and Simple I/O, The Useless Trivia Program
+* Chap 3: Branching, while Loops, and Program Planning: The Guess My Number Game
+* Chap 4: for Loops, Strings, and Tuples: The Word Jumble Game
 
 ---
 

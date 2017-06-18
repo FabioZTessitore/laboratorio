@@ -32,9 +32,17 @@
 
 **Think Python: How to Think Like a Computer Scientist, <a href="http://www.greenteapress.com/thinkpython/html/index.html">www.greenteapress.com/thinkpython/html/index.html</a>**
 
-* <a href="http://www.greenteapress.com/thinkpython/html/thinkpython013.html">Chapter 12  Tuples</a> (fino al 12.2)
-* <a href="http://www.greenteapress.com/thinkpython/html/thinkpython011.html">Chapter 10  Lists</a> (fino al 10.2)
-* <a href="http://www.greenteapress.com/thinkpython/html/thinkpython015.html">Chapter 14  Files</a> (fino al 14.3)
+* <a href="http://www.greenteapress.com/thinkpython/html/thinkpython013.html">Chapter 12 Tuples</a> (fino al 12.2)
+* <a href="http://www.greenteapress.com/thinkpython/html/thinkpython011.html">Chapter 10 Lists</a> (fino al 10.2)
+* <a href="http://www.greenteapress.com/thinkpython/html/thinkpython015.html">Chapter 14 Files</a> (fino al 14.3)
+* <a href="http://www.greenteapress.com/thinkpython/html/thinkpython008.html">Chapter 7 Iteration</a>
+
+---
+
+**M. Dawson, *Python Programming for the Absolute Beginner*, Premier Press, 2003**
+
+* Chap 3: Branching, while Loops, and Program Planning: The Guess My Number Game
+* Chap 4: for Loops, Strings, and Tuples: The Word Jumble Game
 
 ---
 
