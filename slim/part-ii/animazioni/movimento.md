@@ -6,6 +6,9 @@ Movimento di un carattere
 Ora possiamo impostare una semplice animazione: facciamo spostare un carattere
 sullo schermo.
 
+Per le seguenti esercitazioni utilizzeremo la tecnica di mantenere costante
+l'intervallo tra un frame e l'altro.
+
 Le informazioni di cui abbiamo bisogno sono:
 
 * il carattere da stampare
@@ -26,7 +29,8 @@ per farle tutte.
 
 Il nostro compito è quello di calcolare il tempo impiegato dal sistema
 per fare tutte queste operazioni e poi impostare un ritardo in modo tale
-che i frame siano distanziati sempre di 100 msec.
+che i frame siano distanziati sempre di 100 msec, a prescindere dalla
+velocità del sistema.
 
 ##### Il codice
 
@@ -38,7 +42,7 @@ int ch = '*';
 
 La posizione sarà indicata dal numero di riga e dal numero di colonna
 (sono `double` per tenere memoria delle posizioni intermedie, verranno
-arrotondati a int in fase di stampa):
+arrotondati a `int` in fase di stampa):
 
 ```c
 double row = 3.;
@@ -66,13 +70,13 @@ double dt = 1. / (double)FPS;
 Il nucleo del programma sarà allora composto dalle istruzioni per la generazione
 e visualizzazione del frame.
 
-* calcola istante iniziale
+* determina l'istante iniziale
 * cancella il cursore alla vecchia posizione
 * aggiorna la posizione del cursore
 * stampa il cursore
-* calcola istante finale
+* determina l'istante finale
 * calcola il tempo trascorso
-* attende fino a 100 msec
+* attende fino a 100 msec (tenendo conto di quanto già trascorso)
 
 ```c
 struct timespec start, end;
@@ -99,7 +103,7 @@ start_f = start.tv_sec * 1000. + start.tv_nsec / 1.e6;
 end_f = end.tv_sec * 1000. + end.tv_nsec / 1.e6;
 ritardo_f = dt - (end_f - start_f);
 ritardo.tv_sec = (int)(ritardo_f / 1000.);
-ritardo.tv_nsec = (int)()(ritardo_f - ritardo.tv_sec) * 1000. * 1000.);
+ritardo.tv_nsec = (int)((ritardo_f - ritardo.tv_sec) * 1000. * 1000.);
 nanosleep(&ritardo, NULL);
 ```
 

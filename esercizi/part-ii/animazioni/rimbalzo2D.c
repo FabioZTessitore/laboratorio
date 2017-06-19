@@ -4,11 +4,8 @@
 
 /* Istruzioni per la compilazione e l'esecuzione:
  *
- * Compilare:
- * $ gcc -c rimbalzo2D.c -o rimbalzo2D.o
- *
- * Link:
- * $ gcc rimbalzo2D.o -o rimbalzo2D -lncurses
+ * Compilazione e link:
+ * $ make rimbalzo2D
  *
  * Eseguire:
  * $ ./rimbalzo2D
@@ -34,8 +31,10 @@ int main()
 
   /* velocita' verticale (righe percorse ogni secondo) */
   int vel_r = 10;
+  int direz_r = 1;  /* 1 destra, -1 sinistra */
   /* velocita' orizzontale (colonne percorse ogni secondo) */
   int vel_c = 10;
+  int direz_c = 1;  /* 1 basso, -1 alto */
 
   int FPS = 10;
   double dt = 1. / (double)FPS;
@@ -44,6 +43,7 @@ int main()
   struct timespec start_anim;
   double start_anim_f;
   double anim_length = 0.;
+  double durata = 30000.;  /* 30 sec */
 
   /* inizio e fine frame */
   struct timespec start, end;
@@ -59,8 +59,8 @@ int main()
   clock_gettime(CLOCK_MONOTONIC, &start_anim);
   start_anim_f = start_anim.tv_sec * 1000. + start_anim.tv_nsec / 1.e6;
 
-  /* continua fino a 5 sec */
-  while (anim_length < 5000.) {
+  /* continua fino a 30 sec */
+  while (anim_length < durata) {
     /* istante iniziale */
     clock_gettime(CLOCK_MONOTONIC, &start);
 
@@ -72,21 +72,21 @@ int main()
       mvaddch((int)row, (int)col, ' ');
 
     /* calcola nuova posizione */
-    col += vel_c * dt;
+    col += direz_c * vel_c * dt;
     if ((int)col >= COLS) {
       col = COLS-1;
-      vel_c = -vel_c;
+      direz_c = -direz_c;
     } else if ((int)col < 0) {
       col = 0;
-      vel_c = -vel_c;
+      direz_c = -direz_c;
     }
-    row += vel_r * dt;
+    row += direz_r * vel_r * dt;
     if ((int)row >= ROWS) {
       row = ROWS-1;
-      vel_r = -vel_r;
+      direz_r = -direz_r;
     } else if ((int)row < 0) {
       row = 0;
-      vel_r = -vel_r;
+      direz_r = -direz_r;
     }
 
     /* stampa */
@@ -108,10 +108,6 @@ int main()
 
     anim_length = end_f - start_anim_f;
   }
-
-  mvprintw(18, 3, "Premi un tasto per terminare");
-  refresh();
-  getch();
 
   endwin();
 

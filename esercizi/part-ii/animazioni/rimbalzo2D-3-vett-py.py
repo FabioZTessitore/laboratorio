@@ -1,10 +1,9 @@
 # rimbalzo2D-3-vett-py.py
 
-# rimbalzo di tre caratteri sullo schermo per 30 sec (con vettori)
+# rimbalzo di tre caratteri sullo schermo per 30 sec
 
 import curses
 import time
-
 
 # caratteri da stampare
 ch = [ '*', '#', '@' ]
@@ -19,12 +18,15 @@ col = [ 3., 7., 18. ]
 # velocita'
 vel_r = [ 10, 5, 15 ]
 vel_c = [ 10, 5, 20 ]
+direz_r = [1, 1, 1]
+direz_c = [1, 1, 1]
 
-FPS = 10
+FPS = 30
 dt = 1. / float(FPS);
 
 # durata animazione
 anim_length = 0.
+durata = 30.  # 30 sec
 
 screen = curses.initscr()
 curses.curs_set(0)
@@ -32,8 +34,8 @@ curses.curs_set(0)
 # inizio animazione
 start_anim = time.time()
 
-# continua fino a 5 sec
-while anim_length < 5.:
+# continua fino a 30 sec
+while anim_length < durata:
     # istante iniziale
     start = time.time()
 
@@ -47,21 +49,21 @@ while anim_length < 5.:
 
     # calcola nuova posizione
     for i in range(NCAR):
-        col[i] += vel_c[i] * dt
+        col[i] += direz_c[i] * vel_c[i] * dt
         if int(col[i]) >= COLS:
             col[i] = COLS-1
-            vel_c[i] = -vel_c[i]
+            direz_c[i] = -direz_c[i]
         elif int(col[i]) < 0:
             col[i] = 0
-            vel_c[i] = -vel_c[i]
+            direz_c[i] = -direz_c[i]
 
-        row[i] += vel_r[i] * dt
+        row[i] += direz_r[i] * vel_r[i] * dt
         if int(row[i]) >= ROWS:
             row[i] = ROWS-1
-            vel_r[i] = -vel_r[i]
+            direz_r[i] = -direz_r[i]
         elif int(row[i]) < 0:
             row[i] = 0
-            vel_r[i] = -vel_r[i]
+            direz_r[i] = -direz_r[i]
 
     # stampa
     for i in range(NCAR):
@@ -78,9 +80,5 @@ while anim_length < 5.:
     time.sleep(ritardo)
 
     anim_length = end - start_anim
-
-screen.addstr(18, 3, "Premi un tasto per terminare")
-screen.refresh()
-screen.getch()
 
 curses.endwin()

@@ -94,10 +94,6 @@
   * [Esercizi](py-cicli/tabelline.md)
   * [Esercizi](py-cicli/pigreco.md)
 
-
-
-
-
 ## Semplici animazioni
 * [Calcolare il tempo trascorso](animazioni/tempo.md)
 * [Movimento di un carattere](animazioni/movimento.md)
@@ -109,6 +105,11 @@
 * [La libreria time del Python](animazioni/time.md)
 * [Sleeping in Python](animazioni/sleep.md)
   * [Esercizi](animazioni/esercizio-rimbalzo2D-3-vett-py.md)
+
+
+
+
+
 
 ## Controllo del flusso
 * [break e continue](flusso/break-continue.md)

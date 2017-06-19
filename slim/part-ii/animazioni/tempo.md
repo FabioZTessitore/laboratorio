@@ -23,7 +23,7 @@ clock_gettime(CLOCK_MONOTONIC, &end);
 ```
 
 Siccome `start` e `end` sono di tipo `struct timespec` abbiamo gli istanti
-iniziale e finale in termini di secondi e nanosecondi trascorsi.
+iniziale e finale in termini di secondi e nanosecondi.
 
 La prima cosa da fare è convertire in un unico valore, ad esempio in millisecondi:
 
@@ -42,7 +42,8 @@ printf("tempo trascorso: %.3f (msec)\n", end_f - start_f);
 ##### Esempio completo
 
 Nell'esempio che segue viene utilizzata una terza `struct timespec` per
-specificare un intervallo di attesa.
+specificare un intervallo di attesa, in modo da controllare che il tempo
+trascorso sia proprio quello specificato.
 
 > tempo.c
 
@@ -68,6 +69,7 @@ int main()
   /* istante finale */
   clock_gettime(CLOCK_MONOTONIC, &end);
 
+  /* calola il tempo trascorso, deve essere 700 msec */
   printf("start sec:  %ld\n", start.tv_sec);
   printf("start nsec: %ld\n", start.tv_nsec);
   printf("end sec:    %ld\n", end.tv_sec);

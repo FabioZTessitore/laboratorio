@@ -4,11 +4,8 @@
 
 /* Istruzioni per la compilazione e l'esecuzione:
  *
- * Compilare:
- * $ gcc -c rimbalzo.c -o rimbalzo.o
- *
- * Link:
- * $ gcc rimbalzo.o -o rimbalzo -lncurses
+ * Compilazione e link:
+ * $ make rimbalzo
  *
  * Eseguire:
  * $ ./rimbalzo
@@ -34,6 +31,7 @@ int main()
 
   /* velocita' (colonne percorse ogni secondo) */
   int vel = 10;
+  int direz = 1;  /* 1 destra, -1 sinistra */
 
   int FPS = 10;
   double dt = 1. / (double)FPS;
@@ -42,6 +40,7 @@ int main()
   struct timespec start_anim;
   double start_anim_f;
   double anim_length = 0.;
+  double durata = 30000.;  /* 30 sec */
 
   /* inizio e fine frame */
   struct timespec start, end;
@@ -57,8 +56,8 @@ int main()
   clock_gettime(CLOCK_MONOTONIC, &start_anim);
   start_anim_f = start_anim.tv_sec * 1000. + start_anim.tv_nsec / 1.e6;
 
-  /* continua fino a 5 sec */
-  while (anim_length < 5000.) {
+  /* continua fino a 30 sec */
+  while (anim_length < durata) {
     /* istante iniziale */
     clock_gettime(CLOCK_MONOTONIC, &start);
 
@@ -70,13 +69,13 @@ int main()
       mvaddch((int)row, (int)col, ' ');
 
     /* calcola nuova posizione */
-    col += vel * dt;
+    col += direz * vel * dt;
     if ((int)col >= COLS) {
       col = COLS-1;
-      vel = -vel;
+      direz = -direz;
     } else if ((int)col < 0) {
       col = 0;
-      vel = -vel;
+      direz = -direz;
     }
 
     /* stampa */
@@ -98,10 +97,6 @@ int main()
 
     anim_length = end_f - start_anim_f;
   }
-
-  mvprintw(18, 3, "Premi un tasto per terminare");
-  refresh();
-  getch();
 
   endwin();
 

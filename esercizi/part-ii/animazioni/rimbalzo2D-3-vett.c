@@ -4,11 +4,8 @@
 
 /* Istruzioni per la compilazione e l'esecuzione:
  *
- * Compilare:
- * $ gcc -c rimbalzo2D-3-vett.c -o rimbalzo2D-3-vett.o
- *
- * Link:
- * $ gcc rimbalzo2D-3-vett.o -o rimbalzo2D-3-vett -lncurses
+ * Compilazione e link:
+ * $ make rimbalzo2D-3-vett
  *
  * Eseguire:
  * $ ./rimbalzo2D-3-vett
@@ -38,6 +35,8 @@ int main()
   /* velocita' */
   int vel_r[] = { 10, 5, 15 };
   int vel_c[] = { 10, 5, 20 };
+  int direz_r[] = { 1, 1, 1 };
+  int direz_c[] = { 1, 1, 1 };
 
   int FPS = 10;
   double dt = 1. / (double)FPS;
@@ -46,6 +45,7 @@ int main()
   struct timespec start_anim;
   double start_anim_f;
   double anim_length = 0.;
+  double durata = 30000.;  /* 30 sec */
 
   /* inizio e fine frame */
   struct timespec start, end;
@@ -61,8 +61,8 @@ int main()
   clock_gettime(CLOCK_MONOTONIC, &start_anim);
   start_anim_f = start_anim.tv_sec * 1000. + start_anim.tv_nsec / 1.e6;
 
-  /* continua fino a 5 sec */
-  while (anim_length < 5000.) {
+  /* continua fino a 30 sec */
+  while (anim_length < durata) {
     /* istante iniziale */
     clock_gettime(CLOCK_MONOTONIC, &start);
 
@@ -77,21 +77,21 @@ int main()
 
     /* calcola nuova posizione */
     for (i = 0; i < NCAR; i++) {
-      col[i] += vel_c[i] * dt;
+      col[i] += direz_c[i] * vel_c[i] * dt;
       if ((int)col[i] >= COLS) {
         col[i] = COLS-1;
-        vel_c[i] = -vel_c[i];
+        direz_c[i] = -direz_c[i];
       } else if ((int)col[i] < 0) {
         col[i] = 0;
-        vel_c[i] = -vel_c[i];
+        direz_c[i] = -direz_c[i];
       }
-      row[i] += vel_r[i] * dt;
+      row[i] += direz_r[i] * vel_r[i] * dt;
       if ((int)row[i] >= ROWS) {
         row[i] = ROWS-1;
-        vel_r[i] = -vel_r[i];
+        direz_r[i] = -direz_r[i];
       } else if ((int)row[i] < 0) {
         row[i] = 0;
-        vel_r[i] = -vel_r[i];
+        direz_r[i] = -direz_r[i];
       }
     }
 
@@ -115,10 +115,6 @@ int main()
 
     anim_length = end_f - start_anim_f;
   }
-
-  mvprintw(18, 3, "Premi un tasto per terminare");
-  refresh();
-  getch();
 
   endwin();
 

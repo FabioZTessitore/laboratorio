@@ -4,11 +4,8 @@
 
 /* Istruzioni per la compilazione e l'esecuzione:
  *
- * Compilare:
- * $ gcc -c rimbalzo2D-3.c -o rimbalzo2D-3.o
- *
- * Link:
- * $ gcc rimbalzo2D-3.o -o rimbalzo2D-3 -lncurses
+ * Compilazione e link:
+ * $ make rimbalzo2D-3
  *
  * Eseguire:
  * $ ./rimbalzo2D-3
@@ -41,10 +38,16 @@ int main()
   /* velocita' */
   int vel1_r = 10;
   int vel1_c = 10;
+  int direz1_r = 1;
+  int direz1_c = 1;
   int vel2_r = 5;
   int vel2_c = 5;
+  int direz2_r = 1;
+  int direz2_c = 1;
   int vel3_r = 15;
   int vel3_c = 20;
+  int direz3_r = 1;
+  int direz3_c = 1;
 
   int FPS = 10;
   double dt = 1. / (double)FPS;
@@ -53,6 +56,7 @@ int main()
   struct timespec start_anim;
   double start_anim_f;
   double anim_length = 0.;
+  double durata = 30000.;  /* 30 sec */
 
   /* inizio e fine frame */
   struct timespec start, end;
@@ -68,8 +72,8 @@ int main()
   clock_gettime(CLOCK_MONOTONIC, &start_anim);
   start_anim_f = start_anim.tv_sec * 1000. + start_anim.tv_nsec / 1.e6;
 
-  /* continua fino a 5 sec */
-  while (anim_length < 5000.) {
+  /* continua fino a 30 sec */
+  while (anim_length < durata) {
     /* istante iniziale */
     clock_gettime(CLOCK_MONOTONIC, &start);
 
@@ -85,53 +89,53 @@ int main()
       mvaddch((int)row3, (int)col3, ' ');
 
     /* calcola nuova posizione */
-    col1 += vel1_c * dt;
+    col1 += direz1_c * vel1_c * dt;
     if ((int)col1 >= COLS) {
       col1 = COLS-1;
-      vel1_c = -vel1_c;
+      direz1_c = -direz1_c;
     } else if ((int)col1 < 0) {
       col1 = 0;
-      vel1_c = -vel1_c;
+      direz1_c = -direz1_c;
     }
-    row1 += vel1_r * dt;
+    row1 += direz1_r * vel1_r * dt;
     if ((int)row1 >= ROWS) {
       row1 = ROWS-1;
-      vel1_r = -vel1_r;
+      direz1_r = -direz1_r;
     } else if ((int)row1 < 0) {
       row1 = 0;
-      vel1_r = -vel1_r;
+      direz1_r = -direz1_r;
     }
-    col2 += vel2_c * dt;
+    col2 += direz2_c * vel2_c * dt;
     if ((int)col2 >= COLS) {
       col2 = COLS-1;
-      vel2_c = -vel2_c;
+      direz2_c = -direz2_c;
     } else if ((int)col2 < 0) {
       col2 = 0;
-      vel2_c = -vel2_c;
+      direz2_c = -direz2_c;
     }
-    row2 += vel2_r * dt;
+    row2 += direz2_r * vel2_r * dt;
     if ((int)row2 >= ROWS) {
       row2 = ROWS-1;
-      vel2_r = -vel2_r;
+      direz2_r = -direz2_r;
     } else if ((int)row2 < 0) {
       row2 = 0;
-      vel2_r = -vel2_r;
+      direz2_r = -direz2_r;
     }
-    col3 += vel3_c * dt;
+    col3 += direz3_c * vel3_c * dt;
     if ((int)col3 >= COLS) {
       col3 = COLS-1;
-      vel3_c = -vel3_c;
+      direz3_c = -direz3_c;
     } else if ((int)col3 < 0) {
       col3 = 0;
-      vel3_c = -vel3_c;
+      direz3_c = -direz3_c;
     }
-    row3 += vel3_r * dt;
+    row3 += direz3_r * vel3_r * dt;
     if ((int)row3 >= ROWS) {
       row3 = ROWS-1;
-      vel3_r = -vel3_r;
+      direz3_r = -direz3_r;
     } else if ((int)row3 < 0) {
       row3 = 0;
-      vel3_r = -vel3_r;
+      direz3_r = -direz3_r;
     }
 
     /* stampa */
@@ -157,10 +161,6 @@ int main()
 
     anim_length = end_f - start_anim_f;
   }
-
-  mvprintw(18, 3, "Premi un tasto per terminare");
-  refresh();
-  getch();
 
   endwin();
 
