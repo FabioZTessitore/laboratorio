@@ -106,11 +106,6 @@
 * [Sleeping in Python](animazioni/sleep.md)
   * [Esercizi](animazioni/esercizio-rimbalzo2D-3-vett-py.md)
 
-
-
-
-
-
 ## Controllo del flusso
 * [break e continue](flusso/break-continue.md)
 * [Il costrutto switch](flusso/switch.md)
@@ -131,6 +126,11 @@
   * [Esercizi](caratteri/esercizio-contaparole.md)
   * [Esercizi](caratteri/esercizio-stampaparole.md)
   * [Esercizi](caratteri/esercizio-eliminacommenti.md)
+
+
+
+
+
 
 ## Bonus - Introduzione ai fogli di stile (CSS)
 * [I fogli di stile](intro-css/css.md)

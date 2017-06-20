@@ -71,7 +71,8 @@ Qui succede qualcosa di interessante. Solo la prima volta il programma resta
 in attesa dell'input. Le successive due chiamate a `getchar()` vengono gestite
 automaticamente.
 
-Il altre parole, ciò che inserisci la prima volta (i caratteri `h`, `i` e `INVIO`)
+In altre parole, ciò che inserisci la prima volta
+(la sequenza di caratteri `h`, `i` e `INVIO`)
 viene memorizzato in un buffer e `getchar()` non fa altro che andare a prendere
 l'input da quel buffer. La prima volta lo trova vuoto e chiede all'utente.
 Le volte successive legge i caratteri rimanenti.
