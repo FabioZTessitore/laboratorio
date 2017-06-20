@@ -7,19 +7,21 @@
 
 int main()
 {
-  int counter;
+  int counter;          /* i numeri da 0 a 255 */
   int n;
   int i;
 
   int current_bit;
   int current_weight;
 
+  /* Intestazione tabella */
   printf("%5s%10s%5s%4s\n", "N", "Bin", "Oct", "Hex");
 
   for (counter = 0; counter < 256; counter++) {
     printf("%5d  ", counter);
 
     /* conversione in binario */
+    /* le cifre vanno stampate da sinistra a destra !!! */
     current_weight = 128;
     n = counter;
     for (i = 0; i < 8; i++) {
