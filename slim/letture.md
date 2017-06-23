@@ -86,9 +86,6 @@
 ---
 
 **HTML Dog, <a href="http://htmldog.com/guides/html/beginner/">HTML Beginner Tutorial</a>**
-
----
-
 **HTML Dog, <a href="http://htmldog.com/guides/css/beginner/">CSS Beginner Tutorial</a>**
 
 ---

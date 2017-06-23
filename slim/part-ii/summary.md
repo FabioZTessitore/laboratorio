@@ -127,11 +127,6 @@
   * [Esercizi](caratteri/esercizio-stampaparole.md)
   * [Esercizi](caratteri/esercizio-eliminacommenti.md)
 
-
-
-
-
-
 ## Bonus - Introduzione ai fogli di stile (CSS)
 * [I fogli di stile](intro-css/css.md)
 * [HTML Dog, CSS Beginner Tutorial](intro-css/tutorial.md)

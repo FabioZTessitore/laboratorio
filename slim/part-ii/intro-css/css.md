@@ -4,7 +4,7 @@ I fogli di stile
 #### I fogli di stile
 
 Mentre l'`HTML` è un linguaggio di Markup che permette
-di strutturare un documento specificando gli elementi,
+di strutturare un documento specificandone gli elementi,
 i *fogli di stile* (**CSS**, Cascading Style Sheet) permettono
 di modificare l'aspetto esteriore della pagina e dei suoi componenti.
 
