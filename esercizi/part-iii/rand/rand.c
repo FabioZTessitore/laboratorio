@@ -1,10 +1,11 @@
 /* rand.c */
 
-/* Estrae 5 numeri compresi nei seguenti intervalli:
+/* Estrae 5 numeri compresi nei seguenti gruppi:
  *
- * a) 2, 4, 6, 8, 10
- * b) 3, 5, 7, 9, 11
- * c) 6, 10, 14, 18, 22
+ * a) 50, 51, 52, 53, 54, 55
+ * b) 2, 4, 6, 8, 10
+ * c) 3, 5, 7, 9, 11
+ * d) 6, 10, 14, 18, 22
  */
 
 #include <stdio.h>
@@ -15,23 +16,31 @@ int main()
 {
   int i;
 
+  /* inizializza generatore numeri pseudocasuali */
   srand(time(NULL));
 
   /* gruppo a) */
   printf("Estrae 5 numeri dal gruppo\n"
+        "a) 50, 51, 52, 53, 54, 55\n");
+  for (i = 0; i < 5; i++) {
+    printf("%d\t", 50 + rand() % 6);
+  }
+
+  /* gruppo b) */
+  printf("\n\nEstrae 5 numeri dal gruppo\n"
         "a) 2, 4, 6, 8, 10\n");
   for (i = 0; i < 5; i++) {
     printf("%d\t", (1 + rand() % 5) * 2);
   }
 
-  /* gruppo b) */
+  /* gruppo c) */
   printf("\n\nEstrae 5 numeri dal gruppo\n"
         "b) 3, 5, 7, 9, 11\n");
   for (i = 0; i < 5; i++) {
     printf("%d\t", (1 + (1 + rand() % 5) * 2));
   }
 
-  /* gruppo c) */
+  /* gruppo d) */
   printf("\n\nEstrae 5 numeri dal gruppo\n"
         "c) 6, 10, 14, 18, 22\n");
   for (i = 0; i < 5; i++) {

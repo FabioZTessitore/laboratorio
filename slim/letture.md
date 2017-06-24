@@ -57,6 +57,7 @@
 * Cap 2: Introduzione alla programmazione in C
 * Cap 3: Lo sviluppo di programmi strutturati in C
 * Cap 4: Il controllo del programma in C
+* Cap 5: Le funzioni in C
 * Cap 6: I vettori in C (introduzione)
 * Cap 7: I puntatori in C (introduzione)
 * Cap 8: I caratteri e le stringhe in C (introduzione)
@@ -71,6 +72,7 @@
 * Chap 1: A Tutorial Introduction
 * Chap 2: Types, Operators, and Expressions
 * Chap 3: Control Flow
+* Chap 4: Functions and Program Structure
 
 ---
 
