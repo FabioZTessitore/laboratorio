@@ -1,6 +1,6 @@
-Generazione di numeri pseudocasuali
+Generazione di numeri pseudocasuali in C
 
-#### Generazione di numeri pseudocasuali
+#### Generazione di numeri pseudocasuali in C
 
 Un computer è una macchina deterministica, quindi la generazione di numeri
 casuali non è un problema semplice.
@@ -83,14 +83,14 @@ Da 7 a 17 sono 10 valori. Possiamo ottenere un numero compreso tra 0 e 9 (10 val
 in maniera molto semplice effettuando una operazione di *resto* per 10.
 
 ```c
-/* num è compreso tra 0 e 9 */
+/* num e' compreso tra 0 e 9 */
 int num = rand() % 10;
 ```
 
 A questo punto non resta altro da fare che traslare di 7:
 
 ```c
-/* num è compreso tra 7 e 17 (escluso) */
+/* num e' compreso tra 7 e 17 (escluso) */
 int num = 7 + rand() % 10;
 ```
 
@@ -98,7 +98,7 @@ In altre parole se `minimo` e `massimo` sono i valori che delimitano il nostro
 intervallo (`minimo` incluso e `massimo` escluso), la formula che cerchiamo è:
 
 ```c
-/* num è compreso tra 'minimo' e 'massimo' (escluso) */
+/* num e' compreso tra 'minimo' e 'massimo' (escluso) */
 int num = minimo + rand() % (massimo - minimo);
 ```
 
