@@ -127,6 +127,10 @@
   * [Esercizi](caratteri/esercizio-stampaparole.md)
   * [Esercizi](caratteri/esercizio-eliminacommenti.md)
 
+## Forza bruta e bisezione
+* [Forza bruta](ricerca/forza-bruta.md)
+* [Bisezione](ricerca/bisezione.md)
+
 ## Bonus - Introduzione ai fogli di stile (CSS)
 * [I fogli di stile](intro-css/css.md)
 * [HTML Dog, CSS Beginner Tutorial](intro-css/tutorial.md)
