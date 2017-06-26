@@ -6,11 +6,11 @@
 
 ## Funzioni
 * [Le funzioni in C](funzioni/funzioni.md)
+* [Composizione di funzioni](funzioni/composizione.md)
+* [Funzioni che accettano parametri](funzioni/parametri.md)
+* [Funzioni che ritornano valori](funzioni/ritorno.md)
+* [Il passaggio per valore](funzioni/passaggio-valore.md)
 
-
-Funzioni composte (quadrato: stampa linea di asterischi e stampa quadrato)
-Parametri (quadrato n)
-Ritorno (operazioni e menu switch)
 Esercizi (tanti)
 Funzioni Python
 Esercizi
@@ -22,6 +22,5 @@ Esercizi
 Moduli Python
 Esercizi
 
-da caricare
 ## Letture consigliate
 * [Letture consigliate](letture.md)
