@@ -14,6 +14,7 @@
   * [Esercizi](funzioni/esercizio-conversioni2.md)
   * [Esercizi](funzioni/esercizio-aree.md)
   * [Esercizi](funzioni/esercizio-ipotenusa.md)
+  * [Esercizi](funzioni/esercizio-invertecifre.md)
 
 
 
