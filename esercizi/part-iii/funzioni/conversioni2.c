@@ -4,8 +4,8 @@
 
 /* Istruzioni per la compilazione ed esecuzione:
  *
- * $ make conversioni
- * $ ./conversioni
+ * $ make conversioni2
+ * $ ./conversioni2
  */
 
 #include <stdio.h>
