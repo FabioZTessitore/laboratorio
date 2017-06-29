@@ -10,6 +10,11 @@
 * [Funzioni che accettano parametri](funzioni/parametri.md)
 * [Funzioni che ritornano valori](funzioni/ritorno.md)
 * [Il passaggio per valore](funzioni/passaggio-valore.md)
+  * [Esercizi](funzioni/esercizio-conversioni.md)
+  * [Esercizi](funzioni/esercizio-conversioni2.md)
+
+
+
 
 Esercizi (tanti)
 Funzioni Python
