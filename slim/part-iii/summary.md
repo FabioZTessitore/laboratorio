@@ -13,6 +13,7 @@
   * [Esercizi](funzioni/esercizio-conversioni.md)
   * [Esercizi](funzioni/esercizio-conversioni2.md)
   * [Esercizi](funzioni/esercizio-aree.md)
+  * [Esercizi](funzioni/esercizio-ipotenusa.md)
 
 
 
