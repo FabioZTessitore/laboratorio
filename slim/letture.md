@@ -34,7 +34,9 @@
 
 * <a href="http://www.greenteapress.com/thinkpython/html/thinkpython002.html">Chapter 1 The way of the program</a>
 * <a href="http://www.greenteapress.com/thinkpython/html/thinkpython003.html">Chapter 2 Variables, expressions and statements</a>
+* <a href="http://www.greenteapress.com/thinkpython/html/thinkpython004.html">Chapter 3 Functions</a>
 * <a href="http://www.greenteapress.com/thinkpython/html/thinkpython006.html">Chapter 5 Conditionals and recursion</a> (Fino a 5.7)
+* <a href="http://www.greenteapress.com/thinkpython/html/thinkpython007.html">Chapter 6 Fruitful functions</a>
 * <a href="http://www.greenteapress.com/thinkpython/html/thinkpython008.html">Chapter 7 Iteration</a>
 * <a href="http://www.greenteapress.com/thinkpython/html/thinkpython011.html">Chapter 10 Lists</a> (fino al 10.2)
 * <a href="http://www.greenteapress.com/thinkpython/html/thinkpython013.html">Chapter 12 Tuples</a> (fino al 12.2)

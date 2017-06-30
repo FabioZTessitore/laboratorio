@@ -15,13 +15,11 @@
   * [Esercizi](funzioni/esercizio-aree.md)
   * [Esercizi](funzioni/esercizio-ipotenusa.md)
   * [Esercizi](funzioni/esercizio-invertecifre.md)
+* [Le funzioni in Python](funzioni/funzioni-py.md)
+* [Parametri e ritorno](funzioni/funzioni-py2.md)
+  * [Esercizi](funzioni/esercizio-distanza.md)
 
 
-
-
-Esercizi (tanti)
-Funzioni Python
-Esercizi
 ## Regole di compilazione
 * Moduli
 * [Regole di compilazione](make2/compilazione.md)
@@ -29,6 +27,8 @@ Esercizi
 Esercizi
 Moduli Python
 Esercizi
+
+Ricorsione
 
 ## Letture consigliate
 * [Letture consigliate](letture.md)
