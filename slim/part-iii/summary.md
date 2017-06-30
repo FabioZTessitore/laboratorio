@@ -19,16 +19,21 @@
 * [Parametri e ritorno](funzioni/funzioni-py2.md)
   * [Esercizi](funzioni/esercizio-distanza.md)
 
+## Moduli
+* [Regole di compilazione](make/compilazione.md)
+* [Dividere il programma in moduli](make/moduli.md)
+  * [Esercizi](make/esercizio-random.md)
 
-## Regole di compilazione
-* Moduli
-* [Regole di compilazione](make2/compilazione.md)
-* modulo random?
-Esercizi
+
+
 Moduli Python
+Esercizi py
+
+Moduli
 Esercizi
 
 Ricorsione
+Esercizi
 
 ## Letture consigliate
 * [Letture consigliate](letture.md)
