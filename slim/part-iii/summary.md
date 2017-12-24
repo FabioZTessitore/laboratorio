@@ -10,16 +10,29 @@
 * [Funzioni che accettano parametri](funzioni/parametri.md)
 * [Funzioni che ritornano valori](funzioni/ritorno.md)
 * [Il passaggio per valore](funzioni/passaggio-valore.md)
+  * [Esercizi](funzioni/esercizio-conversioni.md)
+  * [Esercizi](funzioni/esercizio-conversioni2.md)
+  * [Esercizi](funzioni/esercizio-aree.md)
+  * [Esercizi](funzioni/esercizio-ipotenusa.md)
+  * [Esercizi](funzioni/esercizio-invertecifre.md)
+* [Le funzioni in Python](funzioni/funzioni-py.md)
+* [Parametri e ritorno](funzioni/funzioni-py2.md)
+  * [Esercizi](funzioni/esercizio-distanza.md)
 
-Esercizi (tanti)
-Funzioni Python
-Esercizi
-## Regole di compilazione
-* Moduli
-* [Regole di compilazione](make2/compilazione.md)
-* modulo random?
-Esercizi
+## Moduli
+* [Regole di compilazione](make/compilazione.md)
+* [Dividere il programma in moduli](make/moduli.md)
+  * [Esercizi](make/esercizio-random.md)
+
+
+
 Moduli Python
+Esercizi py
+
+Moduli
+Esercizi
+
+Ricorsione
 Esercizi
 
 ## Letture consigliate
