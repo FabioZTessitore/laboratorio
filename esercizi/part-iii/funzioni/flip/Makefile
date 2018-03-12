@@ -9,4 +9,4 @@ main.o: main.c random.h
 
 .PHONY: clean
 clean:
-	rm -f *.o flip
+	rm -f *.o main
