@@ -27,6 +27,8 @@ int main()
   /* numero da convertire */
   int num = 0;
 
+  printf("Conversione da decimale a binario, ottale ed esadecimale\n\n");
+
   do {
     printf("Inserisci il numero da convertire (0-255): ");
     scanf("%d", &num);
@@ -62,10 +64,10 @@ int main()
 void menu()
 {
   printf("\nScegli la base:\n"
-        "1) Converti in binario\n"
-        "2) Converti in ottale\n"
-        "3) Converti in esadecimale\n"
-        "Scegli: ");
+        "1) Binario\n"
+        "2) Ottale\n"
+        "3) Esadecimale\n\n"
+        "Scelta: ");
 }
 
 /* converte numeri decimali
