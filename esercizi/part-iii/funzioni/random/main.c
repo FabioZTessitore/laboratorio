@@ -48,7 +48,7 @@ void genera_e_stampa_numeri(int quanti, int min, int max)
 {
   int i;
 
-  printf("Cinque numeri compresi tra %d e %d:\n", min, max);
+  printf("\n%d numeri compresi tra %d e %d:\n", quanti, min, max);
   for (i = 0; i < quanti; i++) {
     printf("%d\n", random_between(min, max));
   }
