@@ -16,6 +16,7 @@ int main()
 
   guess_init();
 
+
   do {
     guess_header(min, max);
 
@@ -26,12 +27,13 @@ int main()
     do {
       printf("? ");
       scanf("%d", &guess);
-
-      while ((temp=getchar()) != '\n')
-        ;
     } while (guess_check(numero, guess) != 0);
 
-    /* read the answer */
+    /* clean the buffer before getchar() */
+    while ((temp=getchar()) != '\n')
+      ;
+
+    /* play again? */
     do {
       printf("\n? ");
       ans = getchar();
@@ -40,10 +42,11 @@ int main()
         /* clear the buffer */
         while ((temp=getchar()) != '\n')
           ;
+        printf("Would you like to play again (y or n)? ");
       }
     } while (ans != 'y' && ans != 'n');
 
-  } while (ans=='y');
+  } while (ans == 'y');
 
   return 0;
 }
