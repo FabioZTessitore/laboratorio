@@ -6,8 +6,11 @@ N_ANSWERS = 4
 
 def estrai_cifra():
     """
-        >>> c = estrai_cifra()
-        >>> c >= 0 and c < 10
+        >>> from functools import reduce
+        >>> cifre = [estrai_cifra() for i in range(1000)]
+        >>> inRange = [c >= 0 and c < 10 for c in cifre]
+        >>> allInRange = reduce(lambda x, y: x and y, inRange)
+        >>> allInRange
         True
     """
     return random.randrange(0, 10)
@@ -15,8 +18,11 @@ def estrai_cifra():
 
 def estrai_risposta():
     """
-        >>> c = estrai_risposta()
-        >>> c >= 0 and c < N_ANSWERS
+        >>> from functools import reduce
+        >>> risposte = [estrai_risposta() for i in range(1000)]
+        >>> inRange = [r >= 0 and r < N_ANSWERS for r in risposte]
+        >>> allInRange = reduce(lambda x, y: x and y, inRange)
+        >>> allInRange
         True
     """
     return random.randrange(0, N_ANSWERS)
