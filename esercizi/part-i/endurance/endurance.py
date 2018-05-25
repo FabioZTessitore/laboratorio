@@ -1,11 +1,11 @@
-# tempo_volo.py
+# endurance.py
 
 # determinare la durata massima di volo conoscendo
 # la quantita' di carburante ed il consumo orario
 
 # esempio di output
 #
-# Tempo di Volo
+# Endurance
 # Determina la durata massima di volo conoscendo
 # la quantita' di carburante ed il consumo orario
 #
@@ -14,20 +14,20 @@
 #
 # Tempo di volo: 4 h 33 min 45 sec
 
-print "Tempo di Volo"
-print "Determina la durata massima di volo conoscendo"
-print "la quantita' di carburante ed il consumo orario\n"
+print("Endurance")
+print("Determina la durata massima di volo conoscendo")
+print("la quantita' di carburante ed il consumo orario\n")
 
-carburante_str = raw_input("Carburante (in galloni): ")
+carburante_str = input("Carburante (in galloni): ")
 carburante = float(carburante_str)
 
-consumo_h_str = raw_input("Consumo Orario (in galloni/h): ")
+consumo_h_str = input("Consumo Orario (in galloni/h): ")
 consumo_h = float(consumo_h_str)
 
 if carburante < 0:
-    print "La quantita' di carburante non puo' essere negativa!"
+    print("La quantita' di carburante non puo' essere negativa!")
 elif consumo_h <= 0:
-    print "Il consumo orario deve essere positivo!"
+    print("Il consumo orario deve essere positivo!")
 else:
     # tempo di volo
     t = carburante / consumo_h # h
@@ -47,4 +47,4 @@ else:
     # secondi interi
     secondi = int(t)
 
-    print "Durata volo:", ore, "h", minuti, "min", secondi, "sec"
+    print("Durata volo:", ore, "h", minuti, "min", secondi, "sec")
