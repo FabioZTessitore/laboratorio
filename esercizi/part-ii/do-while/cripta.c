@@ -1,10 +1,14 @@
 /* cripta.c */
 
 /* Legge un intero di quattro cifre.
-   Lo trasforma scambiando ogni cifra con
-   (cifra + 7) % 10.
+   Lo trasforma scambiando ogni cifra con (cifra + 7) % 10.
    Poi scambia la prima cifra con la terza
    e la seconda con la quarta.
+*/
+
+/* Istruzioni per la compilazione e l'esecuzione:
+$ make cripta
+$ ./cripta
 */
 
 #include <stdio.h>

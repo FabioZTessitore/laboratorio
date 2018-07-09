@@ -1,6 +1,11 @@
 /* quadrato.c */
 
-/* Disegnare un quadrato 'pieno' di lato compreso tra 1 e 20 */
+/* Disegna un quadrato 'pieno' di lato compreso tra 1 e 20 */
+
+/* Istruzioni per la compilazione e l'esecuzione:
+$ make quadrato
+$ ./quadrato
+*/
 
 #include <stdio.h>
 
@@ -8,6 +13,9 @@ int main()
 {
   /* input */
   int lato;
+
+  /* carattere utilizzato per il disegno */
+  int car = '*';
 
   /* contatori */
   int riga, colonna;
@@ -27,7 +35,7 @@ int main()
 
     colonna = 0;
     while (colonna < lato) {
-      putchar('*');
+      putchar(car);
       colonna++;
     }
     putchar('\n');

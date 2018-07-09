@@ -1,13 +1,20 @@
 /* quadratovuoto.c */
 
-/* Disegnare un quadrato 'vuoto' di lato compreso tra 1 e 20 */
+/* Disegna un quadrato 'vuoto' di lato compreso tra 1 e 20 */
 
+/* Istruzioni per la compilazione e l'esecuzione:
+$ make quadratovuoto
+$ ./quadratovuoto
+*/
 #include <stdio.h>
 
 int main()
 {
   /* input */
   int lato;
+
+  /* carattere per il disegno */
+  int car = '*';
 
   /* contatori */
   int riga, colonna;
@@ -25,7 +32,7 @@ int main()
   /* prima riga */
   colonna = 0;
   while (colonna < lato) {
-    putchar('*');
+    putchar(car);
     colonna++;
   }
   putchar('\n');
@@ -33,7 +40,7 @@ int main()
   /* righe intermedie */
   riga = 1;
   while (riga < lato-1) {
-    putchar('*');
+    putchar(car);
 
     colonna = 1;
     while (colonna < lato-1) {
@@ -41,7 +48,7 @@ int main()
       colonna++;
     }
 
-    putchar('*');
+    putchar(car);
     putchar('\n');
 
     riga++;
@@ -51,7 +58,7 @@ int main()
   if (lato > 1) {
     colonna = 0;
     while (colonna < lato) {
-      putchar('*');
+      putchar(car);
       colonna++;
     }
     putchar('\n');

@@ -1,13 +1,19 @@
 /* cifra.c */
 
-/* Conta le occorrenze della cifra 7 */
+/* Conta le occorrenze della cifra 7
+ * nel numero dato in input */
+
+/* Istruzioni per la compilazione e l'esecuzione:
+$ make cifra
+$ ./cifra
+*/
 
 #include <stdio.h>
 
 int main()
 {
-  int num;
-  int num_orig;
+  int num;      /* numero in input */
+  int num_orig; /* copia di backup per la stampa finale */
 
   /* cifra corrente */
   int c;

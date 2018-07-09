@@ -1,6 +1,11 @@
 /* palindromi.c */
 
-/* Determinare se un numero di cinque cifre e' palindromo */
+/* Determina se un numero di cinque cifre e' palindromo */
+
+/* Istruzioni per la compilazione e l'esecuzione:
+$ make palindromi
+$ ./palindromi
+*/
 
 #include <stdio.h>
 

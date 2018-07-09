@@ -1,5 +1,13 @@
 /* cerchio.c */
 
+/* stampa diametro, superficie e circonferenza di un cerchio
+ * dato il raggio (f.p.) non negativo */
+
+/* Istruzioni per la compilazione e l'esecuzione:
+$ make cerchio
+$ ./cerchio
+*/
+
 #include <stdio.h>
 
 int main()

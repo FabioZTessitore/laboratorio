@@ -1,5 +1,12 @@
 /* decripta.c */
 
+/* vedi cripta.c */
+
+/* Istruzioni per la compilazione e l'esecuzione:
+$ make decripta
+$ ./decripta
+*/
+
 #include <stdio.h>
 
 int main()

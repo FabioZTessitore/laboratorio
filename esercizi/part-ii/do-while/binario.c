@@ -2,6 +2,11 @@
 
 /* Converte un numero binario in decimale */
 
+/* Istruzioni per la compilazione e l'esecuzione:
+$ make binario
+$ ./binario
+*/
+
 #include <stdio.h>
 
 int main()
@@ -21,6 +26,7 @@ int main()
 
   int is_binary;
 
+  /* input e controllo che sia binario */
   do {
     is_binary = 1;
 
