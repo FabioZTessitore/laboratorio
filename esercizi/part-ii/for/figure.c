@@ -1,5 +1,12 @@
 /* figure.c */
 
+/* Stampa alcune figure mediante utilizzo di cicli for */
+
+/* Istruzioni per la compilazione e l'esecuzione:
+$ make figure
+$ ./figure
+*/
+
 #include <stdio.h>
 
 int main()

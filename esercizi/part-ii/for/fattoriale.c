@@ -7,6 +7,11 @@
  *  1    2    6   24  120
  */
 
+/* Istruzioni per la compilazione e l'esecuzione:
+$ make fattoriale
+$ ./fattoriale
+*/
+
 #include <stdio.h>
 
 int main()

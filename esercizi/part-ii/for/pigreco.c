@@ -1,6 +1,13 @@
 /* pigreco.c */
 
-/* Approssimazione di pi greco */
+/* Approssimazione di pi greco mediante la serie
+ * 4 - 4/3 + 4/5 - 4/7 + 4/9 - 4/11 + ...
+ */
+
+/* Istruzioni per la compilazione e l'esecuzione:
+$ make pigreco
+$ ./pigreco
+*/
 
 #include <stdio.h>
 
@@ -12,7 +19,7 @@ int main()
   int sign = +1;
 
   /* numero di termini della serie da utilizzare */
-  int n_term;
+  int n_term = 0;
 
   int counter;
 

@@ -1,5 +1,12 @@
 /* rombo.c */
 
+/* Disegna un rombo */
+
+/* Istruzioni per la compilazione e l'esecuzione:
+$ make rombo
+$ ./rombo
+*/
+
 #include <stdio.h>
 
 int main()

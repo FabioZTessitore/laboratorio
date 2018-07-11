@@ -3,6 +3,11 @@
 /* Calcola e visualizza la somma degli interi pari da 2 a 30 */
 /* Calcola e visualizza il prodotto dei dispari da 1 a 15 */
 
+/* Istruzioni per la compilazione e l'esecuzione:
+$ make sommaprodotto
+$ ./sommaprodotto
+*/
+
 #include <stdio.h>
 
 int main()

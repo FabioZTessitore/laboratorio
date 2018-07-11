@@ -2,6 +2,11 @@
 
 /* Stampa sequenze di numeri */
 
+/* Istruzioni per la compilazione e l'esecuzione:
+$ make sequenze
+$ ./sequenze
+*/
+
 #include <stdio.h>
 
 int main()
