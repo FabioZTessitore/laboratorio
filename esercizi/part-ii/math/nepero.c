@@ -1,6 +1,14 @@
 /* nepero.c */
 
-/* Approssima il valore di e = 1 + 1/1! + 1/2! + 1/3! + ... */
+/* Approssima il valore di e = 1 + 1/1! + 1/2! + 1/3! + ...
+ * utilizzando prima un numero fisso di termini,
+ * poi finche' varia la terza cifra decimale
+ */
+
+/* Istruzioni per la compilazione e l'esecuzione:
+$ make nepero
+$ ./nepero
+*/
 
 #include <stdio.h>
 
@@ -19,7 +27,7 @@ int main()
 
   printf("Numero di Nepero e\n\n");
 
-  /* calcola 'e' con n termini */
+  /* calcola e con n termini */
   for (counter = 1; counter < n; counter++) {
     fatt *= counter;
     e += 1. / (double)fatt;
