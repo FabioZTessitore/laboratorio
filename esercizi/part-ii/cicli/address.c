@@ -1,6 +1,11 @@
 /* address.c */
 
-/* Puntatori e indirizzi */
+/* Stampa gli indirizzi degli elementi di un vettore */
+
+/* Istruzioni per la compilazione e l'esecuzione:
+$ make address
+$ ./address
+*/
 
 #include <stdio.h>
 

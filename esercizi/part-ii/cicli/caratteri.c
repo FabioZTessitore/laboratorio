@@ -2,6 +2,11 @@
 
 /* stampa i caratteri di una stringa */
 
+/* Istruzioni per la compilazione e l'esecuzione:
+$ make caratteri
+$ ./caratteri
+*/
+
 #include <stdio.h>
 
 int main()

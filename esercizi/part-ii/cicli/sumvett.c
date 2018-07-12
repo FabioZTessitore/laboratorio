@@ -2,6 +2,11 @@
 
 /* Calcola la somma e la media di dieci interi memorizzati in un vettore */
 
+/* Istruzioni per la compilazione e l'esecuzione:
+$ make sumvett
+$ ./sumvett
+*/
+
 #include <stdio.h>
 
 int main()
