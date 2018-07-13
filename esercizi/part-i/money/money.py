@@ -24,19 +24,19 @@ if money < 0:
     print("L'importo non puo' essere negativo!")
 else:
     # biglietti da venti
-    twenty = int(money / 20)
+    twenty = money // 20
 
     # importo rimanente
     money -= twenty * 20
 
     # biglietti da 10
-    ten = int(money / 10)
+    ten = money // 10
 
     # importo rimanente
     money -= ten * 10
 
     # biglietti da 5
-    five = int(money / 5)
+    five = money // 5
 
     # importo rimanente
     money -= five * 5
