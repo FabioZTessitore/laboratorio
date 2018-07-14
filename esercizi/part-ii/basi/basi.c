@@ -3,6 +3,11 @@
 /* Tabella di conversione decimale,
  * binario, ottale, esadecimale */
 
+/* Istruzioni per la compilazione e l'esecuzione:
+$ make basi
+$ ./basi
+*/
+
 #include <stdio.h>
 
 int main()
