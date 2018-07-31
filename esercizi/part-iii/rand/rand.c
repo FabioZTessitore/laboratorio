@@ -8,6 +8,11 @@
  * d) 6, 10, 14, 18, 22
  */
 
+ /* istruzioni per la compilazione e l'esecuzione:
+ $ make rand
+ $ ./rand
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
