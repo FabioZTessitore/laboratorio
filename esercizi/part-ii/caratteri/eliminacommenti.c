@@ -2,6 +2,11 @@
 
 /* elimina i commenti da un file C */
 
+/* istruzioni per la compilazione e l'esecuzione:
+$ make eliminacommenti
+$ ./eliminacommenti < programma.c
+*/
+
 /* Sono presenti vari commenti cosi' da usare il codice stesso per i test */
 
 /* I commenti in C iniziano quando si incontra il carattere '/' seguito da '*',
@@ -142,7 +147,7 @@ int main()
   "Questa stringa contiene un commento\n"
   "/* non sono un vero commento ... */\n"
   "solo a scopo dimostrativo.\n\n"
-  "E anche un carattere 'c'!!!"
+  "E anche un carattere 'c'!"
   "E una \"stringa\"";
 
   while ( (c = getchar()) != EOF ) {

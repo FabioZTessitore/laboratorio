@@ -1,7 +1,12 @@
 /* contaparole.c */
 
 /* conta caratteri, righe e parole dallo stdin
- * (non ammette la presenza di spazi multipli) */
+ * (ipotizza assenza di spazi multipli) */
+
+ /* istruzioni per la compilazione e l'esecuzione:
+ $ make contaparole
+ $ ./contaparole < testo.txt
+ */
 
  /*
  Stati possibili:
@@ -32,7 +37,7 @@
 
 int main()
 {
-  enum STATO { IN, OUT };  /* all'interno e all'esterno di una parola */
+  enum Stato { IN, OUT };
   int stato = OUT;
 
   int c;
@@ -50,7 +55,7 @@ int main()
     /* conta parole */
     if (stato == IN) {
       if (c == ' ' || c == '\n' || c == '\t') stato = OUT;
-      /* else stato continua ad essere IN */
+      /* else: stato continua ad essere IN */
     } else if (stato == OUT) {
       /* ipotizza che non siano possibili
       spazi multipli, quindi inizia una nuova parola */

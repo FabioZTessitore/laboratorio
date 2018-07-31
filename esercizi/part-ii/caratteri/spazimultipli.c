@@ -4,6 +4,11 @@
  * eliminando gli spazi multipli (non tiene conto di tabulazioni)
  */
 
+ /* istruzioni per la compilazione e l'esecuzione:
+ $ make spazimultipli
+ $ ./spazimultipli < testo.txt
+ */
+
 /*
 Stati possibili:
   1)  NORM      stato normale
@@ -21,7 +26,7 @@ SPACE       c==' '      -              -
 
 int main()
 {
-  enum STATO { NORM, SPACE };
+  enum Stato { NORM, SPACE };
   int stato = NORM;
 
   int c;
