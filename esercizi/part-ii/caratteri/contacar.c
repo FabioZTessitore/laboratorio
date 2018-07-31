@@ -4,7 +4,6 @@
 
 /* istruzioni per la compilazione e l'esecuzione:
 $ make contacar
-
 $ ./contacar < testo
 */
 

@@ -3,11 +3,8 @@
 /* conta le vocali (totale) */
 
 /* istruzioni per la compilazione e l'esecuzione:
-
 $ make contavocali
-
 $ ./contavocali < testo.txt
-
 */
 
 #include <stdio.h>
@@ -15,6 +12,7 @@ $ ./contavocali < testo.txt
 int main()
 {
   int c;
+
   int n_vocali = 0; /* numero di vocali */
 
   while ( (c = getchar()) != EOF) {

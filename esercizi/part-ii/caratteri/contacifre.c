@@ -3,11 +3,8 @@
 /* conta spaziature e cifre */
 
 /* istruzioni per la compilazione e l'esecuzione:
-
 $ make contacifre
-
 $ ./contacifre < testo.txt
-
 */
 
 #include <stdio.h>
@@ -15,6 +12,7 @@ $ ./contacifre < testo.txt
 int main()
 {
   int c;
+
   int n_white = 0;  /* numero di spaziature totali */
   int n_digits[10]; /* contatori per le cifre */
   int n_others = 0; /* altri */
@@ -26,6 +24,7 @@ int main()
     n_digits[i] = 0;
   }
 
+  /* lettura dei caratteri */
   while ( (c = getchar()) != EOF) {
     if (c == ' ' || c == '\n' || c == '\t') {
       n_white++;
@@ -36,13 +35,12 @@ int main()
     }
   }
 
+  /* output */
   printf("Cifre:\n");
   for (i = 0; i < 10; i++) {
     printf("%d) %d\n", i, n_digits[i]);
   }
-
   printf("Spaziature: %d\n", n_white);
-
   printf("Altri caratteri: %d\n", n_others);
 
   return 0;

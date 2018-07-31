@@ -4,7 +4,6 @@
 
 /* istruzioni per la compilazione e l'esecuzione:
 $ make copia
-
 $ ./copia < file_src > file_dst
 */
 

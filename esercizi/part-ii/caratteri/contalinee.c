@@ -4,7 +4,6 @@
 
 /* istruzioni per la compilazione e l'esecuzione:
 $ make contalinee
-
 $ ./contalinee < testo
 */
 
@@ -13,13 +12,13 @@ $ ./contalinee < testo
 int main()
 {
   int c;
-  int n = 0; /* numero di linee */
+  int nl = 0; /* numero di linee */
 
   while ( (c=getchar()) != EOF ) {
-    if (c == '\n') n++;
+    if (c == '\n') nl++;
   }
 
-  printf("Totale linee lette: %d\n", n);
+  printf("Totale linee lette: %d\n", nl);
 
   return 0;
 }

@@ -3,10 +3,8 @@
 /* conta spazi, tab e newline */
 
 /* istruzioni per la compilazione e l'esecuzione:
-
 $ make contaspaziature
 $ ./contaspaziature < testo.txt
-
 */
 
 #include <stdio.h>
@@ -14,6 +12,7 @@ $ ./contaspaziature < testo.txt
 int main()
 {
   int c;
+
   int ns = 0; /* numero di spazi */
   int nt = 0; /* numero di tab */
   int nl = 0; /* numero di linee */
