@@ -2,6 +2,12 @@
 
 /* Simulazione del lancio di una moneta */
 
+/* Istruzioni di compilazione ed esecuzione:
+ *
+ * $ make
+ * $ ./main
+ */
+
 #include <stdio.h>
 #include "random.h"
 

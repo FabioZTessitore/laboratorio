@@ -2,6 +2,12 @@
 
 /* Guess: Indovina il numero */
 
+/* Istruzioni di compilazione ed esecuzione:
+ *
+ * $ make
+ * $ ./main
+ */
+
 #include <stdio.h>
 #include "guess.h"
 

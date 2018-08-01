@@ -2,6 +2,12 @@
 
 /* CAI, esercitazioni con la moltiplicazione */
 
+/* Istruzioni di compilazione ed esecuzione:
+ *
+ * $ make
+ * $ ./main
+ */
+
 #include <stdio.h>
 #include "cai.h"
 
