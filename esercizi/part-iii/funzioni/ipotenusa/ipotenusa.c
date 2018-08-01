@@ -2,6 +2,12 @@
 
 /* Calcola l'ipotenusa di triangoli rettangoli */
 
+/* Istruzioni per la compilazione ed esecuzione:
+ *
+ * $ make ipotenusa
+ * $ ./ipotenusa
+ */
+
 #include <stdio.h>
 #include <math.h>
 

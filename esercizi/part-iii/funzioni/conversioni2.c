@@ -1,4 +1,4 @@
-/* conversioni.c */
+/* conversioni2.c */
 
 /* Conversioni di base, da decimale a binario, ottale o esadecimale */
 
