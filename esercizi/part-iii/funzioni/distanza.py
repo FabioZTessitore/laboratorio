@@ -2,26 +2,36 @@
 
 # calcola la distanza tra due punti del piano
 
-def distanza(P1, P2):
+def distanza(p1, p2):
     # P1 e P2 sono tuple del tipo (x, y)
-    dx = P1[0] - P2[0]
-    dy = P1[1] - P2[1]
+    dx = p1[0] - p2[0]
+    dy = p1[1] - p2[1]
 
     return (dx**2 + dy**2)**0.5
 
 def input_coordinate():
-    x = raw_input('x: ')
-    y = raw_input('y: ')
+    x = input('Coordinata x: ')
+    y = input('Coordinata y: ')
 
     return ( float(x), float(y) )
 
+def stampa_coordinate(p):
+    print('x:', p[0])
+    print('y:', p[1])
 
-print "Distanza tra due punti"
+# main
+print("Distanza tra due punti")
 
-print "\nPrimo punto:"
-P1 = input_coordinate()
+print("\nPunto 1:")
+p1 = input_coordinate()
 
-print "\nSecondo punto:"
-P2 = input_coordinate()
+print("\nPunto 2:")
+p2 = input_coordinate()
 
-print "\nDistanza tra i punti:", distanza(P1, P2)
+print("\nPrimo punto:")
+stampa_coordinate(p1)
+
+print("\nSecondo punto:")
+stampa_coordinate(p2)
+
+print("\nDistanza tra i punti:", distanza(p1, p2))
