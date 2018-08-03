@@ -2,11 +2,12 @@ CC=gcc
 CFLAGS=-Wall -ansi -pedantic
 LDLIBS=
 
-main: random.o main.o
+coin: random.o coin.o main.o
 
 random.o: random.c random.h
-main.o: main.c random.h
+coin.o: coin.c coin.h random.h
+main.o: main.c coin.h
 
 .PHONY: clean
 clean:
-	rm -f *.o main
+	rm -f *.o coin
