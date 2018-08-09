@@ -30,28 +30,28 @@ def estrai_risposta():
 def risposta_esatta():
     risposta = estrai_risposta()
     if risposta == 0:
-        print "Very good!\n"
+        print("Very good!\n")
     elif risposta == 1:
-        print "Excellent!\n"
+        print("Excellent!\n")
     elif risposta == 2:
-        print "Nice work!\n"
+        print("Nice work!\n")
     elif risposta == 3:
-        print "Keep up the good work!\n"
+        print("Keep up the good work!\n")
     else:
-        print "Qualcosa e' andato storto!\n"
+        print("Qualcosa e' andato storto!\n")
 
 def risposta_errata():
     risposta = estrai_risposta()
     if risposta == 0:
-        print "No, Please try again.\n"
+        print("No, Please try again.\n")
     elif risposta == 1:
-        print "Wrong. Try once more.\n"
+        print("Wrong. Try once more.\n")
     elif risposta == 2:
-        print "Don't give up!\n"
+        print("Don't give up!\n")
     elif risposta == 3:
-        print "No. Keep trying.\n"
+        print("No. Keep trying.\n")
     else:
-        print "Qualcosa e' andato storto!\n"
+        print("Qualcosa e' andato storto!\n")
 
 
 if __name__ == '__main__':

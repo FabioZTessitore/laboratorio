@@ -14,30 +14,32 @@ while contatore_risposte < num_domande:
 
     result = cifra1 * cifra2
 
-    print "Domanda # %d (%d)\n" % (contatore_risposte+1, num_domande)
-    print "Quanto fa %d per %d? " % (cifra1, cifra2)
+    print("Domanda # %d (%d)\n" % (contatore_risposte+1, num_domande))
+    print("Quanto fa %d per %d? " % (cifra1, cifra2))
     answer = input()
+    answer = int(answer)
+
     contatore_risposte += 1
 
     if answer != result:
         risposte_errate += 1
         cai.risposta_errata()
-
     else:
         cai.risposta_esatta()
 
     while answer != result and contatore_risposte < num_domande:
-        print "Domanda # %d (%d)\n" % (contatore_risposte+1, num_domande)
-        print "Quanto fa %d per %d? " % (cifra1, cifra2)
+        print("Domanda # %d (%d)\n" % (contatore_risposte+1, num_domande))
+        print("Quanto fa %d per %d? " % (cifra1, cifra2))
         answer = input()
+        answer = int(answer)
+
         contatore_risposte += 1
 
         if answer != result:
             risposte_errate += 1
             cai.risposta_errata()
-
         else:
             cai.risposta_esatta()
 
-if float(risposte_errate) / float(num_domande) > 0.25:
-    print "Please ask your instructor for extra help\n"
+if risposte_errate / num_domande > 0.25:
+    print("Please ask your instructor for extra help\n")
