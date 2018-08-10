@@ -20,4 +20,4 @@ def power(base, exponent):
 b = 3
 e = 4
 
-print "%d^%d = %d" % (b, e, power(b, e))
+print("%d^%d = %d" % (b, e, power(b, e)))
