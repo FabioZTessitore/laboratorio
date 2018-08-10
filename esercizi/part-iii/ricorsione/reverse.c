@@ -4,6 +4,11 @@
  * al contrario mediante una funzione ricorsiva
  */
 
+ /* istruzioni per la compilazione e l'esecuzione:
+ $ make reverse
+ $ ./reverse
+ */
+
 #include <stdio.h>
 
 void inverti_cifre(int n);

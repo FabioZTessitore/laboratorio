@@ -2,6 +2,11 @@
 
 /* somma due interi mediante una funzione ricorsiva */
 
+/* istruzioni per la compilazione e l'esecuzione:
+$ make somma
+$ ./somma
+*/
+
 #include <stdio.h>
 
 int somma(int x, int y);

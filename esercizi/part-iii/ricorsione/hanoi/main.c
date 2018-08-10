@@ -2,6 +2,11 @@
 
 /* La torre di Hanoi */
 
+/* istruzioni per la compilazione e l'esecuzione:
+$ make
+$ ./hanoi
+*/
+
 #include <stdio.h>
 #include "hanoi.h"
 

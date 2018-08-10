@@ -2,6 +2,11 @@
 
 /* Calcola la potenza tramite funzione ricorsiva */
 
+/* istruzioni per la compilazione e l'esecuzione:
+$ make potenza
+$ ./potenza
+*/
+
 #include <stdio.h>
 
 int power(int base, int exponent);
