@@ -1,6 +1,6 @@
 # potenzacoda.py
 
-# Calcola la potenza tramite funzione ricorsiva
+# Calcola la potenza tramite funzione ricorsiva.
 # Utilizza la ricorsione in coda
 
 # power:

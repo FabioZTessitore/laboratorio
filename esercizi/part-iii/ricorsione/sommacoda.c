@@ -1,7 +1,12 @@
 /* sommacoda.c */
 
-/* somma due interi mediante una funzione ricorsiva.
- * utilizza ricorsione in coda.
+/* Somma due interi mediante una funzione ricorsiva.
+ * Utilizza ricorsione in coda.
+ */
+
+ /* istruzioni per la compilazione e l'esecuzione:
+ $ make sommacoda
+ $ ./sommacoda
  */
 
 #include <stdio.h>

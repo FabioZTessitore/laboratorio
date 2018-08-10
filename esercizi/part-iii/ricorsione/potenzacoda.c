@@ -1,7 +1,12 @@
 /* potenzacoda.c */
 
-/* Calcola la potenza tramite funzione ricorsiva
- * utilizza ricorsione in coda.
+/* Calcola la potenza tramite funzione ricorsiva.
+ * Utilizza ricorsione in coda.
+ */
+
+ /* istruzioni per la compilazione e l'esecuzione:
+ $ make potenzacoda
+ $ ./potenzacoda
  */
 
 #include <stdio.h>
