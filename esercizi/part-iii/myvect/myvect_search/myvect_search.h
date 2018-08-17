@@ -9,4 +9,6 @@
  * oppure -1 se non trovato */
 int myvect_linear_search(const int v[], int size, int key);
 
+int myvect_binary_search(int v[], int size, int key);
+
 #endif
