@@ -1,7 +1,7 @@
 #include "myvect_math.h"
 #include "myvect_sort.h"
 
-void myvect_bubble_sort(int v[], int size)
+void myvect_bubble_sort(int v[], const int size)
 {
   int pass;           /* passaggi */
   int i = 0;
@@ -29,7 +29,7 @@ void myvect_bubble_sort(int v[], int size)
   }
 }
 
-void myvect_selection_sort(int v[], int size)
+void myvect_selection_sort(int v[], const int size)
 {
   int temp;
   int min_index;

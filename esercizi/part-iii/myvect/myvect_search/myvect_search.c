@@ -3,10 +3,10 @@
 #include "myvect_search.h"
 
 /* funzioni private */
-int myvect_binary_search_helper(const int v[], int size, int key, int low, int high);
+int myvect_binary_search_helper(const int v[], const int size, const int key, const int low, const int high);
 
 
-int myvect_linear_search(const int v[], int size, int key)
+int myvect_linear_search(const int v[], const int size, const int key)
 {
   int i;
 
@@ -17,12 +17,12 @@ int myvect_linear_search(const int v[], int size, int key)
   return -1;
 }
 
-int myvect_binary_search(int v[], int size, int key)
+int myvect_binary_search(const int v[], const int size, const int key)
 {
   return myvect_binary_search_helper(v, size, key, 0, size-1);
 }
 
-int myvect_binary_search_helper(const int v[], int size, int key, int low, int high)
+int myvect_binary_search_helper(const int v[], const int size, const int key, const int low, const int high)
 {
   int middle;
 

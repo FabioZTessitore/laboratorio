@@ -10,6 +10,6 @@
 void random_init();
 
 /* random_between(): genera un intero compreso tra min (incluso) e max (escluso) */
-int random_between(int min, int max);
+int random_between(const int min, const int max);
 
 #endif

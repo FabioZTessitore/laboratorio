@@ -9,7 +9,7 @@ void random_init()
   srand( time(NULL) );
 }
 
-int random_between(int min, int max)
+int random_between(const int min, const int max)
 {
   if (max <= min) return min;
 
