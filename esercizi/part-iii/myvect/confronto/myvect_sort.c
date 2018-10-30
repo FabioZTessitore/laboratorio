@@ -1,5 +1,3 @@
-/* myvect_sort.c */
-
 #include "myvect_math.h"
 #include "myvect_sort.h"
 

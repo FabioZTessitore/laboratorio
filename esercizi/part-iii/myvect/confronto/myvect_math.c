@@ -1,5 +1,4 @@
 /* myvect_math.c */
-
 #include "myvect_math.h"
 
 int myvect_sum(const int v[], const int size)
