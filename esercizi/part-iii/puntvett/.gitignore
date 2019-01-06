@@ -1,0 +1,4 @@
+*.o
+stampa_stringhe
+ordina_stringhe
+qsort_stringhe
