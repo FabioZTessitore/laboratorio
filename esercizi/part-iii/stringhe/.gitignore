@@ -1,0 +1,6 @@
+*.o
+maiuscole_minuscole
+conversioni
+input_from_string
+concat
+tokenize
