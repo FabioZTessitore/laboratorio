@@ -11,11 +11,13 @@
 #include <stdio.h>
 #include "dado.h"
 
+void stampa_asterischi(int n);
+
 int main()
 {
   int trials = 100;
   int face[7];      /* 0 inutilizzato */
-  int i, k;
+  int i;
 
   dado_init();
 
@@ -31,12 +33,19 @@ int main()
 
   /* stampa con linee di asterischi */
   for (i = 1; i <= 6; i++) {
-    printf("#%d)  [%d]  ", i, face[i]);
-    for (k = 0; k < face[i]; k++) {
-      putchar('*');
-    }
-    putchar('\n');
+    printf("#%02d)  [%d]  ", i, face[i]);
+    stampa_asterischi(face[i]);
   }
 
   return 0;
+}
+
+void stampa_asterischi(int n)
+{
+  int i;
+
+  for (i = 0; i < n; i++) {
+    putchar('*');
+  }
+  putchar('\n');
 }
