@@ -44,36 +44,37 @@ void test_espressioni(void)
 
 int main()
 {
-  CU_pSuite pSuite = NULL;
+  CU_pSuite pSuiteOperazioni = NULL;
+  CU_pSuite pSuiteEspressioni = NULL;
 
   /* inizializza il registro dei test */
   if (CUE_SUCCESS != CU_initialize_registry())
     return CU_get_error();
 
   /* aggiunge una suite di test al registro */
-  pSuite = CU_add_suite("Operazioni Aritmetiche", /* init() */NULL, /* cleanup() */NULL);
-  if (NULL == pSuite) {
+  pSuiteOperazioni = CU_add_suite("Operazioni Aritmetiche", /* init() */NULL, /* cleanup() */NULL);
+  if (NULL == pSuiteOperazioni) {
     CU_cleanup_registry();
     return CU_get_error();
   }
 
   /* aggiunge i test alla suite */
-  if ((NULL == CU_add_test(pSuite, "test somma", test_somma)) ||
-    (NULL == CU_add_test(pSuite, "test sottrazione", test_sottrazione)))
+  if ((NULL == CU_add_test(pSuiteOperazioni, "test somma", test_somma)) ||
+    (NULL == CU_add_test(pSuiteOperazioni, "test sottrazione", test_sottrazione)))
   {
     CU_cleanup_registry();
     return CU_get_error();
   }
 
   /* aggiunge una seconda suite di test al registro */
-  pSuite = CU_add_suite("Espressioni Aritmetiche", /* init() */NULL, /* cleanup() */NULL);
-  if (NULL == pSuite) {
+  pSuiteEspressioni = CU_add_suite("Espressioni Aritmetiche", /* init() */NULL, /* cleanup() */NULL);
+  if (NULL == pSuiteEspressioni) {
     CU_cleanup_registry();
     return CU_get_error();
   }
 
   /* aggiunge i test alla suite */
-  if ((NULL == CU_add_test(pSuite, "test espressioni", test_espressioni)))
+  if ((NULL == CU_add_test(pSuiteEspressioni, "test espressioni", test_espressioni)))
   {
     CU_cleanup_registry();
     return CU_get_error();
