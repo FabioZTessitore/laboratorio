@@ -9,5 +9,5 @@ int aritmetica_somma(int a, int b)
 
 int aritmetica_sottrazione(int a, int b)
 {
-  return a-b;
+  return a+b;   /* ERRORE INTENZIONALE */
 }
