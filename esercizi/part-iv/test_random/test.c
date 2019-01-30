@@ -26,7 +26,7 @@ int suite_random_cleanup()
 }
 
 /* funzioni test per la suite 'Random' */
-void test_randomBetween(void)
+void test_randomBetween()
 {
   int i;
   int n;
@@ -37,7 +37,7 @@ void test_randomBetween(void)
   for (i = 0; i < 1000; i++) {
     CU_ASSERT_EQUAL(random_between(3, 4), 3);
   }
-  
+
   for (i = 0; i < 1000; i++) {
     n = random_between(1, 10);
     CU_ASSERT(n >= 1 && n < 10);

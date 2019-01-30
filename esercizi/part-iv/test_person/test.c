@@ -7,14 +7,12 @@
  * $ ./test
  */
 
-/* crea una suite di test per il modulo person */
-
-static Person p;
+/* crea una suite di test per il modulo Person */
 
 /* funzione di init della suite */
 int suite_person_init()
 {
-  p = person_make("Mario", "Rossi");
+  /* nothing to do */
 
   return 0; /* success */
 }
@@ -30,6 +28,8 @@ int suite_person_cleanup()
 /* funzioni test per la suite 'Person' */
 void test_Person(void)
 {
+  Person p = person_make("Mario", "Rossi");
+
   CU_ASSERT_STRING_EQUAL(p.firstName, "Mario");
   CU_ASSERT_STRING_EQUAL(p.lastName, "Rossi");
 }

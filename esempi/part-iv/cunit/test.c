@@ -18,7 +18,7 @@
  */
 
 /* funzioni test per la suite 'Operazioni Aritmetiche' */
-void test_somma(void)
+void test_somma()
 {
   CU_ASSERT_EQUAL(aritmetica_somma(2, 3), 5);
   CU_ASSERT_EQUAL(aritmetica_somma(0, 0), 0);
@@ -26,7 +26,7 @@ void test_somma(void)
   CU_ASSERT_EQUAL(aritmetica_somma(-1, -2), -3);
 }
 
-void test_sottrazione(void)
+void test_sottrazione()
 {
   CU_ASSERT_EQUAL(aritmetica_sottrazione(2, 3), -1);
   CU_ASSERT_EQUAL(aritmetica_sottrazione(0, 0), 0);
@@ -35,7 +35,7 @@ void test_sottrazione(void)
 }
 
 /* funzioni test per la suite 'Espressioni Aritmetiche' */
-void test_espressioni(void)
+void test_espressioni()
 {
   /* (1 + 5) - 1 == 5 */
   CU_ASSERT_EQUAL(aritmetica_sottrazione(aritmetica_somma(1, 5), 1), 5);
