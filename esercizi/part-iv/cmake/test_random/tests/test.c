@@ -1,12 +1,6 @@
 #include "CUnit/Basic.h"
 #include "random.h"
 
-/* Istruzioni di compilazione ed esecuzione:
- *
- * $ make test
- * $ ./test
- */
-
 /* crea una suite di test per il modulo random */
 
 /* funzione di init della suite */
