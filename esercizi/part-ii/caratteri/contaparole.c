@@ -10,11 +10,22 @@
 
  /*
  Stati possibili:
-   1)  IN       all'interno di una parola
-   2)  OUT      all'esterno delle parole
+   1)  START    stato iniziale, utilizzato per
+                capire se il primo carattere
+                e' di spaziatura o meno
+   2)  IN       all'interno di una parola
+   3)  OUT      all'esterno delle parole
 
  Tabella degli stati:
  Stato       Input          Output      Nuovo Stato
+ START     c==' '  or
+           c=='\n' or
+           c=='\t'            -             OUT
+
+ START     c!=' '  and
+           c!='\n' and
+           c!='\t'            ++nw          IN
+
   IN       c==' '  or
            c=='\n' or
            c=='\t'            -             OUT
@@ -29,7 +40,7 @@
 
  OUT       c!=' '  and
            c!='\n' and
-           c!='\t'            -             IN
+           c!='\t'            ++nw           IN
  */
 
 #include <stdio.h>
@@ -37,8 +48,8 @@
 
 int main()
 {
-  enum Stato { IN, OUT };
-  int stato = OUT;
+  enum Stato { START, IN, OUT };
+  int stato = START;
 
   int c;
   int nc = 0; /* num caratteri */
@@ -53,14 +64,26 @@ int main()
     if (c == '\n') ++nl;
 
     /* conta parole */
-    if (stato == IN) {
+    if (stato == START) {
+      if (c == ' ' || c == '\n' || c == '\t') {
+        stato = OUT;
+      } else {
+        stato = IN;
+        ++nw;
+      }
+    } else if (stato == IN) {
       if (c == ' ' || c == '\n' || c == '\t') stato = OUT;
       /* else: stato continua ad essere IN */
     } else if (stato == OUT) {
-      /* ipotizza che non siano possibili
-      spazi multipli, quindi inizia una nuova parola */
-      ++nw;
-      stato = IN;
+      /* ipotizza che non siano possibili spazi multipli,
+         incluso perche' alcuni editor di testo
+         aggiungono un newline al termine del file */
+      if (c == ' ' || c == '\n' || c == '\t')
+        ;
+      else {
+        stato = IN;
+        ++nw;
+      }
     }
   }
 
