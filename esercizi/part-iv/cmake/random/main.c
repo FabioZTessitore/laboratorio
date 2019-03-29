@@ -1,6 +1,6 @@
 /* main.c */
 
-/* Uso di una libreria */
+/* Compilazione e uso di una modulo con cmake */
 
 /* istruzione per la compilazione e l'esecuzione:
  *
@@ -18,7 +18,7 @@ int main()
 {
   random_init();
 
-  printf("Una cifra casuale: %d\n", random_between(0, 10));
+  printf("Una cifra casuale in [0, 10): %d\n", random_between(0, 10));
 
   return 0;
 }

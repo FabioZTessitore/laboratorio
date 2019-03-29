@@ -1,6 +1,6 @@
 /* radice.c */
 
-/* Uso della libreria matematica */
+/* Compilazione di un programma che fa uso della libreria matematica con cmake */
 
 /* istruzione per la compilazione e l'esecuzione:
  *
