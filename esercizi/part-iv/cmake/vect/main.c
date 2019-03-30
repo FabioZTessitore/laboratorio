@@ -1,8 +1,8 @@
 /* main.c */
 
-/* Uso dei moduli myvect */
+/* Compilazione dei moduli myvect con cmake */
 
-/* istruzione per la compilazione e l'esecuzione:
+/* Istruzioni per la compilazione e l'esecuzione:
  *
  * $ mkdir build
  * $ cd build
@@ -22,7 +22,7 @@ void doppio(int *);
 
 int main()
 {
-  int VETT_SIZE = 10;
+  #define VETT_SIZE 10
   int v[VETT_SIZE];
   int sum = 0;
   int indexOf42 = -1;

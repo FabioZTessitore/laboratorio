@@ -71,7 +71,7 @@ int myvect_max_index(const int v[], const int size)
     }
   }
 
-  return max;
+  return max_index;
 }
 
 int myvect_dot_product(const int v1[], const int v2[], const int size)

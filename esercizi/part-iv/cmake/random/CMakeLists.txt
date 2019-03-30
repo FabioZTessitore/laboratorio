@@ -1,6 +1,9 @@
 cmake_minimum_required(VERSION 3.12)
 
-project(RandomNumber)
+set(CMAKE_C_COMPILER "/usr/bin/gcc")
+set(CMAKE_C_FLAGS "-Wall -ansi -pedantic")
+
+project(RandomNumber C)
 
 # aggiunge l'unica sottodirectory del progetto
 add_subdirectory(random)

@@ -2,7 +2,7 @@
 
 /* Compilazione di un programma che fa uso della libreria matematica con cmake */
 
-/* istruzione per la compilazione e l'esecuzione:
+/* Istruzioni per la compilazione e l'esecuzione:
  *
  * $ mkdir build
  * $ cd build

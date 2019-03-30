@@ -2,7 +2,7 @@
 
 /* Uso di una libreria */
 
-/* istruzione per la compilazione e l'esecuzione:
+/* Istruzioni per la compilazione e l'esecuzione:
  *
  * $ mkdir build
  * $ cd build

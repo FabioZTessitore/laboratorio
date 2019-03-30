@@ -2,7 +2,7 @@
 
 /* Esempio di compilazione di un singolo file con cmake */
 
-/* istruzione per la compilazione e l'esecuzione:
+/* Istruzioni per la compilazione e l'esecuzione:
  *
  * $ mkdir build
  * $ cd build

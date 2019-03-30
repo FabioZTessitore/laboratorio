@@ -2,7 +2,7 @@
 
 /* Compilazione e uso di una modulo con cmake */
 
-/* istruzione per la compilazione e l'esecuzione:
+/* Istruzioni per la compilazione e l'esecuzione:
  *
  * $ mkdir build
  * $ cd build
