@@ -1,8 +1,7 @@
-FIND_PATH(CUNIT_INCLUDE_DIR NAMES CUnit/Basic.h)
-FIND_LIBRARY(CUNIT_LIBRARY NAMES cunit)
+include(FindCUnit.cmake)
 
-add_executable(testNumber test.c)
-target_link_libraries(testNumber PRIVATE Random ${CUNIT_LIBRARY})
+add_executable(testRandom tests.c)
+target_link_libraries(testRandom PRIVATE Random ${CUNIT_LIBRARIES})
 
 # add_test(testName Exename arg1 arg2 ...)
-add_test(testNumber testNumber)
+add_test(testRandom testRandom)

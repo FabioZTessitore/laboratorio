@@ -1,6 +1,9 @@
 cmake_minimum_required(VERSION 3.12)
 
-project(TheSimpletron)
+set(CMAKE_C_COMPILER "/usr/bin/gcc")
+set(CMAKE_C_FLAGS "-Wall -ansi -pedantic")
+
+project(TheSimpletron C)
 
 add_subdirectory(libs)
 

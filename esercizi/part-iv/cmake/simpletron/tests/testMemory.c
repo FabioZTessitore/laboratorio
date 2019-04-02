@@ -27,11 +27,7 @@ void test_zeros()
   int i;
 
   for (i = 0; i < MEMORY_SIZE; i++) {
-    memory_set(&m, i, 0);
-  }
-
-  for (i = 0; i < MEMORY_SIZE; i++) {
-    CU_ASSERT_EQUAL(memory_get(&m, i), 1);
+    CU_ASSERT_EQUAL(memory_get(&m, i), 0);
   }
 }
 

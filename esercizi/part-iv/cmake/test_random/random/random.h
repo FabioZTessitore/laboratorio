@@ -5,8 +5,9 @@
 
 /* libreria per la generazione di numeri pseudocasuali */
 
-/* random_init() inizializza il seme, da richiamare prima di utilizzare
- * le altre funzioni del modulo */
+/* random_init(): inizializza il seme;
+ *                da richiamare prima di utilizzare
+ *                le altre funzioni del modulo */
 void random_init();
 
 /* random_between(): genera un intero compreso tra min (incluso) e max (escluso) */

@@ -12,9 +12,9 @@ add_subdirectory(libs)
 add_executable(Vettori main.c)
 
 # link dei moduli
+# solo quelli a cui fa direttamente riferimento il main
 target_link_libraries(Vettori PRIVATE MyVect)
 target_link_libraries(Vettori PRIVATE MyVectMath)
 target_link_libraries(Vettori PRIVATE MyVectSearch)
 target_link_libraries(Vettori PRIVATE MyVectSort)
 target_link_libraries(Vettori PRIVATE MyVectUtils)
-target_link_libraries(Vettori PRIVATE Random)
