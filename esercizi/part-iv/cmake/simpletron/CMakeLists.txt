@@ -8,7 +8,7 @@ project(TheSimpletron C)
 add_subdirectory(libs)
 
 add_executable(TheSimpletron main.c)
-target_link_libraries(TheSimpletron PRIVATE Simpletron Cpu Memory)
+target_link_libraries(TheSimpletron PRIVATE Simpletron)
 
 # enable make test
 enable_testing()

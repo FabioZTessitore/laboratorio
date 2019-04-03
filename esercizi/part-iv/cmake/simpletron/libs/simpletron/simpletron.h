@@ -6,10 +6,19 @@
 #include "memory.h"
 #include "cpu.h"
 
+struct simpletron {
+  Cpu cpu;
+  Memory memory;
+};
+
+typedef struct simpletron Simpletron;
+
+Simpletron simpletron_make();
+
 void simpletron_welcome();
 
-void simpletron_enterProgram(Memory * const pMemory);
+void simpletron_enterProgram(Simpletron * const pSimpletron);
 
-void simpletron_execProgram(Memory * const pMemory, Cpu * const pCpu);
+void simpletron_execProgram(Simpletron * const pSimpletron);
 
 #endif
