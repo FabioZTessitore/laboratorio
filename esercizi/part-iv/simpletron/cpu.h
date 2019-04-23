@@ -41,10 +41,10 @@ Cpu cpu_make();
 
 void cpu_dump(const Cpu * const pCpu);
 
-void cpu_fetch(const Memory * const pMemory, Cpu * const pCpu);
+void cpu_fetch(Cpu * const pCpu, const Memory * const pMemory);
 
-int cpu_execute(Memory * const pMemory, Cpu * const pCpu);
+int cpu_execute(Cpu * const pCpu, Memory * const pMemory);
 
-void cpu_run(Memory * const pMemory, Cpu * const pCpu);
+void cpu_run(Cpu * const pCpu, Memory * const pMemory);
 
 #endif

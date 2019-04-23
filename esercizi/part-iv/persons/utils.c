@@ -21,5 +21,5 @@ void strSafeInput(char *str, int size)
 
   /* elimina newline */
   len = strlen(str);
-  str[len-1] = '\0';
+  if (str[len-1] == '\n') str[len-1] = '\0';
 }

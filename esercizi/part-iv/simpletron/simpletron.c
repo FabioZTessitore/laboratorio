@@ -36,7 +36,7 @@ void simpletron_execProgram(Memory * const pMemory, Cpu * const pCpu)
 {
   printf("*** Program execution begins ***\n");
 
-  cpu_run(pMemory, pCpu);
+  cpu_run(pCpu, pMemory);
 
   cpu_dump(pCpu);
   putchar('\n');

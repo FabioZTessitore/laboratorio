@@ -27,7 +27,7 @@ void cpu_dump(const Cpu * const pCpu)
   printf("operand\t\t\t   %02d\n", pCpu->operand);
 }
 
-void cpu_fetch(const Memory * const pMemory, Cpu * const pCpu)
+void cpu_fetch(Cpu * const pCpu, const Memory * const pMemory)
 {
   pCpu->instructionRegister = memory_get(pMemory, pCpu->instructionCounter);
 
@@ -37,7 +37,7 @@ void cpu_fetch(const Memory * const pMemory, Cpu * const pCpu)
   pCpu->instructionCounter++;
 }
 
-int cpu_execute(Memory * const pMemory, Cpu * const pCpu)
+int cpu_execute(Cpu * const pCpu, Memory * const pMemory)
 {
   int halt = 0;
   int temp;
@@ -91,12 +91,12 @@ int cpu_execute(Memory * const pMemory, Cpu * const pCpu)
   return halt;
 }
 
-void cpu_run(Memory * const pMemory, Cpu * const pCpu)
+void cpu_run(Cpu * const pCpu, Memory * const pMemory)
 {
   int halt = 0;
 
   while (!halt) {
-    cpu_fetch(pMemory, pCpu);
-    halt = cpu_execute(pMemory, pCpu);
+    cpu_fetch(pCpu, pMemory);
+    halt = cpu_execute(pCpu, pMemory);
   }
 }

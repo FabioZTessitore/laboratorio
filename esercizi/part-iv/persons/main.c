@@ -1,5 +1,10 @@
 /* main.c */
 
+/* Legge nomi e cognomi da una file di testo (max 10 righe).
+  Crea una Person e la aggiunge ad un vettore.
+  Infine stampa la lista di Person
+*/
+
 #include <stdio.h>
 #include <string.h>
 #include "person.h"
@@ -22,6 +27,7 @@ int main()
   puts("Lettura dei contatti\n");
 
   strSafeInput(line, LINE_LEN);
+  i = 0;
   while (i < LINES_MAX && line[0] != '\0') {
     token = strtok(line, ";");
     strSafeCopy(firstName, token, BUF_LEN);
