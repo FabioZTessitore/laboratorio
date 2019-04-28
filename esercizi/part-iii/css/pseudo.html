@@ -1,0 +1,76 @@
+<!doctype html>
+
+<!-- pseudo classi -->
+
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+
+    <style>
+      a:link {
+        color: green;
+      }
+
+      a:visited {
+        color: grey;
+      }
+
+      a:hover {
+        color: yellow;
+      }
+
+      a:active {
+        color: red;
+      }
+
+      li:first-child,
+      li:last-child {
+        text-transform: uppercase;
+      }
+
+      li:nth-child(2) {
+        font-weight: bold;
+      }
+
+      li:nth-child(odd) {
+        background-color: #eee;
+      }
+
+      li:not(:last-child) {
+        margin-bottom: 30px;
+      }
+
+      .important {
+        font-size: 16px;
+      }
+
+      .important:first-letter {
+        font-size: 30px;
+      }
+
+      .important:before {
+        content: "-->";
+      }
+
+      .important:after {
+        content: " Fine."
+      }
+    </style>
+
+    <title>Pseudo Classi</title>
+  </head>
+
+  <body>
+    <p><a href="#">Home</a></p>
+
+    <ul>
+      <li>Lorem ipsum dolor sit amet</li>
+      <li>Lorem ipsum dolor sit amet</li>
+      <li>Lorem ipsum dolor sit amet</li>
+      <li>Lorem ipsum dolor sit amet</li>
+      <li>Lorem ipsum dolor sit amet</li>
+    </ul>
+
+    <p class="important">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem molestias tempore saepe illo optio dicta rerum similique eveniet expedita placeat molestiae, accusamus blanditiis, debitis modi, laudantium sunt. Nihil, officiis, in.</p>
+  </body>
+</html>
