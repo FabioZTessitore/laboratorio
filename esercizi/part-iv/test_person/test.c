@@ -26,7 +26,15 @@ int suite_person_cleanup()
 }
 
 /* funzioni test per la suite 'Person' */
-void test_Person(void)
+void test_Person_empty()
+{
+  Person p = person_make("", "");
+
+  CU_ASSERT_STRING_EQUAL(p.firstName, "");
+  CU_ASSERT_STRING_EQUAL(p.lastName, "");
+}
+
+void test_Person()
 {
   Person p = person_make("Mario", "Rossi");
 
@@ -51,7 +59,8 @@ int main()
   }
 
   /* aggiunge i test alla suite */
-  if ((NULL == CU_add_test(pSuite, "test person first and last name", test_Person)))
+  if ((NULL == CU_add_test(pSuite, "test person first and last name empty", test_Person_empty)) ||
+    (NULL == CU_add_test(pSuite, "test person first and last name", test_Person)))
   {
     CU_cleanup_registry();
     return CU_get_error();
