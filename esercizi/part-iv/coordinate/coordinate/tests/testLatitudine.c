@@ -20,16 +20,6 @@ int suite_cleanup()
   return 0; /* success */
 }
 
-void test_zeros()
-{
-  Latitudine l = { 0, 0, 0, 0 };
-
-  CU_ASSERT_EQUAL(l.gradi, 0);
-  CU_ASSERT_EQUAL(l.primi, 0);
-  CU_ASSERT_EQUAL(l.secondi, 0);
-  CU_ASSERT_EQUAL(l.segno, 0);
-}
-
 void test_make()
 {
   Latitudine l = latitudine_make(5, 10, 15, 1);
@@ -131,8 +121,7 @@ int main()
   }
 
   /* aggiunge i test alla suite */
-  if ((NULL == CU_add_test(pSuite, "test zeros", test_zeros)) ||
-    (NULL == CU_add_test(pSuite, "test make latitudine", test_make)) ||
+  if ((NULL == CU_add_test(pSuite, "test make latitudine", test_make)) ||
     (NULL == CU_add_test(pSuite, "test parse bad", test_parse_bad)) ||
     (NULL == CU_add_test(pSuite, "test parse", test_parse)))
   {
