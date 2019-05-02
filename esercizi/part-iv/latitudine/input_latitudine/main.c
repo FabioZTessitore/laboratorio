@@ -12,19 +12,20 @@
 
 #include <stdio.h>
 #include "latitudine.h"
+#include "str_utils.h"
 
 int main()
 {
   Latitudine l;
   char buffer[80];
+  int status;
 
   printf("Latitudine\n\n");
   printf("Inserisci una latitudine. Es. 40 10 05N\n\n");
 
-  fgets(buffer, 80, stdin);
-  buffer[79] = '\0';
+  strSafeInput(buffer, 80);
 
-  int status = latitudine_parse(&l, buffer);
+  status = latitudine_parse(&l, buffer);
   if (status == 0) latitudine_print(&l);
 
   return 0;

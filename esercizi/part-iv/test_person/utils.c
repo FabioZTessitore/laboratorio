@@ -2,6 +2,7 @@
 
 #include <stdio.h>
 #include <string.h>
+#include "utils.h"
 
 void strSafeCopy(char *dst, const char * const src, const int maxLen)
 {
