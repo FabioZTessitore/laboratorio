@@ -22,39 +22,85 @@ int suite_cleanup()
 
 void test_make()
 {
+  /* ok */
   Latitudine l = latitudine_make(5, 10, 15, 1);
-
   CU_ASSERT_EQUAL(l.gradi, 5);
   CU_ASSERT_EQUAL(l.primi, 10);
   CU_ASSERT_EQUAL(l.secondi, 15);
   CU_ASSERT_EQUAL(l.segno, 1);
 
+  /* tutti fuori range */
   l = latitudine_make(-5, -10, -15, -1);
-
   CU_ASSERT_EQUAL(l.gradi, 0);
   CU_ASSERT_EQUAL(l.primi, 0);
   CU_ASSERT_EQUAL(l.secondi, 0);
-  CU_ASSERT_EQUAL(l.segno, -1);
+  CU_ASSERT_EQUAL(l.segno, 0);
+
+  /* gradi > 90 */
+  l = latitudine_make(95, 10, 15, 1);
+  CU_ASSERT_EQUAL(l.gradi, 0);
+  CU_ASSERT_EQUAL(l.primi, 0);
+  CU_ASSERT_EQUAL(l.secondi, 0);
+  CU_ASSERT_EQUAL(l.segno, 0);
+
+  /* primi > 59 */
+  l = latitudine_make(50, 100, 15, 1);
+  CU_ASSERT_EQUAL(l.gradi, 0);
+  CU_ASSERT_EQUAL(l.primi, 0);
+  CU_ASSERT_EQUAL(l.secondi, 0);
+  CU_ASSERT_EQUAL(l.segno, 0);
+
+  /* secondi > 59 */
+  l = latitudine_make(50, 10, 100, 1);
+  CU_ASSERT_EQUAL(l.gradi, 0);
+  CU_ASSERT_EQUAL(l.primi, 0);
+  CU_ASSERT_EQUAL(l.secondi, 0);
+  CU_ASSERT_EQUAL(l.segno, 0);
+
+  /* gradi < 0 */
+  l = latitudine_make(-5, 10, 15, 1);
+  CU_ASSERT_EQUAL(l.gradi, 0);
+  CU_ASSERT_EQUAL(l.primi, 0);
+  CU_ASSERT_EQUAL(l.secondi, 0);
+  CU_ASSERT_EQUAL(l.segno, 0);
+
+  /* primi < 0 */
+  l = latitudine_make(50, -10, 15, 1);
+  CU_ASSERT_EQUAL(l.gradi, 0);
+  CU_ASSERT_EQUAL(l.primi, 0);
+  CU_ASSERT_EQUAL(l.secondi, 0);
+  CU_ASSERT_EQUAL(l.segno, 0);
+
+  /* secondi < 0 */
+  l = latitudine_make(50, 10, -10, 1);
+  CU_ASSERT_EQUAL(l.gradi, 0);
+  CU_ASSERT_EQUAL(l.primi, 0);
+  CU_ASSERT_EQUAL(l.secondi, 0);
+  CU_ASSERT_EQUAL(l.segno, 0);
+
+  /* oltre 90 gradi */
+  l = latitudine_make(90, 1, 1, 1);
+  CU_ASSERT_EQUAL(l.gradi, 0);
+  CU_ASSERT_EQUAL(l.primi, 0);
+  CU_ASSERT_EQUAL(l.secondi, 0);
+  CU_ASSERT_EQUAL(l.segno, 0);
 }
 
 void test_parse_bad()
 {
   char *inputs[] = {
-    "", "\n", "a", "4a", "40", "40 10 a 05 N", "40 10 a N", "91N", "70 110 21 S", NULL
+    "", "\n", "a", "N40 10 20S", "4a", "40", "40 10 a 05 N", "40 10 a N", "91N", "70 110 21 S", NULL
   };
-  int i = 0;
-
   Latitudine l;
   int status;
 
-  char *current = inputs[i];
-  while (current != NULL) {
-    status = latitudine_parse(&l, current);
+  char **current = inputs;
+  while (*current != NULL) {
+    status = latitudine_parse(&l, *current);
 
     CU_ASSERT_EQUAL(status, -1);
 
-    i++;
-    current = inputs[i];
+    ++current;
   }
 }
 

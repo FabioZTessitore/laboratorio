@@ -31,7 +31,7 @@ int main()
   } while (status != 0);
 
   dl = diff_latitudine(&l1, &l2);
-  printf("Differenza: ");
+  printf("\n\nDifferenza: ");
   diff_latitudine_print(&dl);
 
   return 0;

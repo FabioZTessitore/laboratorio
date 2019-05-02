@@ -21,8 +21,9 @@ int main()
   int status;
 
   printf("Latitudine\n\n");
-  printf("Inserisci una latitudine. Es. 40 10 05N\n\n");
 
+  printf("Inserisci una latitudine. Es. 40 10 05N\n\n");
+  printf("? ");
   strSafeInput(buffer, 80);
 
   status = latitudine_parse(&l, buffer);

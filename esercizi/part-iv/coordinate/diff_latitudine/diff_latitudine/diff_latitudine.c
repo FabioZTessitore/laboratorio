@@ -29,7 +29,7 @@ DiffLatitudine diff_latitudine(const Latitudine * const l1, const Latitudine * c
 
 void diff_latitudine_print(const DiffLatitudine * const dl)
 {
-  printf("%03d %02d %02d", dl->gradi, dl->primi, dl->secondi);
+  printf("%03d %02d %02d ", dl->gradi, dl->primi, dl->secondi);
   printf(dl->segno > 0 ? "N" : "S");
   putchar('\n');
 }

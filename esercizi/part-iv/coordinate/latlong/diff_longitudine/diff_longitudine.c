@@ -1,6 +1,7 @@
 /* diff_longitudine.c */
 
 #include <stdio.h>
+#include <stdlib.h>
 #include "diff_longitudine.h"
 #include "longitudine.h"
 
@@ -12,13 +13,16 @@ DiffLongitudine diff_longitudine(const Longitudine * const l1, const Longitudine
   int sec2 = l2->segno * (l2->gradi * 3600 + l2->primi * 60 + l2->secondi);
 
   int diff = sec2 - sec1;
+  dl.segno = diff > 0 ? 1 : -1;
   /* se la differenza supera 180 gradi, fai il giro dall'altro lato! */
-  if (diff > 180 * 3600) diff = - (360*3600 - diff);
+  if (abs(diff) > 180 * 3600) {
+    diff = - (360*3600 - abs(diff));
+    dl.segno = diff > 0 ? -1 : 1;
+  }
+
   if (diff < 0) {
-    dl.segno = -1;
     diff = -diff;
   }
-  else dl.segno = 1;
 
   dl.gradi = diff / 3600;
   diff %= 3600;
@@ -31,7 +35,7 @@ DiffLongitudine diff_longitudine(const Longitudine * const l1, const Longitudine
 
 void diff_longitudine_print(const DiffLongitudine * const dl)
 {
-  printf("%03d %02d %02d", dl->gradi, dl->primi, dl->secondi);
+  printf("%03d %02d %02d ", dl->gradi, dl->primi, dl->secondi);
   printf(dl->segno > 0 ? "E" : "W");
   putchar('\n');
 }
