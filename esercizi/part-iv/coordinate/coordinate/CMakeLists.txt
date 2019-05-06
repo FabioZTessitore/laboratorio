@@ -13,7 +13,7 @@ add_subdirectory(longitudine)
 add_subdirectory(str_utils)
 
 add_executable(Coords main.c)
-target_link_libraries(Coords PRIVATE DiffLatitudine DiffLongitudine Coordinate StrUtils)
+target_link_libraries(Coords PRIVATE DiffLatitudine DiffLongitudine Latitudine Longitudine Coordinate StrUtils)
 
 enable_testing()
 add_subdirectory(tests)

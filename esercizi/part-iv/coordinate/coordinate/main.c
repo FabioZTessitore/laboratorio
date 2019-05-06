@@ -4,6 +4,8 @@
 
 #include <stdio.h>
 #include "coordinate.h"
+#include "latitudine.h"
+#include "longitudine.h"
 #include "diff_latitudine.h"
 #include "diff_longitudine.h"
 #include "str_utils.h"
