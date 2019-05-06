@@ -1,0 +1,2 @@
+add_library(CoordinataGenerica OBJECT coordinata_generica.c)
+target_include_directories(CoordinataGenerica PUBLIC $(CMAKE_CURRENT_SOURCE_DIR))
