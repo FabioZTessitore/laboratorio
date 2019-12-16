@@ -2,9 +2,21 @@
 
 /* Stampa il maggiore tra cinque numeri dati in input */
 
+/* Istruzioni per la compilazione e l'esecuzione:
+ *
+ * Compilazione:
+ * $ gcc -c maggiore5.c -o maggiore5.o
+ *
+ * Link:
+ * $ gcc maggiore5.o -o maggiore5
+ *
+ * Esecuzione:
+ * $ ./maggiore5
+ */
+
 #include <stdio.h>
 
-int main()
+int main(void)
 {
   /* variabili di input */
   int num1, num2, num3, num4, num5;

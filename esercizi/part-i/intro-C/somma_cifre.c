@@ -1,12 +1,22 @@
 /* somma_cifre.c */
 
-/* Prende in input un numero di tre cifre
-   e ne stampa la somma.
-*/
+/* Prende in input un numero di tre cifre stampa la somma delle stesse */
+
+/* Istruzioni per la compilazione e l'esecuzione:
+ *
+ * Compilazione:
+ * $ gcc -c somma_cifre.c -o somma_cifre.o
+ *
+ * Link:
+ * $ gcc somma_cifre.o -o somma_cifre
+ *
+ * Esecuzione:
+ * $ ./somma_cifre
+ */
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
   /* variabile di input, un intero (di tre cifre) */
   int num;

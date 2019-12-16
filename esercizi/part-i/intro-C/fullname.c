@@ -1,22 +1,22 @@
 /* fullname.c */
 
-/* Stampa il nome completo */
+/* Stampa il nome completo con due chiamate a printf() */
 
 /* Istruzioni per la compilazione e l'esecuzione:
  *
- * Compilare:
+ * Compilazione:
  * $ gcc -c fullname.c -o fullname.o
  *
  * Link:
  * $ gcc fullname.o -o fullname
  *
- * Eseguire:
+ * Esecuzione:
  * $ ./fullname
  */
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
   printf("Fabio ");
   printf("Tessitore\n");

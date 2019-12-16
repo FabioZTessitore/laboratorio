@@ -1,8 +1,22 @@
 /* cerchio.c */
 
+/* Stampa circonferenza e superficie di un cerchio dato il raggio (intero) */
+
+/* Istruzioni per la compilazione e l'esecuzione:
+ *
+ * Compilazione:
+ * $ gcc -c cerchio.c -o cerchio.o
+ *
+ * Link:
+ * $ gcc cerchio.o -o cerchio
+ *
+ * Esecuzione:
+ * $ ./cerchio
+ */
+
 #include <stdio.h>
 
-int main()
+int main(void)
 {
   /* costanti utili */
   double pi = 3.14159;

@@ -2,9 +2,21 @@
 
 /* Esegue le cinque operazioni elementari su due interi dati in input */
 
+/* Istruzioni per la compilazione e l'esecuzione:
+ *
+ * Compilazione:
+ * $ gcc -c operazioni.c -o operazioni.o
+ *
+ * Link:
+ * $ gcc operazioni.o -o operazioni
+ *
+ * Esecuzione:
+ * $ ./operazioni
+ */
+
 #include <stdio.h>
 
-int main()
+int main(void)
 {
   /* variabili di input */
   int num1, num2;

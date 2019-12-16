@@ -4,19 +4,19 @@
 
 /* Istruzioni per la compilazione e l'esecuzione:
  *
- * Compilare:
+ * Compilazione:
  * $ gcc -c figure.c -o figure.o
  *
  * Link:
  * $ gcc figure.o -o figure
  *
- * Eseguire:
+ * Esecuzione:
  * $ ./figure
  */
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
   printf("********    ****\n"
          "*      *    *  *\n"
