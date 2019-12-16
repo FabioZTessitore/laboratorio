@@ -17,8 +17,8 @@
 print("Money")
 print("Determina il numero minimo di banconote\n")
 
-money_str = input("Importo (dollari): ")
-money = int(money_str)
+money = input("Importo (dollari): ")
+money = int(money)
 
 if money < 0:
     print("L'importo non puo' essere negativo!")
@@ -27,19 +27,19 @@ else:
     twenty = money // 20
 
     # importo rimanente
-    money -= twenty * 20
+    money = money % 20
 
     # biglietti da 10
     ten = money // 10
 
     # importo rimanente
-    money -= ten * 10
+    money = money % 10
 
     # biglietti da 5
     five = money // 5
 
     # importo rimanente
-    money -= five * 5
+    money = money % 5
 
     # biglietti da 1
     one = money

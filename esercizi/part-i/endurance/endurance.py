@@ -18,11 +18,11 @@ print("Endurance")
 print("Determina la durata massima di volo conoscendo")
 print("la quantita' di carburante ed il consumo orario\n")
 
-carburante_str = input("Carburante (in galloni): ")
-carburante = float(carburante_str)
+carburante = input("Carburante (in galloni): ")
+carburante = float(carburante)
 
-consumo_h_str = input("Consumo Orario (in galloni/h): ")
-consumo_h = float(consumo_h_str)
+consumo_h = input("Consumo Orario (in galloni/h): ")
+consumo_h = float(consumo_h)
 
 if carburante < 0:
     print("La quantita' di carburante non puo' essere negativa!")
@@ -37,13 +37,13 @@ else:
 
     # minuti rimanenti
     t = t - ore
-    t = t*60 # min
+    t = t * 60 # min
     # minuti interi
     minuti = int(t)
 
     # secondi rimanenti
     t = t - minuti
-    t = t*60 # sec
+    t = t * 60 # sec
     # secondi interi
     secondi = int(t)
 
