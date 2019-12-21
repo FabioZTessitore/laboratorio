@@ -4,19 +4,19 @@
 
 /* Istruzioni per la compilazione e l'esecuzione:
  *
- * Compilare:
+ * Compilazione:
  * $ gcc -c sumvett.c -o sumvett.o
  *
  * Link:
  * $ gcc sumvett.o -o sumvett
  *
- * Eseguire:
+ * Esecuzione:
  * $ ./sumvett
  */
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
   int numbers[3];
   int somma;
@@ -35,7 +35,7 @@ int main()
 
   /* calcolo */
   somma = numbers[0] + numbers[1] + numbers[2];
-  media = somma / 3.0;
+  media = (double)somma / 3.0;
 
   /* output */
   printf("\nDati iniziali:\n");

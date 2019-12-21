@@ -2,9 +2,21 @@
 
 /* Esperimento con vettori e indirizzi */
 
+/* Istruzioni per la compilazione e l'esecuzione:
+ *
+ * Compilazione:
+ * $ gcc -c vettori.c -o vettori.o
+ *
+ * Link:
+ * $ gcc vettori.o -o vettori
+ *
+ * Esecuzione:
+ * $ ./vettori
+ */
+
 #include <stdio.h>
 
-int main()
+int main(void)
 {
   int vett[5];
   int distanza;

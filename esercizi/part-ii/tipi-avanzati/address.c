@@ -4,19 +4,19 @@
 
 /* Istruzioni per la compilazione e l'esecuzione:
  *
- * Compilare:
+ * Compilazione:
  * $ gcc -c address.c -o address.o
  *
  * Link:
  * $ gcc address.o -o address
  *
- * Eseguire:
+ * Esecuzione:
  * $ ./address
  */
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
   float num;
   float *p_num;

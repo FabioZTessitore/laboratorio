@@ -4,19 +4,19 @@
 
 /* Istruzioni per la compilazione e l'esecuzione:
  *
- * Compilare:
+ * Compilazione:
  * $ gcc -c puntatori.c -o puntatori.o
  *
  * Link:
  * $ gcc puntatori.o -o puntatori
  *
- * Eseguire:
+ * Esecuzione:
  * $ ./puntatori
  */
 
  #include <stdio.h>
 
-int main()
+int main(void)
 {
   int num_i = 42;       /* una variabile intera */
   float num_f = 42.0;   /* una variabile float */
