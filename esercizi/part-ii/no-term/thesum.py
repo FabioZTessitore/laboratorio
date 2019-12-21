@@ -1,7 +1,6 @@
 # thesum.py
 
-# TheSum: somma un valore intero chiesto in input
-# ad uno letto in un file.
+# TheSum: somma un valore intero chiesto in input ad uno letto da un file.
 # Salva il risultato nel file
 
 import os

@@ -1,26 +1,25 @@
 /* thesum.c */
 
-/* TheSum: somma un valore intero chiesto in input
- * ad uno letto in un file.
+/* TheSum: somma un valore intero chiesto in input ad uno letto da un file.
  *
  * Salva il risultato nel file
  */
 
 /* Istruzioni per la compilazione e l'esecuzione:
  *
- * Compilare:
+ * Compilazione:
  * $ gcc -c thesum.c -o thesum.o
  *
  * Link:
  * $ gcc thesum.o -o thesum
  *
- * Eseguire:
+ * Esecuzione:
  * $ ./thesum
  */
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
   FILE *f;
   int sum = 0;
@@ -29,8 +28,8 @@ int main()
   f = fopen("sum.dat", "r");
   if (!f) {
     fprintf(stderr, "Impossibile aprire il file sum.dat\n");
-    fprintf(stdout, "Il file sum.dat non esiste,\n"
-                "verra' creato in fase di salvataggio dei dati.\n");
+    printf("Il file sum.dat non esiste,\n"
+            "verra' creato in fase di salvataggio dei dati.\n");
     sum = 0;
   } else {
     printf("Lettura del file sum.dat in corso ...\n");
