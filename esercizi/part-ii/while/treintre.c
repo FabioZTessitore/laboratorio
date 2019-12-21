@@ -9,7 +9,7 @@ $ ./treintre
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
   int partenza = 0;
   int contatore = 0;
@@ -24,6 +24,7 @@ int main()
   contatore = 0;
   while (contatore < 5) {
     printf("%d\n", partenza + contatore * 3);
+
     contatore++;
   }
 

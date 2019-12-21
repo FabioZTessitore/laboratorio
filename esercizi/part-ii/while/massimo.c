@@ -9,7 +9,7 @@ $ ./massimo
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
   int counter;
   int number;
@@ -29,6 +29,7 @@ int main()
   while (counter < 10) {
     printf("Inserisci un numero: ");
     scanf("%d", &number);
+
     counter++;
 
     if (number > largest) largest = number;

@@ -9,11 +9,12 @@ $ ./countdown
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
   int contatore = 0;
 
   printf("Conto alla rovescia\n\n");
+
   printf("Da che numero devo partire? ");
   scanf("%d", &contatore);
 
@@ -21,6 +22,7 @@ int main()
 
   while (contatore > 0) {
     printf("%d\n", contatore);
+
     contatore--;
   }
 

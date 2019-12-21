@@ -9,7 +9,7 @@ $ ./tabelline
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
   int riga = 0;
   int colonna = 0;
@@ -22,6 +22,7 @@ int main()
     colonna = 1;
     while (colonna <= 10) {
       printf("%5d", riga*colonna);
+
       colonna++;
     }
     putchar('\n');

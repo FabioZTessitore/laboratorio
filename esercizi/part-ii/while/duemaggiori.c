@@ -9,7 +9,7 @@ $ ./duemaggiori
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
   int counter;
   int number;
@@ -31,6 +31,7 @@ int main()
   printf("Inserisci un numero: ");
   scanf("%d", &number);
   counter++;
+
   if (number > largest1) {
     largest2 = largest1;
     largest1 = number;
