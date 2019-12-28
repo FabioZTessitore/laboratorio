@@ -1,6 +1,6 @@
 # tabelline.py
 
-# stampa la tabella pitagorica
+# stampa la tavola pitagorica
 
 print('Tabella Pitagorica\n')
 
