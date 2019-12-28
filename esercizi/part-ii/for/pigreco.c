@@ -11,7 +11,7 @@ $ ./pigreco
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
   double pi = 0.;
 

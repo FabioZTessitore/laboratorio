@@ -9,7 +9,7 @@ $ ./rombo
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
   /* righe del rombo (dispari da 1 a 19) */
   int n;

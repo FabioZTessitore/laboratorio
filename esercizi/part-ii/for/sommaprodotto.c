@@ -10,10 +10,10 @@ $ ./sommaprodotto
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
-  int i;
   int somma = 0, prodotto = 1;
+  int i;
 
   for (i = 2; i <= 30; i += 2) {
     somma += i;

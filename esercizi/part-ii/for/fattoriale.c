@@ -14,7 +14,7 @@ $ ./fattoriale
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
   int fatt = 1;
   int counter;
