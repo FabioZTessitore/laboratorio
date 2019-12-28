@@ -9,7 +9,7 @@ $ ./sumvett
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
   int numbers[10];
   int somma;

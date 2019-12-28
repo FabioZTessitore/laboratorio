@@ -9,7 +9,7 @@ $ ./caratteri
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
   char saluto[] = "Salve a tutti!";
   int i;
