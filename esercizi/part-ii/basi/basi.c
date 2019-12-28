@@ -1,7 +1,6 @@
 /* basi.c */
 
-/* Tabella di conversione decimale,
- * binario, ottale, esadecimale */
+/* Tabella di conversione decimale, binario, ottale, esadecimale */
 
 /* Istruzioni per la compilazione e l'esecuzione:
 $ make basi
@@ -10,7 +9,7 @@ $ ./basi
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
   int counter;          /* i numeri da 0 a 255 */
   int n;
