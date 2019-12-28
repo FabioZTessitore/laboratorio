@@ -9,7 +9,7 @@ $ ./binario
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
   /* input, un numero binario */
   int bin;

@@ -1,7 +1,6 @@
 /* cifra.c */
 
-/* Conta le occorrenze della cifra 7
- * nel numero dato in input */
+/* Conta le occorrenze della cifra 7 nel numero dato in input */
 
 /* Istruzioni per la compilazione e l'esecuzione:
 $ make cifra
@@ -10,10 +9,10 @@ $ ./cifra
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
-  int num;      /* numero in input */
-  int num_orig; /* copia di backup per la stampa finale */
+  int num;          /* numero in input */
+  int num_backup;   /* copia di backup per la stampa finale */
 
   /* cifra corrente */
   int c;
@@ -28,7 +27,7 @@ int main()
   } while (num < 0);
 
   /* copia per stampa finale */
-  num_orig = num;
+  num_backup = num;
 
   /* conta le occorrenze della cifra 7 */
   while (num > 0) {
@@ -42,7 +41,7 @@ int main()
     num /= 10;
   }
 
-  printf("%d contiene %d occorrenze della cifra 7\n", num_orig, counter);
+  printf("%d contiene %d occorrenze della cifra 7\n", num_backup, counter);
 
   return 0;
 }

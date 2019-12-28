@@ -10,10 +10,9 @@ $ ./cerchio
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
   double pi = 3.14159;
-
   double raggio;
 
   do {

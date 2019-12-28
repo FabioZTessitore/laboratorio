@@ -9,7 +9,7 @@ $ ./decripta
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
   int num;
   int temp;

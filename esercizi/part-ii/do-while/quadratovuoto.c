@@ -6,9 +6,10 @@
 $ make quadratovuoto
 $ ./quadratovuoto
 */
+
 #include <stdio.h>
 
-int main()
+int main(void)
 {
   /* input */
   int lato;
@@ -29,7 +30,7 @@ int main()
     }
   } while (lato < 1 || lato > 20);
 
-  /* prima riga */
+  /* prima riga (piena) */
   colonna = 0;
   while (colonna < lato) {
     putchar(car);
@@ -37,7 +38,7 @@ int main()
   }
   putchar('\n');
 
-  /* righe intermedie */
+  /* righe intermedie (vuote) */
   riga = 1;
   while (riga < lato-1) {
     putchar(car);
@@ -54,7 +55,7 @@ int main()
     riga++;
   }
 
-  /* ultima riga */
+  /* ultima riga (piena) */
   if (lato > 1) {
     colonna = 0;
     while (colonna < lato) {

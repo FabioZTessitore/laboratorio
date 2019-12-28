@@ -9,7 +9,7 @@ $ ./palindromi
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
   int num = -1;
 
