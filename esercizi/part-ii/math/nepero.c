@@ -12,7 +12,7 @@ $ ./nepero
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
   /* numero di termini della serie */
   int n = 10;

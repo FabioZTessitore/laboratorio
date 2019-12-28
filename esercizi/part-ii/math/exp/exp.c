@@ -10,7 +10,7 @@ $ ./exp
 #include <stdio.h>
 #include <math.h>
 
-int main()
+int main(void)
 {
   double x = 0.;
   double x_to_n = 1.;

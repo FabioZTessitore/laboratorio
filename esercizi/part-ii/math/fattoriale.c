@@ -9,9 +9,9 @@ $ ./fattoriale
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
-  int n;
+  int n = 0;
   int fatt = 1;
   int counter = 1;
 
