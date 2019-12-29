@@ -4,7 +4,7 @@
 
 /* istruzioni per la compilazione e l'esecuzione:
 $ make eliminacommenti
-$ ./eliminacommenti < programma.c
+$ ./eliminacommenti < eliminacommenti.c
 */
 
 /* Sono presenti vari commenti cosi' da usare il codice stesso per i test */
@@ -128,7 +128,7 @@ Stato       Input     Output      Nuovo Stato
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
   enum Stato {  C,      /* CODICE */
                 SLASH,  /* INCONTRATO '/' IN CODICE */

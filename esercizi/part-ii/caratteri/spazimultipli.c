@@ -1,12 +1,13 @@
 /* spazimultipli.c */
 
 /* copia i caratteri dallo standard input allo standard output
- * eliminando gli spazi multipli (non tiene conto di tabulazioni)
+ * eliminando gli spazi multipli (non tiene conto di tabulazioni).
+ * Ipotizza che la sequenza di caratteri non inizi con lo spazio.
  */
 
  /* istruzioni per la compilazione e l'esecuzione:
  $ make spazimultipli
- $ ./spazimultipli < testo.txt
+ $ ./spazimultipli < test4.txt
  */
 
 /*
@@ -24,7 +25,7 @@ SPACE       c==' '      -              -
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
   enum Stato { NORM, SPACE };
   int stato = NORM;

@@ -1,69 +1,40 @@
 /* stampaparole.c */
 
 /* stampa il testo in ingresso una parola per riga
- * (ipotizza assenza di spazi multipli) */
+ * (ipotizza assenza di spazi multipli)
+ */
 
 /* istruzioni per la compilazione e l'esecuzione:
 $ make stampaparole
-$ ./stampaparole < testo.txt
+$ cat test4.txt | ./spazimultipli | ./stampaparole
 */
 
 /*
 Stati possibili:
-  1)  START    stato iniziale, utilizzato per
-                capire se il primo carattere
-                e' di spaziatura o meno
-  2)  IN       all'interno di una parola
-  3)  OUT      all'esterno delle parole
+  1)  IN       all'interno di una parola
 
 Tabella degli stati:
 Stato       Input          Output      Nuovo Stato
-START     c==' '  or
-          c=='\n' or
-          c=='\t'            -            OUT
-
-START     c!=' '  and
-          c!='\n' and
-          c!='\t'            c             IN
-
  IN       c==' '  or
           c=='\n' or
-          c=='\t'           '\n'           OUT
+          c=='\t'           '\n'           IN
 
  IN       c!=' '  and
           c!='\n' and
           c!='\t'            c              -
-
- OUT         -               c             IN
 */
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
-  enum Stato { START, IN, OUT };
-  int stato = START;
-
   int c;
 
   while ( (c=getchar()) != EOF ) {
-    if (stato == START) {
-      if (c==' ' || c=='\n' || c=='\t') {
-        stato = OUT;
-      } else {
-        putchar(c);
-        stato = IN;
-      }
-    } else if (stato == IN) {
-      if (c==' ' || c=='\n' || c=='\t') {
-        putchar('\n');
-        stato = OUT;
-      } else {
-        putchar(c);
-      }
-    } else if (stato == OUT) {
+    if (c==' ' || c=='\n' || c=='\t') {
+      putchar('\n');
+    } else {
       putchar(c);
-      stato = IN;
     }
   }
 
