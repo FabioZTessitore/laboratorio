@@ -4,12 +4,12 @@
 
 /* istruzioni per la compilazione e l'esecuzione:
 $ make contalinee
-$ ./contalinee < testo
+$ ./contalinee < test.txt
 */
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
   int c;
   int nl = 0; /* numero di linee */

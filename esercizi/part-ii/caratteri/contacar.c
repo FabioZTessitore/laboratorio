@@ -4,12 +4,12 @@
 
 /* istruzioni per la compilazione e l'esecuzione:
 $ make contacar
-$ ./contacar < testo
+$ ./contacar < test.txt
 */
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
   int c;
   int n = 0; /* numero di caratteri */

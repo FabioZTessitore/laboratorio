@@ -1,15 +1,15 @@
 /* contacifre.c */
 
-/* conta spaziature e cifre */
+/* conta spaziature, cifre e altri caratteri */
 
 /* istruzioni per la compilazione e l'esecuzione:
 $ make contacifre
-$ ./contacifre < testo.txt
+$ ./contacifre < test3.txt
 */
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
   int c;
 

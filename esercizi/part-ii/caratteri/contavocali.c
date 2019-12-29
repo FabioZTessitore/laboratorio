@@ -4,12 +4,12 @@
 
 /* istruzioni per la compilazione e l'esecuzione:
 $ make contavocali
-$ ./contavocali < testo.txt
+$ ./contavocali < test.txt
 */
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
   int c;
 

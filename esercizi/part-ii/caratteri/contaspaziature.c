@@ -4,12 +4,12 @@
 
 /* istruzioni per la compilazione e l'esecuzione:
 $ make contaspaziature
-$ ./contaspaziature < testo.txt
+$ ./contaspaziature < test2.txt
 */
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
   int c;
 

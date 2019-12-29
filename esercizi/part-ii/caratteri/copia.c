@@ -4,12 +4,12 @@
 
 /* istruzioni per la compilazione e l'esecuzione:
 $ make copia
-$ ./copia < file_src > file_dst
+$ ./copia < test.txt > temp.txt
 */
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
   int c;
 
