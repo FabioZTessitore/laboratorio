@@ -17,7 +17,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-int main()
+int main(void)
 {
   int i;
 

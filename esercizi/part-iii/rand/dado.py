@@ -11,4 +11,4 @@ while N <= 1:
     N = input("N = ")
     N = int(N)
 
-print("Estraggo ...", random.randrange(1, N+1))
+print("Estraggo ...", 1 + random.randrange(N))
