@@ -12,9 +12,9 @@
 #include <stdlib.h>
 #include <time.h>
 
-int crazy_random();
+int crazy_random(void);
 
-int main()
+int main(void)
 {
   srand( time(NULL) );
 
@@ -33,7 +33,7 @@ int main()
   return 0;
 }
 
-int crazy_random()
+int crazy_random(void)
 {
   /* tiene traccia del numero di invocazioni */
   static int counter = 0;

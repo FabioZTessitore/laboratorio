@@ -12,7 +12,7 @@
 
 int inverti_cifre(int num);
 
-int main()
+int main(void)
 {
   int n;
 

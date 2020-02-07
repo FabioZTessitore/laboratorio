@@ -11,13 +11,13 @@
 #include <stdio.h>
 
 /* stampa menu */
-void menu();
+int menu(void);
 
 /* conversioni di base */
 void converti(int num, int base);
 
 
-int main()
+int main(void)
 {
   /* scelta effettuata, indica il tipo di conversione da effettuare */
   int scelta = 0;
@@ -30,24 +30,18 @@ int main()
     scanf("%d", &num);
   } while (num<0 || num>255);
 
-  do {
-    menu();   /* scelte valide: 1, 2, 3 */
-    scanf("%d", &scelta);
-  } while (scelta<1 || scelta>3);
+  scelta = menu();   /* scelte valide: 1, 2, 3 */
 
   printf("\n%d (10) = ", num);
   switch(scelta) {
     case 1:
       converti(num, 2);
-      printf(" (2)\n");
       break;
     case 2:
       converti(num, 8);
-      printf(" (8)\n");
       break;
     case 3:
       converti(num, 16);
-      printf(" (16)\n");
       break;
     default:
       /* scelta non valida */
@@ -57,24 +51,31 @@ int main()
   return 0;
 }
 
-void menu()
+int menu(void)
 {
-  printf("\nScegli la base:\n"
+  int scelta;
+
+  do {
+    printf("\nScegli la base:\n"
         "1) Converti in binario\n"
         "2) Converti in ottale\n"
         "3) Converti in esadecimale\n"
         "Scegli: ");
+    scanf("%d", &scelta);
+  } while (scelta<1 || scelta>3);
+
+  return scelta;
 }
 
 /* converte numeri decimali compresi tra 0 e 255
  * in binario, in ottale o in esadecimale */
 void converti(int num, int base)
 {
-  int i;
   int current_weight;
   int current_bit;
   int numero_cifre;
   int errore_base = 0;
+  int i;
 
   switch (base) {
     case 2:
@@ -137,4 +138,6 @@ void converti(int num, int base)
     num -= current_bit*current_weight;
     current_weight /= base;
   }
+
+  printf(" (%d)\n", base);
 }

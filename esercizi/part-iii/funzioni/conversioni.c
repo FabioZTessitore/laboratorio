@@ -11,7 +11,7 @@
 #include <stdio.h>
 
 /* stampa menu */
-void menu();
+int menu(void);
 
 /* conversioni di base */
 void converti_in_binario(int num);
@@ -19,7 +19,7 @@ void converti_in_ottale(int num);
 void converti_in_esadecimale(int num);
 
 
-int main()
+int main(void)
 {
   /* scelta effettuata, indica il tipo di conversione da effettuare */
   int scelta = 0;
@@ -34,24 +34,19 @@ int main()
     scanf("%d", &num);
   } while (num<0 || num>255);
 
-  do {
-    menu();   /* scelte valide: 1, 2, 3 */
-    scanf("%d", &scelta);
-  } while (scelta<1 || scelta>3);
+  scelta = menu();   /* scelte valide: 1, 2, 3 */
 
   printf("\n%d (10) = ", num);
+
   switch(scelta) {
     case 1:
       converti_in_binario(num);
-      printf(" (2)\n");
       break;
     case 2:
       converti_in_ottale(num);
-      printf(" (8)\n");
       break;
     case 3:
       converti_in_esadecimale(num);
-      printf(" (16)\n");
       break;
     default:
       /* scelta non valida */
@@ -61,13 +56,20 @@ int main()
   return 0;
 }
 
-void menu()
+int menu(void)
 {
-  printf("\nScegli la base:\n"
-        "1) Binario\n"
-        "2) Ottale\n"
-        "3) Esadecimale\n\n"
-        "Scelta: ");
+  int scelta = 0;
+
+  do {
+    printf("\nScegli la base:\n"
+          "1) Binario\n"
+          "2) Ottale\n"
+          "3) Esadecimale\n\n"
+          "Scelta: ");
+    scanf("%d", &scelta);
+  } while (scelta<1 || scelta>3);
+
+  return scelta;
 }
 
 /* converte numeri decimali
@@ -76,9 +78,9 @@ void menu()
  */
 void converti_in_binario(int num)
 {
-  int i;
   int current_weight = 128;  /* peso ottavo bit */
   int current_bit;
+  int i;
 
   for (i = 0; i < 8; i++) {
     current_bit = num/current_weight;
@@ -86,6 +88,8 @@ void converti_in_binario(int num)
     num -= current_bit*current_weight;
     current_weight /= 2;
   }
+
+  printf(" (2)\n");
 }
 
 /* converte numeri decimali
@@ -94,9 +98,9 @@ void converti_in_binario(int num)
  */
 void converti_in_ottale(int num)
 {
-  int i;
   int current_weight = 64;
   int current_bit;
+  int i;
 
   for (i = 0; i < 3; i++) {
     current_bit = num/current_weight;
@@ -104,6 +108,8 @@ void converti_in_ottale(int num)
     num -= current_bit*current_weight;
     current_weight /= 8;
   }
+
+  printf(" (8)\n");
 }
 
 /* converte numeri decimali
@@ -112,9 +118,9 @@ void converti_in_ottale(int num)
  */
 void converti_in_esadecimale(int num)
 {
-  int i;
   int current_weight = 16;
   int current_bit;
+  int i;
 
   for (i = 0; i < 2; i++) {
     current_bit = num/current_weight;
@@ -156,4 +162,6 @@ void converti_in_esadecimale(int num)
     num -= current_bit*current_weight;
     current_weight /= 16;
   }
+
+  printf(" (16)\n");
 }

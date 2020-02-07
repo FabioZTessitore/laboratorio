@@ -10,7 +10,7 @@
 
 #include <stdio.h>
 
-void menu();
+int menu(void);
 
 double area_quadrato(double lato);
 double area_cerchio(double raggio);
@@ -22,10 +22,7 @@ int main()
 
   puts("Calcola l'area di figure geometriche");
 
-  do {
-    menu();
-    scanf("%d", &scelta);
-  } while (scelta<1 || scelta>2);
+  scelta = menu();
 
   switch(scelta) {
     case 1:
@@ -50,12 +47,19 @@ int main()
   return 0;
 }
 
-void menu()
+int menu(void)
 {
-  printf("\nScegli la figura geometrica:\n"
+  int scelta;
+
+  do {
+    printf("\nScegli la figura geometrica:\n"
         "1) Quadrato\n"
         "2) Cerchio\n"
         "Scegli: ");
+    scanf("%d", &scelta);
+  } while (scelta<1 || scelta>2);
+  
+  return scelta;
 }
 
 double area_cerchio(double raggio)

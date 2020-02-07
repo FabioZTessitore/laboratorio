@@ -13,7 +13,7 @@
 
 double ipotenusa(double lato1, double lato2);
 
-int main()
+int main(void)
 {
   printf("Triangolo   Lato 1   Lato 2   Ipotenusa\n");
   printf("%9d   %6.1f   %6.1f   %9.1f\n", 1, 3., 4., ipotenusa(3., 4.));
