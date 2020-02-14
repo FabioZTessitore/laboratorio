@@ -11,7 +11,7 @@
 #include <stdio.h>
 #include "cai.h"
 
-int main()
+int main(void)
 {
   int cifra1, cifra2;
   int result;

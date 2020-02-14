@@ -6,24 +6,24 @@
 
 #define N_ANSWERS 4
 
-int cai_estrai_risposta();
+int cai_estrai_risposta(void);
 
-void cai_init()
+void cai_init(void)
 {
   random_init();
 }
 
-int cai_estrai_cifra()
+int cai_estrai_cifra(void)
 {
   return random_between(0, 10);
 }
 
-int cai_estrai_risposta()
+int cai_estrai_risposta(void)
 {
   return random_between(0, N_ANSWERS);
 }
 
-void cai_risposta_esatta()
+void cai_risposta_esatta(void)
 {
   switch(cai_estrai_risposta()) {
     case 0:
@@ -44,7 +44,7 @@ void cai_risposta_esatta()
   }
 }
 
-void cai_risposta_errata()
+void cai_risposta_errata(void)
 {
   switch(cai_estrai_risposta()) {
     case 0:

@@ -11,7 +11,7 @@
 #include <stdio.h>
 #include "guess.h"
 
-int main()
+int main(void)
 {
   int numero;
   int guess;
@@ -22,12 +22,10 @@ int main()
 
   guess_init();
 
-
   do {
     guess_header(min, max);
 
     guess = 0;
-
     numero = guess_number(min, max);
 
     do {

@@ -4,7 +4,7 @@
 #include "guess.h"
 #include "random.h"
 
-void guess_init()
+void guess_init(void)
 {
   random_init();
 }

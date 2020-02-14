@@ -13,10 +13,9 @@
 
 void genera_e_stampa_numeri(int quanti, int min, int max);
 
-int main()
+int main(void)
 {
-  int quanti = 5;
-
+  int quanti = 5;   /* quanti numeri estrarre */
   int min, max;
 
   puts("Random");

@@ -13,7 +13,7 @@
 
 void stampa_asterischi(int n);
 
-int main()
+int main(void)
 {
   int trials = 100;
   int face[7];      /* 0 inutilizzato */
@@ -33,7 +33,7 @@ int main()
 
   /* stampa con linee di asterischi */
   for (i = 1; i <= 6; i++) {
-    printf("#%02d)  [%d]  ", i, face[i]);
+    printf("#%02d)  [%02d]  ", i, face[i]);
     stampa_asterischi(face[i]);
   }
 

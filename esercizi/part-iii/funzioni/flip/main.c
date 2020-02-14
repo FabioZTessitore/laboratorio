@@ -15,14 +15,14 @@
 /* simulate():  simulazione del lancio di una moneta
  *
  * parametri:
- *  trials:  numero di lanci
+ *  - trials:  numero di lanci
  *
  * restituisce il numero di Head o Tail
  */
 int simulate(int trials);
 
 
-int main()
+int main(void)
 {
   int trials = 100;
   int head_counter = 0;
