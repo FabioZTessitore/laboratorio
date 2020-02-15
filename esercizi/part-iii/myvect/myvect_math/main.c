@@ -11,35 +11,30 @@ $ ./main
 #include "myvect.h"
 #include "myvect_math.h"
 
-int main()
+int main(void)
 {
   int N = 10;
-  int vett[N];
+  int vett1[N];
   int vett2[N];
-  int index;
-  int min;
-  int dot;
 
   printf("MyVect\n\n");
 
   myvect_init();
 
-  myvect_random(vett, N, 0, 100);
-  myvect_print(vett, N);
+  printf("vett1 random in [0, 100[ ...\n");
+  myvect_random(vett1, N, 0, 100);
+  myvect_print(vett1, N);
 
   printf("Cerca il minimo\n");
-  min = myvect_min(vett, N);
-  index = myvect_min_index(vett, N);
+  printf("Minimo: %d\n", myvect_min(vett1, N));
+  printf("Posizione del minimo: %d\n", myvect_min_index(vett1, N));
 
-  printf("Minimo: %d\n", min);
-  printf("Posizione del minimo: %d\n", index);
-
-  myvect_sequence(vett, N, 0, 1);
+  printf("vett1 e vett2, sequenze da 0 con passo 1 ...\n");
+  myvect_sequence(vett1, N, 0, 1);
   myvect_sequence(vett2, N, 0, 1);
-  myvect_print(vett, N);
+  myvect_print(vett1, N);
   myvect_print(vett2, N);
-  dot = myvect_dot_product(vett, vett2, N);
-  printf("Dot Product: %d\n", dot);
+  printf("Dot Product: %d\n", myvect_dot_product(vett1, vett2, N));
 
   return 0;
 }
