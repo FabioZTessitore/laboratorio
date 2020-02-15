@@ -15,9 +15,9 @@ $ ./main
 
 int int_compare(const void *a, const void* b);
 
-int main()
+int main(void)
 {
-  long int N = 100000; /* 100k */
+  const long int N = 100000; /* 100k */
   int vett[N];
   int vett_backup[N];
   long int i;
@@ -28,8 +28,8 @@ int main()
 
   myvect_init();
 
+  printf("vett random in [0, 1000[ ...\n");
   myvect_random(vett, N, 0, 1000);
-  /* make a backup copy */
   for (i = 0; i < N; i++) vett_backup[i] = vett[i];
 
   printf("Bubble Sort\n");

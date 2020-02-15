@@ -11,7 +11,7 @@ $ ./main
 #include "myvect.h"
 #include "myvect_sort.h"
 
-int main()
+int main(void)
 {
   int N = 10;
   int vett[N];

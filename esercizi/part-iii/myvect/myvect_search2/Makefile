@@ -1,5 +1,5 @@
 CC=gcc
-LDFLAGS=-Wall -ansi -pedantic
+CFLAGS=-Wall -ansi -pedantic
 LDLIBS=
 
 main: random.o myvect.o myvect_search.o myvect_sort.o myvect_math.o main.o

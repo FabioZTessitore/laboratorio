@@ -10,22 +10,23 @@ $ ./main
 #include <stdio.h>
 #include <stdlib.h>
 #include "myvect.h"
-#include "random.h"
 
 int int_compare(const void *a, const void* b);
 
-int main()
+int main(void)
 {
-  int N = 10;
+  const int N = 10;
   int vett[N];
 
   printf("MyVect\n\n");
 
   myvect_init();
 
+  printf("vett random in [0, 100[ ...\n");
   myvect_random(vett, N, 0, 100);
   myvect_print(vett, N);
 
+  printf("qsort ...\n");
   qsort(vett, N, sizeof(int), int_compare);
   myvect_print(vett, N);
 
