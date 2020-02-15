@@ -13,7 +13,7 @@
 /* swap: scambia i valori */
 void swap(int *pa, int *pb);
 
-int main()
+int main(void)
 {
   int a = 3;
   int b = 1;

@@ -1,18 +1,18 @@
-/* fibonacci.c */
+/* memoizzazione.c */
 
 /* La serie di Fibonacci mediante funzione ricorsiva e memoizzazione */
 
 /* istruzioni per la compilazione e l'esecuzione:
-$ make fibonacci
-$ ./fibonacci
+$ make memoizzazione
+$ ./memoizzazione
 */
 
 #include <stdio.h>
 
-int fibonacci_helper(int n, int cache[]);
 int fibonacci(int n);
+int fibonacci_helper(int n, int cache[]);
 
-int main()
+int main(void)
 {
   int i;
 
@@ -26,6 +26,20 @@ int main()
   return 0;
 }
 
+int fibonacci(int n)
+{
+    static int cache[30];  /* azzerato automaticamente */
+    cache[0] = 0;
+    cache[1] = 1;
+
+    if (n >= 30) {
+      printf("Posso calcolare fino a fibonacci(29)\n");
+      return -1;
+    }
+
+    return fibonacci_helper(n, cache);
+}
+
 int fibonacci_helper(int n, int cache[])
 {
   if (n == 0 || n == 1) return n;
@@ -35,17 +49,4 @@ int fibonacci_helper(int n, int cache[])
   cache[n] = fibonacci_helper(n-1, cache) + fibonacci_helper(n-2, cache);
 
   return cache[n];
-}
-
-int fibonacci(int n)
-{
-    static int cache[30];  /* azzerato automaticamente */
-    cache[1] = 1;
-
-    if (n >= 30) {
-      printf("Posso calcolare fino a fibonacci(29)\n");
-      return -1;
-    }
-
-    return fibonacci_helper(n, cache);
 }

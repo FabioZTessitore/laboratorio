@@ -11,12 +11,12 @@
 #include <stdio.h>
 
 /* raddoppia_vettore: raddoppia ogni elemento del vettore */
-void raddoppia_vettore(int v[], int n);
+void raddoppia_vettore(int v[], int size);
 
 /* raddoppia_intero: raddoppia l'argomento */
 void raddoppia_intero(int *pn);
 
-int main()
+int main(void)
 {
   int vett[10];
   int i;
@@ -44,11 +44,11 @@ int main()
   return 0;
 }
 
-void raddoppia_vettore(int v[], int n)
+void raddoppia_vettore(int v[], int size)
 {
   int i;
 
-  for (i = 0; i < n; i++) {
+  for (i = 0; i < size; i++) {
     raddoppia_intero(&v[i]);
   }
 }

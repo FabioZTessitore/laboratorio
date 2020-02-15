@@ -11,9 +11,9 @@
 #include <stdio.h>
 
 /* raddoppia: raddoppia ogni elemento del vettore */
-void raddoppia(int v[], int n);
+void raddoppia(int v[], int size);
 
-int main()
+int main(void)
 {
   int vett[10];
   int i;
@@ -41,11 +41,11 @@ int main()
   return 0;
 }
 
-void raddoppia(int v[], int n)
+void raddoppia(int v[], int size)
 {
   int i;
 
-  for (i = 0; i < n; i++) {
+  for (i = 0; i < size; i++) {
     v[i] *= 2;
   }
 }
