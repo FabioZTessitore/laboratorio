@@ -4,7 +4,7 @@
 #include "myvect.h"
 #include "random.h"
 
-void myvect_init()
+void myvect_init(void)
 {
   random_init();
 }
@@ -34,15 +34,6 @@ void myvect_random(int v[], const int size, const int min, const int max)
   for (i = 0; i < size; i++)  v[i] = random_between(min, max);
 }
 
-void myvect_print(const int v[], const int size)
-{
-  int i;
-  for (i = 0; i < size; i++) {
-    printf("%d ", v[i]);
-  }
-  putchar('\n');
-}
-
 void myvect_reverse(int v[], const int size)
 {
   int i;
@@ -53,4 +44,14 @@ void myvect_reverse(int v[], const int size)
     v[i] = v[size-i-1];
     v[size-i-1] = temp;
   }
+}
+
+void myvect_print(const int v[], const int size)
+{
+  int i;
+
+  for (i = 0; i < size; i++) {
+    printf("%d ", v[i]);
+  }
+  putchar('\n');
 }

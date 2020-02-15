@@ -4,7 +4,7 @@
 #include <time.h>
 #include "random.h"
 
-void random_init()
+void random_init(void)
 {
   srand( time(NULL) );
 }
