@@ -21,26 +21,12 @@ double myvect_mean(const int v[], const int size)
 
 int myvect_min(const int v[], const int size)
 {
-  int min = v[0];
-  int i;
-
-  for (i = 1; i < size; i++) {
-    if (v[i] < min) min = v[i];
-  }
-
-  return min;
+  return v[myvect_min_index(v, size)];
 }
 
 int myvect_max(const int v[], const int size)
 {
-  int max = v[0];
-  int i;
-
-  for (i = 1; i < size; i++) {
-    if (v[i] > max) max = v[i];
-  }
-
-  return max;
+  return v[myvect_max_index(v, size)];
 }
 
 int myvect_min_index(const int v[], const int size)

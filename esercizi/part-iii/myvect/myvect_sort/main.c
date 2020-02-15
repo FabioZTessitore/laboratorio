@@ -20,15 +20,19 @@ int main()
 
   myvect_init();
 
+  printf("vett random in [0, 100[ ...\n");
   myvect_random(vett, N, 0, 100);
   myvect_print(vett, N);
 
+  printf("bubble sort ...\n");
   myvect_bubble_sort(vett, N);
   myvect_print(vett, N);
 
+  printf("vett random in [0, 100[ ...\n");
   myvect_random(vett, N, 0, 100);
   myvect_print(vett, N);
 
+  printf("selection sort ...\n");
   myvect_selection_sort(vett, N);
   myvect_print(vett, N);
 
