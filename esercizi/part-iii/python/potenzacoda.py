@@ -6,18 +6,19 @@
 # power:
 #
 # suppone che exponent sia un intero maggiore o uguale a 1
+def power(base, exponent):
+    return power_helper(base, exponent, 1.)
+
 def power_helper(base, exponent, parziale):
     if (exponent == 1):
         return base * parziale
 
-    return power_helper(base, exponent-1, base * parziale)
+    return power_helper(base, exponent-1, base*parziale)
 
-def power(base, exponent):
-    return power_helper(base, exponent, 1)
 
 # main
 
-b = 3
+b = 3.
 e = 4
 
-print("%d^%d = %d" % (b, e, power(b, e)))
+print("%g^%d = %g" % (b, e, power(b, e)))

@@ -14,7 +14,7 @@ def power(base, exponent):
 
 # main
 
-b = 3
+b = 3.
 e = 4
 
-print("%d^%d = %d" % (b, e, power(b, e)))
+print("%g^%d = %g" % (b, e, power(b, e)))

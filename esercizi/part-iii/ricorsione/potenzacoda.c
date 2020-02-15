@@ -11,15 +11,15 @@
 
 #include <stdio.h>
 
-int power_helper(int base, int exponent, int parziale);
-int power(int base, int exponent);
+double power(double base, int exponent);
+double power_helper(double base, int exponent, double parziale);
 
-int main()
+int main(void)
 {
-  int b = 3;
+  double b = 3.;
   int e = 4;
 
-  printf("%d^%d = %d\n", b, e, power(b, e));
+  printf("%g^%d = %g\n", b, e, power(b, e));
 
   return 0;
 }
@@ -29,12 +29,12 @@ int main()
  * suppone che exponent sia un intero maggiore
  * o uguale a 1
  */
-int power(int base, int exponent)
+double power(double base, int exponent)
 {
-  return power_helper(base, exponent, 1);
+  return power_helper(base, exponent, 1.);
 }
 
-int power_helper(int base, int exponent, int parziale)
+double power_helper(double base, int exponent, double parziale)
 {
   if (exponent == 1) return base * parziale;
 

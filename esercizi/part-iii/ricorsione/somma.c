@@ -11,16 +11,14 @@ $ ./somma
 
 int somma(int x, int y);
 
-int main()
+int main(void)
 {
   int a, b;
 
-  printf("Effettua la somma tra due numeri non negativi\n\n");
+  printf("Effettua la somma tra due numeri\n\n");
 
-  do {
-    printf("Inserisci il primo numero: ");
-    scanf("%d", &a);
-  } while (a < 0);
+  printf("Inserisci il primo numero: ");
+  scanf("%d", &a);
 
   do {
     printf("Inserisci il secondo numero: ");

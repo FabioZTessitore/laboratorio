@@ -10,7 +10,7 @@ $ ./hanoi
 #include <stdio.h>
 #include "hanoi.h"
 
-int main()
+int main(void)
 {
   int n_dischi = 4;
 

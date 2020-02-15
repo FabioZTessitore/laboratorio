@@ -1,8 +1,6 @@
 /* reverse.c */
 
-/* stampa le cifre di un numero
- * al contrario mediante una funzione ricorsiva
- */
+/* stampa le cifre di un numero al contrario mediante una funzione ricorsiva */
 
  /* istruzioni per la compilazione e l'esecuzione:
  $ make reverse
@@ -13,15 +11,17 @@
 
 void inverti_cifre(int n);
 
-int main()
+int main(void)
 {
   int num;
 
   printf("Inserisci un numero e io ne stampero'\n"
         "le cifre al contrario. Es. 123 -> 321\n\n");
 
-  printf(" ? ");
-  scanf("%d", &num);
+  do {
+    printf(" ? ");
+    scanf("%d", &num);
+  } while (num < 0);
 
   printf("%d -> ", num);
   inverti_cifre(num);

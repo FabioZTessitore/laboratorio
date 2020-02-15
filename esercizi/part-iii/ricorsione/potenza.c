@@ -9,14 +9,14 @@ $ ./potenza
 
 #include <stdio.h>
 
-int power(int base, int exponent);
+double power(double base, int exponent);
 
-int main()
+int main(void)
 {
-  int b = 3;
+  double b = 3.2;
   int e = 4;
 
-  printf("%d^%d = %d\n", b, e, power(b, e));
+  printf("%g^%d = %g\n", b, e, power(b, e));
 
   return 0;
 }
@@ -26,7 +26,7 @@ int main()
  * suppone che exponent sia un intero maggiore
  * o uguale a 1
  */
-int power(int base, int exponent)
+double power(double base, int exponent)
 {
   if (exponent == 1) return base;
 

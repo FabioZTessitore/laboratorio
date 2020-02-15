@@ -11,19 +11,17 @@
 
 #include <stdio.h>
 
-int somma_helper(int x, int y, int parziale);
 int somma(int x, int y);
+int somma_helper(int x, int y, int parziale);
 
-int main()
+int main(void)
 {
   int a, b;
 
-  printf("Effettua la somma tra due numeri non negativi\n\n");
+  printf("Effettua la somma tra due numeri\n\n");
 
-  do {
-    printf("Inserisci il primo numero: ");
-    scanf("%d", &a);
-  } while (a < 0);
+  printf("Inserisci il primo numero: ");
+  scanf("%d", &a);
 
   do {
     printf("Inserisci il secondo numero: ");
@@ -35,14 +33,14 @@ int main()
   return 0;
 }
 
+int somma(int x, int y)
+{
+  return somma_helper(x, y, 0);
+}
+
 int somma_helper(int x, int y, int parziale)
 {
   if (y == 0) return x + parziale;
 
   return somma_helper(x, y-1, parziale+1);
-}
-
-int somma(int x, int y)
-{
-  return somma_helper(x, y, 0);
 }
