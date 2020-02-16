@@ -1,9 +1,9 @@
 /* maiuscole_minuscole.c */
 
 /* Data una stringa,
-    se non contiene cifre la stampa in maiuscolo
-    altrimenti in minuscolo (mantenendo le cifre)
-*/
+ * se non contiene cifre la stampa in maiuscolo
+ * altrimenti in minuscolo (mantenendo le cifre)
+ */
 
 #include <stdio.h>
 #include <ctype.h>
@@ -12,7 +12,7 @@ int has_digit(const char *s);
 void print_in_lowercase(const char *s);
 void print_in_uppercase(const char *s);
 
-int main()
+int main(void)
 {
   char s[] = "abcDEF123qwerty";
 

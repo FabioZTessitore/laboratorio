@@ -4,7 +4,7 @@
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
   char str[] = "2 3.4";
   int num1;

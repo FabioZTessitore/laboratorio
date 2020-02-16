@@ -5,9 +5,10 @@
 #include <stdio.h>
 #include <string.h>
 
-int main()
+int main(void)
 {
   char msg[] = "Nel mezzo del cammin";
+  char delim[] = " ";
   char* token;
 
   puts("Tokenize\n");
@@ -16,10 +17,10 @@ int main()
 
   puts("Tokens:");
 
-  token = strtok(msg, " ");
+  token = strtok(msg, delim);
   while (token) {
     puts(token);
-    token = strtok(NULL, " ");
+    token = strtok(NULL, delim);
   }
 
   return 0;
