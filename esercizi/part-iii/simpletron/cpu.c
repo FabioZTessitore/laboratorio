@@ -28,8 +28,8 @@ void cpu_fetch(const int memory[], const int memory_size,
 }
 
 int cpu_execute(int memory[], const int memory_size,
-  int * const p_accumulator,
-  int * const p_instructionCounter, const int opcode, const int operand)
+  int * const p_accumulator, int * const p_instructionCounter,
+  const int opcode, const int operand)
 {
   int halt = 0;
   int temp;

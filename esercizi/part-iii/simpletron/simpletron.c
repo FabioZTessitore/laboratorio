@@ -5,7 +5,7 @@
 #include "memory.h"
 #include "simpletron.h"
 
-void simpletron_welcome()
+void simpletron_welcome(void)
 {
   printf("*** Welcome to Simpletron! ***\n");
   printf("*** Please enter your program one istruction    ***\n");

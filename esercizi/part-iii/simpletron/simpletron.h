@@ -3,7 +3,7 @@
 #ifndef SIMPLETRON_H
 #define SIMPLETRON_H
 
-void simpletron_welcome();
+void simpletron_welcome(void);
 
 void simpletron_enterProgram(int memory[], const int memory_size);
 

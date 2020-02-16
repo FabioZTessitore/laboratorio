@@ -5,7 +5,7 @@
 #include <stdio.h>
 #include "simpletron.h"
 
-int main()
+int main(void)
 {
   /* cpu data */
   int accumulator = 0;
