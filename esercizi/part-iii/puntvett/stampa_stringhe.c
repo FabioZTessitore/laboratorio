@@ -9,7 +9,7 @@ $ ./stampa_stringhe
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
   const char * const semi[] = { "Cuori", "Quadri", "Fiori", "Picche" };
   int i;

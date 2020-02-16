@@ -1,3 +1,3 @@
 CC=gcc
-LDFLAGS=-Wall -ansi -pedantic
+CFLAGS=-Wall -ansi -pedantic
 LDLIBS=

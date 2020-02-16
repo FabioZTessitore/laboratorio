@@ -11,9 +11,9 @@ $ ./ordina_stringhe
 
 void bubble_sort(const char *v[], const int size);
 
-int main()
+int main(void)
 {
-  const char * semi[] = { "Cuori", "Quadri", "Fiori", "Picche" };
+  const char *semi[] = { "Cuori", "Quadri", "Fiori", "Picche" };
   int i;
 
   puts("Prima del riordino");
