@@ -1,6 +1,6 @@
 /* main.c */
 
-/* Confronto tra metodi di ordinamento */
+/* Puntatori a funzioni */
 
 /* Istruzioni per la compilazione e l'esecuzione:
 $ make
@@ -8,8 +8,6 @@ $ ./main
 */
 
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 #include "myvect.h"
 #include "myvect_utils.h"
 
@@ -21,20 +19,22 @@ void doubleNum(int *num);
 
 int main()
 {
-  int N = 5;
+  const int N = 5;
   int vett[N];
-  int i;
 
   printf("MyVect\n\n");
 
   myvect_init();
 
+  printf("vett random in [0, 100[ ...\n");
   myvect_random(vett, N, 0, 100);
 
+  printf("apply printNum ...\n");
   myvect_apply(vett, N, printNum);
 
-  printf("\nRaddoppia ...\n\n");
+  printf("\napply doubleNum ...\n");
   myvect_apply(vett, N, doubleNum);
+  printf("apply printNum ...\n");
   myvect_apply(vett, N, printNum);
 
   return 0;
