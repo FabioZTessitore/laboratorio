@@ -16,31 +16,29 @@
 
 int main()
 {
-  char line[LINE_LEN];
-  char *token;
-  char firstName[BUF_LEN];
-  char lastName[BUF_LEN];
+  char line[LINE_LEN] = "";
+  char *token = '\0';
+  char firstName[BUF_LEN] = "";
+  char lastName[BUF_LEN] = "";
   Person p[LINES_MAX];
   int nPersone = 0;
-  int i = 0;
+  int i;
 
   puts("Lettura dei contatti\n");
 
   strSafeInput(line, LINE_LEN);
-  i = 0;
-  while (i < LINES_MAX && line[0] != '\0') {
+  nPersone = 0;
+  while (nPersone < LINES_MAX && line[0] != '\0') {
     token = strtok(line, ";");
     strSafeCopy(firstName, token, BUF_LEN);
 
     token = strtok(NULL, ";");
     strSafeCopy(lastName, token, BUF_LEN);
 
-    p[i] = person_make(firstName, lastName);
-    i++;
+    p[nPersone++] = person_make(firstName, lastName);
 
     strSafeInput(line, LINE_LEN);
   }
-  nPersone = i;
 
   puts("Lista contatti:");
   for (i = 0; i < nPersone; i++) {

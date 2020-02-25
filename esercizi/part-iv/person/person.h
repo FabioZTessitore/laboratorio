@@ -10,7 +10,6 @@ struct person {
   char firstName[PERSON_FIRSTNAME_MAX_LEN];
   char lastName[PERSON_LASTNAME_MAX_LEN];
 };
-
 typedef struct person Person;
 
 Person person_make(const char * const firstName, const char * const lastName);
