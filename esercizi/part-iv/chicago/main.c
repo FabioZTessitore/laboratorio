@@ -15,29 +15,38 @@
 
 #define MAXPLAYERS 10
 
-int main()
+int input_players(Player players[], const int maxPlayers);
+void print_score(const Player players[], const int numPlayers);
+
+int main(void)
 {
   Player players[MAXPLAYERS];
   int numPlayers = 0;
-
-  int minScore = 2;
-
-  char playerNameBuffer[80];
-
-  int otherPlayers = 'y';
-  int temp;
-
-  int i;
 
   chicago_init();
 
   puts("Chicago\n\n");
 
+  numPlayers = input_players(players, MAXPLAYERS);
+
+  chicago_run(players, numPlayers);
+
+  print_score(players, numPlayers);
+
+  return 0;
+}
+
+int input_players(Player players[], const int maxPlayers)
+{
+  int numPlayers = 0;
+  char playerNameBuffer[80];
+  int otherPlayers = 's';
+  int temp;
+
   do {
     printf("Giocatore #%d: ", numPlayers+1);
     strSafeInput(playerNameBuffer, 80);
-    players[numPlayers] = player_make(playerNameBuffer);
-    numPlayers++;
+    players[numPlayers++] = player_make(playerNameBuffer);
 
     /* altri giocatori? s o n */
     do {
@@ -51,17 +60,16 @@ int main()
       }
     } while (otherPlayers != 's' && otherPlayers != 'n');
 
-  } while (otherPlayers == 's' && numPlayers < MAXPLAYERS);
+  } while (otherPlayers == 's' && numPlayers < maxPlayers);
 
-  /* start the game */
-  while (minScore <= 12) {
-    chicago_turno(players, numPlayers, minScore);
-    minScore++;
-  }
+  return numPlayers;
+}
+
+void print_score(const Player players[], const int numPlayers)
+{
+  int i;
 
   for (i = 0; i < numPlayers; i++) {
-    printf("%-20s%5d\n", players[i].name, players[i].score);
+    printf("%-24s%5d\n", players[i].name, players[i].score);
   }
-
-  return 0;
 }

@@ -1,15 +1,11 @@
 /* random.h */
 
+/* libreria per la generazione di numeri pseudocasuali */
+
 #ifndef RANDOM_H
 #define RANDOM_H
 
-/* libreria per la generazione di numeri pseudocasuali */
-
-/* random_init() inizializza il seme, da richiamare prima di utilizzare
- * le altre funzioni del modulo */
-void random_init();
-
-/* random_between(): genera un intero compreso tra min (incluso) e max (escluso) */
+void random_init(void);
 int random_between(int min, int max);
 
 #endif

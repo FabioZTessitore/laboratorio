@@ -7,7 +7,7 @@ Player player_make(const char * const name)
 {
     Player p;
 
-    strSafeCopy(p.name, name, 80);
+    strSafeCopy(p.name, name, PLAYER_NAME_MAX_LEN);
     p.score = 0;
 
     return p;

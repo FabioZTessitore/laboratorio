@@ -6,7 +6,7 @@
 #include "person.h"
 #include "utils.h"
 
-int main()
+int main(void)
 {
   char firstName[80];
   char lastName[80];

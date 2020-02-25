@@ -14,7 +14,7 @@
 #define LINES_MAX 10
 #define BUF_LEN 80
 
-int main()
+int main(void)
 {
   char line[LINE_LEN] = "";
   char *token = '\0';
