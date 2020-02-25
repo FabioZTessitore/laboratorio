@@ -1,5 +1,7 @@
 /* main.c */
 
+/* Utilizzo di struct */
+
 #include <stdio.h>
 #include "person.h"
 #include "utils.h"

@@ -13,7 +13,7 @@ struct person {
 
 typedef struct person Person;
 
-Person person_make(const char *firstName, const char *lastName);
+Person person_make(const char * const firstName, const char * const lastName);
 void person_print(const Person * const p);
 
 #endif

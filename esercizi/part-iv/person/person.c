@@ -4,7 +4,7 @@
 #include "person.h"
 #include "utils.h"
 
-Person person_make(const char *firstName, const char *lastName)
+Person person_make(const char * const firstName, const char * const lastName)
 {
   Person p;
 
