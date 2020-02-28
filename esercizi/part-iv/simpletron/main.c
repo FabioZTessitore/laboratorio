@@ -4,19 +4,16 @@
 
 #include <stdio.h>
 #include "simpletron.h"
-#include "cpu.h"
-#include "memory.h"
 
-int main()
+int main(void)
 {
-  Cpu theCpu = cpu_make();
-  Memory theMemory = memory_make();
+  Simpletron aSimpletron = simpletron_make();
 
   simpletron_welcome();
 
-  simpletron_enterProgram(&theMemory);
+  simpletron_enterProgram(&aSimpletron);
 
-  simpletron_execProgram(&theMemory, &theCpu);
+  simpletron_execProgram(&aSimpletron);
 
   return 0;
 }

@@ -4,7 +4,7 @@
 #include "cpu.h"
 #include "memory.h"
 
-Cpu cpu_make()
+Cpu cpu_make(void)
 {
   Cpu aCpu;
 

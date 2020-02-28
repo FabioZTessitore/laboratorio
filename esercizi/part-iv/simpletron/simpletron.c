@@ -5,7 +5,17 @@
 #include "memory.h"
 #include "simpletron.h"
 
-void simpletron_welcome()
+Simpletron simpletron_make(void)
+{
+  Simpletron aSimpletron;
+
+  aSimpletron.memory = memory_make();
+  aSimpletron.cpu = cpu_make();
+
+  return aSimpletron;
+}
+
+void simpletron_welcome(void)
 {
   printf("*** Welcome to Simpletron! ***\n");
   printf("*** Please enter your program one istruction    ***\n");
@@ -15,7 +25,7 @@ void simpletron_welcome()
   printf("*** Type -99999 to stop entering your program.  ***\n\n");
 }
 
-void simpletron_enterProgram(Memory * const pMemory)
+void simpletron_enterProgram(Simpletron * const pSimpletron)
 {
   int instruction = -1;
   int index = 0;
@@ -25,20 +35,20 @@ void simpletron_enterProgram(Memory * const pMemory)
     scanf("%d", &instruction);
 
     if (instruction != -99999) {
-      memory_set(pMemory, index++, instruction);
+      memory_set(&(pSimpletron->memory), index++, instruction);
     }
   }
 
   printf("*** Program loading completed ***\n");
 }
 
-void simpletron_execProgram(Memory * const pMemory, Cpu * const pCpu)
+void simpletron_execProgram(Simpletron * const pSimpletron)
 {
   printf("*** Program execution begins ***\n");
 
-  cpu_run(pCpu, pMemory);
+  cpu_run(&(pSimpletron->cpu), &(pSimpletron->memory));
 
-  cpu_dump(pCpu);
+  cpu_dump(&(pSimpletron->cpu));
   putchar('\n');
-  memory_dump(pMemory);
+  memory_dump(&(pSimpletron->memory));
 }

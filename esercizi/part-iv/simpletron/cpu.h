@@ -34,17 +34,12 @@ struct cpu {
   int opcode;
   int operand;
 };
-
 typedef struct cpu Cpu;
 
-Cpu cpu_make();
-
+Cpu cpu_make(void);
 void cpu_dump(const Cpu * const pCpu);
-
 void cpu_fetch(Cpu * const pCpu, const Memory * const pMemory);
-
 int cpu_execute(Cpu * const pCpu, Memory * const pMemory);
-
 void cpu_run(Cpu * const pCpu, Memory * const pMemory);
 
 #endif
