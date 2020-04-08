@@ -35,7 +35,8 @@ int main(void)
     token = strtok(NULL, ";");
     strSafeCopy(lastName, token, BUF_LEN);
 
-    p[nPersone++] = person_make(firstName, lastName);
+    p[nPersone] = person_make(firstName, lastName);
+    nPersone++;
 
     strSafeInput(line, LINE_LEN);
   }
