@@ -46,19 +46,22 @@ int input_players(Player players[], const int maxPlayers)
   do {
     printf("Giocatore #%d: ", numPlayers+1);
     strSafeInput(playerNameBuffer, 80);
-    players[numPlayers++] = player_make(playerNameBuffer);
+    players[numPlayers] = player_make(playerNameBuffer);
+    numPlayers++;
 
     /* altri giocatori? s o n */
-    do {
-      printf("Altri giocatori (s o n)?: ");
-      otherPlayers = getchar();
+    if (numPlayers < maxPlayers) {
+      do {
+        printf("Altri giocatori (s o n)?: ");
+        otherPlayers = getchar();
 
-      if (otherPlayers != '\n') {
-        /* clear the buffer */
-        while ((temp=getchar()) != '\n')
-          ;
-      }
-    } while (otherPlayers != 's' && otherPlayers != 'n');
+        if (otherPlayers != '\n') {
+          /* clear the buffer */
+          while ((temp=getchar()) != '\n')
+            ;
+        }
+      } while (otherPlayers != 's' && otherPlayers != 'n');
+    }
 
   } while (otherPlayers == 's' && numPlayers < maxPlayers);
 

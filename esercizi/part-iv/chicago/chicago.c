@@ -12,9 +12,13 @@ void chicago_init(void)
     dado_init();
 }
 
-int chicago_roll(void)
+void chicago_run(Player players[], const int numPlayers)
 {
-    return dado_roll() + dado_roll();
+    int minScore = 2;
+    while (minScore <= 12) {
+        chicago_round(players, numPlayers, minScore);
+        minScore++;
+    }
 }
 
 void chicago_round(Player players[], const int numPlayers, const int minValue)
@@ -31,11 +35,7 @@ void chicago_round(Player players[], const int numPlayers, const int minValue)
     }
 }
 
-void chicago_run(Player players[], const int numPlayers)
+int chicago_roll(void)
 {
-    int minScore = 2;
-    while (minScore <= 12) {
-        chicago_round(players, numPlayers, minScore);
-        minScore++;
-    }
+    return dado_roll() + dado_roll();
 }
