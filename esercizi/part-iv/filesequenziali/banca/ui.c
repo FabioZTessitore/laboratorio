@@ -48,7 +48,6 @@ void ui_run(const UI * const ui)
     }
 
     bank_close(ui->bank);
-
 }
 
 int ui_menu(void)

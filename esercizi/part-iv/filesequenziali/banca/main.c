@@ -2,11 +2,8 @@
 
 /* Scrittura di record in file sequenziale */
 
-#include <stdio.h>
 #include "ui.h"
 #include "bank.h"
-
-#define BUFFER_SIZE 80
 
 int main(void)
 {
