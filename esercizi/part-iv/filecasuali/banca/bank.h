@@ -13,7 +13,7 @@ struct bank {
 };
 typedef struct bank Bank;
 
-void bank_init(Bank * const bank, const char * const filename);
+void bank_init(Bank * const bank, char * const filename);
 void bank_close(const Bank * const bank);
 void bank_showAll(const Bank * const bank);
 void bank_showZero(const Bank * const bank);

@@ -8,7 +8,41 @@
 
 #define BUFFER_SIZE 80
 
-void bank_init(Bank * const bank, const char * const filename)
+int filterAll(const Bankaccount * const unused) {
+    return 1;
+}
+
+int filterZero(const Bankaccount * const account) {
+    return (bankaccount_getBalance(account) == 0.);
+}
+
+int filterNegative(const Bankaccount * const account) {
+    return (bankaccount_getBalance(account) < 0.);
+}
+
+int filterPositive(const Bankaccount * const account) {
+    return (bankaccount_getBalance(account) > 0.);
+}
+
+void bank_showFiltered(const Bank * const bank, int (*filter)(const Bankaccount * const account))
+{
+    Bankaccount account;
+
+    rewind(bank->f_clients);
+
+    printf("%6s%25s%25s%15s\n", "Codice", "Nome", "Cognome", "Saldo");
+    while(!feof(bank->f_clients)) {
+        fread(&account, sizeof(Bankaccount), 1, bank->f_clients);
+
+        if (account.id > 0 && filter(&account)) {
+            bankaccount_print(&account);
+            putchar('\n');
+        }
+    }
+}
+
+
+void bank_init(Bank * const bank, char * const filename)
 {
     int i;
     Bankaccount account;
@@ -40,72 +74,22 @@ void bank_close(const Bank * const bank)
 
 void bank_showAll(const Bank * const bank)
 {
-    int i;
-    Bankaccount account;
-
-    printf("%6s%25s%25s%15s\n", "Codice", "Nome", "Cognome", "Saldo");
-    for (i = 0; i < BANK_CLIENTS_MAX; i++) {
-        fseek(bank->f_clients, i*sizeof(Bankaccount), SEEK_SET);
-        fread(&account, sizeof(Bankaccount), 1, bank->f_clients);
-
-        if (account.id > 0) {
-            bankaccount_print(&account);
-            putchar('\n');
-        }
-    }
+    bank_showFiltered(bank, filterAll);
 }
 
 void bank_showZero(const Bank * const bank)
 {
-    int i;
-    Bankaccount account;
-
-    printf("%6s%25s%25s%15s\n", "Codice", "Nome", "Cognome", "Saldo");
-    for (i = 0; i < BANK_CLIENTS_MAX; i++) {
-        fseek(bank->f_clients, i*sizeof(Bankaccount), SEEK_SET);
-        fread(&account, sizeof(Bankaccount), 1, bank->f_clients);
-
-        if (account.id > 0 && bankaccount_getBalance(&account) == 0.) {
-            bankaccount_print(&account);
-            putchar('\n');
-        }
-    }
+    bank_showFiltered(bank, filterZero);
 }
 
 void bank_showNegative(const Bank * const bank)
 {
-    int i;
-    Bankaccount account;
-
-    rewind(bank->f_clients);
-
-    printf("%6s%25s%25s%15s\n", "Codice", "Nome", "Cognome", "Saldo");
-    for (i = 0; i < BANK_CLIENTS_MAX; i++) {
-        fseek(bank->f_clients, i*sizeof(Bankaccount), SEEK_SET);
-        fread(&account, sizeof(Bankaccount), 1, bank->f_clients);
-
-        if (account.id > 0 && bankaccount_getBalance(&account) < 0.) {
-            bankaccount_print(&account);
-            putchar('\n');
-        }
-    }
+    bank_showFiltered(bank, filterNegative);
 }
 
 void bank_showPositive(const Bank * const bank)
 {
-    int i;
-    Bankaccount account;
-
-    printf("%6s%25s%25s%15s\n", "Codice", "Nome", "Cognome", "Saldo");
-    for (i = 0; i < BANK_CLIENTS_MAX; i++) {
-        fseek(bank->f_clients, i*sizeof(Bankaccount), SEEK_SET);
-        fread(&account, sizeof(Bankaccount), 1, bank->f_clients);
-
-        if (account.id > 0 && bankaccount_getBalance(&account) > 0.) {
-            bankaccount_print(&account);
-            putchar('\n');
-        }
-    }
+    bank_showFiltered(bank, filterPositive);
 }
 
 void bank_updateClient(const Bank * const bank)
