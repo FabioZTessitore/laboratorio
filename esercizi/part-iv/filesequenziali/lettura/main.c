@@ -27,7 +27,6 @@ int main(void)
         buffer[BUFFER_SIZE-1] = '\0';
 
         account = bankaccount_parse(buffer);
-
         bankaccount_print(&account);
     }
 

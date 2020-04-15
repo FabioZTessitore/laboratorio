@@ -65,7 +65,7 @@ int main(void)
 
         account = bankaccount_parse(buffer);
 
-        bankaccount_write(stdout, &account);
+        bankaccount_print(&account);
         putchar('\n');
     }
 

@@ -20,6 +20,7 @@ typedef struct bankaccount Bankaccount;
 Bankaccount bankaccount_parse(const char * const buffer);
 Bankaccount bankaccount_make(const int id, const char * const firstname, const char * const lastname, const double balance);
 void bankaccount_write(FILE *f, const Bankaccount * const account);
+void bankaccount_print(const Bankaccount * const account);
 double bankaccount_getBalance(const Bankaccount * const account);
 void bankaccount_setBalance(Bankaccount * const account, const double balance);
 double bankaccount_getID(const Bankaccount * const account);

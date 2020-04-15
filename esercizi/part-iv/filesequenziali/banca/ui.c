@@ -2,8 +2,56 @@
 
 #include <stdio.h>
 #include "ui.h"
+#include "bank.h"
 
-int menu(void)
+int ui_menu(void);
+
+void ui_init(UI * const ui, Bank * const bank)
+{
+    ui->bank = bank;
+}
+
+void ui_run(const UI * const ui)
+{
+    int choice;
+    int done = 0;
+
+    while (!done) {
+        choice = ui_menu();
+
+        switch (choice) {
+            case 1:
+                bank_showAll(ui->bank);
+                break;
+            case 2:
+                bank_showZero(ui->bank);
+                break;
+            case 3:
+                bank_showNegative(ui->bank);
+                break;
+            case 4:
+                bank_showPositive(ui->bank);
+                break;
+            case 5:
+                bank_insertClient(ui->bank);
+                break;
+            case 6:
+                bank_update(ui->bank);
+                break;
+            case 7:
+                done = 1;
+                break;
+            default:
+                puts("Scelta non valida!");
+                break;
+        }
+    }
+
+    bank_close(ui->bank);
+
+}
+
+int ui_menu(void)
 {
     int choice = -1;
     int choiceNotValid = 0;

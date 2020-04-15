@@ -33,6 +33,10 @@ void bankaccount_write(FILE *f, const Bankaccount * const account)
     fprintf(f, "%6d%25s%25s%15.2f", account->id, account->firstname, account->lastname, account->balance);
 }
 
+void bankaccount_print(const Bankaccount * const account) {
+    bankaccount_write(stdout, account);
+}
+
 double bankaccount_getBalance(const Bankaccount * const account)
 {
     return account->balance;
