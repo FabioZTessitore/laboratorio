@@ -10,9 +10,4 @@ struct node {
 typedef struct node Node;
 typedef struct node *NodePtr;
 
-
-void nodeseq_insert(NodePtr *head, int val);
-void nodeseq_remove(NodePtr *head, int val);
-void nodeseq_clear(NodePtr *head);
-
 #endif

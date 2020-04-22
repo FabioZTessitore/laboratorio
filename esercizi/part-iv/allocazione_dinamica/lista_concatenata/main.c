@@ -1,6 +1,6 @@
 /* main.c */
 
-/* Una sequenza di Nodi */
+/* Esempio d'uso di una lista concatenata */
 
 #include <stdio.h>
 #include "list.h"
