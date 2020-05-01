@@ -59,21 +59,34 @@
 #include "queue.h"
 #include "stack.h"
 
+void make_postfix(char *infix, Queue *postfix);
 int priority(char *op, char *t);
 
 int main(void)
 {
-    Queue token;
     char infix[] = "(2 * (8 + 3)) + 5 * 43 + 1";
+    Queue postfix;
+
+    make_postfix(infix, &postfix);
+    
+    queue_print(&postfix);
+
+    queue_clear(&postfix);
+
+    return 0;
+}
+
+void make_postfix(char *infix, Queue *postfix)
+{
+    Queue token;
+    Stack s;
     char *current;
     char buffer[80];
     int k;
-    
-    Stack s;
     char *stack_item;
-    char postfix[80] = "";
 
     queue_init(&token);
+    queue_init(postfix);
     stack_init(&s);
 
     /* Operazione preliminare: creazione della coda di token */
@@ -126,8 +139,11 @@ int main(void)
 
         /* 4) se e' un numero lo copia in postfix */
         if (isdigit(*current)) {
+            queue_enqueue(postfix, current);
+            /*
             strcat(postfix, current);
             strcat(postfix, " ");
+            */
         }
         
         /* 5) se e' una parentesi aperta la inserisce nello stack */
@@ -141,8 +157,11 @@ int main(void)
                   parentesi aperta e li inserisce in postfix */
             while (strcmp(stack_top(&s), "(") != 0) {
                 stack_item = stack_pop(&s);
+                queue_enqueue(postfix, stack_item);
+                /*
                 strcat(postfix, stack_item);
                 strcat(postfix, " ");
+                */
                 free(stack_item);
             }
             /* 8) elimina la parentesi aperta dallo stack */
@@ -156,8 +175,11 @@ int main(void)
                    a quello corrente dallo stack e li inserisce in postfix */
             while (priority(stack_top(&s), current)) {
                 stack_item = stack_pop(&s);
+                queue_enqueue(postfix, stack_item);
+                /*
                 strcat(postfix, stack_item);
                 strcat(postfix, " ");
+                */
                 free(stack_item);
             }
             /* 11) inserisce nello stack l'operatore corrente */
@@ -170,9 +192,9 @@ int main(void)
     queue_clear(&token);
     stack_clear(&s);
 
+    /*
     printf("POSTFIX: %s\n", postfix);
-
-    return 0;
+    */
 }
 
 int priority(char *op, char *t)
