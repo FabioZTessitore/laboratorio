@@ -36,7 +36,7 @@
  *
  * Dati:
  * - token      la coda contenente i token
- * - postfix    il vettore contenente l'espressione convertita
+ * - postfix    la coda contenente l'espressione convertita
  * - stack      uno stack per la memorizzazione temporanea dei caratteri
  *
  *  1) inserire una parentesi aperta nello stack e una chiusa al termine di token
@@ -59,7 +59,7 @@
 #include "queue.h"
 #include "stack.h"
 
-void make_postfix(char *infix, Queue *postfix);
+void make_postfix(Queue *postfix, char *infix);
 int priority(char *op, char *t);
 
 int main(void)
@@ -67,7 +67,7 @@ int main(void)
     char infix[] = "(2 * (8 + 3)) + 5 * 43 + 1";
     Queue postfix;
 
-    make_postfix(infix, &postfix);
+    make_postfix(&postfix, infix);
     
     queue_print(&postfix);
 
@@ -76,7 +76,7 @@ int main(void)
     return 0;
 }
 
-void make_postfix(char *infix, Queue *postfix)
+void make_postfix(Queue *postfix, char *infix)
 {
     Queue token;
     Stack s;
@@ -125,13 +125,6 @@ void make_postfix(char *infix, Queue *postfix)
     stack_push(&s, "(");
     queue_enqueue(&token, ")");
 
-    printf("Dopo il passo 1:\n");
-    printf("Token:\n");
-    queue_print(&token);
-    printf("Stack:\n");
-    stack_print(&s);
-    putchar('\n');
-
     /* 2) finche' lo stack non e' vuoto: */
     while (!stack_isEmpty(&s)) {
         /* 3) estrae il primo token */
@@ -140,10 +133,6 @@ void make_postfix(char *infix, Queue *postfix)
         /* 4) se e' un numero lo copia in postfix */
         if (isdigit(*current)) {
             queue_enqueue(postfix, current);
-            /*
-            strcat(postfix, current);
-            strcat(postfix, " ");
-            */
         }
         
         /* 5) se e' una parentesi aperta la inserisce nello stack */
@@ -158,10 +147,6 @@ void make_postfix(char *infix, Queue *postfix)
             while (strcmp(stack_top(&s), "(") != 0) {
                 stack_item = stack_pop(&s);
                 queue_enqueue(postfix, stack_item);
-                /*
-                strcat(postfix, stack_item);
-                strcat(postfix, " ");
-                */
                 free(stack_item);
             }
             /* 8) elimina la parentesi aperta dallo stack */
@@ -176,10 +161,6 @@ void make_postfix(char *infix, Queue *postfix)
             while (priority(stack_top(&s), current)) {
                 stack_item = stack_pop(&s);
                 queue_enqueue(postfix, stack_item);
-                /*
-                strcat(postfix, stack_item);
-                strcat(postfix, " ");
-                */
                 free(stack_item);
             }
             /* 11) inserisce nello stack l'operatore corrente */
@@ -191,10 +172,6 @@ void make_postfix(char *infix, Queue *postfix)
 
     queue_clear(&token);
     stack_clear(&s);
-
-    /*
-    printf("POSTFIX: %s\n", postfix);
-    */
 }
 
 int priority(char *op, char *t)
