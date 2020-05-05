@@ -20,8 +20,8 @@ int main(void)
     int t_attesa = 0;
     
     int t_simulazione = 720; /* 720 min = 12 h */
-    int max_coda = 0;
     int len_coda = 0;
+    int max_coda = 0;
     int max_attesa = 0;
 
     random_init();
@@ -46,8 +46,11 @@ int main(void)
             /* quando arriva un nuovo cliente,
                 memorizza l'istante di inserimento in coda */
             queue_enqueue(&q, t_simulazione);
+
+            /* prevede un nuovo cliente */
             t_prossimo_arrivo = genera_tempo_arrivo();
 
+            /* calcola lunghezza coda */
             len_coda = queue_size(&q);
             if (len_coda > max_coda) max_coda = len_coda;
         }
@@ -55,12 +58,14 @@ int main(void)
         t_servizio--;
         if (t_servizio <= 0) {
             if (t_servizio == 0) {
+                /* quando un cliente viene servito,
+                   calcola il tempo di attesa */
                 t_attesa = t_inserito_in_coda - t_simulazione;
-                printf("Servito cliente in %d (t: %d)(L: %d)\n", t_attesa, t_simulazione, len_coda);
+                printf("Servito cliente in %d (t: %d) (L: %d)\n", t_attesa, t_simulazione, len_coda);
                 if (t_attesa > max_attesa) max_attesa = t_attesa;
             }
             if (!queue_isEmpty(&q)) {
-                /* estrae il prossimo cliente dalla coda */
+                /* si prepara a servire il prossimo cliente */
                 t_inserito_in_coda = queue_dequeue(&q);
                 t_servizio = genera_tempo_servizio();
             }
