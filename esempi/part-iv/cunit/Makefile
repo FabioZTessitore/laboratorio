@@ -9,7 +9,6 @@ test: test.o aritmetica.o
 	$(CC) $^ -o $@ $(TEST_LDLIBS)
 
 aritmetica.o: aritmetica.c aritmetica.h
-
 test.o: test.c aritmetica.h
 
 .PHONY: clean

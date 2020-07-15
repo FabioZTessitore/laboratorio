@@ -1,9 +1,11 @@
 /* main.c */
 
+/* esempio di uso del modulo "aritmetica" */
+
 #include <stdio.h>
 #include "aritmetica.h"
 
-int main()
+int main(void)
 {
   int a = 5;
   int b = 3;

@@ -18,7 +18,7 @@
  */
 
 /* funzioni test per la suite 'Operazioni Aritmetiche' */
-void test_somma()
+void test_somma(void)
 {
   CU_ASSERT_EQUAL(aritmetica_somma(2, 3), 5);
   CU_ASSERT_EQUAL(aritmetica_somma(0, 0), 0);
@@ -26,7 +26,7 @@ void test_somma()
   CU_ASSERT_EQUAL(aritmetica_somma(-1, -2), -3);
 }
 
-void test_sottrazione()
+void test_sottrazione(void)
 {
   CU_ASSERT_EQUAL(aritmetica_sottrazione(2, 3), -1);
   CU_ASSERT_EQUAL(aritmetica_sottrazione(0, 0), 0);
@@ -35,14 +35,14 @@ void test_sottrazione()
 }
 
 /* funzioni test per la suite 'Espressioni Aritmetiche' */
-void test_espressioni()
+void test_espressioni(void)
 {
   /* (1 + 5) - 1 == 5 */
   CU_ASSERT_EQUAL(aritmetica_sottrazione(aritmetica_somma(1, 5), 1), 5);
 }
 
 
-int main()
+int main(void)
 {
   CU_pSuite pSuiteOperazioni = NULL;
   CU_pSuite pSuiteEspressioni = NULL;
@@ -52,7 +52,7 @@ int main()
     return CU_get_error();
 
   /* aggiunge una suite di test al registro */
-  pSuiteOperazioni = CU_add_suite("Operazioni Aritmetiche", /* init() */NULL, /* cleanup() */NULL);
+  pSuiteOperazioni = CU_add_suite("Operazioni Aritmetiche", NULL, NULL);
   if (NULL == pSuiteOperazioni) {
     CU_cleanup_registry();
     return CU_get_error();
@@ -67,7 +67,7 @@ int main()
   }
 
   /* aggiunge una seconda suite di test al registro */
-  pSuiteEspressioni = CU_add_suite("Espressioni Aritmetiche", /* init() */NULL, /* cleanup() */NULL);
+  pSuiteEspressioni = CU_add_suite("Espressioni Aritmetiche", NULL, NULL);
   if (NULL == pSuiteEspressioni) {
     CU_cleanup_registry();
     return CU_get_error();
