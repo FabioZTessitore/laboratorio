@@ -10,7 +10,7 @@
 /* crea una suite di test per il modulo Person */
 
 /* funzione di init della suite */
-int suite_person_init()
+int suite_person_init(void)
 {
   /* nothing to do */
 
@@ -18,7 +18,7 @@ int suite_person_init()
 }
 
 /* funzione di cleanup della suite */
-int suite_person_cleanup()
+int suite_person_cleanup(void)
 {
   /* nothing to do */
 
@@ -26,7 +26,7 @@ int suite_person_cleanup()
 }
 
 /* funzioni test per la suite 'Person' */
-void test_Person_empty()
+void test_Person_empty(void)
 {
   Person p = person_make("", "");
 
@@ -34,7 +34,7 @@ void test_Person_empty()
   CU_ASSERT_STRING_EQUAL(p.lastName, "");
 }
 
-void test_Person()
+void test_Person_name(void)
 {
   Person p = person_make("Mario", "Rossi");
 
@@ -42,8 +42,16 @@ void test_Person()
   CU_ASSERT_STRING_EQUAL(p.lastName, "Rossi");
 }
 
+void test_Person_name_too_long(void)
+{
+  Person p = person_make("123456789012345678901234567890", "123456789012345678901234567890123456789012345");
 
-int main()
+  CU_ASSERT_STRING_EQUAL(p.firstName, "12345678901234567890123");
+  CU_ASSERT_STRING_EQUAL(p.lastName, "123456789012345678901234567890123456789");
+}
+
+
+int main(void)
 {
   CU_pSuite pSuite = NULL;
 
@@ -59,8 +67,9 @@ int main()
   }
 
   /* aggiunge i test alla suite */
-  if ((NULL == CU_add_test(pSuite, "test person first and last name empty", test_Person_empty)) ||
-    (NULL == CU_add_test(pSuite, "test person first and last name", test_Person)))
+  if ((NULL == CU_add_test(pSuite, "test person empty", test_Person_empty)) ||
+    (NULL == CU_add_test(pSuite, "test person first and last name", test_Person_name)) ||
+    (NULL == CU_add_test(pSuite, "test person name too long", test_Person_name_too_long)))
   {
     CU_cleanup_registry();
     return CU_get_error();

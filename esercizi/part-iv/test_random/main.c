@@ -13,7 +13,7 @@
 
 void genera_e_stampa_numeri(int quanti, int min, int max);
 
-int main()
+int main(void)
 {
   puts("Random");
   puts("Modulo per la generazione di numeri pseudocasuali");

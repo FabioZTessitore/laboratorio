@@ -12,7 +12,6 @@ test: test.o person.o utils.o
 main.o: main.c person.h utils.h
 person.o: person.c person.h utils.h
 utils.o: utils.c utils.h
-
 test.o: test.c person.h
 
 .PHONY: clean
