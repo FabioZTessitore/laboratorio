@@ -3,9 +3,8 @@
 
 /* crea una suite di test per il modulo Latitudine */
 
-
 /* funzione di init della suite */
-int suite_init()
+int suite_init(void)
 {
   /* nothing to do */
 
@@ -13,14 +12,14 @@ int suite_init()
 }
 
 /* funzione di cleanup della suite */
-int suite_cleanup()
+int suite_cleanup(void)
 {
   /* nothing to do */
 
   return 0; /* success */
 }
 
-void test_make()
+void test_make(void)
 {
   /* ok */
   Latitudine l = latitudine_make(5, 10, 15, 1);
@@ -78,7 +77,7 @@ void test_make()
   CU_ASSERT_EQUAL(l.secondi, 0);
   CU_ASSERT_EQUAL(l.segno, 0);
 
-  /* oltre 90 gradi */
+  /* 90 gradi piu' qualcosa */
   l = latitudine_make(90, 1, 1, 1);
   CU_ASSERT_EQUAL(l.gradi, 0);
   CU_ASSERT_EQUAL(l.primi, 0);
@@ -86,10 +85,10 @@ void test_make()
   CU_ASSERT_EQUAL(l.segno, 0);
 }
 
-void test_parse_bad()
+void test_parse_bad(void)
 {
   char *inputs[] = {
-    "", "\n", "a", "N40 10 20S", "4a", "40", "40 10 a 05 N", "40 10 a N", "91N", "70 110 21 S", NULL
+    "", "\n", "a", "N40 10 20S", "4a", "40", "40 10 a 05 N", "40 10 a N", "91N", "70 110 21 S", "90 01 00 N", NULL
   };
   Latitudine l;
   int status;
@@ -104,7 +103,7 @@ void test_parse_bad()
   }
 }
 
-void test_parse()
+void test_parse(void)
 {
   char *input_1 = "40N";
   char *input_2 = "40 N";
@@ -151,9 +150,10 @@ void test_parse()
   CU_ASSERT_EQUAL(l.segno, 1);
 }
 
-int main()
+int main(void)
 {
   CU_pSuite pSuite = NULL;
+  int exit_value = 0;
 
   /* inizializza il registro dei test */
   if (CUE_SUCCESS != CU_initialize_registry())
@@ -178,7 +178,10 @@ int main()
   /* esegue i test */
   CU_basic_set_mode(CU_BRM_VERBOSE);
   CU_basic_run_tests();
+  
+  exit_value = CU_get_number_of_failures();
+
   CU_cleanup_registry();
 
-  return CU_get_error();
+  return exit_value;
 }

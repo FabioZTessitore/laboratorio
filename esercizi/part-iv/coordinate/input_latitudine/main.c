@@ -14,7 +14,7 @@
 #include "latitudine.h"
 #include "str_utils.h"
 
-int main()
+int main(void)
 {
   Latitudine l;
   char buffer[80];

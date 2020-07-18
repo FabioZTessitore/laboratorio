@@ -20,9 +20,9 @@ Latitudine latitudine_make(int gradi, int primi, int secondi, int segno)
     return l;
   }
 
-  l.gradi = gradi >= 0 ? gradi : 0;
-  l.primi = primi >= 0 ? primi : 0;
-  l.secondi = secondi >= 0 ? secondi : 0;
+  l.gradi = gradi;
+  l.primi = primi;
+  l.secondi = secondi;
   l.segno = segno > 0 ? 1 : -1;
 
   return l;
@@ -68,9 +68,10 @@ int latitudine_parse(Latitudine * const l, const char *input)
 
 int latitudine_check_dati(int gradi, int primi, int secondi, int segno)
 {
-  return (gradi >= 0 && gradi <= 90) &&
+  return (((gradi >= 0 && gradi < 90) &&
     (primi >= 0 && primi <= 59) &&
-    (secondi >= 0 && secondi <= 59) &&
+    (secondi >= 0 && secondi <= 59)) ||
+    (gradi == 90 && primi == 0 && secondi == 0)) &&
     (segno == 's' || segno == 'S' || segno == 'n' || segno =='N');
 }
 
