@@ -4,7 +4,7 @@
 #include "myvect.h"
 #include "random.h"
 
-void myvect_init()
+void myvect_init(void)
 {
   random_init();
 }
