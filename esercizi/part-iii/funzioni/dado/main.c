@@ -5,7 +5,7 @@
 /* Istruzioni di compilazione ed esecuzione:
  *
  * $ make
- * $ ./dado
+ * $ ./main
  */
 
 #include <stdio.h>
@@ -28,7 +28,7 @@ int main(void)
 
   /* lancia e conta */
   for (i = 0; i < trials; i++) {
-    face[dado_roll()]++;
+    face[ dado_roll() ]++;
   }
 
   /* stampa con linee di asterischi */

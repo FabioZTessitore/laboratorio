@@ -5,7 +5,7 @@
 /* Istruzioni di compilazione ed esecuzione:
  *
  * $ make
- * $ ./random
+ * $ ./main
  */
 
 #include <stdio.h>

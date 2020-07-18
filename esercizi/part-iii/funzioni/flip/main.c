@@ -5,7 +5,7 @@
 /* Istruzioni di compilazione ed esecuzione:
  *
  * $ make
- * $ ./coin
+ * $ ./main
  */
 
 #include <stdio.h>
