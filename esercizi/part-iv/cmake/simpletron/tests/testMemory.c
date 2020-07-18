@@ -5,7 +5,7 @@
 
 
 /* funzione di init della suite */
-int suite_memory_init()
+int suite_memory_init(void)
 {
   /* nothing to do */
 
@@ -13,7 +13,7 @@ int suite_memory_init()
 }
 
 /* funzione di cleanup della suite */
-int suite_memory_cleanup()
+int suite_memory_cleanup(void)
 {
   /* nothing to do */
 
@@ -21,7 +21,7 @@ int suite_memory_cleanup()
 }
 
 /* funzioni test per la suite 'Memory' */
-void test_zeros()
+void test_zeros(void)
 {
   Memory m = memory_make();
   int i;
@@ -31,7 +31,7 @@ void test_zeros()
   }
 }
 
-void test_ones()
+void test_ones(void)
 {
   Memory m = memory_make();
   int i;
@@ -40,12 +40,14 @@ void test_ones()
     memory_set(&m, i, 1);
   }
 
+  memory_set(&m, 0, 0);
+
   for (i = 0; i < MEMORY_SIZE; i++) {
     CU_ASSERT_EQUAL(memory_get(&m, i), 1);
   }
 }
 
-void test_memory()
+void test_memory(void)
 {
   Memory m = memory_make();
   int i;
@@ -60,9 +62,10 @@ void test_memory()
 }
 
 
-int main()
+int main(void)
 {
   CU_pSuite pSuite = NULL;
+  int exit_value = 0;
 
   /* inizializza il registro dei test */
   if (CUE_SUCCESS != CU_initialize_registry())
@@ -87,7 +90,10 @@ int main()
   /* esegue i test */
   CU_basic_set_mode(CU_BRM_VERBOSE);
   CU_basic_run_tests();
+  
+  exit_value = CU_get_number_of_failures();
+
   CU_cleanup_registry();
 
-  return CU_get_error();
+  return exit_value;
 }

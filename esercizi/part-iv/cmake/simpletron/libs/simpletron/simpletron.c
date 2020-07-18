@@ -5,7 +5,7 @@
 #include "cpu.h"
 #include "memory.h"
 
-Simpletron simpletron_make()
+Simpletron simpletron_make(void)
 {
   Simpletron aSimpletron;
 
@@ -15,7 +15,7 @@ Simpletron simpletron_make()
   return aSimpletron;
 }
 
-void simpletron_welcome()
+void simpletron_welcome(void)
 {
   printf("*** Welcome to Simpletron! ***\n");
   printf("*** Please enter your program one istruction    ***\n");

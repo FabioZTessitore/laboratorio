@@ -5,5 +5,4 @@ set(CMAKE_C_FLAGS "-Wall -ansi -pedantic")
 
 project(Hello C)
 
-# creazione di un target di nome Hello
 add_executable(Hello hello.c)

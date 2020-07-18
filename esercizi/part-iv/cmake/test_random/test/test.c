@@ -4,7 +4,7 @@
 /* crea una suite di test per il modulo random */
 
 /* funzione di init della suite */
-int suite_random_init()
+int suite_random_init(void)
 {
   random_init();
 
@@ -12,7 +12,7 @@ int suite_random_init()
 }
 
 /* funzione di cleanup della suite */
-int suite_random_cleanup()
+int suite_random_cleanup(void)
 {
   /* nothing to do */
 
@@ -20,17 +20,17 @@ int suite_random_cleanup()
 }
 
 /* funzioni test per la suite 'Random' */
-void test_randomBetween_bad_max()
+void test_randomBetween_max_lt_min(void)
 {
   CU_ASSERT_EQUAL(random_between(1, 0), 1);
 }
 
-void test_randomBetween_max_eq_min()
+void test_randomBetween_max_eq_min(void)
 {
   CU_ASSERT_EQUAL(random_between(3, 3), 3);
 }
 
-void test_randomBetween_max_gt_one_min()
+void test_randomBetween_max_gt_one_min(void)
 {
   int i;
   const int N = 1000;
@@ -40,7 +40,7 @@ void test_randomBetween_max_gt_one_min()
   }
 }
 
-void test_randomBetween_positive()
+void test_randomBetween_positive(void)
 {
   int i;
   int r;
@@ -52,7 +52,7 @@ void test_randomBetween_positive()
   }
 }
 
-void test_randomBetween_negative()
+void test_randomBetween_negative(void)
 {
   int i;
   int r;
@@ -81,7 +81,7 @@ int main()
   }
 
   /* aggiunge i test alla suite */
-  if ((NULL == CU_add_test(pSuite, "test random between: bad max", test_randomBetween_bad_max)) ||
+  if ((NULL == CU_add_test(pSuite, "test random between: max < min", test_randomBetween_max_lt_min)) ||
     (NULL == CU_add_test(pSuite, "test random between: max == min", test_randomBetween_max_eq_min)) ||
     (NULL == CU_add_test(pSuite, "test random between: max == min+1", test_randomBetween_max_gt_one_min)) ||
     (NULL == CU_add_test(pSuite, "test random between: positive", test_randomBetween_positive)) ||

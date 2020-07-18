@@ -6,7 +6,7 @@
 
 
 /* funzione di init della suite */
-int suite_cpu_init()
+int suite_cpu_init(void)
 {
   /* nothing to do */
 
@@ -14,7 +14,7 @@ int suite_cpu_init()
 }
 
 /* funzione di cleanup della suite */
-int suite_cpu_cleanup()
+int suite_cpu_cleanup(void)
 {
   /* nothing to do */
 
@@ -22,7 +22,7 @@ int suite_cpu_cleanup()
 }
 
 /* funzioni test per la suite 'Cpu' */
-void test_cpu_init()
+void test_cpu_init(void)
 {
   Cpu aCpu = cpu_make();
 
@@ -33,7 +33,7 @@ void test_cpu_init()
   CU_ASSERT_EQUAL(aCpu.operand, 0);
 }
 
-void test_cpu_fetch()
+void test_cpu_fetch(void)
 {
   Memory m = memory_make();
   Cpu aCpu = cpu_make();
@@ -53,7 +53,7 @@ void test_cpu_fetch()
   CU_ASSERT_EQUAL(aCpu.instructionCounter, 1);
 }
 
-void test_cpu_run()
+void test_cpu_run(void)
 {
   Memory m = memory_make();
   Cpu aCpu = cpu_make();
@@ -79,9 +79,10 @@ void test_cpu_run()
   CU_ASSERT_EQUAL(aCpu.accumulator, 8);
 }
 
-int main()
+int main(void)
 {
   CU_pSuite pSuite = NULL;
+  int exit_value = 0;
 
   /* inizializza il registro dei test */
   if (CUE_SUCCESS != CU_initialize_registry())
@@ -106,7 +107,10 @@ int main()
   /* esegue i test */
   CU_basic_set_mode(CU_BRM_VERBOSE);
   CU_basic_run_tests();
+
+  exit_value = CU_get_number_of_failures();
+
   CU_cleanup_registry();
 
-  return CU_get_error();
+  return exit_value;
 }

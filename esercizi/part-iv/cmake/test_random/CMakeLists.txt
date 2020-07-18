@@ -12,4 +12,4 @@ target_link_libraries(Number PRIVATE Random)
 
 # enable make test
 enable_testing()
-add_subdirectory(tests)
+add_subdirectory(test)

@@ -14,7 +14,7 @@
 #include <stdio.h>
 #include "random.h"
 
-int main()
+int main(void)
 {
   random_init();
 

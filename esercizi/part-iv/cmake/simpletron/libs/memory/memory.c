@@ -4,7 +4,7 @@
 #include <string.h>
 #include "memory.h"
 
-Memory memory_make()
+Memory memory_make(void)
 {
   Memory aMemory;
 

@@ -37,7 +37,7 @@ struct cpu {
 
 typedef struct cpu Cpu;
 
-Cpu cpu_make();
+Cpu cpu_make(void);
 
 void cpu_dump(const Cpu * const pCpu);
 

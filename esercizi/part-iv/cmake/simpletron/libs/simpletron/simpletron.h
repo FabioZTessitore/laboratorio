@@ -13,9 +13,9 @@ struct simpletron {
 
 typedef struct simpletron Simpletron;
 
-Simpletron simpletron_make();
+Simpletron simpletron_make(void);
 
-void simpletron_welcome();
+void simpletron_welcome(void);
 
 void simpletron_enterProgram(Simpletron * const pSimpletron);
 

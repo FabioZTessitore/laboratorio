@@ -11,7 +11,7 @@ struct memory {
 
 typedef struct memory Memory;
 
-Memory memory_make();
+Memory memory_make(void);
 
 int memory_get(const Memory * const pMemory, const int index);
 
