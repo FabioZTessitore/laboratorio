@@ -2,6 +2,14 @@
 
 // stampa il doppio del numero inserito
 
+// Istruzioni per la compilazione e l'esecuzione:
+//
+// Compilazione:
+// $ make doppio
+//
+// Esecuzione:
+// $ ./doppio
+
 #include <iostream>
 using namespace std;
 
