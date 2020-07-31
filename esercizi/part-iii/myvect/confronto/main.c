@@ -13,11 +13,11 @@ $ ./main
 #include "myvect.h"
 #include "myvect_sort.h"
 
-int int_compare(const void *a, const void* b);
+int int_compare(const void *a, const void *b);
 
 int main(void)
 {
-  const long int N = 100000; /* 100k */
+  #define N 100000  /* 100k */
   int vett[N];
   int vett_backup[N];
   long int i;
@@ -62,10 +62,10 @@ int main(void)
   return 0;
 }
 
-int int_compare(const void *a, const void* b)
+int int_compare(const void *a, const void *b)
 {
-  const int *pa = (const int*)a;
-  const int *pb = (const int*)b;
+  const int *pa = (const int *)a;
+  const int *pb = (const int *)b;
 
   return *pa - *pb;
 }
