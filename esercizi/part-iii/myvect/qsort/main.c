@@ -11,11 +11,11 @@ $ ./main
 #include <stdlib.h>
 #include "myvect.h"
 
-int int_compare(const void *a, const void* b);
+int int_compare(const void *a, const void *b);
 
 int main(void)
 {
-  const int N = 10;
+  #define N 10
   int vett[N];
 
   printf("MyVect\n\n");
@@ -33,10 +33,10 @@ int main(void)
   return 0;
 }
 
-int int_compare(const void *a, const void* b)
+int int_compare(const void *a, const void *b)
 {
-  const int *pa = (const int*)a;
-  const int *pb = (const int*)b;
+  const int *pa = (const int *)a;
+  const int *pb = (const int *)b;
 
   return *pa - *pb;
 }
