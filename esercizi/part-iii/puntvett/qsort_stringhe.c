@@ -11,7 +11,7 @@ $ ./qsort_stringhe
 #include <stdlib.h>
 
 /* il prototipo della funzione di confronto e' obbligato */
-int compare(const void *a, const void* b);
+int compare(const void *a, const void *b);
 
 int main(void)
 {
@@ -23,7 +23,7 @@ int main(void)
     puts(semi[i]);
   }
 
-  qsort(semi, 4, sizeof(char*), compare);
+  qsort(semi, 4, sizeof(char *), compare);
 
   puts("\nDopo il riordino");
   for (i = 0; i < 4; i++) {
@@ -38,10 +38,10 @@ int main(void)
  * contengono gli indirizzi delle stringhe.
  * Il cast deve quindi essere effettuato a char*
  */
-int compare(const void *a, const void* b)
+int compare(const void *a, const void *b)
 {
-  const char *pa = (const char*)a;
-  const char *pb = (const char*)b;
+  const char *pa = (const char *)a;
+  const char *pb = (const char *)b;
 
   /* se pa e' un puntatore a stringa, *pa e'
    * il primo carattere della stringa stessa.
