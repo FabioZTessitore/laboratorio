@@ -4,10 +4,7 @@
 
 // Istruzioni per la compilazione e l'esecuzione:
 //
-// Compilazione:
 // $ make cast
-//
-// Esecuzione:
 // $ ./cast
 
 #include <iostream>
