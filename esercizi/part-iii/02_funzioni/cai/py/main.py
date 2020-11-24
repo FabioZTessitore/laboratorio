@@ -14,8 +14,8 @@ while contatore_risposte < num_domande:
 
     result = cifra1 * cifra2
 
-    print("Domanda # %d (%d)\n" % (contatore_risposte+1, num_domande))
-    print("Quanto fa %d per %d? " % (cifra1, cifra2))
+    print(f"Domanda # {contatore_risposte+1} di {num_domande}\n")
+    print(f"Quanto fa {cifra1} per {cifra2}? ")
     answer = input()
     answer = int(answer)
 
@@ -28,8 +28,8 @@ while contatore_risposte < num_domande:
         cai.risposta_esatta()
 
     while answer != result and contatore_risposte < num_domande:
-        print("Domanda # %d (%d)\n" % (contatore_risposte+1, num_domande))
-        print("Quanto fa %d per %d? " % (cifra1, cifra2))
+        print(f"Domanda # {contatore_risposte+1} di {num_domande}\n")
+        print(f"Quanto fa {cifra1} per {cifra2}? ")
         answer = input()
         answer = int(answer)
 
