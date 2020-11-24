@@ -18,16 +18,16 @@ def input_coordinate(prompt):
 
 def stampa_coordinate(prompt, p):
     print(prompt)
-    print('x:', p[0])
-    print('y:', p[1])
+    print(f'x: {p[0]}')
+    print(f'y: {p[1]}')
 
 # main
-print("Distanza tra due punti")
+print('Distanza tra due punti')
 
-p1 = input_coordinate("Punto 1:")
-p2 = input_coordinate("Punto 2:")
+p1 = input_coordinate('Punto 1:')
+p2 = input_coordinate('Punto 2:')
 
-stampa_coordinate("Primo punto:", p1)
-stampa_coordinate("Secondo punto:", p2)
+stampa_coordinate('Primo punto:', p1)
+stampa_coordinate('Secondo punto:', p2)
 
-print("\nDistanza tra i punti:", distanza(p1, p2))
+print(f'\nDistanza tra i punti: {distanza(p1, p2)}')
