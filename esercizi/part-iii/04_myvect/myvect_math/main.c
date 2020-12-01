@@ -13,7 +13,7 @@ $ ./main
 
 int main(void)
 {
-  int N = 10;
+  #define N 10
   int vett1[N];
   int vett2[N];
 

@@ -25,7 +25,7 @@ void myvect_sequence(int v[], const int size, const int start, const int step)
 {
   int i;
   int k;
-  for (i = 0, k = start; i < size; i++, k+=step)  v[i] = k;
+  for (i = 0, k = start; i < size; i++, k += step)  v[i] = k;
 }
 
 void myvect_random(int v[], const int size, const int min, const int max)
