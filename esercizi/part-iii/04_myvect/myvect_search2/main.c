@@ -14,7 +14,7 @@ $ ./main
 
 int main(void)
 {
-  int N = 10;
+  #define N 10
   int vett[N];
   int index;
 
