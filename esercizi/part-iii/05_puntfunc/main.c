@@ -19,7 +19,7 @@ void doubleNum(int *num);
 
 int main()
 {
-  const int N = 5;
+  #define N 5
   int vett[N];
 
   printf("MyVect\n\n");
