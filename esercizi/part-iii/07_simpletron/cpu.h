@@ -29,7 +29,9 @@ void cpu_dump(const int accumulator, const int instructionRegister,
   const int instructionCounter, const int opcode, const int operand);
 
 void cpu_fetch(const int memory[], const int memory_size,
-  int * const p_instructionRegister, int * const p_instructionCounter,
+  int * const p_instructionRegister, int * const p_instructionCounter);
+
+void cpu_decode(int * const p_instructionRegister, int * const p_instructionCounter,
   int * const p_opcode, int * const p_operand);
 
 int cpu_execute(int memory[], const int memory_size,

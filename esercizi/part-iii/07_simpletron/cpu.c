@@ -16,11 +16,14 @@ void cpu_dump(const int accumulator, const int instructionRegister,
 }
 
 void cpu_fetch(const int memory[], const int memory_size,
-  int * const p_instructionRegister, int * const p_instructionCounter,
-  int * const p_opcode, int * const p_operand)
+  int * const p_instructionRegister, int * const p_instructionCounter)
 {
   *p_instructionRegister = memory_get(memory, memory_size, *p_instructionCounter);
+}
 
+void cpu_decode(int * const p_instructionRegister, int * const p_instructionCounter,
+  int * const p_opcode, int * const p_operand)
+{
   *p_opcode = *p_instructionRegister / 100;
   *p_operand = *p_instructionRegister % 100;
 
@@ -91,7 +94,8 @@ void cpu_run(int memory[], const int memory_size,
   int halt = 0;
 
   while (!halt) {
-    cpu_fetch(memory, memory_size, p_instructionRegister, p_instructionCounter, p_opcode, p_operand);
+    cpu_fetch(memory, memory_size, p_instructionRegister, p_instructionCounter);
+    cpu_decode(p_instructionRegister, p_instructionCounter, p_opcode, p_operand);
     halt = cpu_execute(memory, memory_size, p_accumulator, p_instructionCounter, *p_opcode, *p_operand);
   }
 }
