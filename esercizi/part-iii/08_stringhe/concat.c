@@ -15,7 +15,7 @@ int main(void)
 
   printf("Stringhe iniziali: \"%s\" \"%s\"\n\n", str1, str2);
 
-  strncpy(msg, str1, 6);  /* Attenzione, deve copiare anche il terminatore! */
+  strncpy(msg, str1, 6);  /* Attenzione, deve copiare anche il terminatore! (strlen + 1) */
   strncat(msg, str2, 8);  /* Sovrascrive il terminatore e copia la seconda stringa
                              piu' il nuovo terminatore */
 
