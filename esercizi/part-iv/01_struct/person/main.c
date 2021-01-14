@@ -8,15 +8,17 @@
 
 int main(void)
 {
-  char firstName[80];
-  char lastName[80];
+  #define BUFFER_SIZE 80
+
+  char firstName[BUFFER_SIZE];
+  char lastName[BUFFER_SIZE];
   Person p;
 
   printf("Name: ");
-  strSafeInput(firstName, 80);
+  strSafeInput(firstName, BUFFER_SIZE);
 
   printf("Lastname: ");
-  strSafeInput(lastName, 80);
+  strSafeInput(lastName, BUFFER_SIZE);
 
   p = person_make(firstName, lastName);
 
