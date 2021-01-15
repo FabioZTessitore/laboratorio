@@ -12,6 +12,6 @@ struct player {
 typedef struct player Player;
 
 Player player_make(const char * const name);
-void player_updateScore(Player * const player, int scoreToAdd);
+void player_updateScore(Player * const player, const int scoreToAdd);
 
 #endif

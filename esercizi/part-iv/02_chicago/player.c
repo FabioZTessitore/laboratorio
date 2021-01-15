@@ -13,7 +13,7 @@ Player player_make(const char * const name)
     return p;
 }
 
-void player_updateScore(Player * const player, int scoreToAdd)
+void player_updateScore(Player * const player, const int scoreToAdd)
 {
     player->score += scoreToAdd;
 }

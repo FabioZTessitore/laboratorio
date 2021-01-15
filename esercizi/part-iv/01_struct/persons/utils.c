@@ -26,7 +26,7 @@ void strSafeInput(char *str, int size)
   len = strlen(str);
 
   /* se non e' stato letto il newline
-   * (stringa di ingresso di lunghezza maggiore di 'size),
+   * (stringa di ingresso di lunghezza maggiore di 'size'),
    * pulisce il buffer di input
    */
   if (str[len-1] != '\n') {

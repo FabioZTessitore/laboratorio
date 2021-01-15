@@ -62,7 +62,6 @@ int input_players(Player players[], const int maxPlayers)
         }
       } while (otherPlayers != 's' && otherPlayers != 'n');
     }
-
   } while (otherPlayers == 's' && numPlayers < maxPlayers);
 
   return numPlayers;
