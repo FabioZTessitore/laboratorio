@@ -28,7 +28,7 @@ int main(void)
 
     result = cifra1*cifra2;
 
-    do {
+    /* do { */
       printf("Domanda # %d (%d)\n", contatore_risposte+1, num_domande);
       printf("Quanto fa %d per %d? ", cifra1, cifra2);
       scanf("%d", &answer);
@@ -39,7 +39,11 @@ int main(void)
         risposte_errate++;
         cai_risposta_errata();
       }
-    } while(answer != result && contatore_risposte < num_domande);
+    
+    /* abilitare il ciclo do-while per far si che il programma
+     * richieda sempre la stessa domanda finche' la risposta non e' corretta
+     */
+    /* } while(answer != result && contatore_risposte < num_domande); */
 
     if (answer == result) {
       cai_risposta_esatta();
