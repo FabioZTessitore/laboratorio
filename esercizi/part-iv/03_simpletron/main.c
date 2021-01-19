@@ -11,9 +11,11 @@ int main(void)
 
   simpletron_welcome();
 
-  simpletron_enterProgram(&aSimpletron);
+  simpletron_enter_program(&aSimpletron);
 
-  simpletron_execProgram(&aSimpletron);
+  simpletron_execute_program(&aSimpletron);
+
+  simpletron_dump(&aSimpletron);
 
   return 0;
 }

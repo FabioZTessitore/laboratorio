@@ -14,7 +14,8 @@ typedef struct simpletron Simpletron;
 
 Simpletron simpletron_make(void);
 void simpletron_welcome(void);
-void simpletron_enterProgram(Simpletron * const pSimpletron);
-void simpletron_execProgram(Simpletron * const pSimpletron);
+void simpletron_enter_program(Simpletron * const pSimpletron);
+void simpletron_execute_program(Simpletron * const pSimpletron);
+void simpletron_dump(const Simpletron * const pSimpletron);
 
 #endif

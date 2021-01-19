@@ -25,7 +25,7 @@ void simpletron_welcome(void)
   printf("*** Type -99999 to stop entering your program.  ***\n\n");
 }
 
-void simpletron_enterProgram(Simpletron * const pSimpletron)
+void simpletron_enter_program(Simpletron * const pSimpletron)
 {
   int instruction = -1;
   int index = 0;
@@ -42,12 +42,15 @@ void simpletron_enterProgram(Simpletron * const pSimpletron)
   printf("*** Program loading completed ***\n");
 }
 
-void simpletron_execProgram(Simpletron * const pSimpletron)
+void simpletron_execute_program(Simpletron * const pSimpletron)
 {
   printf("*** Program execution begins ***\n");
 
-  cpu_run(&(pSimpletron->cpu), &(pSimpletron->memory));
+  cpu_run_program(&(pSimpletron->cpu), &(pSimpletron->memory));
+}
 
+void simpletron_dump(const Simpletron * const pSimpletron)
+{
   cpu_dump(&(pSimpletron->cpu));
   putchar('\n');
   memory_dump(&(pSimpletron->memory));
