@@ -44,20 +44,23 @@ int main(void)
         fprintf(stderr, "Impossibile aprire il file\n");
         return -1;
     }
-    /* cerca la fine del file */
-    while(!feof(f)) {
-        fgets(buffer, BUFFER_SIZE, f);
-    }
+
+    /* si sposta alla fine del file */
+    fseek(f, 0L, SEEK_END);
+    /* equivalente a:
+     *
+     * while(!feof(f)) {
+     *   fgets(buffer, BUFFER_SIZE, f);
+     * }
+     */
     
     /* aggiunge il nuovo conto al file */
     printf("Scrittura file in corso ...\n");
     fputc('\n', f);
     bankaccount_write(f, &account);
 
-    /* torna all'inizio del file */
+    /* torna all'inizio del file e legge tutti i dati */
     rewind(f);
-
-    /* legge tutti i dati */
     printf("%6s%25s%25s%15s\n", "Codice", "Nome", "Cognome", "Saldo");
     while(!feof(f)) {
         fgets(buffer, BUFFER_SIZE, f);
