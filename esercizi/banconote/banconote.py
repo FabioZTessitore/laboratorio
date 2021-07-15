@@ -1,10 +1,10 @@
-# money.py
+# banconote.py
 
 # Determina il numero minimo di banconote da 20, 10, 5 e 1
 
 # esempio di output
 #
-# Money
+# Banconote
 # Determina il numero minimo di banconote.
 # 
 # Importo (dollari): 93
@@ -14,7 +14,7 @@
 # biglietti da  $5: 0
 # biglietti da  $1: 3
 
-print("Money")
+print("Banconote")
 print("Determina il numero minimo di banconote\n")
 
 money = input("Importo (dollari): ")
