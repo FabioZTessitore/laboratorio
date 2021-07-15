@@ -4,7 +4,7 @@
 
 print("Calcola il dopppio di un numero")
 
-# input restituisce una stringa
+# la funzione input() restituisce una stringa
 num = input("Numero: ")
 
 # cast a intero
