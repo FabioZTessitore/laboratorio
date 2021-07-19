@@ -6,6 +6,7 @@ int posX = 0;
 
 void setup() {
   size(500, 400);
+  noStroke();
   fill(0);
 }
 
