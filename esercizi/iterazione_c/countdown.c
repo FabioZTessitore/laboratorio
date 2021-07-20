@@ -18,6 +18,11 @@ int main(void)
   printf("Da che numero devo partire? ");
   scanf("%d", &contatore);
 
+  if (contatore <= 0) {
+    printf("Inserire un numero positivo.\nBye");
+    return 0;
+  }
+
   printf("\n\n");
 
   while (contatore > 0) {
