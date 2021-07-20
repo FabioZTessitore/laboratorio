@@ -18,9 +18,9 @@
 
 int main(void)
 {
-  int num_i = 42;       /* una variabile intera */
-  float num_f = 42.0;   /* una variabile float */
-  double num_d = 42.0;  /* una variabile double */
+  int num_i = 42;         /* una variabile intera */
+  float num_f = 42.0;     /* una variabile float */
+  double num_d = 42.0;    /* una variabile double */
 
   /* puntatori */
   int *p_num_i;           /* puntatore a variabile intera */
