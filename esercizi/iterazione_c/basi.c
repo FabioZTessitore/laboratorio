@@ -25,7 +25,10 @@ int main(void)
     printf("%5d  ", counter);
 
     /* conversione in binario */
-    /* le cifre vanno stampate da sinistra a destra !!! */
+    /* le cifre vanno stampate da sinistra a destra,
+     * ma sapendo che si arriva fino a 255
+     * e' noto il numero di cifre necessarie
+     * e quindi il peso da cui partire */
     current_weight = 128;
     n = counter;
     for (i = 0; i < 8; i++) {
