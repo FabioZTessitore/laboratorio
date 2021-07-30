@@ -50,5 +50,4 @@ if abs(x**3 + 4.5 * x**2 + 3.5 * x - 3) < eps:
     print("Soluzione: %.3f" % (x,))
     print("Passaggi: %d" % (counter,))
 else:
-    print("Sooluzione non trovata, provare a cambiare i parametri di ricerca")
-
+    print("Soluzione non trovata, provare a cambiare i parametri di ricerca")
