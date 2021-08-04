@@ -9,25 +9,27 @@ def distanza(p1, p2):
 
     return (dx**2 + dy**2)**0.5
 
-def input_coordinate(prompt):
-    print(prompt)
-    x = input('Coordinata x: ')
-    y = input('Coordinata y: ')
+def input_coordinate():
+    x = input('Coordinata x ? ')
+    y = input('Coordinata y ? ')
 
     return ( float(x), float(y) )
 
-def stampa_coordinate(prompt, p):
-    print(prompt)
+def stampa_coordinate(p):
     print(f'x: {p[0]}')
     print(f'y: {p[1]}')
 
 # main
 print('Distanza tra due punti')
 
-p1 = input_coordinate('Punto 1:')
-p2 = input_coordinate('Punto 2:')
+print('Input Punto 1')
+p1 = input_coordinate()
+print('Input Punto 2')
+p2 = input_coordinate()
 
-stampa_coordinate('Primo punto:', p1)
-stampa_coordinate('Secondo punto:', p2)
+print('Primo punto:')
+stampa_coordinate(p1)
+print('Secondo punto:')
+stampa_coordinate(p2)
 
 print(f'\nDistanza tra i punti: {distanza(p1, p2)}')

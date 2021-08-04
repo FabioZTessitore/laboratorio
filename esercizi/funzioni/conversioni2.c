@@ -1,11 +1,11 @@
-/* conversioni.c */
+/* conversioni2.c */
 
 /* Conversioni di base, da decimale a binario, ottale o esadecimale */
 
 /* Istruzioni per la compilazione ed esecuzione:
  *
- * $ make conversioni
- * $ ./conversioni
+ * $ make conversioni2
+ * $ ./conversioni2
  */
 
 #include <stdio.h>
@@ -14,10 +14,7 @@
 int menu(void);
 
 /* conversioni di base */
-void converti_in_binario(int num);
-void converti_in_ottale(int num);
-void converti_in_esadecimale(int num);
-
+void converti(int num, int base);
 
 int main(void)
 {
@@ -27,8 +24,6 @@ int main(void)
   /* numero da convertire */
   int num = 0;
 
-  printf("Conversione da decimale a binario, ottale ed esadecimale\n\n");
-
   do {
     printf("Inserisci il numero da convertire (0-255): ");
     scanf("%d", &num);
@@ -37,16 +32,15 @@ int main(void)
   scelta = menu();   /* scelte valide: 1, 2, 3 */
 
   printf("\n%d (10) = ", num);
-
   switch(scelta) {
     case 1:
-      converti_in_binario(num);
+      converti(num, 2);
       break;
     case 2:
-      converti_in_ottale(num);
+      converti(num, 8);
       break;
     case 3:
-      converti_in_esadecimale(num);
+      converti(num, 16);
       break;
     default:
       /* scelta non valida */
@@ -58,71 +52,52 @@ int main(void)
 
 int menu(void)
 {
-  int scelta = 0;
+  int scelta;
 
   do {
     printf("\nScegli la base:\n"
-          "1) Binario\n"
-          "2) Ottale\n"
-          "3) Esadecimale\n\n"
-          "Scelta: ");
+        "1) Converti in binario\n"
+        "2) Converti in ottale\n"
+        "3) Converti in esadecimale\n"
+        "Scegli: ");
     scanf("%d", &scelta);
   } while (scelta<1 || scelta>3);
 
   return scelta;
 }
 
-/* converte numeri decimali
- * compresi tra 0 e 255 in binario.
- * Risultato a 8 bit
- */
-void converti_in_binario(int num)
+/* converte numeri decimali compresi tra 0 e 255
+ * in binario, in ottale o in esadecimale */
+void converti(int num, int base)
 {
-  int current_weight = 128;  /* peso ottavo bit */
+  int current_weight;
   int current_bit;
+  int numero_cifre;
+  int errore_base = 0;
   int i;
 
-  for (i = 0; i < 8; i++) {
-    current_bit = num/current_weight;
-    printf("%d", current_bit);
-    num -= current_bit*current_weight;
-    current_weight /= 2;
+  switch (base) {
+    case 2:
+      numero_cifre = 8;
+      current_weight = 128;
+      break;
+    case 8:
+      numero_cifre = 3;
+      current_weight = 64;
+      break;
+    case 16:
+      numero_cifre = 2;
+      current_weight = 16;
+      break;
+    default:
+      printf("base puo' essere solo 2, 8 o 16\n");
+      errore_base = 1;
+      break;
   }
 
-  printf(" (2)\n");
-}
+  if (errore_base) return;
 
-/* converte numeri decimali
- * compresi tra 0 e 255 in ottale.
- * Risultato in 3 cifre.
- */
-void converti_in_ottale(int num)
-{
-  int current_weight = 64;
-  int current_bit;
-  int i;
-
-  for (i = 0; i < 3; i++) {
-    current_bit = num/current_weight;
-    printf("%d", current_bit);
-    num -= current_bit*current_weight;
-    current_weight /= 8;
-  }
-
-  printf(" (8)\n");
-}
-
-/* converte numeri decimali
- * compresi tra 0 e 255 in esadecimale.
- * Risultato in 2 cifre.
- */
-void converti_in_esadecimale(int num)
-{
-  int current_weight = 16;
-  int current_bit;
-  int i;
-
-  for (i = 0; i < 2; i++) {
+  for (i = 0; i < numero_cifre; i++) {
     current_bit = num/current_weight;
     switch(current_bit) {
       case 0:
@@ -160,8 +135,8 @@ void converti_in_esadecimale(int num)
         break;
     }
     num -= current_bit*current_weight;
-    current_weight /= 16;
+    current_weight /= base;
   }
 
-  printf(" (16)\n");
+  printf(" (%d)\n", base);
 }

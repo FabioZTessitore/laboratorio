@@ -36,6 +36,7 @@ int inverti_cifre(int num)
   while (num) {
     /* estrae ultima cifra di num */
     cifra = num % 10;
+    /* e la elimina */
     num /= 10;
 
     /* costruisce il risultato facendo scalare a sinistra */
