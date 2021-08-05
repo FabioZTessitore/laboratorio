@@ -6,7 +6,6 @@ N_ANSWERS = 4
 
 def estrai_cifra():
     """
-        >>> from functools import reduce
         >>> cifre = [estrai_cifra() for i in range(1000)]
         >>> all([c >= 0 and c < 10 for c in cifre])
         True
@@ -16,7 +15,6 @@ def estrai_cifra():
 
 def estrai_risposta():
     """
-        >>> from functools import reduce
         >>> risposte = [estrai_risposta() for i in range(1000)]
         >>> all([r >= 0 and r < N_ANSWERS for r in risposte])
         True
