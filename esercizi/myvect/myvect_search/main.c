@@ -9,8 +9,8 @@ $ ./main
 
 #include <stdio.h>
 #include "myvect.h"
-#include "myvect_search.h"
 #include "myvect_sort.h"
+#include "myvect_search.h"
 
 int main(void)
 {
@@ -22,6 +22,22 @@ int main(void)
 
   myvect_init();
 
+  /* ricerca lineare */
+
+  printf("vett sequenza da 1 con passo 3 ...\n");
+  myvect_sequence(vett, N, 1, 3);
+  myvect_print(vett, N);
+
+  printf("Cerca il valore 7\n");
+  index = myvect_linear_search(vett, N, 7);
+  if (index >= 0) {
+    printf("Trovato alla posizione %d\n", index);
+  } else {
+    printf("Non trovato\n");
+  }
+
+  /* ricerca binaria */
+  
   printf("vett random in [0, 100[ ...\n");
   myvect_random(vett, N, 0, 100);
   myvect_print(vett, N);
