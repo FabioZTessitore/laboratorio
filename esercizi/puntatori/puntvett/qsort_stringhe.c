@@ -38,27 +38,17 @@ int main(void)
  * contengono gli indirizzi dei puntatori alle stringhe.
  * Il cast deve quindi essere effettuato a (const char **)
  *
- * a contiene l'indirizzo del dato passato &s1
- * b contiene l'indirizzo del dato passato &s2
- * (*a) e (*b) contengono i dati s1 e s2
- * In questo caso s1 ed s2 sono stringhe (e quindi puntatori)
- * quindi
- * a contiene l'indirizzo del puntatore alla prima stringa
- * b contiene l'indirizzo del puntatore alla seconda stringa
- * (*a) e' il puntatore alla prima stringa
- * (*b) e' il puntatore alla seconda stringa
- * (**a) e' il primo carattere della prima stringa
- * (**b) e' il primo carattere della seconda stringa
+ * a contiene l'indirizzo del dato passato &s1 (indirizzo del puntatore)
+ * b contiene l'indirizzo del dato passato &s2 (indirizzo del puntatore)
+ * (*a) e (*b) contengono i dati s1 e s2 (puntatori a char, quindi le stringhe)
  */
 int compare(const void *a, const void *b)
 {
   const char **ppa = (const char **)a;
   const char **ppb = (const char **)b;
 
-  /*
   printf("\nConfronto tra %s e %s\n", *ppa, *ppb);
   printf("Risultato: %d\n", **ppa-**ppb);
-  */
 
   /* confronta solo il primo caratere!
    *
