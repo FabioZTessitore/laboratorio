@@ -15,7 +15,7 @@ int main(void)
 
   printf("Testo: \"%s\"\n\n", msg);
 
-  puts("Tokens:");
+  puts("I token:");
 
   token = strtok(msg, delim);
   while (token) {

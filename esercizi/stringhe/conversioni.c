@@ -8,7 +8,7 @@
 int main(void)
 {
   char stringa_iniziale[] = "123";
-  char stringa_finale[6];
+  char stringa_finale[6]; /* "123.0" e terminatore */
 
   double num = atof(stringa_iniziale);
 
