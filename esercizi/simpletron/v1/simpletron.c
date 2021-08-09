@@ -1,9 +1,9 @@
 /* simpletron.c */
 
 #include <stdio.h>
+#include "simpletron.h"
 #include "cpu.h"
 #include "memory.h"
-#include "simpletron.h"
 
 void simpletron_welcome(void)
 {
@@ -25,7 +25,8 @@ void simpletron_enterProgram(int memory[], const int memory_size)
     scanf("%d", &instruction);
 
     if (instruction != -99999) {
-      memory_set(memory, memory_size, index++, instruction);
+      memory_set(memory, memory_size, index, instruction);
+      index++;
     }
   }
 

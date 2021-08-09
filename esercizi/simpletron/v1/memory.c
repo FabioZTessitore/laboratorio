@@ -5,14 +5,14 @@
 
 int memory_get(const int memory[], const int memory_size, const int index)
 {
-  if (index < memory_size) return memory[index];
+  if (index >= 0 && index < memory_size) return memory[index];
 
   return 0;
 }
 
 void memory_set(int memory[], const int memory_size, const int index, const int value)
 {
-  if (index < memory_size) memory[index] = value;
+  if (index >= 0 && index < memory_size) memory[index] = value;
 }
 
 void memory_dump(const int memory[], const int memory_size)
