@@ -11,12 +11,12 @@ mode = ''
 while not mode in ['E', 'e', 'D', 'd']:
     mode = input('E - Encrypt, D - Decrypt: ')
 
-# key, la chiave di cifratura (intero tra 1 e 25)
+# key: la chiave di cifratura (intero tra 1 e 25)
 key = 0
 while key < 1 or key > 25:
     key = int(input('key: '))
 
-# text da cifrare/decifrare
+# text: testo da cifrare/decifrare
 text = input('Enter the message: ')
 
 if mode in ['E', 'e']:

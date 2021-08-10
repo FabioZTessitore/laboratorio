@@ -1,4 +1,4 @@
-# funzione.py
+# plot.py
 
 # grafico di una funzione con matplotlib
 
