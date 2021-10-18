@@ -11,7 +11,7 @@ void draw() {
   background(30);
   
   // luna
-  fill(200);
+  fill(220);
   ellipse(400, 100, 50, 50);
   
   // stelle
