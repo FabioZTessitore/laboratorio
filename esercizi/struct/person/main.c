@@ -4,23 +4,23 @@
 
 #include <stdio.h>
 #include "person.h"
-#include "utils.h"
+#include "safeString.h"
 
 int main(void)
 {
   #define BUFFER_SIZE 80
 
-  char firstName[BUFFER_SIZE];
-  char lastName[BUFFER_SIZE];
+  char firstname[BUFFER_SIZE];
+  char lastname[BUFFER_SIZE];
   Person p;
 
   printf("Name: ");
-  strSafeInput(firstName, BUFFER_SIZE);
+  safeString_input(firstname, BUFFER_SIZE);
 
   printf("Lastname: ");
-  strSafeInput(lastName, BUFFER_SIZE);
+  safeString_input(lastname, BUFFER_SIZE);
 
-  p = person_make(firstName, lastName);
+  p = person_make(firstname, lastname);
 
   printf("\nA person:\n");
   person_print(&p);
