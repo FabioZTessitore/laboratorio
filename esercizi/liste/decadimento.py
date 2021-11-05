@@ -34,5 +34,5 @@ plt.title('Decadimento radioattivo')
 plt.axis([t_min, t_max, 0, 1])
 for k, l in enumerate(lambdas):
     plt.plot(t, n[k], colors[k]+'o-', label=lambdas[k])
-    plt.legend()
+plt.legend()
 plt.show()

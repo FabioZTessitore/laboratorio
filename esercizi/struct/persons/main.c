@@ -1,50 +1,66 @@
 /* main.c */
 
-/* Legge nomi e cognomi da una file di testo (max 10 righe).
+/* Legge nomi e cognomi da un file di testo (max 10 righe).
  * Crea una Person e la aggiunge ad un vettore.
- * Infine stampa la lista di Person
+ * Infine stampa la lista di Persons
 */
 
 #include <stdio.h>
 #include <string.h>
 #include "person.h"
-#include "utils.h"
+#include "safeString.h"
 
 #define LINE_LEN 1024
 #define LINES_MAX 10
 #define BUF_LEN 80
 
+int leggi_persone(Person * const p, const int size);
+void stampa_persone(const Person * const p, const int size);
+
 int main(void)
+{
+  Person p[LINES_MAX];
+  int nPersone = 0;
+
+  nPersone = leggi_persone(p, LINES_MAX);
+  stampa_persone(p, nPersone);
+
+  return 0;
+}
+
+int leggi_persone(Person * const p, const int size)
 {
   char line[LINE_LEN] = "";
   char *token = '\0';
-  char firstName[BUF_LEN] = "";
-  char lastName[BUF_LEN] = "";
-  Person p[LINES_MAX];
+  char firstname[BUF_LEN] = "";
+  char lastname[BUF_LEN] = "";
   int nPersone = 0;
-  int i;
 
   printf("Lettura dei contatti...");
-  strSafeInput(line, LINE_LEN);
-  nPersone = 0;
+  safeString_input(line, LINE_LEN);
   while (nPersone < LINES_MAX && line[0] != '\0') {
     token = strtok(line, ";");
-    strSafeCopy(firstName, token, BUF_LEN);
+    safeString_copy(firstname, token, BUF_LEN);
 
     token = strtok(NULL, ";");
-    strSafeCopy(lastName, token, BUF_LEN);
+    safeString_copy(lastname, token, BUF_LEN);
 
-    p[nPersone] = person_make(firstName, lastName);
+    p[nPersone] = person_make(firstname, lastname);
     nPersone++;
 
-    strSafeInput(line, LINE_LEN);
+    safeString_input(line, LINE_LEN);
   }
   puts("Fatto\n");
 
-  puts("Lista contatti:");
-  for (i = 0; i < nPersone; i++) {
-    person_print(&p[i]);
-  }
+  return nPersone;
+}
 
-  return 0;
+void stampa_persone(const Person * const pp, const int size)
+{
+  int i;
+
+  puts("Lista contatti:");
+  for (i = 0; i < size; i++) {
+    person_print(pp+i);
+  }
 }

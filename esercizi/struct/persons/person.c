@@ -2,19 +2,19 @@
 
 #include <stdio.h>
 #include "person.h"
-#include "utils.h"
+#include "safeString.h"
 
-Person person_make(const char *firstName, const char *lastName)
+Person person_make(const char *firstname, const char *lastname)
 {
   Person p;
 
-  strSafeCopy(p.firstName, firstName, PERSON_FIRSTNAME_MAX_LEN);
-  strSafeCopy(p.lastName, lastName, PERSON_LASTNAME_MAX_LEN);
+  safeString_copy(p.firstname, firstname, PERSON_FIRSTNAME_MAX_LEN);
+  safeString_copy(p.lastname, lastname, PERSON_LASTNAME_MAX_LEN);
 
   return p;
 }
 
 void person_print(const Person * const p)
 {
-  printf("%s, %s\n", p->lastName, p->firstName);
+  printf("%s, %s\n", p->lastname, p->firstname);
 }
