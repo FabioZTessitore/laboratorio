@@ -4,6 +4,9 @@
 #include <string.h>
 #include "memory.h"
 
+int memory_addressCheck(int address);
+
+
 Memory memory_make(void)
 {
   Memory aMemory;
@@ -13,16 +16,16 @@ Memory memory_make(void)
   return aMemory;
 }
 
-int memory_get(const Memory * const pMemory, const int index)
+int memory_get(const Memory * const pMemory, const int address)
 {
-  if (index < MEMORY_SIZE) return pMemory->cells[index];
+  if (memory_addressCheck(address)) return pMemory->cells[address];
 
   return 0;
 }
 
-void memory_set(Memory * const pMemory, const int index, const int value)
+void memory_set(Memory * const pMemory, const int address, const int data)
 {
-  if (index < MEMORY_SIZE) pMemory->cells[index] = value;
+  if (memory_addressCheck(address)) pMemory->cells[address] = data;
 }
 
 void memory_dump(const Memory * const pMemory)
@@ -44,4 +47,9 @@ void memory_dump(const Memory * const pMemory)
     }
     putchar('\n');
   }
+}
+
+int memory_addressCheck(int address)
+{
+  return (address >= 0 && address < MEMORY_SIZE) ? 1 : 0;
 }

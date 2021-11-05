@@ -2,7 +2,6 @@
 
 /* Simpletron */
 
-#include <stdio.h>
 #include "simpletron.h"
 
 int main(void)

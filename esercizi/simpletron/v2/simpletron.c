@@ -28,14 +28,14 @@ void simpletron_welcome(void)
 void simpletron_enter_program(Simpletron * const pSimpletron)
 {
   int instruction = -1;
-  int index = 0;
+  int address = 0;
 
   while (instruction != -99999) {
-    printf(" %02d ? ", index);
+    printf(" %02d ? ", address);
     scanf("%d", &instruction);
 
     if (instruction != -99999) {
-      memory_set(&(pSimpletron->memory), index++, instruction);
+      memory_set(&(pSimpletron->memory), address++, instruction);
     }
   }
 
