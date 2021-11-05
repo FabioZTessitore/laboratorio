@@ -11,7 +11,7 @@
 #include <stdio.h>
 #include "chicago.h"
 #include "player.h"
-#include "utils.h"
+#include "safeString.h"
 
 #define MAXPLAYERS 10
 
@@ -38,14 +38,15 @@ int main(void)
 
 int input_players(Player players[], const int maxPlayers)
 {
+  #define BUFFER_LEN 80
   int numPlayers = 0;
-  char playerNameBuffer[80];
+  char playerNameBuffer[BUFFER_LEN];
   int otherPlayers = 's';
   int temp;
 
   do {
     printf("Giocatore #%d: ", numPlayers+1);
-    strSafeInput(playerNameBuffer, 80);
+    safeString_input(playerNameBuffer, BUFFER_LEN);
     players[numPlayers] = player_make(playerNameBuffer);
     numPlayers++;
 

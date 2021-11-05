@@ -6,8 +6,8 @@
 #define PLAYER_NAME_MAX_LEN 24
 
 struct player {
-    char name[PLAYER_NAME_MAX_LEN];
-    int score;
+  char name[PLAYER_NAME_MAX_LEN];
+  int score;
 };
 typedef struct player Player;
 
