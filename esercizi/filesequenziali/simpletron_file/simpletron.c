@@ -5,7 +5,7 @@
 #include "cpu.h"
 #include "memory.h"
 #include "simpletron.h"
-#include "utils.h"
+#include "safeString.h"
 
 Simpletron simpletron_make(void)
 {
@@ -35,7 +35,7 @@ void simpletron_enterProgram(Simpletron * const pSimpletron)
   FILE *f;
 
   printf("Enter source filename: ");
-  strSafeInput(buffer, 80);
+  safeString_input(buffer, 80);
   
   f = fopen(buffer, "r");
   if (!f) {

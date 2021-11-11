@@ -15,14 +15,14 @@ Memory memory_make(void)
 
 int memory_get(const Memory * const pMemory, const int index)
 {
-  if (index < MEMORY_SIZE) return pMemory->cells[index];
+  if (index >= 0 && index < MEMORY_SIZE) return pMemory->cells[index];
 
   return 0;
 }
 
 void memory_set(Memory * const pMemory, const int index, const int value)
 {
-  if (index < MEMORY_SIZE) pMemory->cells[index] = value;
+  if (index >= 0 && index < MEMORY_SIZE) pMemory->cells[index] = value;
 }
 
 void memory_dump(const Memory * const pMemory)
