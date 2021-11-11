@@ -6,7 +6,7 @@
 #include <stdio.h>
 
 struct bank {
-    char *filename;
+    char *filename;     /* necessario in bank_update() per ricreare il file */
     FILE *f_clients;
 };
 typedef struct bank Bank;

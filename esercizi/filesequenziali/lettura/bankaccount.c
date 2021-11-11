@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 #include "bankaccount.h"
-#include "utils.h"
+#include "safeString.h"
 
 #define INPUT_BUFFER_SIZE 80
 
@@ -18,8 +18,8 @@ Bankaccount bankaccount_parse(const char * const buffer)
     sscanf(buffer, "%d %s %s %lf", &id, firstname, lastname, &balance);
 
     account.id = id;
-    strSafeCopy(account.firstname, firstname, BANKACCOUNT_NAME_MAX_LEN);
-    strSafeCopy(account.lastname, lastname, BANKACCOUNT_NAME_MAX_LEN);
+    safeString_copy(account.firstname, firstname, BANKACCOUNT_NAME_MAX_LEN);
+    safeString_copy(account.lastname, lastname, BANKACCOUNT_NAME_MAX_LEN);
     account.balance = balance;
 
     return account;

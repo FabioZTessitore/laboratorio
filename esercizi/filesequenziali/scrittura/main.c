@@ -4,7 +4,7 @@
 
 #include <stdio.h>
 #include "bankaccount.h"
-#include "utils.h"
+#include "safeString.h"
 
 #define BUFFER_SIZE 80
 
@@ -28,10 +28,10 @@ int main(void)
         ;
 
     printf("Nome: ");
-    strSafeInput(firstname, BUFFER_SIZE);
+    safeString_input(firstname, BUFFER_SIZE);
 
     printf("Cognome: ");
-    strSafeInput(lastname, BUFFER_SIZE);
+    safeString_input(lastname, BUFFER_SIZE);
 
     printf("Saldo Iniziale: ");
     scanf("%lf", &balance);
