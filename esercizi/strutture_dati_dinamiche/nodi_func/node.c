@@ -4,14 +4,14 @@
 #include <stdlib.h>
 #include "node.h"
 
-int nodeseq_isEmpty(Node *head)
+int nodeseq_isEmpty(const Node * const head)
 {
     return head == NULL;
 }
 
-void nodeseq_print(Node *head)
+void nodeseq_print(const Node * const head)
 {
-    Node *current = head;
+    const Node *current = head;
 
     while (current != NULL) {
         printf("%d ---> ", current->val);
@@ -79,7 +79,6 @@ void nodeseq_insertTail(NodePtr *head, int val)
     while (current->next != NULL) {
         current = current->next;
     }
-
     current->next = newNode;
     newNode->next = NULL;
 }

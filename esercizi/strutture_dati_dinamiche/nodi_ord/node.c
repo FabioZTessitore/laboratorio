@@ -1,29 +1,17 @@
-/* list.c */
+/* node.c */
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "list.h"
 #include "node.h"
 
-void list_init(List *l)
+int nodeseq_isEmpty(const Node * const head)
 {
-    l->head = NULL;
-    l->size = 0;
+    return head == NULL;
 }
 
-int list_isEmpty(const List * const l)
+void nodeseq_print(const Node * const head)
 {
-    return l->size == 0;
-}
-
-int list_size(const List * const l)
-{
-    return l->size;
-}
-
-void list_print(const List * const l)
-{
-    Node *current = l->head;
+    const Node *current = head;
 
     while (current != NULL) {
         printf("%d ---> ", current->val);
@@ -32,9 +20,9 @@ void list_print(const List * const l)
     printf("NULL\n");
 }
 
-void list_insert(List * const l, int val)
+void nodeseq_insert(NodePtr *head, int val)
 {
-    Node *current = l->head;
+    Node *current = *head;
     Node *prev = NULL;
 
     Node *newNode = (Node *) malloc( sizeof(Node) );
@@ -50,12 +38,10 @@ void list_insert(List * const l, int val)
         current = current->next;
     }
 
-    l->size++;
-
     /* lista vuota o inserimento in testa */
     if (prev == NULL) {
         newNode->next = current;
-        l->head = newNode;
+        *head = newNode;
         return;
     }
 
@@ -64,9 +50,9 @@ void list_insert(List * const l, int val)
     prev->next = newNode;
 }
 
-void list_remove(List * const l, int val)
+void nodeseq_remove(NodePtr *head, int val)
 {
-    Node *current = l->head;
+    Node *current = *head;
     Node *prev = NULL;
 
     Node *temp;
@@ -83,13 +69,11 @@ void list_remove(List * const l, int val)
         return;
     }
 
-    l->size--;
-
     /* elimina elemento in testa */
     if (prev == NULL) {
         printf("Elimina elemento in testa\n");
-        temp = l->head;
-        l->head = current->next;
+        temp = *head;
+        *head = current->next;
 
         printf("Libero memoria per l'elemento %d\n", temp->val);
         free(temp);
@@ -105,9 +89,9 @@ void list_remove(List * const l, int val)
     free(temp);
 }
 
-void list_clear(List * const l)
+void nodeseq_clear(NodePtr *head)
 {
-    Node *current = l->head;
+    Node *current = *head;
     Node *temp;
 
     while (current != NULL) {
@@ -118,6 +102,5 @@ void list_clear(List * const l)
         free(temp);
     }
 
-    l->head = NULL;
-    l->size = 0;
+    *head = NULL;
 }

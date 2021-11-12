@@ -11,19 +11,14 @@ void input_stringa_2(char **dst);
 
 int main(void)
 {
-    char *dst_str = "";
+    char *dst_str;
     
     dst_str = input_stringa_1();
-
     printf("dst_str: \"%s\"\n", dst_str);
-
     free(dst_str);
 
-
     input_stringa_2(&dst_str);
-
     printf("dst_str: \"%s\"\n", dst_str);
-
     free(dst_str);
 
     return 0;
