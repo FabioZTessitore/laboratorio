@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="400"
+   height="600"
+   viewBox="70 50 392.72727 648"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20, custom)"
+   sodipodi:docname="moon.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="1.0406414"
+     inkscape:cx="28.359821"
+     inkscape:cy="318.38722"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     width="209mm"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid77"
+       originx="-67.903349"
+       originy="-51.339499" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Livello 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-67.90335,-51.3395)">
+    <path
+       id="path31"
+       style="fill:#f2f2f2;fill-opacity:1;stroke-width:3.48247"
+       d="M 236.51142,101.3395 A 313.75621,324.00026 0 0 0 118.36589,125.40256 293.13231,309.10647 0 0 1 340.71323,425.33846 293.13231,309.10647 0 0 1 118.26698,725.23305 313.75621,324.00026 0 0 0 236.51142,749.3395 313.75621,324.00026 0 0 0 550.26698,425.33846 313.75621,324.00026 0 0 0 236.51142,101.3395 Z" />
+  </g>
+</svg>
