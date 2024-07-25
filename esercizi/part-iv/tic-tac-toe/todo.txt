@@ -1,0 +1,14 @@
+Create an empty Board
+Display instructions
+Who goes first?
+Display the Board
+While nobody won and it's not a tie
+    if it's human turn
+        get the move
+        update the Board
+    else
+        calc comp move
+        update the Board
+    Display the Board
+    switch turn
+congratulate or declare a tie
