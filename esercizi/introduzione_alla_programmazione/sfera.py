@@ -10,7 +10,7 @@ print("Inserisci il raggio")
 raggio = input("? ")
 raggio = float(raggio)
 
-superficie = 4. * math.pi * raggio * raggio
-volume = 4. / 3. * math.pi * raggio * raggio * raggio
+superficie = 4. * math.pi * raggio**2
+volume = 4. / 3. * math.pi * raggio**3
 
 print(f"La sfera di raggio {raggio} ha superficie {superficie} e volume {volume}")

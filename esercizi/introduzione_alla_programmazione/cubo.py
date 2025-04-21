@@ -5,6 +5,6 @@
 lato = input("Lato del cubo: ")
 lato = int(lato)
 
-volume = lato * lato * lato
+volume = lato**3
 
 print(f"Il cubo di lato {lato} ha volume {volume}")
