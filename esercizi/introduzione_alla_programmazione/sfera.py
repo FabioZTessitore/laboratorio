@@ -8,9 +8,9 @@ print("Calcolo della superficie e del volume di una sfera")
 
 print("Inserisci il raggio")
 raggio = input("? ")
-raggio = int(raggio)
+raggio = float(raggio)
 
 superficie = 4. * math.pi * raggio * raggio
 volume = 4. / 3. * math.pi * raggio * raggio * raggio
 
-print("La sfera di raggio", raggio, "ha superficie", superficie, "e volume", volume)
+print(f"La sfera di raggio {raggio} ha superficie {superficie} e volume {volume}")

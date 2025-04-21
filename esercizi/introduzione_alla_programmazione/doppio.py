@@ -13,4 +13,4 @@ num = int(num)
 # calcolo
 doppio = num * 2
 
-print("Il doppio di", num, "e'", doppio)
+print(f"Il doppio di {num} e' {doppio}")
