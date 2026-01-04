@@ -1,11 +1,11 @@
-/* operazioni.c */
+// operazioni.c
 
-/* Esegue le cinque operazioni elementari su due interi dati in input */
+// Esegue le cinque operazioni elementari su due interi dati in input
 
 /* Istruzioni per la compilazione e l'esecuzione:
  *
  * Compilazione:
- * $ gcc -c operazioni.c -o operazioni.o
+ * $ gcc -std=c11 -c operazioni.c -o operazioni.o
  *
  * Link:
  * $ gcc operazioni.o -o operazioni
@@ -18,31 +18,29 @@
 
 int main(void)
 {
-  /* variabili di input */
+  // variabili di input
   int num1, num2;
 
-  /* variabili di output */
+  // variabili di output
   int somma, differenza, prodotto, quoziente, resto;
 
-  /* input */
-  printf("Inserisci un intero: ");
+  // input
+  printf("%s", "Inserisci un intero: ");
   scanf("%d", &num1);
-  printf("Inserisci un altro intero: ");
+  printf("%s", "Inserisci un altro intero: ");
   scanf("%d", &num2);
 
-  /* calcolo */
+  // calcolo
   somma = num1 + num2;
   differenza = num1 - num2;
   prodotto = num1 * num2;
   quoziente = num1 / num2;
   resto = num1 % num2;
 
-  /* output */
+  // output
   printf("%d + %d = %d\n", num1, num2, somma);
   printf("%d - %d = %d\n", num1, num2, differenza);
   printf("%d * %d = %d\n", num1, num2, prodotto);
   printf("%d / %d = %d\n", num1, num2, quoziente);
   printf("%d %% %d = %d\n", num1, num2, resto);
-
-  return 0;
 }
