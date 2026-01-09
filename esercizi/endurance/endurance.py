@@ -3,7 +3,7 @@
 # determinare la durata massima di volo conoscendo
 # la quantita' di carburante ed il consumo orario
 
-# esempio di output
+# esempio di output:
 #
 # Endurance
 # Determina la durata massima di volo conoscendo
@@ -30,21 +30,21 @@ elif consumo_h <= 0:
     print("Il consumo orario deve essere positivo!")
 else:
     # tempo di volo
-    t = carburante / consumo_h # h
+    t = carburante / consumo_h  # h
 
     # ore intere
     ore = int(t)
 
     # minuti rimanenti
     t = t - ore
-    t = t * 60 # min
+    t = t * 60  # min
     # minuti interi
     minuti = int(t)
 
     # secondi rimanenti
     t = t - minuti
-    t = t * 60 # sec
+    t = t * 60  # sec
     # secondi interi
     secondi = int(t)
 
-    print("Durata volo:", ore, "h", minuti, "min", secondi, "sec")
+    print(f"Durata volo: {ore} h {minuti} min {secondi} sec")
