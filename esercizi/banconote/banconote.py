@@ -2,13 +2,13 @@
 
 # Determina il numero minimo di banconote da 20, 10, 5 e 1
 
-# esempio di output
+# esempio di output:
 #
 # Banconote
 # Determina il numero minimo di banconote.
-# 
+#
 # Importo (dollari): 93
-# 
+#
 # biglietti da $20: 4
 # biglietti da $10: 1
 # biglietti da  $5: 0
@@ -44,7 +44,8 @@ else:
     # biglietti da 1
     one = money
 
-    print("\nbiglietti da $20:", twenty)
-    print("biglietti da $10:", ten)
-    print("biglietti da  $5:", five)
-    print("biglietti da  $1:", one)
+    print()
+    print(f"biglietti da $20: {twenty}")
+    print(f"biglietti da $10: {ten}")
+    print(f"biglietti da  $5: {five}")
+    print(f"biglietti da  $1: {one}")
