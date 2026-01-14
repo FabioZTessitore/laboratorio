@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ViaggiaSicuro - Viaggi sostenibili</title>
+  </head>
+
+  <body>
+    <!-- Intestazione del sito -->
+    <header>
+      <h1>ViaggiaSicuro</h1>
+      <p>Promuoviamo il turismo sostenibile e responsabile</p>
+
+      <nav>
+        <ul>
+          <li><a href="#chi-siamo">Chi siamo</a></li>
+          <li><a href="#destinazioni">Destinazioni</a></li>
+          <li><a href="#contatti">Contatti</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="chi-siamo">
+        <h2>Chi siamo</h2>
+
+        <article>
+          <h3>La nostra missione</h3>
+          <p>
+            <strong>ViaggiaSicuro</strong> nasce nel
+            <time datetime="2015">2015</time>
+            con l’obiettivo di rendere il viaggio un’esperienza
+            <em>consapevole</em> e rispettosa dell’ambiente.
+          </p>
+
+          <figure>
+            <img
+              src="https://picsum.photos/id/128/600/480"
+              alt="Paesaggio naturale incontaminato"
+            />
+            <figcaption>Viaggiare nel rispetto della natura</figcaption>
+          </figure>
+        </article>
+      </section>
+
+      <section id="destinazioni">
+        <h2>Le nostre destinazioni</h2>
+
+        <article>
+          <h3>Tipologie di viaggio</h3>
+
+          <h4>Viaggi più richiesti</h4>
+          <ul>
+            <li>Ecoturismo</li>
+            <li>Turismo rurale</li>
+            <li>Viaggi solidali</li>
+          </ul>
+
+          <h4>Fasi di un viaggio sostenibile</h4>
+          <ol>
+            <li>Pianificazione</li>
+            <li>Scelta dei mezzi di trasporto</li>
+            <li>Rispetto delle comunità locali</li>
+          </ol>
+        </article>
+
+        <article>
+          <h3>Costi medi</h3>
+
+          <table>
+            <caption>
+              Prezzi indicativi per destinazione
+            </caption>
+            <thead>
+              <tr>
+                <th>Destinazione</th>
+                <th>Durata</th>
+                <th>Costo medio</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Trentino</th>
+                <td>5 giorni</td>
+                <td>600 €</td>
+              </tr>
+              <tr>
+                <th>Sardegna</th>
+                <td>7 giorni</td>
+                <td>900 €</td>
+              </tr>
+              <tr>
+                <th>Umbria</th>
+                <td>4 giorni</td>
+                <td>450 €</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+      </section>
+
+      <aside>
+        <h2>Lo sapevi?</h2>
+        <p>
+          Scegliere strutture locali riduce l’impatto ambientale e favorisce
+          l’economia del territorio.
+        </p>
+        <p>
+          Visita il sito del
+          <a href="https://www.wwf.it">WWF</a>
+          per approfondire.
+        </p>
+      </aside>
+
+      <section id="contatti">
+        <h2>Contattaci</h2>
+
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Modulo di contatto</legend>
+
+            <p>
+              <label for="nome">Nome:</label><br />
+              <input type="text" id="nome" name="nome" />
+            </p>
+
+            <p>
+              <label for="email">Email:</label><br />
+              <input type="email" id="email" name="email" />
+            </p>
+
+            <p>
+              <label for="data">Data di partenza:</label><br />
+              <input type="date" id="data" name="data" />
+            </p>
+
+            <p>
+              Tipo di viaggio:<br />
+              <input type="radio" id="singolo" name="tipo" value="singolo" />
+              <label for="singolo">Singolo</label><br />
+
+              <input type="radio" id="gruppo" name="tipo" value="gruppo" />
+              <label for="gruppo">Gruppo</label>
+            </p>
+
+            <p>
+              <label for="destinazione">Destinazione preferita:</label><br />
+              <select id="destinazione" name="destinazione">
+                <option value="trentino">Trentino</option>
+                <option value="sardegna">Sardegna</option>
+                <option value="umbria">Umbria</option>
+              </select>
+            </p>
+
+            <p>
+              <label for="messaggio">Messaggio:</label><br />
+              <textarea
+                id="messaggio"
+                name="messaggio"
+                rows="4"
+                cols="40"
+              ></textarea>
+            </p>
+
+            <p>
+              <button type="submit">Invia</button>
+            </p>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 ViaggiaSicuro</p>
+
+      <address>
+        Contattaci via email:
+        <a href="mailto:info@viaggiasicuro.it">info@viaggiasicuro.it</a>
+      </address>
+    </footer>
+  </body>
+</html>
